@@ -1,35 +1,32 @@
-var http = require('http');
-
 const Base = require('./base.js');
 module.exports = class extends Base {
-    indexAction() {
+    async indexAction() {
         var that = this;
-        var options = {
-            host: 'www.zjgt_dev.com',
+         var options = {
+            host: think.config('api_url'),
             path: '/product',
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
             }
-        };
-        http.get(options, function (res) {
-            res.setEncoding('utf8');
-            var statusCode = res.statusCode;
-            var getData = '';
-            if (statusCode == 200) {
-                res.on('data', function (chunk) {
-                    getData += chunk;
-                }).on('end', function () {
-                    var obj = JSON.parse(getData);
-                    console.log(obj);
-                });
-            } else {
-                console.log(statusCode);
+        };       
+        const getApi = think.service("getapi", options);
+        await getApi.httpGet().then(function (obj) {
+            if (obj.errno == '0') {
+                that.assign('getData', obj.data);
             }
-        }).on('error', function (e) {
+        })
+        that.assign('myName', '我是测试哦~~~');
+        return that.display();
+    }
 
-        });
-        this.assign('myName', '我是测试哦~~~');
-        return this.display();
+    async loginAction() {
+        await this.session("userName", "小茉莉");
+        return this.success("OK");
+    }
+
+    async logoutAction() {
+        await this.session(null);
+        return this.success("OK");
     }
 };
