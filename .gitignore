@@ -21,7 +21,7 @@ coverage/
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules/
+#node_modules/
 
 # IDE config
 .idea
@@ -33,5 +33,5 @@ output.tar.gz
 runtime/
 app/
 
-config.development.js
-adapter.development.js
+#config.development.js
+#adapter.development.js

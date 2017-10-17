@@ -2,14 +2,14 @@ const Base = require('./base.js');
 module.exports = class extends Base {
     async indexAction() {
         var that = this;
-         var options = {
+        var options = {
             host: think.config('api_url'),
             path: '/product',
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
             }
-        };       
+        };
         const getApi = think.service("getapi", options);
         await getApi.httpGet().then(function (obj) {
             if (obj.errno == '0') {
