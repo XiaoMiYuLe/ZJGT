@@ -1,0 +1,246 @@
+.item0 {
+	width: 100%;
+	height: 610px;
+	background: url(/static/img/content/safe/banner01.jpg) no-repeat center center;
+}
+.item1 {
+	width: 100%;
+	height: 465px;
+	background: url(/static/img/content/safe/banner02.jpg) no-repeat center center;
+}
+.item2 {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	padding-bottom: 80px;
+}
+.item3 {
+	width: 100%;
+	height: 770px;
+	background: url(/static/img/content/safe/banner03.jpg) no-repeat center center;
+	margin-top: -5px;
+}
+.item4 {
+	width: 100%;
+	height: 800px;
+	background: #f7f7f7;
+}
+.safe-cont.join-us {
+	width: 925px;
+	height: 490px;
+	background: url(/static/img/content/safe/banner05.jpg);
+	margin:0 auto;
+}
+.item4 .btn {
+    width: 385px;
+    height: 85px;
+    display: block;
+    background: #f19d00;
+    margin: 100px auto;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 85px;
+    color: #fff;
+    vertical-align: middle;	
+    font-size: 3.5em;
+}
+
+.safe-cont {
+	width: 980px;
+	margin:0 auto;
+}
+.safe-cont p {
+	margin-bottom: 20px;
+}
+.safe-msg {
+	color: #31549d;
+	font-size: 1.6em;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+.safe-title {
+	width: 550px;
+	height: 50px;
+	display: block;
+	background: url(/static/img/content/safe/title.png) 0 0;
+}
+.safe-logo {
+	display: block;
+	background: url(/static/img/content/safe/logo.png) 0 0;
+}
+
+
+/*relax*/
+.relax-c {
+	margin-top: 0;
+	padding-top: 90px;
+}
+.relax-c .safe-title {
+	background-position: -22px -10px;
+}
+.relax-c .safe-logo {
+	width: 200px;
+	height: 255px;
+	background-position: 0 0;
+	cursor: inherit;
+}
+
+/*anxin*/
+.anxin-c {
+	margin-top: 0;
+	padding-top: 0px;
+}
+.anxin-c .safe-title {
+	background-position: -22px -60px;
+}
+.anxin-c .safe-logo {
+    width: 250px;
+    height: 250px;
+    background-position: -249px 0;
+}
+
+
+/*sx-c*/
+.sx-c {
+	margin-top: 0;
+	padding-top: 0;
+}
+.sx-c .grid-70 {
+	padding-top: 50px;
+}
+.sx-c .safe-title {
+	background-position: -22px -100px;
+}
+.sx-c .safe-logo {
+    width: 250px;
+    height: 300px;
+    background-position: -504px 0;
+}
+
+/*tx*/
+.tx-c {
+	margin-top: 0;
+	padding-top: 0;
+}
+.tx-c .safe-msg {
+	margin-bottom:0;
+}
+.tx-c .safe-title {
+	background-position: -22px -150px;
+}
+.tx-c .safe-logo {
+    width: 250px;
+    height: 300px;
+    background-position: -760px 0;
+}
+#safetyRepeot {
+	cursor: pointer;
+}
+
+/*/.tip-c*/
+.tip-c {
+	width: 670px;
+}
+.tip-c .safe-tip {
+	background: url(/static/img/content/safe/title.png) -22px -190px;
+}
+.tip-c .safe-msg span {
+	color: #fa0303;
+	display: block;
+}
+.tip-c .safe-logo {
+	width: 145px;
+	height: 200px;
+	background: url(/static/img/content/safe/safe-book.jpg) 0 0;
+	cursor: pointer;
+}
+
+/*yx-c*/
+.yx-c {
+	margin-top: 0;
+	padding-top: 20px;
+}
+.yx-c .safe-title {
+	background-position: -22px -235px;
+}
+.yx-c .safe-logo {
+	margin:0 auto;
+}
+.yx-c .safe-logo span {
+	position: relative;
+    bottom: -260px;
+    font-style: normal;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: #31549d;
+}
+.yx-c .safe-logo.logo1 {
+    width: 250px;
+    height: 300px;
+    background-position: 0px -285px;
+}
+.yx-c .safe-logo.logo2 {
+    width: 265px;
+    height: 300px;
+    background-position: -295px -280px;
+}
+.yx-c .fr.grid-40 {
+	float: right;
+}
+
+/*self-c*/
+.self-c {
+	padding-top: 70px;
+}
+.self-msg {
+	margin-bottom: 40px;
+	padding: 0;
+}
+.self-c .self-msg i {
+	color: #fff;
+	font-style: normal;
+	font-size: 1em;
+	display: block;
+	background: #1472a7;
+	border-radius: 20px;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+	text-align: center;
+	margin-right: 20px;
+	float: left;
+}
+.self-c h3 {
+	font-size: 1.6em;
+	color: #31549d;
+}
+.self-c p {
+	font-size: 1.6em;
+	color: #fff;
+	margin-left: 43px;
+	line-height: 25px;
+}
+.self-c h1 {
+    font-size: 2em;
+    color: #fff;
+    line-height: 60px;
+    vertical-align: middle;
+}
+.self-c .grid-40.fr {
+	float: right;
+}
+.self-c .href-safe-img {
+	width: 308px;
+	height: 98px;
+	background: url(/static/img/content/safe/safe-img.png) 0 0;
+	margin-left: 45px;
+}
+.self-c .pwd-safe-img {
+	background-position: 0 -118px;
+}
+.mr100 {
+	margin-top: 100px;
+}

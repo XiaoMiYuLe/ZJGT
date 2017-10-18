@@ -1,0 +1,239 @@
+@charset "UTF-8";
+h1,h2,h3,h4,h5,h6{ margin:0;}
+
+body{ min-width:1200px;}
+.wrap{ width:1200px; margin:0 auto; position:relative; *overflow:hidden;}
+
+.listPager td em{ font-style:normal; font-size:18px; color:#ff7e00;}
+
+.header{ height:100px; background:url(/static/img/business/bg-top.png) repeat-x;}
+.header .logo{ float:left; display:inline; width:423px; height:54px; background:url(/static/img/business/logo.png) no-repeat; margin-top:30px;}
+.header .top-tel{ float:right; display:inline; width:406px; height:55px; background:url(/static/img/business/top-tel.png) no-repeat; margin-top:27px;}
+
+.footer{ text-align:center; color:#000; padding:25px 0;}
+.footer p{ line-height:35px;}
+.footer a{ font-size:12px; color:#000; margin:0 10px;}
+
+.login-content{ position:relative;}
+.login-content .banner{ width:100%; height:539px; background:url(/static/img/business/login-banner.png) no-repeat center top; position:relative; z-index:1;}
+.login-content .wrap{ position:absolute; left:50%; margin-left:-600px; z-index:2; top:0;}
+.login-content .login-form{ width:240px; height:290px; background:url(/static/img/business/bg-mask-alpha40.png); padding:0 25px; position:absolute; right:0; top:60px;}
+.login-content .login-form h2{ height:32px; line-height:32px; font-size:18px; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.75); border-bottom:1px solid #fff; padding-top:12px;}
+.login-content .login-form ul{ height:155px; padding-top:20px;}
+.login-content .login-form li{ height:32px; border:1px solid #a0a0a0; background:#fff; position:relative; margin-bottom:35px;}
+.login-content .login-form .ico{ width:30px; height:26px; background-repeat:no-repeat; background-position:center center; border-right:1px solid #f5f5f5; position:absolute; left:0; top:50%; margin-top:-13px;}
+.login-content .login-form .ico.ico-user{ background-image:url(/static/img/business/ico-user.png);}
+.login-content .login-form .ico.ico-pwd{ background-image:url(/static/img/business/ico-pwd.png);}
+.login-content .login-form .valid-check{ height:18px; line-height:18px; font-size:12px; color:#fff; position:absolute; left:0; bottom:-28px;}
+.login-content .login-form .valid-check:after{ content:""; float:left; display:inline; width:18px; height:18px; background:url(/static/img/business/ico-warning.png) no-repeat; margin-right:10px;}
+.login-content .login-form input{ display:block; width:170px; height:32px; font-size:14px; border:none; background:none; outline:none; margin-left:45px;}
+.login-content .login-form .btn-login{ display:block; width:100%; height:34px; line-height:34px; text-align:center; font-size:18px; color:#fff; background:#ffaa11; margin:0;}
+
+
+.business-content{ width:1200px; margin:20px auto 30px; *overflow:hidden;}
+.business-content:after{ content:"."; display:block; height:0; overflow:hidden; clear:both;}
+.business-left{ float:left; display:inline; width:158px; min-height:800px; background:#fff; border:1px solid #dcdcdc; box-shadow:0 4px 4px 0 #eaeaea; padding-top:30px;}
+.business-right{ float:right; display:inline; width:918px; background:#fff; border:1px solid #dcdcdc; box-shadow:0 4px 4px 0 #eaeaea; padding:0 40px 35px;}
+.business-title{ height:90px; line-height:90px; font-size:16px;}
+
+.sub-nav{ height:54px; line-height:54px; font-size:14px;}
+.sub-nav a{ color:#666;}
+.sub-nav span{ color:#f60;}
+
+
+.search p{ height:34px; line-height:34px; font-size:14px; margin-bottom:15px;}
+.search a{ display:inline-block; height:20px; line-height:20px; color:#666; padding:0 8px; margin:0 2px;}
+.search a.selected{ color:#fff; background:#ff7e00;}
+.search .text,
+.search select{ display:inline-block; width:100px; height:32px; line-height:32px; font-size:14px; background-color:#fff; border:1px solid #d2d2d2; padding-left:15px; box-sizing:border-box; vertical-align:middle;}
+.search .end,
+.search .id,
+.search select{ margin-right:10px;}
+.search .branch-name{ width:215px; margin-right:15px;}
+.search .branch-no{ width:115px; margin-right:25px;}
+.search .btn-search{ display:inline-block; width:83px; height:32px; line-height:32px; text-align:center; font-size:14px; color:#666; background:url(/static/img/business/btn-search.png) no-repeat; cursor:pointer; padding:0;}
+
+table.record{ width:100%; margin:0; border:1px solid #f2f2f2; border-right:none; border-bottom:none;}
+table.record th, table.record td{ text-align:center; color:#666; border:1px solid #f2f2f2; border-left:none; border-top:none;}
+table.record th{ line-height:16px; background:#f2f2f2; padding:10px 0;}
+table.record td{ line-height:16px; padding:12px 5px; word-break:break-all;}
+table.record .green{ color:#3ba800;}
+table.record .orange{ color:#ff7e00;}
+table.record .gray{ color:#929292;}
+table.record .red{ color:#f00;}
+table.record .blue{ color:#57bcef;}
+
+.tab-btn{ height:49px; border:1px solid #ececec; border-top:none; border-right:none; margin-bottom:15px;}
+.tab-btn li{ float:left; display:inline; width:159px; height:48px; line-height:48px; text-align:center; font-size:16px; color:#676767; border-right:1px solid #ececec; border-top:1px solid #ececec; cursor:pointer;}
+.tab-btn li.selected{ height:46px; line-height:46px; color:#ff7e00; border-top:3px solid #ff7e00; cursor:default;}
+
+.tab-con{ display:none;}
+
+.listPager{ padding-left:0;}
+
+
+.side-menu dl span, .side-menu dl a{ color:#666; cursor:pointer;}
+.side-menu dl dt{ width:170px; height:60px; line-height:60px; font-size:16px; margin-left:-1px; position:relative;}
+.side-menu dl dt .ico{ float:left; background:url(/static/img/business/side-menu.png?v=201600622) no-repeat; margin:23px 15px 0 30px;}
+.side-menu dl dt .ico-1{ width:14px; height:15px; background-position:0 0; margin-left:33px;}
+.side-menu dl dt .ico-2{ width:18px; height:13px; background-position:-60px 0;}
+.side-menu dl dt .ico-3{ width:19px; height:16px; background-position:-120px 0;}
+.side-menu dl dt .ico-4{ width:19px; height:15px; background-position:0 -50px;}
+.side-menu dl dt .ico-5{ width:19px; height:17px; background-position:-60px -50px;}
+.side-menu dl dt .ico-6{ width:19px; height:19px; background-position:-120px -50px; margin-top:20px;}
+.side-menu dl dt .ico-7{ width:20px; height:14px; background-position:0 -100px;}
+.side-menu dl dt .ico-8{ width:19px; height:21px; background-position:-60px -100px; margin-top:19px;}
+.side-menu dl dt .ico-9{ width:19px; height:18px; background-position:0 -150px; margin-top:20px;}
+.side-menu dl dt .ico-10{ width:19px; height:18px; background-position:-60px -150px; margin-top:20px;}
+.side-menu dl dt .ico-11{ width:19px; height:18px; background-position:-120px -150px; margin-top:20px;}
+.side-menu dl dt .welfare{ position:absolute; top:10px; right:6px;}
+.side-menu dl dd{ display:none; height:40px; line-height:40px; list-style:circle inside; margin-left:50px;}
+.side-menu dl dd:before{ content:"·"; font-size:16px; margin-right:8px;}
+.side-menu dl dd.cur{ color:#ff7e00;}
+.side-menu dl dd.cur a{ color:#ff7e00;}
+.side-menu dl.cur dt{ color:#fff; background:#ff7e00;}
+.side-menu dl.cur dt:after{ content:""; width:10px; height:8px; background:url(/static/img/business/side-menu.png?v=201600622) no-repeat -120px -100px; position:absolute; right:0; bottom:-8px;}
+.side-menu dl.cur dt span, .side-menu dl.cur dt a{ color:#fff;}
+.side-menu dl.cur dt .ico-1{ background-position:-30px 0;}
+.side-menu dl.cur dt .ico-2{ background-position:-90px 0;}
+.side-menu dl.cur dt .ico-3{ background-position:-150px 0;}
+.side-menu dl.cur dt .ico-4{ background-position:-30px -50px;}
+.side-menu dl.cur dt .ico-5{ background-position:-90px -50px;}
+.side-menu dl.cur dt .ico-6{ background-position:-150px -50px;}
+.side-menu dl.cur dt .ico-7{ background-position:-30px -100px;}
+.side-menu dl.cur dt .ico-8{ background-position:-90px -100px;}
+.side-menu dl.cur dt .ico-9{ background-position:-30px -150px;}
+.side-menu dl.cur dt .ico-10{ background-position:-90px -150px;}
+.side-menu dl.cur dt .ico-11{ background-position:-150px -150px;}
+
+.home-account{ background:#fffaec; border:1px solid #ffe4c5; margin-bottom:20px;}
+.home-account ul{ height:165px;}
+.home-account li{ float:left; display:inline; width:25%; height:100%; text-align:center; position:relative;}
+.home-account li:after{ content:""; width:1px; height:100px; background:#ffe4c5; position:absolute; right:-1px; top:50%; margin-top:-50px;}
+.home-account li h3{ height:24px; line-height:24px; font-size:16px; margin:30px 0 0 0;}
+.home-account li h4{ height:24px; line-height:24px; font-size:12px; color:#a9a9a9;}
+.home-account li h4 a{ color:#45baf1;}
+.home-account li h4 .withdrawals{ display:inline-block; width:70px; height:24px; line-height:24px; text-align:center; font-size:12px; color:#fff; background:#ff7e00; vertical-align:top; margin-right:10px;}
+.home-account li p{ height:70px; line-height:70px; font-size:26px; font-family:Arial;}
+.home-account li p i{ font-style:normal; font-family:'Microsoft YaHei'; font-size:14px; color:#a5a5a5; padding-left:10px;}
+.home-account li p strong{ color:#f60;}
+.home-account .sales{ height:54px; line-height:54px; font-size:16px; color:#666; background:#fffefa; border-top:1px dashed #ffe4c5; padding-left:75px;}
+.home-account .sales strong{ font-size:30px; font-family:arial; color:#f60;}
+.home-account .sales span{ font-size:14px; color:#a5a5a5;}
+.home-info h3{ height:44px; line-height:44px; font-size:18px; color:#666;}
+.home-info table{ width:750px; border-top:1px dashed #ccc; margin-bottom:10px;}
+.home-info td{ height:44px; line-height:44px; font-size:12px; color:#999; border-bottom:1px dashed #ccc;}
+.home-info td em{ font-style:normal; color:#ff7e00;}
+.home-info td span{ color:#ccc;}
+.home-info td a{ color:#45baf1; margin-left:15px;}
+.home-info .shop h4{ height:34px; line-height:36px; font-size:16px; color:#666;}
+.home-info .shop h4 i{ font-size:18px; font-style:normal; color:#ff7e00; margin-right:10px;}
+.home-info .cash{}
+.home-info .cash h4{ height:62px; line-height:62px; font-size:16px; color:#666;}
+.home-info .cash h4 span{ font-size:12px; color:#ccc; padding-left:15px;}
+
+.cashin-title{ height:74px; line-height:74px; font-size:16px;}
+.cashin-account{ background:#fffaec; border:1px solid #ffe4c5; margin-bottom:20px;}
+.cashin-account ul{ height:140px;}
+.cashin-account li{ float:left; display:inline; width:25%; height:100%; text-align:center; position:relative;}
+.cashin-account li:after{ content:""; width:1px; height:100px; background:#ffe4c5; position:absolute; right:-1px; top:50%; margin-top:-50px;}
+.cashin-account li h3{ height:24px; line-height:24px; font-size:16px; margin:30px 0 0 0;}
+.cashin-account li p{ height:70px; line-height:70px; font-size:26px; font-family:Arial;}
+.cashin-account li p i{ font-style:normal; font-family:'Microsoft YaHei'; font-size:14px; color:#a5a5a5; padding-left:10px;}
+.cashin-account li p strong{ color:#f60;}
+.cashin-account .sales{ height:54px; line-height:54px; font-size:16px; color:#666; background:#fffefa; border-bottom:1px dashed #ffe4c5; padding-left:75px; margin:0;}
+
+table.cashout-record td{ padding:10px 0;}
+
+.withdrawals-cont{ height:650px; border-top:1px solid #ececec; padding-top:15px;}
+.withdrawals-cont table{ margin-bottom:35px;}
+.withdrawals-cont th{ width:110px; font-weight:normal; font-size:14px;}
+.withdrawals-cont th i{ color:#f00;}
+.withdrawals-cont td{ line-height:34px; font-size:14px; padding:15px 0;}
+.withdrawals-cont td em{ font-style:normal; color:#ff7e00;}
+.withdrawals-cont td strong{ font-family:arial; font-weight:normal; color:#ff7e00; font-size:24px;}
+.withdrawals-cont td span{ float:left; display:inline; width:240px; height:34px; border:1px solid #d2d2d2; margin-right:15px;}
+.withdrawals-cont td input{ display:block; width:220px; height:34px; line-height:34px; font-size:14px; border:none; background:none; outline:none; margin:0 auto;}
+.withdrawals-cont .btn-withdrawals,
+.withdrawals-cont .btn-back{ float:left; display:inline; width:150px; height:40px; line-height:40px; text-align:center; font-size:16px; font-weight:bold; color:#fff; margin-right:20px;}
+.withdrawals-cont .btn-withdrawals{ background:#ff7e00;}
+.withdrawals-cont .btn-back{ background:#45baf1;}
+
+.branch-account{ background:#fffaec; border:1px solid #ffe4c5; margin-bottom:40px;}
+.branch-account ul{ height:140px;}
+.branch-account li{ float:left; display:inline; width:25%; height:100%; text-align:center; position:relative;}
+.branch-account li:after{ content:""; width:1px; height:100px; background:#ffe4c5; position:absolute; right:-1px; top:50%; margin-top:-50px;}
+.branch-account li h3{ height:24px; line-height:24px; font-size:16px; margin:30px 0 0 0;}
+.branch-account li p{ height:70px; line-height:70px; font-size:26px; font-family:Arial;}
+.branch-account li p i{ font-style:normal; font-family:'Microsoft YaHei'; font-size:14px; color:#a5a5a5; padding-left:10px;}
+.branch-account li p strong{ font-weight:normal; color:#f60;}
+.branch-record a{ color:#2370db;}
+.branch-record .btn-withdrawals{ display:inline-block; width:68px; height:22px; line-height:22px; text-align:center; font-size:12px; color:#6bb918; background:#edfddc; border:1px solid #8bd739; cursor:pointer;}
+.branch-record .btn-withdrawals.disabled{ color:#b1b0b0; background:#f3f3f5; border-color:#c5c5c5;}
+
+.smsmanage-record .info{ padding:0;}
+.smsmanage-record li{ height:35px; overflow:hidden; margin:-1px 0 0 -1px;}
+.smsmanage-record li .t{ display:block; width:90%; height:20px; line-height:20px; text-align:center; font-size:12px; border:1px solid #e1e1e1; box-shadow:1px 1px 0 0 #a8a8a8 inset; margin:5px auto 0;}
+.smsmanage-record .role,
+.smsmanage-record .tel,
+.smsmanage-record .name,
+.smsmanage-record .operation{ float:left; display:inline; height:34px; line-height:34px; border:1px solid #f6f6f6; border-bottom:none; border-right:none;}
+.smsmanage-record .role{ width:200px;}
+.smsmanage-record .tel{ width:160px;}
+.smsmanage-record .name{ width:180px;}
+.smsmanage-record .operation{ width:162px;}
+.smsmanage-record .btn{ color:#2370db; cursor:pointer;}
+.smsmanage-record .btn-save{ display:inline-block; width:55px; height:20px; line-height:20px; text-align:center; font-size:12px; color:#fff; background:#ff7e00; margin-right:15px;}
+.smsmanage-record li .hide{ display:none;}
+
+.alert-success{ display:none; text-align:center; padding-top:20px;}
+.alert-success p{ height:34px; line-height:34px; font-size:18px; color:#788179;}
+.alert-success em{ font-style:normal; color:#ff7e00;}
+.alert-error{ display:none; padding:35px 20px 0;}
+.alert-error p{ height:42px; line-height:42px; text-align:center; font-size:18px; color:#f00; margin:0 auto;}
+.alert-error p i{ display:inline-block; width:42px; height:42px; background:url(/static/img/business/ico-error.png) no-repeat; margin-right:10px; vertical-align:top;}
+
+/* 电子兑换券 20160412 */
+.voucher-cont{ min-height:695px; border-top:1px solid #dcdcdc;}
+
+.voucher-valid{ padding:45px 0 200px 200px;}
+.voucher-valid h2{ height:56px; line-height:56px; font-size:16px; color:#000; font-weight:normal;}
+.voucher-valid .cdkey{ width:350px; height:42px; border:1px solid #ccc; position:relative;}
+.voucher-valid .cdkey .t{ display:block; width:90%; height:100%; line-height:42px; font-size:14px; border:none; background:none; outline:none; margin:0 auto;}
+.voucher-valid .cdkey .btn{ width:115px; height:44px; line-height:44px; text-align:center; font-size:18px; color:#fff; background:#ff7e00; position:absolute; right:-130px; top:-1px; cursor:pointer;}
+.voucher-valid .valid{ height:52px; line-height:52px; font-size:14px; color:#fd0000; background:url(/static/img/business/ico-error-small.png) no-repeat left center; padding-left:22px;}
+
+.voucher-exchange{ text-align:center;}
+.voucher-exchange h2{ height:50px; line-height:50px; font-size:16px; color:#000;}
+.voucher-exchange h3{ height:40px; line-height:40px; font-size:18px; font-family:Arial; color:#fcb25f; background:#fffbf7; margin-bottom:25px;}
+.voucher-exchange .record{ border:1px solid #f2f2f2;}
+.voucher-exchange .record th{ background:#f6f6f6;}
+.voucher-exchange .record td{ border:none;}
+.voucher-exchange .btn-wrap{ height:200px; padding-top:55px;}
+.voucher-exchange .btn{ display:inline-block; width:115px; height:44px; line-height:44px; font-size:16px; color:#fff; border-radius:5px; margin:0 6px; cursor:pointer;}
+.voucher-exchange .btn.btn-cancel{ background:#fdad5e;}
+.voucher-exchange .btn.btn-exchange{ background:#ff7200;}
+.voucher-exchange .btn.disabled{ background:#ccc; cursor:not-allowed;}
+
+/* 还款记录 */
+.repayment-info{ padding-top:30px;}
+.repayment-info span{ padding-right:20px;}
+.repayment-info em{ font-style:normal; color:#000;}
+
+/* 还款记录 */
+.loan-info{ background:#fffaec; border:1px solid #ffe4c5; padding:20px 0 20px 50px; margin-bottom:20px; overflow:hidden; _zoom:1;}
+.loan-info li{ float:left; display:inline; line-height:34px; font-size:14px; margin-right:50px;}
+.loan-info span{ color:#000;}
+.loan-info em{ font-style:normal; color:#fd0000;}
+
+/* 还款 */
+.alert-repayment{ padding:30px 0;}
+.alert-repayment li{ margin:0 0 15px 150px; position:relative;}
+.alert-repayment .tit{ width:140px; height:38px; line-height:38px; text-align:right; position:absolute; left:-150px; top:0;}
+.alert-repayment span{ margin-right:30px;}
+.alert-repayment p{ line-height:34px;}
+.alert-repayment .t,
+.alert-repayment textarea{ display:inline-block; width:200px; font-size:14px; background-color:#fff; border:1px solid #d2d2d2; outline:none; padding:0 10px; margin-right:10px; vertical-align:top;}
+.alert-repayment .t{ height:32px; line-height:32px;}
+.alert-repayment i.tip{ display:block; line-height:20px; font-style:normal; color:#fd0000;}
+.alert-repayment textarea{ line-height:20px; padding:10px; resize:none;}

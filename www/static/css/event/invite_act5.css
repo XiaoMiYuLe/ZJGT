@@ -1,0 +1,105 @@
+@charset "utf-8"; 
+.invest_act{ font-size:14px;}
+.invest_act *{ box-sizing:content-box;}
+.invest_act .banner{ background:url(/static/img/event/invite_act5/banner.png) center center no-repeat; height:637px;}
+.invest_act .part1{ background-color:#fff; padding-top:55px; overflow:hidden;}
+.invest_act .part1 .title{ background:url(/static/img/event/invite_act5/title1.png) center top no-repeat; height:81px; padding-bottom:50px;}
+.invest_act .part1 .sub-title{ background:url(/static/img/event/invite_act5/sub-title.png) center top no-repeat; height:29px; padding-bottom:40px;}
+.invest_act .part1 .eg-1{ background:url(/static/img/event/invite_act5/eg1.png) center top no-repeat; height:420px; padding-bottom:50px;}
+.invest_act .part1 .eg-2{ background:url(/static/img/event/invite_act5/eg2.png) center top no-repeat; height:379px; position:relative; left:-40px;}
+.invest_act .part2{ background-color:#fff; padding-top:55px; padding-bottom:70px;}
+.invest_act .part2 .title{ background:url(/static/img/event/invite_act5/title2.png) center top no-repeat; height:81px; padding-bottom:50px;}
+.invest_act .part2 .act-table{background:url(/static/img/event/invite_act5/part2.png) center top no-repeat;height:460px;width:1039px;margin:0 auto}
+
+.invest_act .act-table{ text-align:center; color:#c67901; font-size:18px; line-height:60px; position:relative;}
+.invest_act .act-table .rank{ width:110px; height:60px;}
+.invest_act .act-table .rank i{ display:block; margin:14px auto 0; width:45px; height:31px;}
+.invest_act .act-table .name{ width:250px;}
+.invest_act .act-table .invest-amount{ width:300px;}
+.invest_act .act-table .back-amount{ width:270px;}
+.invest_act .act-table .friend-num{ width:280px;}
+.invest_act .act-table .first-amount{ width:340px;}
+.invest_act .act-table .award{ width:300px;}
+.invest_act .act-table .level1{ background:url(/static/img/event/invite_act5/level1.png) center top no-repeat;}
+.invest_act .act-table .level2{ background:url(/static/img/event/invite_act5/level2.png) center top no-repeat;}
+.invest_act .act-table .level3{ background:url(/static/img/event/invite_act5/level3.png) center top no-repeat;}
+.invest_act .act-table .table-hd{ font-size:22px; width:945px; margin:0 auto; padding-top:25px;}
+.invest_act .act-table .table-hd li{ float:left;}
+.invest_act .act-table .table-bd{ width:945px; margin:0 auto; height:365px; overflow:hidden;}
+.invest_act .act-table .table-bd span{ float:left;}
+.invest_act .act-table .table-bd li{ border-bottom:1px dashed #c67901;}
+.invest_act .act-table .invite-num-text{ position:absolute; width:100%; top:-55px;}
+.invest_act .act-table .invite-num-text span{ float:none!important;}
+.invest_act .act-table .invite-fund-text{ position:absolute; width:100%; top:465px;}
+.invest_act .act-table .invite-fund-text span{ float:none!important;}
+.invest_act .act-table .get-btn{ background-color:#fca54b; border-bottom:2px solid #d37632; color:#fff; padding:3px 6px; margin-left:15px; cursor:pointer;}
+.invest_act .act-table .get-btn.disable{ background:#c5c5c5; cursor:default;}
+.invest_act .act-table .red{ color:red;}
+.invest_act .act-table .data-empty .empty{ background:url(/static/img/event/invite_act5/empty.png) left top no-repeat; width:155px; height:201px; margin:30px auto;}
+.invest_act .act-table .data-empty .text{ font-size:24px; text-align:center;}
+
+#divNologin{ width:760px; height:auto; background:none;}
+.invest_act .part2 .tab-btn{ width:100%; height:46px;}
+.invest_act .part2 .tab-btn li{ float:left; display:inline; width:50%; height:46px; line-height:46px; text-align:center; font-size:16px; font-weight:bold; color:#dd6d00; background:#fffce6; border-radius:10px 10px 0 0; position:relative; cursor:pointer; behavior:url(/static/css/pie.htc);}
+.invest_act .part2 .tab-btn li.selected{ background:#fef3cc; cursor:default;}
+.invest_act .part2 .tab-btn li a{ width:55px; height:18px; line-height:18px; font-weight:normal; font-size:12px; color:#0052f7; text-decoration:underline; position:absolute; right:60px; top:50%; margin-top:-9px;}
+.invest_act .part2 .tab-con{ display:none; width:100%; background:#fef3cc; border-radius:0 0 10px 10px; padding-bottom:10px;}
+.invest_act .part2 .tab-con dl{ width:730px; text-align:center; margin:0 auto;}
+.invest_act .part2 .tab-con .no{ float:left; display:inline; width:85px;}
+.invest_act .part2 .tab-con .name{ float:left; display:inline; width:125px;}
+.invest_act .part2 .tab-con .friend{ float:left; display:inline; width:175px;}
+.invest_act .part2 .tab-con .invite{ float:left; display:inline; width:185px;}
+.invest_act .part2 .tab-con .gift{ float:left; display:inline; width:130px; margin-left:20px;}
+.invest_act .part2 .tab-con .ico-no{ display:block; width:100%; height:100%; font-style:normal; overflow:hidden;}
+.invest_act .part2 .tab-con .ico-no.no-1{ background:url(/static/img/event/invite_act5/ico-no-1.png) no-repeat center center; text-indent:-999em;}
+.invest_act .part2 .tab-con .ico-no.no-2{ background:url(/static/img/event/invite_act5/ico-no-2.png) no-repeat center center; text-indent:-999em;}
+.invest_act .part2 .tab-con .ico-no.no-3{ background:url(/static/img/event/invite_act5/ico-no-3.png) no-repeat center center; text-indent:-999em;}
+.invest_act .part2 .tab-con .ico-rank{ width:34px; height:34px; position:absolute; right:-11px; bottom:0;}
+.invest_act .part2 .tab-con .ico-rank.rank-1{ background:url(/static/img/event/invite_act5/ico-rank-1.png) no-repeat;}
+.invest_act .part2 .tab-con .ico-rank.rank-2{ background:url(/static/img/event/invite_act5/ico-rank-2.png) no-repeat;}
+.invest_act .part2 .tab-con .ico-rank.rank-3{ background:url(/static/img/event/invite_act5/ico-rank-3.png) no-repeat;}
+.invest_act .part2 .tab-con .ico-env{ display:inline-block; width:25px; height:26px; line-height:0; font-size:0; background:url(/static/img/event/invite_act5/ico-redenv.png) no-repeat; vertical-align:middle; margin-right:10px;}
+.invest_act .part2 .tab-con dt{ height:44px; line-height:44px; font-size:16px; color:#c87e10; background:#fef3cc; position:relative; z-index:2;}
+.invest_act .part2 .tab-con dd{ height:40px; line-height:40px; font-size:14px; color:#c67901; border-top:1px dashed #e9c681; margin-top:-1px; position:relative;}
+
+
+.invest_act .part3{ background:url(/static/img/event/invite_act5/part3.png) left bottom no-repeat #ffa735; height:500px; padding-top:80px; overflow:hidden;}
+.invest_act .part3 .container{ width:990px; margin:0 auto; position:relative;}
+.invest_act .part3 .title{ background:url(/static/img/event/invite_act5/title3.png) center center no-repeat; height:53px; margin-bottom:30px;}
+.invest_act .part3 .evt-rule{ color:#fff; font-size:18px;}
+.invest_act .part3 .evt-rule li{ line-height:34px; margin-bottom:13px;}
+.invest_act .part3 .mobile-plus{ background-color:#fee4bb; color:#fc7100; line-height:32px; border-radius:8px; padding:10px 25px; font-size:16px; position:absolute; right:110px; top:170px;}
+.invest_act .part3 .mobile-plus .tag{ background-color:#fc6b00; color:#fce700; border-radius:15px; margin-right:10px; padding:2px 10px;}
+.invest_act .part3 .mobile-plus .red{ color:#ff1e1e;}
+
+.invite-mask{ position:fixed; bottom:0; width:100%; z-index:999; color:#ffcf84; overflow:hidden; visibility:hidden;}
+.invite-mask .mask-layer{ background-color:#000; opacity:.85; height:160px; position:absolute; bottom:0; left:0; width:100%;}
+.invite-mask .container{ width:990px; margin:0 auto; overflow:hidden; position:relative; padding-top:10px;}
+.invite-mask .title{ font-size:24px; margin-top:10px; margin-bottom:10px;}
+.invite-mask .friends{ background:url(/static/img/event/invite_act5/friends.png) center center no-repeat; display:inline-block; width:38px; height:35px; vertical-align:middle; margin-left:10px;}
+.invite-mask .copy-url{ background-color:#fff; border:3px solid #fca54b; height:50px; line-height:50px; border-radius:25px; width:570px; font-size:16px; padding:0 36px; color:#636363; float:left; text-align:center;}
+.invite-mask .copy-url.no-login{ font-size:24px; color:#fca54b; cursor:pointer;}
+.invite-mask .copy-text{ font-size:16px; line-height:35px; margin-top:2px; text-indent:10px;}
+.invite-mask .animate-btn{ background:url(/static/img/event/invite_act5/btn-bg.png) left 5px no-repeat; width:121px; height:50px; float:left; margin-left:15px; cursor:pointer;}
+.invite-mask .animate-btn button{ border:0; outline:0; background:url(/static/img/event/invite_act5/btn.png) left top no-repeat; width:121px; height:45px; font-size:16px; font-weight:700; cursor:pointer; position:relative; left:-2px;}
+.invite-mask .animate-btn:hover button{ transform:translateY(3px);}
+.invite-mask .copy-btn{ color:#fc4b4b;}
+.invite-mask .share-btn{ color:#fca54b;}
+
+.alert-mask{ display:none; width:100%; height:100%; background:#000; position:fixed; left:0; top:0; z-index:999;}
+.alert-invite{ display:none; width:400px; height:290px; background:#fff; position:fixed; left:50%; top:50%; margin:-145px 0 0 -200px; z-index:1000;}
+.alert-invite .tit{ height:60px; line-height:60px; font-size:20px; color:#fff; background:#ff7e00; padding-left:25px;}
+.alert-invite .tit .close{ width:60px; height:60px; line-height:54px; text-align:center; font-size:30px; font-family:tahoma,arial,simsun,sans-serif; position:absolute; right:0; top:0; cursor:pointer;}
+.alert-invite .cont{ text-align:center; padding-top:25px;}
+.alert-invite .cont h2{ height:40px; line-height:40px; font-size:24px; margin:0;}
+.alert-invite .cont h2 em{ font-style:normal; color:red;}
+.alert-invite .cont p{ height:56px; line-height:36px; font-size:14px; color:#999;}
+.alert-invite .cont .btn-share{ display:block; width:224px; height:52px; line-height:52px; text-align:center; font-size:16px; font-weight:700; color:#fff; background:#ff7e00; margin:0 auto 10px;}
+.alert-invite .cont .close{ color:#999; outline:0;}
+.alert-share{ display:none; width:300px; height:290px; background:#fff; padding-top:50px; position:fixed; left:50%; top:50%; margin:-170px 0 0 -150px; z-index:1000;}
+.alert-share .close{ width:60px; height:60px; line-height:54px; text-align:center; font-size:30px; font-family:tahoma,arial,simsun,sans-serif; color:#ff7e00; position:absolute; right:0; top:0; cursor:pointer;}
+.alert-share img{ display:block; width:210px; height:210px; margin:0 auto 20px;}
+.alert-share p{ height:40px; line-height:40px; text-align:center; font-size:20px; color:#999;}
+.alert *{ box-sizing:border-box;}
+
+#qr-wx table{ margin:0 auto 20px!important;}
