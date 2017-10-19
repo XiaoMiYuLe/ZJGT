@@ -1,0 +1,91 @@
+/* 20160330 邀请好友赚钱五期 */
+h1,h2,h3,h4,h5,h6{ margin:0;}
+
+.invite-cont{ float:right; display:inline; width:1000px; color:#333;}
+.invite-wrap{ border:1px solid #dcdcdc; background:#fff; box-shadow:0 4px 4px 0 #eaeaea; margin-bottom:25px;}
+
+.hd-tit{ height:60px; line-height:60px; font-size:28px; font-weight:bold; color:#fff; background:url(/static/img/account/invitefriend/bg-tit.png) no-repeat; padding-left:25px;}
+.hd-tit span{ font-size:16px; font-weight:normal; padding-left:30px;}
+
+.hd-link{ height:130px; padding-left:85px;}
+.hd-link p{ height:70px; line-height:70px; font-size:18px; font-weight:bold; padding-top:5px;}
+.hd-link .t{ float:left; display:inline; width:615px; height:32px; line-height:32px; text-align:center; font-size:16px; border:1px solid #c5c5c5; border-right:none;}
+.hd-link .btn{ float:left; display:inline; height:34px; line-height:34px; font-size:14px; color:#fff; cursor:pointer;}
+.hd-link .btn.btn-copy{ width:90px; text-align:center; margin-right:10px; background:#ff7802;}
+.hd-link .btn.btn-wxshare{ width:70px; background:#ff7802 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAQMAAABsABwUAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAC9JREFUCNdj+G9/gKFRwQGMZ6qBMYwPloOB/3ZAMRBWAqoBYWWQPgaGRmWgOmUHAKgAEjwuetDlAAAAAElFTkSuQmCC) no-repeat 16px center; padding-left:45px;}
+.hd-link .btn.disabled{ background-color:#c8c8c8; cursor:default;}
+
+.hd-main{ background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAGBAMAAAAWFyJGAAAAElBMVEX/fgD/////8er/49T/xaP/kj/enKKxAAAAFklEQVQI12MQdmJQYGUwYACSILagIAAMQwFH5xV+wgAAAABJRU5ErkJggg==') repeat-y left center; margin-left:75px; padding-bottom:15px; position:relative; margin-bottom:35px;}
+.hd-main:after{ content:""; width:16px; height:16px; background:#ff7e00; border-radius:50%; position:absolute; left:-6px; bottom:0; behavior:url(/static/css/pie.htc);}
+.hd-main h2{ height:34px; line-height:34px; font-size:20px; font-weight:bold; color:#ff7e00; padding-left:35px; position:relative;}
+.hd-main h2 i{ width:34px; height:34px; text-align:center; font:normal bold 26px/34px "arial"; color:#fff; background:#ff7e00; border-radius:50%; position:absolute; left:-15px; top:0; behavior:url(/static/css/pie.htc);}
+
+.hd-intro{ width:735px; background:#fef3cc; border-radius:10px; padding:10px; margin:15px 0 20px 50px; behavior:url(/static/css/pie.htc); position:relative;}
+.hd-intro .tit{ height:50px;}
+.hd-intro .tit dt,
+.hd-intro .tit dd{ float:left; display:inline; line-height:40px; text-align:center; font-size:18px;}
+.hd-intro .tit dt{ width:170px;}
+.hd-intro .tit dd{ width:187px;}
+.hd-intro .item dt{ float:left; display:inline; width:170px;}
+.hd-intro .item dt p{ height:43px; line-height:38px; text-align:center; font-size:16px; color:#c87e10;}
+.hd-intro .item dt i,
+.hd-intro .item dt b{ display:inline-block; width:38px; height:38px; line-height:38px; color:#d16700; border-radius:50%; margin-right:22px; vertical-align:top; behavior:url(/static/css/pie.htc); position:relative;}
+.hd-intro .item dt i{ font-style:normal; background:#ffd1a8;}
+.hd-intro .item dt b{ font-weight:normal; background:#fef3cc;}
+.hd-intro .item dt em{ font-style:normal; color:#ff1000;}
+.hd-intro .item dd{ float:left; display:inline; width:75px; height:75px; background:#fffce6; border:3px solid #ffd1a8; border-radius:50%; position:relative; margin:0 50px 0 55px; behavior:url(/static/css/pie.htc);}
+.hd-intro .item dd p{ text-align:center; font-size:16px; color:#636363;}
+.hd-intro .item dd .plus{ width:116px; height:63px; background:url(/static/img/account/invitefriend/ico-plus.png) no-repeat; position:absolute; left:-17px; bottom:-12px;}
+.hd-intro .item .split{ width:30px; height:3px; line-height:0; font-size:0; background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAADAQMAAACKz+y4AAAABlBMVEUAAAD+eQN9yXQQAAAAAXRSTlMAQObYZgAAAAtJREFUCNdjeACCAAfmAqGBW6z3AAAAAElFTkSuQmCC') repeat-x; position:absolute; right:-70px; top:50%; margin-top:-1px;}
+.hd-intro .item.pc{ height:100px;}
+.hd-intro .item.pc dd p{ line-height:75px;}
+.hd-intro .item.mobile{ height:95px; background:#fffce6; border-radius:10px; padding-top:30px; behavior:url(/static/css/pie.htc); position:relative;}
+.hd-intro .item.mobile dd p{ line-height:44px;}
+
+
+.hd-rank{ width:760px; margin-left:50px;}
+.hd-rank p{ height:48px; line-height:48px; font-size:14px;}
+.hd-rank .tab-btn{ width:700px; height:66px; margin:0 auto; position:relative; z-index:1;}
+.hd-rank .tab-btn dt{ float:left; display:inline; width:50%; height:66px; line-height:58px; text-align:center; font-size:18px; font-weight:bold; color:#dd6d00; background:#fffad3; border-radius:20px 20px 0 0; position:relative; cursor:pointer; behavior:url(/static/css/pie.htc);}
+.hd-rank .tab-btn dt.selected{ color:#fff; background:#ee9802; cursor:default;}
+.hd-rank .tab-btn dt a{ display:inline-block; height:18px; line-height:18px; font-weight:normal; font-size:12px; color:#f00; text-decoration:underline; margin-left:25px;}
+.hd-rank .tab-btn dd{ width:798px; height:43px; background:url(/static/img/account/invitefriend/bg-tab.png) no-repeat; position:absolute; left:50%; top:53px; margin-left:-400px;}
+.hd-rank .tab-con{ display:none; width:100%; background:#fffad3; border-bottom:5px solid #ee9802; padding-bottom:10px; position:relative; z-index:2;}
+.hd-rank .tab-con dl{ width:730px; text-align:center; color:#6b2800; margin:0 auto;}
+.hd-rank .tab-con .no{ float:left; display:inline; width:85px;}
+.hd-rank .tab-con .name{ float:left; display:inline; width:125px;}
+.hd-rank .tab-con .friend{ float:left; display:inline; width:175px;}
+.hd-rank .tab-con .invite{ float:left; display:inline; width:185px;}
+.hd-rank .tab-con .gift{ float:left; display:inline; width:130px; margin-left:20px;}
+.hd-rank .tab-con .ico{ display:block; width:100%; height:100%; font-style:normal; overflow:hidden;}
+.hd-rank .tab-con .ico.ico-1{ background:url(/static/img/account/invitefriend/ico-no-1.png) no-repeat center center; text-indent:-999em;}
+.hd-rank .tab-con .ico.ico-2{ background:url(/static/img/account/invitefriend/ico-no-2.png) no-repeat center center; text-indent:-999em;}
+.hd-rank .tab-con .ico.ico-3{ background:url(/static/img/account/invitefriend/ico-no-3.png) no-repeat center center; text-indent:-999em;}
+.hd-rank .tab-con .ico-env{ display:inline-block; width:25px; height:26px; line-height:0; font-size:0; background:url(/static/img/account/invitefriend/ico-redenv.png) no-repeat; vertical-align:middle; margin-right:15px;}
+.hd-rank .tab-con dt{ height:44px; line-height:44px; font-size:16px; font-weight:bold; background:#fffad3; position:relative; z-index:2;}
+.hd-rank .tab-con dd{ height:40px; line-height:40px; font-size:14px; border-top:1px dashed #e9c681; margin-top:-1px; position:relative;}
+
+.hd-rules{ padding:20px 0 30px 40px;}
+.hd-rules p{ line-height:24px; font-size:12px;}
+
+.hd-list{ padding:15px 45px;}
+.hd-list h2{ height:45px; line-height:34px; font-size:12px; color:#666; padding-left:12px;}
+.hd-list h2 strong{ font-weight:normal; padding-right:60px;}
+.hd-list h2 em{ font-style:normal; color:#ff0101;}
+.hd-list .btn-get{ display:inline-block; width:65px; height:20px; line-height:20px; text-align:center; font-size:12px; color:#fff; background:#ff7802; margin-left:15px;}
+.hd-list .btn-get.disable{ background: #c5c5c5; cursor:default;}
+
+.alert-mask{ display:none; width:100%; height:100%; background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlOArV5bRgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII='); position:fixed; left:0; top:0; z-index:999;}
+.alert-invite{ display:none; width:400px; height:290px; background:#fff; position:fixed; left:50%; top:50%; margin:-145px 0 0 -200px; z-index:1000;}
+.alert-invite .tit{ height:60px; line-height:60px; font-size:20px; color:#fff; background:#ff7e00; padding-left:25px;}
+.alert-invite .tit .close{ width:60px; height:60px; line-height:54px; text-align:center; font-size:30px; font-family:tahoma,arial,\5b8b\4f53,sans-serif; position:absolute; right:0; top:0; cursor:pointer;}
+.alert-invite .cont{ text-align:center; padding-top:25px;}
+.alert-invite .cont h2{ height:40px; line-height:40px; font-size:24px; margin:0;}
+.alert-invite .cont h2 em{ font-style:normal; color:#f00;}
+.alert-invite .cont p{ height:56px; line-height:36px; font-size:14px; color:#999;}
+.alert-invite .cont .btn-share{ display:block; width:224px; height:52px; line-height:52px; text-align:center; font-size:16px; font-weight:bold; color:#fff; background:#ff7e00; margin:0 auto 10px;}
+.alert-invite .cont .close{ color:#999; outline:none;}
+.alert-share{ display:none; width:300px; height:290px; background:#fff; padding-top:50px; position:fixed; left:50%; top:50%; margin:-170px 0 0 -150px; z-index:1000;}
+.alert-share .close{ width:60px; height:60px; line-height:54px; text-align:center; font-size:30px; font-family:tahoma,arial,\5b8b\4f53,sans-serif; color:#ff7e00; position:absolute; right:0; top:0; cursor:pointer;}
+.alert-share img{ display:block; width:210px; height:210px; margin:0 auto 20px;}
+.alert-share p{ height:40px; line-height:40px; text-align:center; font-size:20px; color:#999;}

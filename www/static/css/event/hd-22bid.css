@@ -1,0 +1,65 @@
+/* 22%新手标改版 20160523 */
+h1,h2,h3,h4,h5,h6,table{ margin:0;}
+
+.hd-cont{ background:#fff2e4;}
+.wrap{ width:1200px; margin:0 auto;}
+
+.banner{ height:496px; background:url(/static/img/event/hd-22bid/banner.png?v=20160527) no-repeat center top; margin-bottom:45px;}
+.banner .wrap{ height:100%; position:relative;}
+.banner .btn-invest{ width:305px; height:87px; background:url(/static/img/event/hd-22bid/btn-banner-invest.png) no-repeat; margin-left:-152px; position:absolute; left:50%; bottom:38px;}
+
+.hd-product{ width:1078px; height:480px; color:#595757; margin:0 auto;}
+.hd-product .product{ float:left; display:inline; width:730px; height:430px; background:#fff; border:2px solid #f67975; position:relative;}
+.hd-product .product h2{ height:68px; line-height:68px; text-align:center; font-size:24px; font-weight:normal; color:#fff; background:#f67975; margin-bottom:35px;}
+.hd-product .product h2 em{ font-style:normal; color:#fffc00}
+.hd-product .product .ico{ width:34px; line-height:22px; text-align:center; font-size:20px; color:#fff; background:#e43e2d; word-break:break-all; padding:11px 0; position:absolute; left:-2px; top:130px;}
+.hd-product .info{ height:155px; padding-left:60px;}
+.hd-product .info li{ float:left; display:inline; width:33%; text-align:center; position:relative;}
+.hd-product .info strong,
+.hd-product .info em{ display:block; height:100px; line-height:100px; font-style:normal; font-weight:normal; font-size:48px; font-family:Arial;}
+.hd-product .info strong{ color:#f04c43;}
+.hd-product .info i{ font-style:normal; font-size:18px; font-family:"microsoft yahei";}
+.hd-product .info span{ font-size:18px;}
+.hd-product .info .line{ width:0px; height:105px; font-size:0; border-left:1px dotted #d7d7d7; position:absolute; right:0; top:0;}
+.hd-product .safe{ height:54px; border-bottom:1px solid #c3c3c3; margin-bottom:25px;}
+.hd-product .safe li{ float:left; display:inline; width:243px; line-height:30px; text-align:center; font-size:16px; }
+.hd-product .btn-purchase{ display:block; width:345px; height:60px; line-height:60px; text-align:center; font-size:30px; font-weight:bold; color:#fff; background:#fe6f29; border-radius:4px; margin:0 auto;}
+.hd-product .record{ float:right; display:inline; width:323px; height:430px; background:#fff; border:2px solid #f67975; overflow:hidden;}
+.hd-product .record dt{ height:68px; line-height:68px; text-align:center; font-size:24px; color:#fff; background:#f67975;}
+.hd-product .record dd{ width:270px; height:60px; line-height:60px; font-size:16px; border-bottom:1px dotted #777; margin:0 auto;}
+.hd-product .record dd .name{ float:left; display:inline; width:85px;}
+.hd-product .record dd .total{ float:right; display:inline; width:180px; text-align:right;}
+
+
+.hd-info{ width:1078px; background:#fff; border:2px solid #f67975; border-radius:20px; margin:195px auto 0; position:relative;}
+.hd-info h2{ width:822px; height:67px; line-height:60px; text-align:center; font-size:36px; font-weight:normal; color:#fff; background:url(/static/img/event/hd-22bid/bg-tit.png) no-repeat; padding-top:76px; margin-left:-411px; position:absolute; left:50%; top:-143px;}
+.hd-info p{ width:650px; line-height:30px; font-size:24px; color:#333; padding:15px 0 15px 60px;}
+
+.hd-info.intro{ padding:40px 0 60px;}
+.hd-info.intro span{ display:block; height:34px; line-height:34px; font-size:18px; color:#fc964a; padding-left:60px;}
+.hd-info.intro img{ position:absolute; top:30px; right:36px;}
+
+.hd-info.payment{ padding:70px 0 75px;}
+.hd-info.payment img{ position:absolute; right:55px; top:40px;}
+
+.hd-info.profit{ padding:90px 0 80px;}
+.hd-info.profit table{ color:#595757; margin-left:60px;}
+.hd-info.profit th{ height:46px; line-height:46px; font-weight:normal; text-align:center; font-size:18px; border:1px solid #f8b62d;}
+.hd-info.profit td{ line-height:40px; font-size:18px; text-align:center; font-family:Arial; font-weight:bold; border:1px solid #f8b62d;}
+.hd-info.profit td em{ font-style:normal; color:#f2603d;}
+.hd-info.profit td i{ font-style:normal; font-family:"microsoft yahei"; font-weight:normal;}
+.hd-info.profit td .rate{ font-size:38px; color:#f2603d;}
+.hd-info.profit td .rate i{ font-size:22px;}
+.hd-info.profit td .dateline{ font-size:42px;}
+.hd-info.profit td .dateline i{ font-size:16px;}
+.hd-info.profit .calc{ position:absolute; right:370px; top:60px;}
+.hd-info.profit .profit{ position:absolute; right:40px; top:48px;}
+
+
+.hd-safe{ color:#fff; background:#f67975; padding-bottom:55px; margin-top:70px;}
+.hd-safe h2{ height:160px; line-height:160px; text-align:center; font-size:36px; font-weight:normal;}
+.hd-safe ul{ overflow:hidden;}
+.hd-safe li{ float:left; display:inline; width:25%; text-align:center;}
+.hd-safe img{ display:block; width:90px; height:90px; margin:0 auto 20px;}
+.hd-safe h3{ height:64px; line-height:64px; font-size:22px; font-weight:normal;}
+.hd-safe p{ line-height:32px; font-size:14px;}

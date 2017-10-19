@@ -1,0 +1,151 @@
+body,ul,ol,dl,dt,dd,p,span,h1,h2,h3,h4,h5,h6,input,button { margin:0; padding:0; font-weight: normal; }
+li { list-style: none; }
+a { text-decoration: none; outline: none; }
+i { font-style: normal; font-weight: normal; }
+strong,b { font-weight: normal; }
+button { border:none; background: none; outline: none;}
+input,textarea { border:none; outline: none; resize:none; }
+img { border:none; vertical-align: top; max-width: 100%; }
+em { font-style:normal; }
+
+
+.clearfix { zoom:1; }
+.clearfix:after { content:""; display:block; clear:both; }
+
+.box-shadow { border:1px solid #dedede; box-shadow: 6px 3px 10px #dedede; background:#fff; }
+
+
+.pro-cont .table { width:938px; margin:46px auto 30px; border-left:1px solid #ddd; border-top:1px solid #ddd; }
+.pro-cont .table th, .pro-cont .table td { line-height:40px; text-align:center; font-size:13px; border-right:1px solid #ddd; border-bottom:1px solid #ddd; }
+.pro-cont .table th { background-color:#f6f6f6; }
+
+
+
+.product-page a { outline:none; }
+.pro-page-a { width:1160px; margin:0 auto 20px; }
+.pro-page-b { width:1160px; margin:0 auto 20px; }
+
+.pro-page-a .pro-l { float:left; width:690px; padding:8px 20px; height:320px; }
+.pro-page-a .pro-r { float:right; width:378px; padding:8px 20px;  height:320px; background-color:#fff8ee; }
+
+.pro-page-a .pro-l h3 { font-size:18px; text-indent:36px; border-bottom:1px dashed #dedede; line-height:46px; }
+.pro-page-a .pro-l h3 a { color:#565656;  overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.pro-page-a .pro-l p { font-size:14px; border-top:1px dashed #dedede; line-height:66px; }
+.pro-page-a .pro-l p b { padding-left:34px; }
+.pro-page-a .pro-l p span { display:inline-block; line-height:24px; padding-left: 28px; background: url(/static/img/invest/invest-ico.jpg) no-repeat; }
+.pro-page-a .pro-l p .ico { background-position: 0 -24px; }
+
+.pro-page-a .pro-l  dl { padding:30px 0; overflow:hidden; font-size:14px; }
+.pro-page-a .pro-l  dd { float:left; width:33.3333%; padding-left:4%; border-right:1px solid #dedede; box-sizing:border-box; }
+.pro-page-a .pro-l  dd span { display:block; line-height:30px; }
+.pro-page-a .pro-l  dd:last-child { border-right:0; }
+.pro-page-a .pro-l .tit { margin-bottom:20px; }
+.pro-page-a .pro-l .tbig b { font-size:36px; }
+.pro-page-a .pro-l .tOrange { color:#ff6600; }
+
+
+.pro-page-a .pro-r .tit { line-height:20px; font-size:12px; text-align:right; margin-bottom:14px; }
+.pro-page-a .pro-r .tit span { position:relative; margin:0 14px 0 8px; }
+.pro-page-a .pro-r .tit img { display:inline; margin-top:2px; cursor:pointer; }
+.pro-page-a .pro-r .tit b { display:none; position:absolute; z-index:20; left:-92px; top:32px; width:162px; height:20px; line-height:20px; text-indent:0; text-align:center; font-size:12px; color:#808080; border:1px solid #ffbb76; border-radius:3px; background-color:#fffcef;  }
+.pro-page-a .pro-r .tit b i { position:absolute; width:7px; height:11px; left:95px; top:-10px; background:url(/static/img/ProductPage/ico-arrow.jpg) no-repeat; }
+.pro-page-a .pro-r .tit strong { color:#ff6600; }
+.pro-page-a .pro-r .tit .txt { float:left; margin:0; }
+.pro-page-a .pro-r .div-box { padding:0 14px; }
+.pro-page-a .pro-r .div-box > p { margin-bottom:8px; font-size:14px; color:##808080; }
+.pro-page-a .pro-r .div-box .op { margin-top:20px; }
+.pro-page-a .pro-r .div-box .op span { font-size:12px; }
+.pro-page-a .pro-r .div-box .op b { font-size:35px; color:#ff6600; }
+.pro-page-a .pro-r .div-box .op b i { font-size:20px; }
+.pro-page-a .pro-r .days { min-height:86px; }
+.pro-page-a .pro-r .days a { position:relative; float:left; width:104px; line-height:35px; border:1px solid #d2d2d2; margin: 0 10px 6px 0; text-align:center; color:#808080; font-size:14px; }
+.pro-page-a .pro-r .days .on { color:#ff6600; border-color:#ff6600; }
+.pro-page-a .pro-r .days .jiaxi:before, .pro-page-a .pro-r .days .fanxian:before { position:absolute; right:-1px; top:-1px; padding:0 3px; line-height:16px; font-size:10px; color:#fff; background:#ff761b; }
+.pro-page-a .pro-r .days .jiaxi:before { content:"加息"; }
+.pro-page-a .pro-r .days .fanxian:before { content:"返现"; }
+.pro-page-a .pro-r .days .tick { border-color:#ff761b; background:url(/static/img/ProductPage/btn-ico-1.png) no-repeat right bottom; }
+
+.pro-page-a .investment { position:relative; padding-bottom:34px; }
+.pro-page-a .investment .oop { border:1px solid #d2d2d2; overflow:hidden; }
+.pro-page-a .investment .oop span { float:left; }
+.pro-page-a .investment .oop .inpt { position:relative; width:266px; height:36px; }
+.pro-page-a .investment .oop .inpt input { width:246px; height:36px; line-height:36px; padding:0 10px; font-size:14px; color:#717171; background:transparent; }
+.pro-page-a .investment .oop .inpt:before { position:absolute; right:10px; line-height:36px; font-size:16px; content:"元"; }
+.pro-page-a .investment .oop .minus { border-right:1px solid #d2d2d2; }
+.pro-page-a .investment .oop .add { border-left:1px solid #d2d2d2; }
+
+.pro-page-a .investment .oop .butn { float:left; position:relative; width:40px; height:36px; line-height:36px; background:#f0f0f0; color:#A09E9E; cursor:pointer; }
+.pro-page-a .investment .oop .butn:hover { color:#fff; background:#ff8330; }
+.pro-page-a .investment .oop .butn:before { position:absolute; left:0; top:0; width:40px; height:36px; font-size:20px; text-align:center; }
+.pro-page-a .investment .oop .add:before { content:"+"; }
+.pro-page-a .investment .oop .minus:before { content:"-"; }
+
+
+#NowInvest { display:block; width:100%; height:38px; font-size:15px; line-height:38px; text-align:center; background-color:#ff8330; color:#fff; cursor:pointer; }
+#spnErrByInvestMoney { position:absolute; left:0; bottom:0; width:100%; height:34px; line-height:34px; text-align:center; }
+#spnErrByInvestMoney p { display:none; font-size:12px; }
+#spnErrByInvestMoney .text-a { color:#000; }
+#spnErrByInvestMoney .text-b { color:red; }
+#spnErrByInvestMoney .sp-b,#spnErrByInvestMoney .sp-c { font-size:13px; font-weight:bold; color:#ff8330; }
+
+
+/* 投资记录 */ 
+.pro-page-b .pro-btn .InvestRecordInfo { margin-left:10px; padding: 0 3px; background:#999; color:#fff; }
+.pro-page-b .pro-btn .on .InvestRecordInfo { background:#ff8330 url(/static/img/ProductPage/left-arrow.png) no-repeat -5px center; }
+
+
+#over-window { margin:20px auto 0; width:262px; height:114px; padding-top:30px; text-align:center; font-size:14px; color:#878787; background-color:#f5f7f7; }
+#over-window p { line-height:24px; margin-bottom:0; }
+#over-window span { display:block; font-size:20px; margin-top:12px; }
+
+
+.pro-page-b .pro-btn { height:50px; border:1px solid #ccc; background-color:#f2f2f2; font-size:0; }
+.pro-page-b .pro-btn span { position:relative; display:inline-block; width:140px; line-height:50px; font-size:14px; color:#565656; text-align:center; border-right:1px solid #ccc; cursor:pointer; }
+.pro-page-b .pro-btn span b { position:absolute; top:0; left:0; width:100%; height:4px; background-color:#f2f2f2; }
+.pro-page-b .pro-btn .on { width:198px; height:51px; border-top-color: #b89055; color:#b89055; background:#fff; }
+.pro-page-b .pro-btn .on b { top:-1px; background-color:#b89055; }
+
+.pro-page-b .pro-cont { padding:34px 50px 34px 22px; border:1px solid #ccc; border-top:0; background-color:#fff; }
+.pro-page-b .pro-cont > div { display:none; min-height:400px; }
+.pro-page-b .pro-cont .pro-cont-a { display:block; }
+.pro-page-b .pro-cont h3 { line-height:30px; font-size:14px; color:#b99050; text-indent:18px; border-left:2px solid #fd8b35; background-color:#f9f5ec; }
+.pro-page-b .pro-cont .text { padding:22px 8px; }
+.pro-page-b .pro-cont .text p { line-height:30px; font-size:16px; color:#565656; }
+
+.cs-Imglistbox { position:relative; width:100%; height:238px; margin:50px 0;  overflow:hidden; }
+.cs-Imglistbox > a { position:absolute; top: 50%; outline:none; margin-top:-68px; width:20px; height:35px; padding:50px 0; background:url(/Event/images/Wallet/arrows-two.jpg) no-repeat 0 center; }
+.cs-Imglistbox .prev { left:40px; }
+.cs-Imglistbox .next { right:40px; background-position: -20px center; }
+.cs-Imglistbox ul { height:238px; overflow:hidden; }
+.cs-Imglistbox li { float:left; width:208px; height:100%; margin-right:10px; }
+.cs-Imglistbox .bd { position:relative; width:868px; height:238px; margin:0 auto; overflow:hidden; }
+.cs-Imglistbox img { display:block; }
+
+
+
+.pro-cont-d { position:relative; }
+.pro-cont-d .login-show { position:absolute; left:50%; top:50%; width:200px; height:40px; margin:-20px 0 0 -100px; font-size:16px; line-height:40px; text-align:center; color:#fff; background-color:#ff8330; }
+.pro-cont-d .page-cont { text-align:right; padding-right:75px; line-height:24px; font-size:13px; }
+.pro-cont-d .page-cont a { padding:0 10px; line-height:22px; }
+.pro-cont-d .page-cont .on { color:#ff0000; }
+.pro-cont-d .jump input { width:34px; padding:0 4px; line-height:22px; border:1px solid #a9a9a9;  }
+.pro-cont-d .jump button { width:44px; font-size:13px; color:#000; border:1px solid #a9a9a9; line-height:22px; height:24px; padding:0 4px; background:#dfdfdf; cursor:pointer; }
+
+
+/* 浮层 */
+.pro-popop { display:none; position:fixed; top:0; left:0; z-index:100; width:100%; height:100%; background:rgba(0,0,0,0.8); }
+.pro-popop a { outline:none; }
+.pro-popop .img-box { position: absolute; width: 1200px; height: 566px; left: 50%; top: 50%; margin-left: -600px; margin-top: -283px; }
+.pro-popop .bd { position:relative; width:1000px; height:566px; margin: 0 auto; overflow:hidden; }
+.pro-popop .bd ul { position:absolute; left:0; top:0; }
+.pro-popop .bd li { float:left; width:1000px; height:566px; }
+.pro-popop .bd li img { display:block; height: 100%; margin: 0 auto; }
+.pro-popop .arrow { position:absolute; top:50%; width:100px; height:200px; margin-top:-100px; }
+.pro-popop .arrow span { display:block; width:50px; height:94px; margin:53px auto; overflow:hidden; background:url(/static/img/ProductPage/popop_arrow.png) no-repeat; }
+.pro-popop .next { right:0; }
+.pro-popop .next span { background-position:-50px 0; }
+.pro-popop .pop-close { position:absolute; top:-50px; right:8%; width:36px; height:36px; background:url(/static/img/ProductPage/popop-close.png) no-repeat; }
+
+
+
+

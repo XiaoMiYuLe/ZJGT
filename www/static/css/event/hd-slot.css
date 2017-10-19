@@ -1,0 +1,90 @@
+/* 新手标促复投——老虎机公用样式 20160407 */
+h1,h2,h3,h4,h5.h6{ margin:0;}
+@-webkit-keyframes breathe{ 0%{ -webkit-transform:scale(1); transform:scale(1); } 55%{ -webkit-transform:scale(1.04); transform:scale(1.04); } 100%{ -webkit-transform:scale(1); transform:scale(1); } }
+@keyframes breathe{ 0%{ -webkit-transform:scale(1); transform:scale(1); } 55%{ -webkit-transform:scale(1.04); transform:scale(1.04); } 100%{ -webkit-transform:scale(1); transform:scale(1); } }
+
+
+
+.hd-slot{ width:757px; height:609px; background:url(/static/img/event/hd-slot/slot/bg-lottery.png) no-repeat; position:relative;}
+.hd-slot .light{ width:746px; height:600px; background:url(/static/img/event/hd-slot/slot/bg-light.png) no-repeat; position:absolute; left:3px; top:4px;}
+.hd-slot .light.active{ background-image:url(/static/img/event/hd-slot/slot/bg-light-active.png);}
+.hd-slot .btn-go{ width:273px; height:100px; background:url(/static/img/event/hd-slot/slot/btn-lottery.png) no-repeat; position:absolute; left:238px; top:241px; cursor:pointer; -webkit-animation:breathe 2.5s ease-in-out infinite alternate; animation:breathe 2.5s ease-in-out infinite alternate;}
+.hd-slot .btn-go.disabled{ cursor:not-allowed;}
+.hd-slot .info{ width:270px; text-align:center; position:absolute; left:240px; top:358px;}
+.hd-slot .info h3{ height:26px; line-height:26px; font-size:18px; color:#fff;}
+.hd-slot .info span{ color:#fec835;}
+.hd-slot .info em{ font-style:normal; font-size:24px;}
+.hd-slot .info p{ height:20px; line-height:20px; font-size:14px; color:#fde081;}
+.hd-slot .item{ width:166px; height:131px; position:absolute;}
+.hd-slot .item i{ display:none; width:180px; height:149px; background:url(/static/img/event/hd-slot/slot/bg-item-mask.png) no-repeat; position:absolute; left:50%; top:50%; margin:-75px 0 0 -90px;}
+.hd-slot .item.item-1{ background:url(/static/img/event/hd-slot/slot/item-1.png) no-repeat; left:34px; top:29px;}
+.hd-slot .item.item-2{ background:url(/static/img/event/hd-slot/slot/item-2.png) no-repeat; left:205px; top:29px;}
+.hd-slot .item.item-3{ background:url(/static/img/event/hd-slot/slot/item-3.png) no-repeat; left:375px; top:29px;}
+.hd-slot .item.item-4{ background:url(/static/img/event/hd-slot/slot/item-4.png) no-repeat; left:546px; top:29px;}
+.hd-slot .item.item-5{ background:url(/static/img/event/hd-slot/slot/item-5.png) no-repeat; left:546px; top:165px;}
+.hd-slot .item.item-6{ background:url(/static/img/event/hd-slot/slot/item-6.png) no-repeat; left:546px; top:302px;}
+.hd-slot .item.item-7{ background:url(/static/img/event/hd-slot/slot/item-7.png) no-repeat; left:546px; top:439px;}
+.hd-slot .item.item-8{ background:url(/static/img/event/hd-slot/slot/item-8.png) no-repeat; left:375px; top:439px;}
+.hd-slot .item.item-9{ background:url(/static/img/event/hd-slot/slot/item-9.png) no-repeat; left:205px; top:439px;}
+.hd-slot .item.item-10{ background:url(/static/img/event/hd-slot/slot/item-10.png) no-repeat; left:34px; top:439px;}
+.hd-slot .item.item-11{ background:url(/static/img/event/hd-slot/slot/item-11.png) no-repeat; left:34px; top:302px;}
+.hd-slot .item.item-12{ background:url(/static/img/event/hd-slot/slot/item-12.png) no-repeat; left:34px; top:165px;}
+.hd-slot .item.c i{ display:block;}
+
+.hd-slot.alert-mode{ width:540px; height:434px; background:url(/static/img/event/hd-slot/slot-alert/bg-lottery.png) no-repeat; position:relative;}
+.hd-slot.alert-mode .light{ width:532px; height:428px; background:url(/static/img/event/hd-slot/slot-alert/bg-light.png) no-repeat; position:absolute; left:1px; top:2px;}
+.hd-slot.alert-mode .light.active{ background-image:url(/static/img/event/hd-slot/slot-alert/bg-light-active.png);}
+.hd-slot.alert-mode .btn-go{ width:194px; height:71px; background:url(/static/img/event/hd-slot/slot-alert/btn-lottery.png) no-repeat; position:absolute; left:170px; top:172px; cursor:pointer; -webkit-anima-modet.alertion:breathe 2.5s ease-in-out infinite alternate; animation:breathe 2.5s ease-in-out infinite alternate;}
+.hd-slot.alert-mode .btn-go.disabled{ cursor:not-allowed;}
+.hd-slot.alert-mode .info{ width:194px; text-align:center; position:absolute; left:170px; top:252px;}
+.hd-slot.alert-mode .info h3{ height:22px; line-height:22px; font-size:14px; color:#fff;}
+.hd-slot.alert-mode .info span{ color:#fec835;}
+.hd-slot.alert-mode .info em{ font-style:normal; font-size:18px;}
+.hd-slot.alert-mode .info p{ height:16px; line-height:16px; font-size:12px; color:#fde081;}
+.hd-slot.alert-mode .item{ width:118px; height:93px; position:absolute;}
+.hd-slot.alert-mode .item i{ display:none; width:128px; height:106px; background:url(/static/img/event/hd-slot/slot-alert/bg-item-mask.png) no-repeat; position:absolute; left:50%; top:50%; margin:-53px 0 0 -64px;}
+.hd-slot.alert-mode .item.item-1{ background:url(/static/img/event/hd-slot/slot-alert/item-1.png) no-repeat; left:24px; top:21px;}
+.hd-slot.alert-mode .item.item-2{ background:url(/static/img/event/hd-slot/slot-alert/item-2.png) no-repeat; left:146px; top:21px;}
+.hd-slot.alert-mode .item.item-3{ background:url(/static/img/event/hd-slot/slot-alert/item-3.png) no-repeat; left:267px; top:21px;}
+.hd-slot.alert-mode .item.item-4{ background:url(/static/img/event/hd-slot/slot-alert/item-4.png) no-repeat; left:390px; top:21px;}
+.hd-slot.alert-mode .item.item-5{ background:url(/static/img/event/hd-slot/slot-alert/item-5.png) no-repeat; left:390px; top:118px;}
+.hd-slot.alert-mode .item.item-6{ background:url(/static/img/event/hd-slot/slot-alert/item-6.png) no-repeat; left:390px; top:216px;}
+.hd-slot.alert-mode .item.item-7{ background:url(/static/img/event/hd-slot/slot-alert/item-7.png) no-repeat; left:390px; top:313px;}
+.hd-slot.alert-mode .item.item-8{ background:url(/static/img/event/hd-slot/slot-alert/item-8.png) no-repeat; left:267px; top:313px;}
+.hd-slot.alert-mode .item.item-9{ background:url(/static/img/event/hd-slot/slot-alert/item-9.png) no-repeat; left:146px; top:313px;}
+.hd-slot.alert-mode .item.item-10{ background:url(/static/img/event/hd-slot/slot-alert/item-10.png) no-repeat; left:24px; top:313px;}
+.hd-slot.alert-mode .item.item-11{ background:url(/static/img/event/hd-slot/slot-alert/item-11.png) no-repeat; left:24px; top:216px;}
+.hd-slot.alert-mode .item.item-12{ background:url(/static/img/event/hd-slot/slot-alert/item-12.png) no-repeat; left:24px; top:118px;}
+.hd-slot.alert-mode .item.c i{ display:block;}
+
+.alert-slot-mask{ display:none; width:100%; height:100%; background:url(/static/img/event/hd-slot/alert/bg-alert-mask.png); position:fixed; left:0; top:0; z-index:999;}
+.alert-slot{ display:block; width:675px; text-align:center; background:#ffe6a6; border:5px solid #fe3428; border-radius:40px; position:fixed; left:50%; top:50%; margin-left:-342px; z-index:1000;}
+.alert-slot .btn{ display:block; width:380px; height:80px; line-height:80px; font-size:36px; color:#fff; background:#ff5a00; box-shadow:0 5px 0 0 #e53701; border-radius:6px; margin:0 auto;}
+.alert-slot .btn-close{ width:35px; height:35px; background:url(/static/img/event/hd-slot/alert/alert-btn-close.png) no-repeat; position:absolute; right:47px; top:51px; cursor:pointer; z-index:3; -webkit-transition:transform 0.8s linear; transition:transform 0.8s linear;}
+.alert-slot .btn-close:hover{ -webkit-transform:rotate(360deg); transform:rotate(360deg);}
+
+.alert-slot.notimes{ height:440px; padding-top:80px; margin-top:-265px; z-index:1001;}
+.alert-slot.notimes h2{ height:120px; line-height:120px; font-size:36px; font-weight:bold; color:#746848;}
+.alert-slot.notimes p{ height:72px; line-height:72px; font-size:24px; color:#746848; margin-bottom:80px;}
+.alert-slot.notimes p em{ font-style:normal; color:#f00;}
+
+.alert-slot.win{ height:395px; padding-top:105px; margin-top:-255px; z-index:1001;}
+.alert-slot.win .btn-close{ right:22px; top:32px;}
+.alert-slot.win .flower{ width:624px; height:295px; background:url(/static/img/event/hd-slot/alert/alert-bg-win.png) no-repeat; position:absolute; left:50%; top:-195px; z-index:2; margin-left:-312px;}
+.alert-slot.win h2{ height:80px; line-height:80px; font-size:36px; font-weight:bold; color:#746848;}
+.alert-slot.win em{ font-style:normal; color:#f00;}
+.alert-slot.win img{ display:block; margin:0 auto;}
+.alert-slot.win .msg{ line-height:42px; font-size:24px; color:#746848; margin:20px 0 30px;}
+.alert-slot.win .tip{ height:60px; line-height:60px; font-size:16px; color:#f96d1e;}
+
+.alert-slot.error{ height:300px; padding-top:80px; margin-top:-265px; z-index:1001;}
+.alert-slot.error h2{ height:120px; line-height:120px; font-size:36px; font-weight:bold; color:#746848;}
+.alert-slot.error p{ height:72px; line-height:72px; font-size:24px; color:#746848; margin-bottom:80px;}
+
+.alert-slot.slot{ width:540px; height:434px; background:none; border-radius:0; border:none; overflow:visible; margin:-217px 0 0 -270px;}
+.alert-slot.slot .btn-close{ width:53px; height:53px; background:url(/static/img/event/hd-slot/alert/btn-slot-close-bg.png) no-repeat; right:-16px; top:-21px;}
+.alert-slot.slot .btn-close:before{ content:""; width:24px; height:24px; background:url(/static/img/event/hd-slot/alert/btn-slot-close.png?v=20160510) no-repeat; position:absolute; left:14px; top:11px; -webkit-transition:transform 0.8s linear; transition:transform 0.8s linear;}
+.alert-slot.slot .btn-close:hover{ -webkit-transform:rotate(0deg); transform:rotate(0deg);}
+.alert-slot.slot .btn-close:hover:before{ -webkit-transform:rotate(360deg); transform:rotate(360deg);}
+.alert-slot.slot .tit{ width:500px; height:107px; background:url(/static/img/event/hd-slot/slot-alert/slot-alert-tit.png) no-repeat; position:absolute; left:50%; top:-118px; margin-left:-250px;}
+.alert-slot.slot .btn-link{ width:233px; height:56px; line-height:52px; text-align:center; font-size:18px; color:#305335; background:url(/static/img/event/hd-slot/slot-alert/btn-link.png) no-repeat; position:absolute; left:50%; bottom:-89px; margin-left:-116px; padding-top:33px;}

@@ -7,7 +7,8 @@
 * 
 * Open source under the BSD License. 
 * 
-* Copyright 漏 2008 George McGinley Smith
+* Copyright © 2008 George McGinley Smith
+*
 * All rights reserved.
 * 
 * Redistribution and use in source and binary forms, with or without modification, 
@@ -176,7 +177,11 @@ jQuery.extend(jQuery.easing,
 * 
 * Open source under the BSD License. 
 * 
+<<<<<<< HEAD
 * Copyright 漏 2001 Robert Penner
+=======
+* Copyright © 2001 Robert Penner
+>>>>>>> master
 * All rights reserved.
 * 
 * Redistribution and use in source and binary forms, with or without modification, 
@@ -10553,7 +10558,11 @@ $.widget( "ui.menu", {
 		menus.children( ":not(.ui-menu-item)" ).each(function() {
 			var item = $( this );
 			// hyphen, em dash, en dash
+<<<<<<< HEAD
 			if ( !/[^\-â€”â€“\s]/.test( item.text() ) ) {
+=======
+			if ( !/[^\-—–\s]/.test( item.text() ) ) {
+>>>>>>> master
 				item.addClass( "ui-widget-content ui-menu-divider" );
 			}
 		});
@@ -16293,7 +16302,11 @@ function dialogByTip(msg,tipObj) {
     });
 }
 
+<<<<<<< HEAD
 //æ ¹ç›®å½•è°ƒç”¨è¿™ä¸ª
+=======
+//根目录调用这个
+>>>>>>> master
 function dialogByTipRoot(msg, tipObj) {
     seajs.use(['jquery', '/js/dialog/src/dialog'], function ($, dialog) {
         var d = dialog({
@@ -16331,7 +16344,11 @@ function dialogByBox(title, msg, url) {
     });
 }
 
+<<<<<<< HEAD
 //æ ¹ç›®å½•è°ƒç”¨è¿™ä¸ª
+=======
+//根目录调用这个
+>>>>>>> master
 function dialogBoxRoot(title, msg) {
     seajs.use(['jquery', '/js/dialog/src/dialog'], function ($, dialog) {
         var d = dialog({
@@ -16345,7 +16362,11 @@ function dialogBoxRoot(title, msg) {
     });
 }
 
+<<<<<<< HEAD
 //æ ¹ç›®å½•è°ƒç”¨è¿™ä¸ª
+=======
+//根目录调用这个
+>>>>>>> master
 function dialogByBoxRoot(title, msg, url) {
     seajs.use(['jquery', '/js/dialog/src/dialog'], function ($, dialog) {
         var d = dialog({
@@ -16364,19 +16385,35 @@ function dialogByBoxRoot(title, msg, url) {
 function dialogByLoading() {
     seajs.use(['jquery', '../js/dialog/src/dialog'], function ($, dialog) {
         var d = dialog({
+<<<<<<< HEAD
             title: "åŠ è½½ä¸­..."
+=======
+            title: "加载中..."
+>>>>>>> master
         });
         d.showModal();
     });
 }
 
+<<<<<<< HEAD
 //æ ¹ç›®å½•è°ƒç”¨è¿™ä¸ª
 function dialogByLoadingRoot() {
     seajs.use(['jquery', '/js/dialog/src/dialog'], function ($, dialog) {
         var d = dialog({
             title: "åŠ è½½ä¸­..."
+=======
+//根目录调用这个
+function dialogByLoadingRoot() {
+    seajs.use(['jquery', '/js/dialog/src/dialog'], function ($, dialog) {
+        var d = dialog({
+            title: "加载中..."
+>>>>>>> master
         });
         d.showModal();
     });
 }
+<<<<<<< HEAD
 (function (a, b, c, d) { function e() { clearTimeout(i); for (var c = a.innerWidth || b.documentElement.clientWidth || b.body.clientWidth || 0, e, f, o, p, q = m, u = m - 1; q--;) { g = "", e = l[q].split("="), f = e[0], p = e[1] ? e[1].replace(/\s/g, "") : d, e = (o = f.match("to")) ? parseInt(f.split("to")[0], 10) : parseInt(f, 10), f = o ? parseInt(f.split("to")[1], 10) : d; if (!f && q === u && c > e || c > e && c <= f) { p && (g = k + p); break } } h ? h !== g && (h = n.href = g, j && j(q, c)) : (h = n.href = g, j && j(q, c), k && (b.head || b.getElementsByTagName("head")[0]).appendChild(n)) } function f() { clearTimeout(i), i = setTimeout(e, 16) } if (c) { var g, h, i, j = typeof c.callback == "function" ? c.callback : d, k = c.path ? c.path : "", l = c.range, m = l.length, n = b.createElement("link"); n.rel = "stylesheet", n.media = "screen", e(), c.dynamic && (a.addEventListener ? a.addEventListener("resize", f, !1) : a.attachEvent ? a.attachEvent("onresize", f) : a.onresize = f) } })(this, this.document, ADAPT_CONFIG)
+=======
+(function (a, b, c, d) { function e() { clearTimeout(i); for (var c = a.innerWidth || b.documentElement.clientWidth || b.body.clientWidth || 0, e, f, o, p, q = m, u = m - 1; q--;) { g = "", e = l[q].split("="), f = e[0], p = e[1] ? e[1].replace(/\s/g, "") : d, e = (o = f.match("to")) ? parseInt(f.split("to")[0], 10) : parseInt(f, 10), f = o ? parseInt(f.split("to")[1], 10) : d; if (!f && q === u && c > e || c > e && c <= f) { p && (g = k + p); break } } h ? h !== g && (h = n.href = g, j && j(q, c)) : (h = n.href = g, j && j(q, c), k && (b.head || b.getElementsByTagName("head")[0]).appendChild(n)) } function f() { clearTimeout(i), i = setTimeout(e, 16) } if (c) { var g, h, i, j = typeof c.callback == "function" ? c.callback : d, k = c.path ? c.path : "", l = c.range, m = l.length, n = b.createElement("link"); n.rel = "stylesheet", n.media = "screen", e(), c.dynamic && (a.addEventListener ? a.addEventListener("resize", f, !1) : a.attachEvent ? a.attachEvent("onresize", f) : a.onresize = f) } })(this, this.document, ADAPT_CONFIG)
+>>>>>>> master

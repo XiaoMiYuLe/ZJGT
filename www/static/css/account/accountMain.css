@@ -1,0 +1,14 @@
+a{  cursor:pointer;}
+.fl { float:left;}
+.fr { float:right;}
+
+
+.account-content{ margin:10px auto; font-size:12px; overflow:hidden;}
+.account-left{ float:left; display:inline; width:158px; background:#fff none repeat scroll 0 0; border:1px solid #dcdcdc; box-shadow:0 4px 4px 0 #eaeaea;}
+.account-right{ float:right; display:inline; width:998px; background-color:#ffffff; border:1px solid #ccc; box-shadow:3px 4px 8px 0 #eaeaea;}
+.account-title{ border-bottom:1px solid #ccc; font-size:1.8em; padding-bottom:35px; vertical-align:middle;}
+
+.sub-banner{  height:110px;}
+
+.remind{ width:1140px; margin-right:auto; margin-left:auto; font-size:14px; color:#333; background-color:#fffae9; padding-top:5px; padding-right:20px; padding-bottom:5px; padding-left:20px; border:1px solid #dcdcdc; margin-bottom:20px;}
+.remind img{ vertical-align:bottom;}

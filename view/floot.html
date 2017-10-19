@@ -1,2 +1,137 @@
+<div class="in-footer">
+        <div class="inWrap">
+            <div class="f-nav clearfix">
+                <div class="nav fl">
+                    <ul>
+                        <li>
+                            <span>关于我们</span>
+                            <a href="/Content/About.aspx#a">公司介绍</a>
+                            <a href="/Content/About.aspx#b">管理团队</a>
+                            <a href="/Content/honor.aspx">荣誉资质</a>
+                            <a href="/Content/Contact.aspx">联系我们</a>
+                        </li>
+                        <li>
+                            <span>安全保障</span>
+                            <a href="/Content/capital.aspx">一亿验资</a>
+                            <a href="/Content/Safety.aspx">存款保障</a>
+                            <a href="/Content/Privacy.aspx">隐私保护</a>
+                            <a href="/Content/Law.aspx">法律法规</a>
+                        </li>
+                        <li>
+                            <span>理财学堂</span>
+                            <a href="/Content/guide.aspx">新手指引</a>
+                            <a href="/Content/strategy.aspx">理财攻略</a>
+                            <a href="/Content/mission.aspx">新手任务</a>
+                            <a href="/Content/List.aspx?TypeId=5">常见问题</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="qr-code fl">
+                    <div class="ma ma-a">
+                        <img src="/static/img/index2/ma-a.jpg">
+                        <p>关注微信服务号</p>
+                        <p>随时在线咨询/购买</p>
+                    </div>
+                    <div class="ma">
+                        <img src="/static/img/index2/ma-b.jpg">
+                        <p>关注微信订阅号</p>
+                        <p>最新理财咨询，投资领先一步</p>
+                    </div>
+                </div>
+                <div class="contact fl">
+                    <span>客服热线: 工作时间 9:00-21:00</span>
+                    <span>双休日(不含法定假日): 9:00-18:00</span>
+                    <span class="f-phone">(021)80164139</span>
+                    <span>客服邮箱: kefu@chinazjgt.com</span>
+                    <span>投资有风险 理财需谨慎</span>
+                </div>
+            </div>
+            <div class="f-information">
+                <p>
+                    <span class="fl">上海中金国泰金融信息服务有限公司&nbsp;&nbsp;&nbsp;沪ICP备14043140号&nbsp;&nbsp;&nbsp;版权所有</span>
+                    <span class="fr">
+                        <a id='___szfw_logo___' href='https://search.szfw.org/cert/l/CX20150611010316010885' target='_blank'>
+                            <img src="/static/img/index2/f-in-a.jpg">
+                        </a>
+                        <script type='text/javascript'>(function () { document.getElementById('___szfw_logo___').oncontextmenu = function () { return false; } })();</script>
+                        <a id="_pingansec_bottomimagesmall_p2p" href="http://si.trustutn.org/info?sn=269150811000195164073">
+                            <img src="/static/img/index2/f-in-c.jpg">
+                        </a>
+                    </span>
+                </p>
+                <p>
+                    友情链接：
+                    <a href="http://www.chinazjgt.com/" target="_blank">中金国泰</a>
+                    <a href="http://finance.sina.com.cn/" target="_blank">新浪财经</a>
+                    <a href="http://www.hexun.com/" target="_blank">和讯网</a>
+                    <a href="http://www.wdzj.com/" target="_blank">网贷之家</a>
+                    <a href="http://p2p.yinhang.com/" target="_blank">银率网</a>
+                    <a href="http://www.p2peye.com/" target="_blank">网贷天眼</a>
+                    <a href="http://www.fengchelicai.com/" target="_blank">风车理财</a>
+                    <a href="http://www.svmuu.com/" target="_blank">水木资本网</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 侧边导航 -->
+    <div class="pub-slide">
+        <div class="slide-a sd">
+            <div class="span-box">
+                <a href="javascript:void(0);" onclick="openQQ()">
+                    <span class="bg-a bg"></span>
+                    <span>联系<br>
+                        客服</span>
+                </a>
+            </div>
+        </div>
+        <div class="slide-c sd">
+            <div class="span-box">
+                <span class="bg-c bg"></span>
+                <span>返回<br>
+                    顶部</span>
+            </div>
+        </div>
+
+        <div class="message">
+            <p>您的吐槽，我愿倾听</p>
+            <textarea class="textarea"></textarea>
+            <div class="btn">
+                <a href="#">提交</a>
+                <a class="last" href="javascript:;">取消</a>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript'>
+        function openQQ() {
+            window.open("/Content/QQMsg.aspx", "openQQ", "width=700,height=610", false);
+        }
+        $(function () {
+            $('#aFloatTools_Hide').hide();
+            $('#floatTools').hover(
+                function () {
+                    $('#divFloatToolsView').stop().animate({
+                        width: 'show',
+                        opacity: 'show'
+                    }, 100, function () {
+                        $('#divFloatToolsView').show();
+                    });
+                    $('#aFloatTools_Show').hide();
+                    $('#aFloatTools_Hide').show();
+                },
+                function () {
+                    $('#divFloatToolsView').stop().animate({
+                        width: 'hide',
+                        opacity: 'hide'
+                    }, 100, function () {
+                        $('#divFloatToolsView').hide();
+                    });
+                    $('#aFloatTools_Show').show();
+                    $('#aFloatTools_Hide').hide();
+                }
+            );
+
+        });
+    </script>
+    <script type="text/javascript" src="/static/js/tj_statistics.js?v=16071331"></script>
 </body>
 </html>

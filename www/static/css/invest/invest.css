@@ -1,0 +1,217 @@
+/* 投资列表 20120222 */
+h1,h2,h3,h4,h5,h6{ margin:0;}
+
+.list-cont{ width:1200px; margin:0 auto;}
+.Navigation { width:1160px; margin:0 auto; }
+
+
+.list-nav{ width:1160px; margin:0 auto 40px; overflow:hidden; _zoom:1;}
+.list-nav li{ float:left; display:inline; width:320px; height:150px; color:#fff; white-space:nowrap; position:relative; overflow:hidden;}
+.list-nav .item{ width:840px; height:100%; position:absolute; top:0;}
+.list-nav strong{ display:block; height:58px; line-height:58px; font-size:40px; font-weight:bold; padding-top:34px;}
+.list-nav span{ display:block; height:26px; line-height:26px; font-size:14px; font-weight:bold; color:#fff;}
+.list-nav .normal .item{ background:#fff url(/static/img/invest/bg-normal.png) no-repeat 55px 38px; left:-120px;}
+.list-nav .normal strong{ color:#ff8331; padding-left:220px;}
+.list-nav .normal span{ padding-left:220px;}
+.list-nav .vip{ text-align:right;}
+.list-nav .vip .item{ background:#fff url(/static/img/invest/bg-vip.png) no-repeat 12px 34px; right:-120px;}
+.list-nav .vip strong{ color:#3f9ae0; padding-right:220px;}
+.list-nav .vip span{ padding-right:220px;}
+.list-nav .select{ width:840px;}
+.list-nav .normal.select .item{ background-color:#ffb955; left:0;}
+.list-nav .normal.select strong{ color:#fff;}
+.list-nav .vip.select .item{ background-color:#85cdff; right:0;}
+.list-nav .vip.select strong{ color:#fff;}
+
+
+.list-brief{ height:132px; color:#fff; background:url(/static/img/invest/bg-brief.png) repeat-x center top; margin-bottom:20px;}
+.list-brief .wrap{ width:1200px; margin:0 auto;}
+.list-brief h2{ float:left; display:inline; width:200px; height:132px; line-height:132px; text-align:center; font-size:38px; margin:0;}
+.list-brief ul{ float:left; padding-top:36px;}
+.list-brief li{ float:left; display:inline; padding-left:75px; position:relative;}
+.list-brief li i{ position:absolute; top:0; left:0;}
+.list-brief li i.no-1{ width:21px; height:49px; background:url(/static/img/invest/ico-num-1.png) no-repeat; margin-left:41px;}
+.list-brief li i.no-2{ width:35px; height:53px; background:url(/static/img/invest/ico-num-2.png) no-repeat; margin-left:29px;}
+.list-brief li i.no-3{ width:34px; height:53px; background:url(/static/img/invest/ico-num-3.png) no-repeat; margin-left:27px;}
+.list-brief li i.no-4{ width:37px; height:46px; background:url(/static/img/invest/ico-num-4.png) no-repeat; margin-left:33px;}
+.list-brief li h3{ height:32px; line-height:32px; font-size:18px; margin:0;}
+.list-brief li p{ height:24px; line-height:24px; font-size:14px; white-space:nowrap;}
+
+.list-tab{ width:1160px; height:80px; background:#fff; box-shadow:0 1px 2px 2px rgba(11,3,6,0.08); margin:0 auto 25px; }
+.list-tab .btn-order{ float:left; display:inline; width:70px; height:30px; line-height:30px; text-align:right; font-size:18px; color:#565656; background:url(/static/img/invest/ico-order.png) no-repeat left center; margin:26px 45px 0;}
+.list-tab ul{ float:left; display:inline; height:30px; border-left:1px solid #ebebeb; margin-top:30px;}
+.list-tab li{ float:left; display:inline; width:220px; height:30px; border-right:1px solid #ebebeb; text-align:center; position:relative;}
+.list-tab strong{ display:block; height:26px; line-height:26px; font-size:18px; font-weight:normal; color:#565656; margin-top:-14px;}
+.list-tab strong a{ color:#565656;}
+.list-tab span{ display:block; height:20px; line-height:20px; font-size:14px; color:#808080;}
+.list-tab i{ display:none; width:19px; height:11px; background:url(/static/img/invest/bg-arrow.png) no-repeat; position:absolute; left:50%; top:43px;}
+.list-tab li.vip{ width:300px; border-right:none;}
+.list-tab li.vip span,
+.list-tab li.vip strong a{ color:#1695f6}
+.list-tab li.cur strong a{ color:#ff8331;}
+.list-tab li.cur i{ display:block;}
+
+.list-wrap li{ width:1160px; height:160px; background:#fff; margin:20px auto 0; position:relative;}
+.list-wrap h2{ height:48px; line-height:48px; font-size:18px; color:#565656; padding-left:40px; margin:0;}
+.list-wrap h2 a{ float:left; display:inline; color:#565656;}
+.list-wrap h2 a:hover{ color:#ff8331;}
+.list-wrap .tip{ float:left; display:inline; font-size:14px; font-style:normal; padding-left:30px; margin-left:20px;}
+.list-wrap .tip.pro{ color:#f60; background:url(/static/img/invest/ico-pro.png) no-repeat left center;}
+.list-wrap .tip.vip{ color:#1695f6; background:url(/static/img/invest/ico-vip.png) no-repeat left center; margin-left:30px;}
+.list-wrap dd{ float:left; display:inline; height:60px; line-height:60px; text-align:center; font-size:15px; color:#565656; position:relative;}
+.list-wrap dd strong{ font-size:24px; font-weight:normal; font-family:Arial; padding-right:5px;}
+.list-wrap dd span{ width:100%; height:24px; line-height:24px; font-size:14px; color:#808080; position:absolute; left:0; bottom:-14px;}
+.list-wrap dd.date{ width:180px; color:#f60; font-size:16px; }
+.list-wrap dd.date strong{ font-size:30px;}
+.list-wrap dd.duration{ width:120px;}
+.list-wrap dd.total{ width:180px; margin-left:22px;}
+.list-wrap dd.min{ width:180px;}
+.list-wrap dd.end{ width:165px;}
+.list-wrap .status{ width:263px; height:142px; position:absolute; right:10px; top:50%; margin-top:-71px;}
+.list-wrap .status .soldout{ position:absolute; top:11px; left:-63px;}
+
+.list-wrap .status.invest{ background:#fef9f1;}
+.list-wrap .status.invest p{ height:40px; line-height:40px; text-align:center; font-size:14px; color:#565656; padding-top:18px; margin-bottom:6px;}
+.list-wrap .status.invest p em{ font-style:normal; font-size:20px; font-family:Arial; color:#f60;}
+.list-wrap .status.invest .btn-invest{ display:block; width:200px; height:50px; line-height:50px; text-align:center; font-size:22px; color:#fff; background:#ff8331; border-radius:4px; margin:0 auto 8px;}
+.list-wrap .status.invest .pro{ height:24px; line-height:24px; padding-left:30px;}
+.list-wrap .status.invest .pro span{ float:left; display:inline; width:38px;}
+.list-wrap .status.invest .pro p{ float:left; display:inline; width:126px; height:10px; background:#f0f0f0; border-radius:4px; overflow:hidden; margin-top:8px; padding:0;}
+.list-wrap .status.invest .pro p i{ display:block; width:0; height:10px !important; background:#ff8331; border-radius:4px;}
+.list-wrap .status.invest .pro b{ float:left; display:inline; padding-left:9px;}
+
+.list-wrap .status.repayment{ text-align:center; background:#f5f7f7; color:#7c8f82;}
+.list-wrap .status.repayment p{ line-height:22px; font-size:14px; padding-top:30px;}
+.list-wrap .status.repayment strong{ display:block; height:48px; line-height:48px; font-size:22px; font-weight:normal;}
+
+.list-wrap .status.finish{ text-align:center; background:#f5f7f7; color:#878787;}
+.list-wrap .status.finish p{ line-height:22px; font-size:14px; padding-top:30px;}
+.list-wrap .status.finish strong{ display:block; height:48px; line-height:48px; font-size:22px; font-weight:normal;}
+
+.list-wrap .list-vip .status.invest{ background:#fef9f1;}
+.list-wrap .list-vip .status.invest .btn-invest{ background:#ff8331;}
+
+
+/* 分页按钮 */
+#listPager { margin:35px 0; font-size:12px; padding:0 20px; color:#666; text-align:right; overflow:hidden; }
+#listPager a { margin-left:8px; margin-right:0 !important; color:#666; background:#fff; }
+#listPager .on { color:#fff; margin-left:8px; margin-right:0 !important; background:#fd7500; border-color:#fd7500; }
+#listPager .cont { margin-right:10px; }
+#listPager .btn { padding:3px 10px; border:1px solid #c9c9c9; }
+#listPager .page { padding:3px 8px; border:1px solid #c9c9c9;  }
+#listPager .listPage { line-height:24px; }
+
+
+/* 愚人节活动 20160324 */
+.list-wrap .egg{ height:100%; padding:0 10px;}
+.list-wrap .egg .ico-egg{ float:left; display:inline; width:37px; height:45px; background:url(/static/img/event/hd-foolsday/ico-egg.gif) no-repeat; position:relative;}
+.list-wrap .egg .ico-egg.hover{ background:url(/static/img/event/hd-foolsday/ico-egg-ani.gif) no-repeat;}
+.list-wrap .egg .ico-egg .notice{ display:none; width:165px; line-height:20px; font-size:12px; color:#666; border:1px solid #666; background:#fff; padding:5px 10px; position:absolute; left:50px; top:0; cursor:default;}
+.list-wrap .egg .ico-egg:hover .notice{ display:block;}
+.list-wrap .egg .ico-welfare{ float:left; display:inline; width:130px; height:16px; background:url(/static/img/event/hd-foolsday/ico-welfare-lendlist.png) no-repeat; margin-top:18px;}
+.list-wrap .date em{ height:16px; line-height:16px; font-size:12px; font-style:normal; font-family:Arial; color:#fff; letter-spacing:-1px; background:#fc350e; padding:0 5px; position:absolute; right:10px; top:7px;}
+
+/* 新手标自动续投3月标 */
+.invest-auto{ width:1198px; color:#333; background:#fff; border:1px solid #dedede; margin:35px auto;}
+.invest-auto h2{ height:110px; line-height:110px; text-align:center; font-size:30px; font-weight:normal; padding-top:30px;}
+
+.invest-auto .redenv-wrap{ width:915px; background:#f5fcff; border:1px solid #d3e6ec; margin:0 auto; padding-bottom:20px; margin-bottom:25px; position:relative;}
+.invest-auto .redenv-wrap .ico-chance{ width:102px; height:102px; background:url(/static/img/invest/ico-chance.png) no-repeat; position:absolute; left:-1px; top:-1px;}
+.invest-auto .redenv{ overflow:hidden; padding:45px 0 0 5px;}
+.invest-auto .redenv li{ float:left; display:inline; width:153px; height:159px; background:url(/static/img/invest/redenv-back.png) no-repeat; margin:0 0 30px 110px; position:relative; cursor:pointer;}
+.invest-auto .redenv span{ width:148px; height:117px; line-height:100px; text-align:center; font-weight:bold; font-size:26px; color:#fb3402; background:url(/static/img/invest/redenv-main.png) no-repeat; position:absolute; right:0; bottom:37px;}
+.invest-auto .redenv b{ font-weight:normal; font-size:46px; letter-spacing:-3px; padding-left:5px;}
+.invest-auto .redenv i{ width:153px; height:96px; background:url(/static/img/invest/redenv-front.png) no-repeat; position:absolute; left:0; bottom:6px;}
+
+.invest-auto .redenv-list{ width:724px; height:55px; background:url(/static/img/invest/bg-list.png) no-repeat; margin:0 auto;}
+.invest-auto .redenv-list ul{ height:36px; padding-top:10px; overflow:hidden;}
+.invest-auto .redenv-list li{ width:670px; height:36px; margin:0 auto;}
+.invest-auto .redenv-list p{ float:left; width:50%; line-height:36px; text-align:center; font-size:14px;}
+
+.invest-auto .redenv-detail{ display:none;}
+.invest-auto .redenv-detail .tip{ width:600px; height:40px; line-height:40px; text-align:center; font-size:14px; background:#fffaec; border:1px dashed #ffe4c5; margin:0 auto 25px;}
+.invest-auto .redenv-detail .tip em{ font-style:normal; font-size:22px; color:#fb463d;}
+.invest-auto .redenv-detail .tip b{ font-weight:normal; font-size:18px;}
+.invest-auto .redenv-detail .tip .btn-show{ color:#f86343; cursor:pointer;}
+.invest-auto .redenv-detail ul{ display:none; width:535px; border:1px solid #a7a7a7; padding:10px 0; margin:0 auto 10px; overflow:hidden;}
+.invest-auto .redenv-detail li{ float:left; display:inline; height:64px; text-align:center; border-left:1px solid #d6d6d6; margin-left:-1px;}
+.invest-auto .redenv-detail li .tit{ display:block; height:30px; line-height:20px; font-size:14px; margin-top:-3px;}
+.invest-auto .redenv-detail li strong,
+.invest-auto .redenv-detail li em{ display:block; height:30px; line-height:30px; font-style:normal; font-weight:normal; font-size:18px; color:#595757;}
+.invest-auto .redenv-detail li em{ color:#f04c43;}
+.invest-auto .redenv-detail li em i{ font-style:normal; font-size:14px;}
+.invest-auto .redenv-detail li.wrap-lendmoney{ width:185px;}
+.invest-auto .redenv-detail li.wrap-dateline{ width:100px;}
+.invest-auto .redenv-detail li.wrap-rate{ width:130px;}
+.invest-auto .redenv-detail li.wrap-income{ width:120px;}
+.invest-auto .redenv-detail p{ width:400px; height:50px; line-height:50px; font-size:14px; margin:0 auto;}
+.invest-auto .redenv-detail p input{ margin-right:10px; vertical-align:middle;}
+
+.invest-auto .btn-wrap{ text-align:center; padding-bottom:70px;}
+.invest-auto .btn-wrap .btn{ display:inline-block; width:180px; height:46px; line-height:46px; font-size:18px; color:#fff; margin:0 20px; cursor:pointer;}
+.invest-auto .btn-wrap .btn.confirm{ background:#ff8330;}
+.invest-auto .btn-wrap .btn.giveup{ background:#b7b7b7;}
+
+
+.invest-auto .text-p { width:630px; height:116px; margin:0 auto; padding:10px 0; border:1px solid #ffe4c5; font-size:13px; background-color:#fffaec; }
+.invest-auto .text-p p { line-height:30px; color:#ebab62; text-indent:40px; }
+.invest-auto .text-p span { color:#ff7e00;  }
+#popup { display:none; position:fixed; z-index:100; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); }
+#popup .pop-box { position:absolute; left:50%; top:50%; width:535px; height:240px; margin-top:-120px; margin-left:-267px; background:#fff; }
+#popup h2 { padding:0 22px; text-align:left; height:62px; line-height:62px; font-size:20px; background-color:#ff7e00; color:#fff; }
+#popup h2  a { float:right; width:62px; margin-right:-22px; text-align:center; font-size:30px; color:#fff; }
+#popup .pop-box > div { height:100%; text-align:center; font-size:16px; color:#666666; }
+#popup .pop-box p span { font-size:18px; }
+#popup .pop-box .one-p { margin:46px 0 38px 0; line-height:28px; }
+#popup .context-box a { display:inline-block; font-size:16px; width:150px; line-height:40px; text-align:center; color:#fff; margin:0 15px; }
+#popup .context-box .link-on { background:#ff7e00; }
+#popup .context-box .link-off { background:#b7b7b7; }
+
+
+
+/*产品改造二期 - 16.6.30*/
+.fl { float:left; }
+.fr { float:right; }
+.hide { display:none; }
+.clearfix { zoom:1; }
+.clearfix:after { content:''; display:block; clear:both; }
+
+
+.cs-investlist { width:1200px; margin:0 auto; }
+.cs-investlist .title-img { margin-bottom:18px; }
+.cs-investlist .menus { width:940px; }
+.cs-investlist .menus li { padding:22px 30px; margin-bottom:20px; background:#fff; }
+.cs-investlist .menus li b { font-weight:normal; }
+.cs-investlist .menus li > p { margin-bottom:22px; line-height:24px; overflow:hidden; }
+.cs-investlist .menus li > p a { float:left; max-width:500px; font-size:16px; color:#565656; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.cs-investlist .menus li > p a:hover { color:#ff4c4c; }
+.cs-investlist .menus li > p span { float:left; font-size:14px; }
+.cs-investlist .menus li > p .ico { width:0; height:24px; margin:0 8px; padding-left:28px; overflow:hidden; cursor:pointer; background:url(/static/img/invest/invest-ico.jpg) no-repeat; }
+.cs-investlist .menus li > p .ico-b { background-position:0 -24px; }
+.cs-investlist .menus li dl { overflow:hidden; font-size:14px; color:#565656; }
+.cs-investlist .menus li dd { float:left; width:25%; text-align:center; }
+.cs-investlist .menus .span-a { display:block; height:40px; line-height:40px; overflow:hidden; }
+.cs-investlist .menus .span-b { display:block; line-height:34px; font-size:14px; color:#808080; }
+
+.cs-investlist .menus dd a { display:block; width:130px; margin:0 auto; border-radius:5px; color:#ff4c4c; border:1px solid #ff4c4c; } 
+.cs-investlist .menus .dd-a .span-a { font-size:30px; color:#ff3c00; }
+.cs-investlist .menus .dd-b .span-a b { font-size:24px; }
+.cs-investlist .menus .dd-d a { color:#ff4c4c; }
+.cs-investlist .menus .dd-d a:hover { color:#fff; background-color:#ff4c4c; }
+.cs-investlist .menus .dd-d .span-a b { font-weight:bold; color:#ff3c00; }
+.cs-investlist .menus .dd-e .span-a b { font-size:12px; }
+.cs-investlist .menus .dd-e .span-b { color:#a4a4a4; border:1px solid #c5c5c5; }
+
+.cs-investlist .fly { position:fixed; top:0; left:50%; margin-left:352px; } 
+.cs-investlist .slide { width:218px; padding:20px 15px; background:#fff; }
+.cs-investlist .slide dt { position:relative; line-height:30px; font-size:16px; color:#474e5d; text-align:center; }
+.cs-investlist .slide dt i { position:absolute; width:100%; height:1px; top:50%; left:0; background:#e6e6e6; }
+.cs-investlist .slide dt b { position:relative; z-index:3; font-weight:normal; padding:0 12px; background:#fff; }
+.cs-investlist .slide dd { padding:16px 0 16px 86px; line-height:20px; font-size:12px; }
+.cs-investlist .slide dd span { display:block; }
+.cs-investlist .slide dd span b { color:#ff4c4c; }
+.cs-investlist .slide dd em { float:left; width:40px; height:40px; margin-left:-65px; background:url(/static/img/invest/slide-ico.jpg) no-repeat; }
+.cs-investlist .slide .em-b { background-position:0 -40px; }
+.cs-investlist .slide .em-c { background-position:0 -80px; }
+
+

@@ -1,0 +1,92 @@
+
+.pub-slide { display:none; }
+.slide-prize { display:none; }
+
+/* 周年活动 - 2016.6.20 */
+#anniversary { background-color: #fff582; min-width:1200px; }
+#anniversary a { outline:none; }
+.wrap { width:1200px; margin:0 auto; }
+
+.anCont-1 { height:367px; background:url(/static/img/event/anniversary/anCont-1.jpg) no-repeat center; }
+.anCont-2 { height:360px; background:url(/static/img/event/anniversary/anCont-2.jpg) no-repeat center; }
+.anCont-3 { height:1049px; background:url(/static/img/event/anniversary/anCont-3.jpg) no-repeat center; }
+.anCont-4 { height:1043px; background:url(/static/img/event/anniversary/anCont-4.jpg) no-repeat center; }
+.anCont-5 { height:475px; background:url(/static/img/event/anniversary/anCont-5.jpg) no-repeat center; }
+
+.anCont-3 .activity-a { position:relative; height:1049px; background:url(/static/img/event/anniversary/anMain-1.png) no-repeat; }
+.anCont-4 .activity-b { position:relative; height:1043px; background:url(/static/img/event/anniversary/anMain-2.png) no-repeat; }
+.anCont-5 .activity-c { position:relative; height:475px; background:url(/static/img/event/anniversary/anMain-3.png) no-repeat; }
+.anCont-6 .activity-d { text-align: center; line-height: 30px; padding:34px 0 24px; font-size: 20px; color:#8e3013; }
+
+.invest-table { position: absolute; left:60px; top:253px; padding:0 32px; }
+.invest-table p { line-height: 100px; font-size: 20px; text-indent: 34px; color:#7c4100; }
+.invest-table h3 { margin-bottom: 41px; line-height: 40px; font-size: 24px; color:#6e1f00; font-weight: normal; }
+.invest-table dl { color:#472513; font-size: 0; }
+.invest-table dt { line-height: 78px; font-size:24px; }
+.invest-table dd { line-height: 56px; margin-bottom: 2px; font-size: 20px; }
+.invest-table .span-a { display: inline-block; width:250px; text-indent: 34px; }
+.invest-table .span-b { display: inline-block; width:220px; text-indent: 52px; }
+
+.invest-text { position:absolute; left:106px; bottom:100px; font-size:24px; color:#6e1f00; }
+.invest-text p { line-height: 42px; }
+.invest-text span { line-height: 52px; }
+
+.invest-p { position: absolute; bottom:237px; right:97px; width:476px; height:48px; line-height: 48px; text-align:center; font-size:20px; color:#fff6f7; }
+.invest-p b { font-weight:normal; }
+.invest-p a, .invest-p b { color:#fff601; }
+.invest-p .sp-l { display:none; }
+.invest-p .sp-l a { text-decoration:underline; }
+.invest-button { position: absolute; bottom:310px; right:168px; width:330px; height:90px; overflow: hidden; background:url(/static/img/event/anniversary/button.png) no-repeat; }
+.invest-button-on { background-position:center -90px; }
+.invest-scroll { position: absolute; top:336px; right:94px; width:482px; height:50px; overflow: hidden; }
+.invest-scroll ul { position:absolute; top:0; left:0; width:100%; }
+.invest-scroll li { line-height: 50px; font-size:22px; color:#fff9de; text-align: center; }
+
+.invitation-a { position:absolute; top:816px; left:416px; width:366px; height:102px; background:url(/static/img/event/anniversary/button-2.png) no-repeat; }
+.invitation-h3 { position:absolute; top:202px; width:100%; font-weight:normal; font-size:30px; text-align: center; line-height: 40px; color:#fff; }
+.invitation-h3 span { color:#ff1e00; }
+
+.instructions { position: absolute; top:52px; left:136px; width:798px; height:302px; padding:46px 30px 46px 80px; }
+.instructions p { margin-bottom: 30px; line-height: 30px; font-size: 24px; color: #8e3013; }
+.instructions p b { color:#e83113; font-weight:normal; }
+.instructions span { float:left; width:28px; height:28px; margin-left:-42px; border-radius:50%; text-align: center; background: #ffa300; }
+
+.anSlide { position:fixed; right:0; top:20%; width:248px; display: none; }
+.anSlide span { display: block; width:248px; height:300px; overflow: hidden; background:url(/static/img/event/anniversary/anSlide.png) no-repeat; }
+.anSlide ul { width:164px; margin:0 auto; padding:0 20px 20px; border-left: 2px solid #f54e2d; border-right:2px solid #f54e2d; background:#fa725a; }
+.anSlide .img-arr { margin:0 auto; width:208px; height:32px; background:url(/static/img/event/anniversary/anSlide_bm.png) no-repeat center bottom; }
+.anSlide li { line-height: 76px; text-align: center; border-bottom:2px dashed #fff; font-size: 30px; }
+.anSlide li a { display: block; color:#fff; }
+
+.invest-draw { position: absolute; left:670px; top:435px; width:378px; height:160px; padding:10px 6px; }
+.invest-draw .num-m { float:left; width:86px; height:160px; margin:0 4px; background:url(/static/img/event/anniversary/num.png) top center repeat-y; }
+.invest-draw .dynamic { position: absolute; right: -69px; top: -15px; width:38px; height:189px; background:url(/static/img/event/anniversary/dynamic.gif) no-repeat; }
+
+/* 弹窗 */
+#popup { display:none; position:fixed; left:0; top:0; z-index: 100; width:100%; height:100%; background:rgba(0,0,0,0.8); }
+#popup .csBtn { position: absolute; right:0; top:304px; width:52px; height:52px; border-radius:50%; }
+#popup .sqBtn { height:68px; line-height: 64px; font-size: 30px; font-weight:bold; color:#fff; }
+#popup .nowBtn { display: block; width:300px; margin:0 auto; background:url(/static/img/event/anniversary/sBtn.png) no-repeat; }
+#popup .agBtn { background:url(/static/img/event/anniversary/abtn.png) no-repeat; }
+#popup .okBtn { display:block; width:212px; margin:100px auto 0; }
+#popup .lkBtn , #popup .okBtn { background:url(/static/img/event/anniversary/lbtn.png) no-repeat; }
+#popup .pop_success .sqBtn { display: inline-block; width:212px; margin:0 12px; }
+
+#popup .pop_sub { position:absolute; left:50%; top:50%; margin:-468px 0 0 -342px; width:700px; height:784px; text-align:center; color:#713500; }
+#popup .pop_sub p { margin-bottom:44px; font-size: 24px; line-height: 40px; }
+#popup .pop_sub h2 { margin-top:425px; line-height: 48px; font-size: 34px; font-weight:normal; }
+
+#popup .pop_not, #popup .pop_sorry { display:none; background:url(/static/img/event/anniversary/sorry_bg.png) no-repeat; }
+#popup .pop_not h2 { margin-bottom:24px; }
+#popup .pop_not span { color:#e53020; }
+#popup .pop_success { background:url(/static/img/event/anniversary/success_bg.png) no-repeat; }
+#popup .pop_success h2 { margin-bottom: 42px; }
+#popup .pop_success h2 span { color:#ff2301; }
+#popup .pop_success h2 span b { font-size:55px; font-weight:normal; }
+#popup .pop_success p { margin-bottom: 52px; }
+#popup .pop_success p b { display:none; font-weight:normal; }
+#popup .pop_success p span { color:#6ab1ea; }
+
+
+
+
