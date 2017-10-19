@@ -43,7 +43,7 @@
 .hd-rules p em{ font-style:normal; color:#f00822;}
 .hd-rules .notice{ height:104px; line-height:104px; text-align:center; font-size:22px; color:#93621c; padding-top:10px;}
 
-/* ÐÂÄêºì°ü 20160125 */
+/* æ–°å¹´çº¢åŒ… 20160125 */
 .alert-env{ display:none; width:100%; height:100%; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlPUwVjOqwAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=); position:fixed; left:0; top:0; bottom:0; z-index:99;}
 .alert-env .mask{ width:1070px; height:1040px; position:absolute; left:50%; top:50%; margin:-520px 0 0 -535px; z-index:1;}
 .alert-env .alert-cont{ width:544px; text-align:center; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUBAMAAABlm+CwAAAAGFBMVEX1QEPmMDHoMzTyPUDwOz3tODrrNTfkLi94z9ArAAAAxUlEQVQY0yXOO6/CMAyG4U8nOd0dSLuSBMQaeglruHUu0MJMBroj4PeTtp4sWdbz4g126lqgb3CHZxfStMSfQQD26aGoqOGSSzDysHApglvEM3/QCg+/rxtcfJ8+17PEbHSDr/ta/FMpFGno+NvZ/KXb4w2cWkUyj+dhKpKlek37aG9nYF13xRIu2mOHwGAzOXbUSD4IleHCsgLAebDzBVexdp6YnboG24uQgUqK9tjhMNhFrTPPW2CySzooMhB+6shWJ/UDvQ0mdttqytAAAAAASUVORK5CYII=); border-radius:0 0 20px 20px; box-shadow:0 0 10px 3px #b41e1d; position:absolute; left:50%; top:50%; z-index:2; margin-left:-272px;}
