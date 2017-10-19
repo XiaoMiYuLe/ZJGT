@@ -1,4 +1,32 @@
 {% include 'header.html' %}
+<link href="/static/css/invest/invest.css" rel="stylesheet" />
+<script type="text/javascript">
+    $(function () {
+        // 小图片悬浮伸展
+        $(".cs-investlist span.ico").hover(
+            function () {
+                $(this).stop().animate({
+                    'width': '200'
+                }, 300);
+            },
+            function () {
+                $(this).stop().animate({
+                    'width': 0
+                }, 300);
+            }
+        );
+
+        // 侧边栏
+        var sTop = $(".cs-investlist .box-menu").offset().top;
+        var slide = $(".cs-investlist .slide");
+
+        $(window).scroll(function () {
+            $(window).scrollTop() > sTop ? slide.addClass("fly") : slide.removeClass("fly");
+        });
+
+    });
+</script>
+
 <form method="post" action="./list.aspx" id="aspnetForm">
     <div class="aspNetHidden">
         <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5Mjg4OTgwMDQPZBYCZg9kFghmD2QWAgIGDxUBLi9hc3NldHMvc3R5bGVzaGVldHMvdW5zZW1hbnRpYy1ncmlkLW1vYmlsZS5jc3NkAgMPDxYEHgRUZXh0BRPkvZPpqowgwrcg5paw5omL5qCHHgtOYXZpZ2F0ZVVybAUqL0V2ZW50LzIyQmlkTmV3Q3VzdG9tZXJEZXRhaWwuYXNweD9JZD0xODE4ZGQCBA8PFgQfAAUT5rS75pyfIMK3IOmHkemSseWMhR8BBSIvRXZlbnQvV2FsbGV0X0RldGFpbHMuYXNweD9JZD0yMDI5ZGQCBQ9kFgICAQ9kFgICAQ8PFgIeC1JlY29yZGNvdW50ArkEZGRkVKBgI6Sq7AYPKaTyhN0dAFvpqKpX6mWIfxAlYb4nczY=" />
@@ -66,7 +94,7 @@
                             <span>
                                 
 
-                                <a href="DetailsGB.aspx?id=2024" class="opt">优选 11期 中金宝上海某物流有限公司2898万 应收账款转让项目</a>
+                                <a href="/invest/info?id=2024" class="opt">优选 11期 中金宝上海某物流有限公司2898万 应收账款转让项目</a>
 
                                 
                             </span>
@@ -97,7 +125,7 @@
                                 <span class="span-a">剩余金额：&nbsp;<b>16264400.00</b>&nbsp;元</span>
 
 
-                                <a href="DetailsGB.aspx?id=2024" class="span-b">立即投资</a>
+                                <a href="/invest/info?id=2024" class="span-b">立即投资</a>
 
 
 
@@ -113,7 +141,7 @@
                             <span>
                                 
 
-                                <a href="DetailsGB.aspx?id=2012" class="opt">优选 10期 中金宝上海某物流有限公司2705万 应收账款转让项目</a>
+                                <a href="/invest/info?id=2012" class="opt">优选 10期 中金宝上海某物流有限公司2705万 应收账款转让项目</a>
 
                                 
                             </span>
@@ -144,7 +172,7 @@
                                 <span class="span-a">结束时间：&nbsp;<b>2017/8/19 13:01:47</b></span>
 
 
-                                <a href="DetailsGB.aspx?id=2012" class="span-b">募集结束</a>
+                                <a href="/invest/info?id=2012" class="span-b">募集结束</a>
 
 
 
@@ -160,7 +188,7 @@
                             <span>
                                 
 
-                                <a href="DetailsGB.aspx?id=1982" class="opt">优选 9期 中金宝上海某物流有限公司4521万 应收账款转让项目</a>
+                                <a href="/invest/info?id=1982" class="opt">优选 9期 中金宝上海某物流有限公司4521万 应收账款转让项目</a>
 
                                 
                             </span>
@@ -191,7 +219,7 @@
                                 <span class="span-a">结束时间：&nbsp;<b>2017/6/7 18:56:53</b></span>
 
 
-                                <a href="DetailsGB.aspx?id=1982" class="span-b">募集结束</a>
+                                <a href="/invest/info?id=1982" class="span-b">募集结束</a>
 
 
 
