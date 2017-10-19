@@ -262,6 +262,11 @@ em {
     width: 75px;
 }
 
+.in-nav .nav div.on {
+    border-color: #e6e6e6;
+    box-shadow: 0 0 10px #e6e6e6;
+}
+
 .in-nav .nav .sub-menu {
     display: none;
     position: absolute;
@@ -272,11 +277,6 @@ em {
     width: 100%;
     background: #fff;
     box-sizing: border-box;
-}
-
-.in-nav .nav div.on {
-    border-color: #e6e6e6;
-    box-shadow: 0 0 10px #e6e6e6;
 }
 
 .in-nav .nav .sub-menu a {
@@ -362,6 +362,10 @@ em {
     background: url(../img/header/d-arrows.png) no-repeat 0 -8px;
     margin-left: 9px;
     vertical-align: middle;
+}
+
+.in-nav .nav .sub-menu a:hover, .in-nav .nav .link-box a:hover {
+    color: #c89a49;
 }
 
 

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+
+<head id="Head1">
+    <title>
+        中金国泰理财网，安全透明的网络理财、网络投资、投资理财平台
+    </title>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="中金国泰理财网，网络理财，投资理财" />
+    <meta name="Description" content="中金国泰理财网（www.zjgt.com）是国家工信部金融研究院长单位,中国领先的互联网金融 服务平台,为投资理财用户和贷款用户提供安全、透明的互联网金融服务,投资理财用户可以通过中金国泰理财网平台进行投标、加入投资项目、购买债权等方式进行投资获得高收益,贷款用户可以通过平台申请企业贷、商户贷、车贷、网商贷、网贷、物业贷等小额贷款。" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/unsemantic-grid-base.css?v=16041957" />
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/unsemantic-grid-desktop.css?v=16041957" />
+    <link rel="stylesheet" type="text/css" href="/css/indexMerge.css?v=17022008" />
+    <link rel="stylesheet" type="text/css" href="/public/css/account/accountMain.css?v=16042126" />
+    <link rel="stylesheet" type="text/css" href="/public/css/account/account.min.css?v=16070633" />
+    <link rel="stylesheet" type="text/css" href="/public/css/jquery-ui-1.9.2.custom.css?v=16041958" />
+    <script type="text/javascript" src="/public/js/jquery-1.11.3.min.js?v=16041958"></script>
+    <script type="text/javascript" src="/public/js/jquery.cookie.js?v=16041958"></script>
+    <script type="text/javascript" src="/public/js/jquery-ui-1.9.2.custom.js?v=16041958"></script>
+    <script type="text/javascript" src="/public/js/common.js?v=16062727"></script>
+    <script type="text/javascript" src="/public/js/Validform_v5.3.2_min.js?v=16041958"></script>
+    <script type="text/javascript" src="/public/js/layer/layer.js?v=16082949"></script>
+    <script type="text/javascript" src="/public/js/flexslider.js?v=16041958"></script>
+    <script type="text/javascript" src="/js/dialog/lib/sea.js?v=16041958"></script>
+    <script type="text/javascript" src="/js/dialog/src/dialog.js?v=16041958"></script>
+
+    <script type="text/javascript">
+        //获取当前url参数值 勿删
+        function getUrlPara(paraName) {
+
+            var _cpath = window.location.href;
+            var _css = _cpath.indexOf('?');
+            var url = "";
+            if (_css > -1) {
+                url = _cpath.substring(_css + 1);
+            }
+            var _jw = url.lastIndexOf('#');
+            if (_jw > -1) {
+                url = url.substring(0, _jw);
+            }
+
+            var sUrl = "?" + url;
+            if (sUrl.indexOf(paraName) > -1) {
+                var sReg = "(?:\\?|&){1}" + paraName + "=([^&]*)"
+                var re = new RegExp(sReg, "gi");
+                re.exec(sUrl);
+                return RegExp.$1;
+            }
+            return "";
+        }
+
+        $(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                slideshow: true
+            });
+
+
+            //导航悬浮
+            var menubox = $(".menu-box");
+
+            menubox.hover(function() {
+                $(this).find(".link-box").addClass("on");
+                $(this).find(".sub-menu").show();
+            }, function() {
+                $(this).find(".link-box").removeClass("on");
+                $(this).find(".sub-menu").hide();
+            });
+
+
+
+            $(".AspNet-Menu li").on("mouseenter mouseleave", function(e) {
+                var $item = $(this).find(".item");
+                if (e.type == "mouseenter" && $item.length != 0) {
+                    $item.stop(true, true).fadeIn();
+                } else {
+                    $item.stop(true, true).fadeOut();
+                }
+            });
+
+            //导航悬浮
+            var menubox = $(".menu-box");
+
+            menubox.hover(function() {
+                $(this).find(".link-box").addClass("on");
+                $(this).find(".sub-menu").show();
+            }, function() {
+                $(this).find(".link-box").removeClass("on");
+                $(this).find(".sub-menu").hide();
+            });
+
+
+
+
+        });
+
+    </script>
+    <script type='text/javascript'>
+        window._ty_rum || function(t) {
+            function e(t) {
+                switch (typeof t) {
+                    case "object":
+                        if (!t) return "null";
+                        if (t instanceof Array) {
+                            for (var r = "[", n = 0; n < t.length; n++) r += (n > 0 ? "," : "") + e(t[n]);
+                            return r + "]"
+                        }
+                        var r = "{",
+                            n = 0;
+                        for (var a in t)
+                            if ("function" != typeof t[a]) {
+                                var o = e(t[a]);
+                                r += (n > 0 ? "," : "") + e(a) + ":" + o, n++
+                            }
+                        return r + "}";
+                    case "string":
+                        return '"' + t.replace(/([\"\\])/g, "\\$1") + '"';
+                    case "number":
+                        return t.toString();
+                    case "boolean":
+                        return t ? "true" : "false";
+                    case "function":
+                        return "[function]";
+                    case "undefined":
+                    default:
+                        return "undefined"
+                }
+            }
+
+            function r(e) {
+                return t.encodeURIComponent ? encodeURIComponent(e) : e
+            }
+
+            function n() {
+                return Date.now ? Date.now() : (new Date).valueOf()
+            }
+
+            function a(t) {
+                return function(t, e) {}
+            }
+
+            function o() {
+                b.initend()
+            }
+
+            function i() {
+                "complete" === y.readyState && b.initend()
+            }
+
+            function s(t) {
+                function e() {
+                    b.send()
+                }
+                return v.load_time ? !0 : (b.initend(), v.load_time = n(), void(9 === t ? e() : setTimeout(e, 0)))
+            }
+
+            function u() {
+                E || s(9), E = 1
+            }
+
+            function c() {
+                b.touch || (b.touch = n())
+            }
+
+            function f(t) {
+                var e = arguments,
+                    r = "unknown",
+                    a = [n()];
+                if (0 != e.length) {
+                    if ("string" == typeof t) {
+                        var o = e.length < 4 ? e.length : 4;
+                        a[1] = e[0], o > 2 && (a[2] = e[2], a[3] = 0, a[4] = e[1]), o > 3 && e[3] && (a[3] = e[3])
+                    } else if (t instanceof Event && (a[1] = t.message || (t.error && t.error.constructor.name) + (t.error && t.error.message) || "", a[2] = t.lineno ? t.lineno : 0, a[3] = t.colno ? t.colno : 0, a[4] = t.filename || t.error && t.error.fileName || t.target && t.target.baseURI || "", a[4] == y.URL && (a[4] = "#"), a[1] === r && a[4] === r)) return;
+                    b.errors.push(a)
+                }
+            }
+
+            function d(t, e, r) {
+                for (var n = "o." + e + "(", a = 0; a < r.length; a++) n += (a > 0 ? "," : "") + "a[" + a + "]";
+                return n += ");", new Function(n)()
+            }
+
+            function l(t) {
+                return function() {
+                    var e = arguments;
+                    if (!this._ty_wrap) {
+                        var r = T.args.apply(this, e);
+                        this._ty_rum = {
+                            method: r[0],
+                            url: r[1],
+                            start: n()
+                        }
+                    }
+                    try {
+                        return t.apply(this, e)
+                    } catch (a) {
+                        return this.open = t, d(this, "open", e)
+                    }
+                }
+            }
+
+            function h(e) {
+                return "string" == typeof e ? e.length : t.ArrayBuffer && e instanceof ArrayBuffer ? e.byteLength : t.Blob && e instanceof Blob ? e.size : e && e.length ? e.length : 0
+            }
+
+            function p(e) {
+                return function() {
+                    function r(t) {
+                        var e, r, a = c._ty_rum;
+                        if (a) {
+                            if (4 !== a.readyState && (a.end = n()), a.s = c.status, "" == c.responseType || "text" == c.responseType) a.res = h(c.responseText);
+                            else if (c.response) a.res = h(c.response);
+                            else try {
+                                a.res = h(c.responseText)
+                            } catch (i) {
+                                a.res = 0
+                            }
+                            if (a.readyState = c.readyState, a.cb_time = f, e = [a.method + " " + a.url, a.s > 0 ? a.end - a.start : 0, f, a.s, a.s > 0 ? 0 : t, a.res, a.req], a.r && (r = o(c), r && (r = r.xData) && (e.push(r.id), e.push(r.action), e.push(r.time && r.time.duration), e.push(r.time && r.time.qu))), v.aa.push(e), v.server.custom_urls && v.server.custom_urls.length && !b.ct) {
+                                if (!v.pattern) {
+                                    v.pattern = [];
+                                    for (var s = 0; s < v.server.custom_urls.length; s++) v.pattern.push(new RegExp(v.server.custom_urls[s]))
+                                }
+                                for (var s = 0; s < v.pattern.length; s++)
+                                    if (a.url.match(v.pattern[s])) {
+                                        b.ct = a.end + f;
+                                        break
+                                    }
+                            }
+                            b.sa(), c._ty_rum = null
+                        }
+                    }
+
+                    function a() {
+                        4 == c.readyState && r(0)
+                    }
+
+                    function o(e) {
+                        var r;
+                        if (e.getResponseHeader) {
+                            var n = T.parseJSON(e.getResponseHeader("X-Tingyun-Tx-Data"));
+                            n && n.r && e._ty_rum && n.r + "" == e._ty_rum.r + "" && (r = {
+                                name: e._ty_rum.url,
+                                xData: n
+                            }, w && t._ty_rum.c_ra.push(r))
+                        }
+                        return r
+                    }
+
+                    function i(t) {
+                        return function() {
+                            var e;
+                            4 == c.readyState && c._ty_rum && (c._ty_rum.end = e = n(), c._ty_rum.readyState = 4);
+                            var r = t.apply(this, arguments);
+                            return 4 == c.readyState && (f = n() - e), a(), r
+                        }
+                    }
+
+                    function s(t) {
+                        return function() {
+                            var e = c._ty_rum;
+                            return e ? "progress" == t ? !0 : ("abort" == t ? r(905) : "loadstart" == t ? e.start = n() : "error" == t ? r(990) : "timeout" == t && r(903), !0) : !0
+                        }
+                    }
+
+                    function u(t, e) {
+                        e instanceof Array || (e = [e]);
+                        for (var r = 0; r < e.length; r++) {
+                            var n = e[r];
+                            T.sh(t, n, s(n), !1)
+                        }
+                    }
+                    if (!this._ty_wrap) {
+                        this._ty_rum.start = n(), this._ty_rum.req = arguments[0] ? h(arguments[0]) : 0;
+                        var c = this,
+                            f = 0,
+                            l = T.wrap(!1, this, "onreadystatechange", i);
+                        l || T.sh(this, "readystatechange", a, !1), u(this, ["error", "progress", "abort", "load", "loadstart", "loadend", "timeout"]), l || setTimeout(function() {
+                            T.wrap(!1, c, "onreadystatechange", i)
+                        }, 0)
+                    }
+                    var p = function() {
+                            function t(t) {
+                                var e = {},
+                                    r = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?/.exec(t);
+                                return r && (e.protocol = r[1] ? r[1] + ":" : "http:", e.hostname = r[3], e.port = r[4] || ""), e
+                            }
+                            return function(e) {
+                                var r = location;
+                                if (e = T.trim(e)) {
+                                    if (e = e.toLowerCase(), e.startsWith("//") && (e = r.protocol + e), !e.startsWith("http")) return !0;
+                                    var n = t(e),
+                                        a = n.protocol === r.protocol && n.hostname === r.hostname;
+                                    return a && (a = n.port === r.port ? !0 : !r.port && ("http:" === r.protocol && "80" === n.port || "https:" === r.protocol && "443" === n.port)), a
+                                }
+                                return !1
+                            }
+                        }(),
+                        m = arguments;
+                    try {
+                        try {
+                            var y = v.server;
+                            y && y.id && this._ty_rum && p(this._ty_rum.url) && (this._ty_rum.r = (new Date).getTime() % 1e8, this.setRequestHeader && this.setRequestHeader("X-Tingyun-Id", y.id + ";r=" + this._ty_rum.r))
+                        } catch (g) {}
+                        return e.apply(this, m)
+                    } catch (g) {
+                        return this.send = e, d(this, "send", m)
+                    }
+                }
+            }
+            var m = t.XMLHttpRequest,
+                y = document,
+                v = t._ty_rum = {
+                    st: n(),
+                    ra: [],
+                    c_ra: [],
+                    aa: [],
+                    snd_du: function() {
+                        return this.server.adu ? 1e3 * this.server.adu : 1e4
+                    },
+                    cc: function() {
+                        return this.server.ac ? this.server.ac : 10
+                    }
+                };
+            var ty_rum = v;
+            ty_rum.server = {
+                id: 'M9lWmFUvn1Y',
+                beacon: 'beacon.tingyun.com',
+                beacon_err: 'beacon-err.tingyun.com',
+                key: 'GkadBZAAlek',
+                trace_threshold: 7000,
+                custom_urls: [],
+                sr: 1.0
+            };
+            if (v.server && !(v.server.sr && Math.random() >= v.server.sr)) {
+                var g = String.prototype.trim;
+                String.prototype.startsWith || (String.prototype.startsWith = function(t, e) {
+                    return e = e || 0, this.indexOf(t, e) === e
+                });
+                var _ = /^http/i,
+                    S = function() {
+                        function t() {
+                            return (65536 * (1 + Math.random()) | 0).toString(16).substring(1)
+                        }
+                        return t() + "-" + t() + t()
+                    }(),
+                    T = {
+                        wrap: function(t, e, r, n, a) {
+                            try {
+                                var o = e[r]
+                            } catch (i) {
+                                if (!t) return !1
+                            }
+                            if (!o && !t) return !1;
+                            if (o && o._ty_wrap) return !1;
+                            try {
+                                e[r] = n(o, a)
+                            } catch (i) {
+                                return !1
+                            }
+                            return e[r]._ty_wrap = [o], !0
+                        },
+                        mkurl: function(t, e) {
+                            var a = arguments,
+                                o = /^https/i.test(y.URL) ? "https" : "http";
+                            if (o = o + "://" + t + "/" + e + "?av=1.0.0&v=1.3.1&key=" + r(v.server.key) + "&ref=" + r(y.URL) + "&rand=" + n() + "&pvid=" + S, "pf" !== e && v && v.agent && v.agent.n && (o += "&n=" + r(v.agent.n)), a.length > 2) {
+                                var i = a[2];
+                                for (var s in i) o += "&" + s + "=" + i[s]
+                            }
+                            return o
+                        },
+                        GET: function(t, e) {
+                            function r() {
+                                e && e.apply(this, arguments), n.parentNode && n.parentNode.removeChild(n)
+                            }
+                            if (navigator && navigator.sendBeacon && _.test(t)) return navigator.sendBeacon(t, null);
+                            var n = y.createElement("img");
+                            return n.setAttribute("src", t), n.setAttribute("style", "display:none"), this.sh(n, "readystatechange", function() {
+                                ("loaded" == n.readyState || 4 == n.readyState) && r("loaded")
+                            }, !1), this.sh(n, "load", function() {
+                                return r("load"), !0
+                            }, !1), this.sh(n, "error", function() {
+                                return r("error"), !0
+                            }, !1), y.body.appendChild(n)
+                        },
+                        fpt: function(t, e, r) {
+                            function n(t, e, r) {
+                                var n = y.createElement(t);
+                                try {
+                                    for (var a in e) n[a] = e[a]
+                                } catch (o) {
+                                    var i = "<" + t;
+                                    for (var a in e) i += " " + a + '="' + e[a] + '"';
+                                    i += ">", r || (i += "</" + t + ">"), n = y.createElement(i)
+                                }
+                                return n
+                            }
+                            var a = n("div", {
+                                    style: "display:none"
+                                }, !1),
+                                o = n("iframe", {
+                                    name: "_ty_rum_frm",
+                                    width: 0,
+                                    height: 0,
+                                    style: "display:none"
+                                }, !1),
+                                i = n("form", {
+                                    style: "display:none",
+                                    action: t,
+                                    enctype: "application/x-www-form-urlencoded",
+                                    method: "post",
+                                    target: "_ty_rum_frm"
+                                }, !1),
+                                s = n("input", {
+                                    name: "data",
+                                    type: "hidden"
+                                }, !0);
+                            return s.value = e, i.appendChild(s), a.appendChild(o), a.appendChild(i), y.body.appendChild(a), i.submit(), o.onreadystatechange = function() {
+                                ("complete" === o.readyState || 4 === o.readyState) && (r(null, o.innerHTML), y.body.removeChild(a))
+                            }, !0
+                        },
+                        POST: function(e, r, n, a) {
+                            if (this.ie) return this.fpt(e, r, a);
+                            if (navigator && navigator.sendBeacon && _.test(e)) return navigator.sendBeacon(e, r);
+                            var o;
+                            if (t.XDomainRequest) return o = new XDomainRequest, o.open("POST", e), o.onload = function() {
+                                a(null, o.responseText)
+                            }, this.sh(o, "load", function() {
+                                a(null, o.responseText)
+                            }, !1), this.sh(o, "error", function() {
+                                a("POST(" + e + ")error")
+                            }, !1), this.wrap(!0, o, "onerror", function(t) {
+                                return function() {
+                                    return a && a("post error", o.responseText), !0
+                                }
+                            }), o.send(r), !0;
+                            if (!m) return !1;
+                            o = new m, o.overrideMimeType && o.overrideMimeType("text/html");
+                            try {
+                                o._ty_wrap = 1
+                            } catch (i) {}
+                            var s = 0;
+                            o.onreadystatechange = function() {
+                                4 == o.readyState && 200 == o.status && (0 == s && a(null, o.responseText), s++)
+                            }, o.onerror && this.wrap(!0, o, "onerror", function(t) {
+                                return function() {
+                                    return a("post error", o.responseText), "function" == typeof t ? t.apply(this, arguments) : !0
+                                }
+                            });
+                            try {
+                                o.open("POST", e, !0)
+                            } catch (i) {
+                                return this.fpt(e, r, a)
+                            }
+                            for (var u in n) o.setRequestHeader(u, n[u]);
+                            return o.send(r), !0
+                        },
+                        sh: function(t, e, r, n) {
+                            return t.addEventListener ? t.addEventListener(e, r, n) : t.attachEvent ? t.attachEvent("on" + e, r) : !1
+                        },
+                        args: function() {
+                            for (var t = [], e = 0; e < arguments.length; e++) t.push(arguments[e]);
+                            return t
+                        },
+                        stringify: e,
+                        parseJSON: function(e) {
+                            if (e && "string" == typeof e) {
+                                var r = t.JSON ? t.JSON.parse : function(t) {
+                                    return new Function("return " + t)()
+                                };
+                                return r(e)
+                            }
+                            return null
+                        },
+                        trim: g ? function(t) {
+                            return null == t ? "" : g.call(t)
+                        } : function(t) {
+                            return null == t ? "" : t.toString().replace(/^\s+/, "").replace(/\s+$/, "")
+                        }
+                    },
+                    w = t.performance ? t.performance : t.Performance;
+                w && (T.sh(w, "resourcetimingbufferfull", function() {
+                    var t = w.getEntriesByType("resource");
+                    t && (v.ra = v.ra.concat(t), w.clearResourceTimings())
+                }, !1), T.sh(w, "webkitresourcetimingbufferfull", function() {
+                    var t = w.getEntriesByType("resource");
+                    t && (v.ra = v.ra.concat(t), w.webkitClearResourceTimings())
+                }, !1));
+                for (var b = v.metric = {
+                        ready: function() {
+                            return v.load_time
+                        },
+                        initend: function() {
+                            function t() {
+                                b.sa()
+                            }
+                            v.end_time || (v.end_time = n(), this._h = setInterval(t, 2e3))
+                        },
+                        send: function() {
+                            function n() {
+                                function e(t) {
+                                    return a[t] > 0 ? a[t] - s : 0
+                                }
+                                var n = {};
+                                if (w && w.timing) {
+                                    var a = w.timing;
+                                    s = a.navigationStart;
+                                    var o = e("domainLookupStart"),
+                                        i = e("domainLookupEnd"),
+                                        u = e("redirectStart"),
+                                        c = e("redirectEnd"),
+                                        f = e("connectStart"),
+                                        d = e("connectEnd");
+                                    n = {
+                                        f: e("fetchStart"),
+                                        qs: e("requestStart"),
+                                        rs: e("responseStart"),
+                                        re: e("responseEnd"),
+                                        os: e("domContentLoadedEventStart"),
+                                        oe: e("domContentLoadedEventEnd"),
+                                        oi: e("domInteractive"),
+                                        oc: e("domComplete"),
+                                        ls: e("loadEventStart"),
+                                        le: e("loadEventEnd")
+                                    }, d - f > 0 && (n.cs = f, n.ce = d), i - o > 0 && (n.ds = o, n.de = i), (c - u > 0 || c > 0) && (n.es = u, n.ee = c), 0 == n.le && (n.ue = v.load_time - s);
+                                    var l;
+                                    if (a.msFirstPaint) l = a.msFirstPaint;
+                                    else if (t.chrome && chrome.loadTimes) {
+                                        var h = chrome.loadTimes();
+                                        h && h.firstPaintTime && (l = 1e3 * h.firstPaintTime)
+                                    } else v.firstPaint && (l = v.firstPaint);
+                                    l && (n.fp = Math.round(l - s)), a.secureConnectionStart && (n.sl = e("secureConnectionStart"))
+                                } else n = {
+                                    t: s,
+                                    os: v.end_time - s,
+                                    ls: v.load_time - s
+                                };
+                                n.je = b.errors.length, b.ct && (n.ct = b.ct - s), b.touch && (n.fi = b.touch - s);
+                                var p = v.agent;
+                                return p && (n.id = r(p.id), n.a = p.a, n.q = p.q, n.tid = r(p.tid), n.n = r(p.n)), n
+                            }
+
+                            function o(e) {
+                                var r = t._ty_rum.c_ra;
+                                if (e)
+                                    for (var n = r.length - 1; n >= 0; n--)
+                                        if (e.indexOf(r[n].name) > -1) return r[n].xData;
+                                return null
+                            }
+
+                            function i(t) {
+                                function e(t) {
+                                    return f[t] > 0 ? f[t] : 0
+                                }
+                                if (t < v.server.trace_threshold) return null;
+                                var n = w;
+                                if (n && n.getEntriesByType) {
+                                    var a = {
+                                            tr: !0,
+                                            tt: r(y.title),
+                                            charset: y.characterSet
+                                        },
+                                        i = v.ra,
+                                        u = n.getEntriesByType("resource");
+                                    u && (i = i.concat(u), n.webkitClearResourceTimings && n.webkitClearResourceTimings(), n.clearResourceTimings && n.clearResourceTimings()), a.res = [];
+                                    for (var c = 0; c < i.length; c++) {
+                                        var f = i[c],
+                                            d = {
+                                                o: e("startTime"),
+                                                rt: f.initiatorType,
+                                                n: f.name,
+                                                f: e("fetchStart"),
+                                                ds: e("domainLookupStart"),
+                                                de: e("domainLookupEnd"),
+                                                cs: e("connectStart"),
+                                                ce: e("connectEnd"),
+                                                sl: e("secureConnectionStart"),
+                                                qs: e("requestStart"),
+                                                rs: e("responseStart"),
+                                                re: e("responseEnd")
+                                            },
+                                            l = o(f.name);
+                                        l && (d.aid = l.id, d.atd = l.trId, d.an = l.action, d.aq = l.time && l.time.qu, d.as = l.time && l.time.duration), a.res.push(d)
+                                    }
+                                    if (b.errors.length) {
+                                        a.err = [];
+                                        for (var c = 0, h = b.errors; c < h.length; c++) a.err.push({
+                                            o: Math.round(h[c][0] - s),
+                                            e: h[c][1],
+                                            l: h[c][2],
+                                            c: h[c][3],
+                                            r: h[c][4]
+                                        })
+                                    }
+                                    return a
+                                }
+                                return null
+                            }
+                            if (this.sended) return !1;
+                            if (!this.ready()) return !1;
+                            var s = v.st,
+                                u = {};
+                            try {
+                                pf = n(), u = i(pf.ls > 0 ? pf.ls : v.load_time - s)
+                            } catch (c) {}
+                            u = u ? T.stringify(u) : "";
+                            var f = T.mkurl(v.server.beacon, "pf", pf);
+                            if (0 != u.length && T.POST(f, u, {}, a("POST")) || T.GET(f), this.errors.length > 0) {
+                                var c = b.errors[0];
+                                T.GET(T.mkurl(v.server.beacon_err, "err", {
+                                    data: r(e([c[1], c[2], c[3], "#" == c[4] ? y.URL : c[4], b.errors.length]))
+                                }), a("GET err"))
+                            }
+                            return this.sended = !0, this.sa(1), !0
+                        },
+                        sa: function(t) {
+                            (this.ready() || t) && (t || (t = !this._last_send || n() - this._last_send > v.snd_du() || v.aa.length >= v.cc()), v.aa.length > 0 && t && (this._last_send = n(), T.POST(T.mkurl(v.server.beacon, "xhr"), T.stringify({
+                                xhr: v.aa
+                            }), {}, a("POST")), v.aa = []))
+                        },
+                        errors: []
+                    }, E = null, R = [
+                        ["load", s],
+                        ["beforeunload", u],
+                        ["pagehide", u],
+                        ["unload", u],
+                        ["error", f]
+                    ], x = 0; x < R.length; x++) T.sh(t, R[x][0], R[x][1], !1);
+                for (var q = [
+                        ["scroll", c],
+                        ["keypress", c],
+                        ["click", c],
+                        ["DOMContentLoaded", o],
+                        ["readystatechange", i]
+                    ], x = 0; x < q.length; x++) T.sh(y, q[x][0], q[x][1], !1);
+                if (T.wrap(!1, t, "requestAnimationFrame", function(e) {
+                        return function() {
+                            return v.firstPaint = n(), t.requestAnimationFrame = e, e.apply(this, arguments)
+                        }
+                    }), m)
+                    if (m.prototype) T.wrap(!1, m.prototype, "open", l), T.wrap(!1, m.prototype, "send", p);
+                    else {
+                        T.ie = 7;
+                        var C = m;
+                        t.XMLHttpRequest = function() {
+                            var t = new C;
+                            return T.wrap(!1, t, "open", l), T.wrap(!1, t, "send", p), t
+                        }
+                    }
+                else t.ActiveXObject && (T.ie = 6);
+            }
+        }(window);
+
+    </script>
+
+    <script type="text/javascript" src="js/ValidateCode.js?v=16041958"></script>
+
+
+    <script type="text/javascript">
+        function selectToChange() {
+            if ($('#login_select img').css('display') != 'none') {
+                $('#login_select img').hide();
+            } else {
+                $('#login_select img').show();
+            }
+        }
+
+        $(document).ready(function() {
+            //点击验证码时的操作
+            $("#reg_verification_refresh").click(function() {
+                $("#reg_verification_img").attr("src", "Inc/CheckCode.aspx?id=" + Math.random());
+            });
+
+            $("#reg_verification_img").click(function() {
+                $("#reg_verification_img").attr("src", "Inc/CheckCode.aspx?id=" + Math.random());
+            });
+
+            $("#reg_verification2").click(function() {
+                $("#reg_label").show();
+                $("#reg_verification_img").show();
+                $("#reg_verification_refresh").show();
+            });
+
+        });
+
+    </script>
+</head>
+
+<body class="loading">
+
+    <div class="in-nav">
+        <div class="n-top">
+            <div class="inWrap clearfix">
+                <div class="t-phone fl">
+                    <span class="num">客服热线: (021)80164139</span>
+                    <span class="line">|</span>
+                    <div class="weixin ico">
+                        <span></span>
+                        <dl class="cont">
+                            <dt>扫码关注中金国泰微信号</dt>
+                            <dd>
+                                <img src="/public/images/index2/qr-ser.jpg" />
+                                <p>服务号：zjgtcom</p>
+                            </dd>
+                            <dd>
+                                <img src="/public/images/index2/qr-sub.jpg" />
+                                <p>订阅号：zjgtlczx</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="weibo ico">
+                        <span></span>
+                        <div class="cont">
+                            <p>点击关注中金国泰微博</p>
+                            <a href="http://weibo.com/zjgtcom?is_hot=1" target="_blank">@中金国泰</a>
+                        </div>
+                    </div>
+                    <div class="sub-phone ico">
+                        <span></span>
+                        <div class="cont">
+                            <p>手机扫一扫</p>
+                            <img src="/public/images/index2/qrcode.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="t-login fr">
+
+                    <!--登陆前-->
+                    <span class="login-a">送50<b></b></span>
+                    <span class="registered"><a href="/Register.aspx">免费注册</a></span>
+                    <span class="line">|</span>
+                    <span><a href="/Login.aspx">登录</a></span>
+
+                    <span class="line">|</span>
+                    <span><a href="/Account/jxb/activationUser.aspx">激活金薪宝</a></span>
+                    <span class="line">|</span>
+                    <span><a href="/Content/List.aspx?TypeId=5">帮助中心</a></span>
+                    <span class="line">|</span>
+                    <span><a class="last" href="/EnterpriseAccountLogin.aspx">企业登录</a></span>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="n-bottom">
+            <div class="inWrap clearfix">
+
+                <div class="logo fl">
+
+                    <a class="in-link" href="/Index.aspx"><img src="/public/images/index2/logo.jpg" alt="中金国泰，安全透明的理财平台"/></a>
+
+                </div>
+
+                <ul class="nav fr">
+
+                    <li class="home-page"><a class="link-a" href="/Index.aspx">首页</a></li>
+
+                    <li class="menu-box">
+                        <div class="link-box">
+                            <a class="link-a" href="/Lend/list.aspx">我要投资<b></b></a>
+                        </div>
+                        <div class="sub-menu on">
+                            <a href="/Lend/list.aspx">定期 · 投资表</a>
+
+                            <a id="WTProjTitle" class="color-gray" href="/Event/22BidNewCustomerDetail.aspx?Id=1818">体验 · 新手标</a>
+
+                            <a id="hlJQBProj" class="color-gray" href="/Event/Wallet_Details.aspx?Id=2029">活期 · 金钱包</a>
+                        </div>
+                    </li>
+
+                    <li class="menu-box">
+                        <div class="link-box">
+                            <a class="link-a" href="/Event/collection.aspx">活动专区<b></b></a>
+                        </div>
+                        <div class="sub-menu on">
+                            <a href="/Event/collection.aspx?type=online">线上活动</a>
+                            <a href="/Event/HdOpenDayIndex.aspx">开放日</a>
+                            <a href="/Event/HdSendGoldPigIndex.aspx">送金猪</a>
+                        </div>
+                    </li>
+
+                    <li class="menu-box">
+                        <div class="link-box">
+                            <a class="link-a" href="javascript:void(0);">安全保障<b></b></a>
+                        </div>
+                        <div class="security sub-menu on clearfix">
+                            <span class="span-a">
+                                <a href="/Content/capital.aspx">一亿验资</a>
+                                <a href="/Content/Safety.aspx">存款保障</a>
+                                <a href="/Content/p2peye.aspx">网贷天眼</a>
+                                <!--<a href="/Event/SunshineInsuranceInvest.aspx">阳光保险</a>-->
+                                <a class="last" href="/Event/brandPublicity.aspx#safty">最佳风控奖</a>
+                            </span>
+                            <span class="span-b">
+                                <a href="/Content/lawyer.aspx">金诚同达律师所</a>
+                                <a href="/Content/originaldebtor.aspx">原始债务人</a>
+                                <a class="last" href="/Content/trusteeship.aspx">第三方支付</a>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li class="menu-box">
+                        <div class="link-box">
+                            <a class="link-a" href="javascript:;">关于我们<b></b></a>
+                        </div>
+                        <div class="content-us sub-menu on clearfix">
+                            <span class="span-a">
+                                <a href="/Content/About.aspx#a">公司介绍</a>
+                                <a href="/Event/chairman.aspx">董事长介绍</a>
+                                <a href="/Content/About.aspx#b">核心团队</a>
+                                <a class="last" href="/Content/About.aspx#c">专家顾问</a>
+                            </span>
+                            <span class="span-b">
+                                <a href="/Content/news.aspx">集团新闻</a>
+                                <a href="/Content/course.aspx">发展历程</a>
+                                <a href="/Content/honor.aspx">荣誉资质</a>
+                                <a class="last" href="/Event/brandPublicity.aspx#video">媒体报道</a>
+                            </span>
+                            <span class="span-c">
+                                <a href="/Content/Contact.aspx">联系我们</a>
+                                <a href="/Content/teamactive.aspx">员工风采</a>
+                                <a class="last" href="/Content/office.aspx">办公环境</a>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li class="my-account"><a class="link-a" href="/Account/FundDetails.aspx">我的账户</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <form method="post" action="./Login.aspx" id="aspnetForm">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4NDI0MTgwNjIPZBYCZg9kFgQCAw8PFgQeBFRleHQFE+S9k+mqjCDCtyDmlrDmiYvmoIceC05hdmlnYXRlVXJsBSovRXZlbnQvMjJCaWROZXdDdXN0b21lckRldGFpbC5hc3B4P0lkPTE4MThkZAIEDw8WBB8ABRPmtLvmnJ8gwrcg6YeR6ZKx5YyFHwEFIi9FdmVudC9XYWxsZXRfRGV0YWlscy5hc3B4P0lkPTIwMjlkZGQn/40tZLkXbnjCxXYqnS7pFmQlqjMFP/FGEUXxEIGKvw==" />
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
+        </div>
+
+
+        <div class="grid-container" style="position: relative; z-index: 4;">
+            <div class="grid-100">
+                <div class="login">
+                    <fieldset>
+                        <legend>帐户信息</legend>
+                        <p>
+                            <label>账号</label>
+                            <input name="ctl00$ContentPlaceHolder1$login_userName" type="text" id="login_userName" placeholder="输入手机号/用户名" />
+                        </p>
+                        <p>
+                            <label>密码</label>
+                            <input name="ctl00$ContentPlaceHolder1$login_userPassWorld" type="password" id="login_userPassWorld" maxlength="20" placeholder="输入密码" />
+                        </p>
+                        <p>
+
+                        </p>
+                        <p style="text-align: center">
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$btnLogin" value="立即登录" id="btnLogin" class="btn" />
+                        </p>
+
+                        <p style="padding-left: 50px;">
+                            <span>没有账号？</span><a href="/">免费注册&nbsp;|&nbsp;</a><a href="/">忘记密码</a>
+                        </p>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="login-banner"></div>
+        </div>
+        
+    </form>
+    
+    <div class="FooterBar2">
+        <div class="grid-container">
+            <div class="grid-100">
+                <ul class="clearfix">
+                    <li><a href="/">新手帮助</a></li>
+                    <li><a href="/">常见问题</a></li>
+                    <li><a href="/">隐私保护</a></li>
+                    <li><a href="/">联系我们</a></li>
+                    <li><a href="/">法律法规</a></li>
+                </ul>
+            </div>
+            <div class="grid-100 copyright">
+                <ul>
+                    <li class="last">上海中金国泰金融信息服务有限公司&nbsp;&nbsp;沪ICP备14043140号&nbsp;&nbsp;版权所有</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/tj_statistics.js"></script>
+
+</body>
+
+</html>

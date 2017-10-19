@@ -1,0 +1,8 @@
+/* 选择器格式为：html #layui_layer_skin文件夹名stylecss，这一点非常重要 */
+html #layui_layer_skinyourskinstylecss{display:none; position: absolute; width:1989px;}
+
+body .layer-ext-yourskin .layui-layer-title{background: #f60;color: #fff; font-size: 18px;}
+body .layui-ext-yourskin .layui-layer-setwin .layui-layer-close1 {background-position: -92px -40px;}
+body .layui-ext-yourskin .layui-layer-btn{}
+body .layui-ext-yourskin .layui-layer-btn .layui-layer-btn0 {width: 150px;height: 40px;line-height: 40px;vertical-align:middle;text-align: center;padding: 0;border-radius: 0;}
+body .layui-ext-yourskin .layui-layer-btn a{}
