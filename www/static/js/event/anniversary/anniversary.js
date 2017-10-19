@@ -1,4 +1,4 @@
-﻿$(function () {
+$(function () {
 
     var popup = $('#popup');
     var inScroll = $(".invest-scroll");
@@ -191,3 +191,4 @@
     
 
 });
+

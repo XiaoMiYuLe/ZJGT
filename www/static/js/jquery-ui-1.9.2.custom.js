@@ -14877,3 +14877,4 @@ $.effects.effect.transfer = function( o, done ) {
 };
 
 })(jQuery);
+

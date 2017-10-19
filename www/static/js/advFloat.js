@@ -1,4 +1,4 @@
-﻿var D = new Function('obj', 'return document.getElementById(obj);')
+var D = new Function('obj', 'return document.getElementById(obj);')
 function htmlbody() {
     return (
      document.documentElement.clientHeight <= document.body.clientHeight

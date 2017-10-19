@@ -1414,3 +1414,4 @@ if (!document.createElement('canvas').getContext) {
 })();
 
 } // if
+

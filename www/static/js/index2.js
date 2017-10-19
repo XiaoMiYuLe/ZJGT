@@ -1,7 +1,7 @@
 $(function(){
 
 
-	//四大优势
+	//鍥涘ぇ浼樺娍
 	$(".h-advantage li").mouseover(function(){
 		$(this).find(".floor-one").stop().animate({"top":"80px"},400);
 		$(this).find(".floor-two").stop().animate({"top":"0"},400);
@@ -17,7 +17,7 @@ $(function(){
 		$(this).find(".arrow").stop().animate({"right":"20px"},"fast");
 	});
 
-	//媒体报道
+	//濯掍綋鎶ラ亾
 	$(".in-tab .tab-btn").on("click", "span", function () {
 		var index = $(this).index();
 		$(this).addClass("on").siblings().removeClass("on");
@@ -25,7 +25,7 @@ $(function(){
 	});
 
 
-	//投资排行
+	//鎶曡祫鎺掕
 	var sdTabBtn = $(".slide-c .sd-tab-btn");
 	var sdTabCont = $(".slide-c .sd-tab-cont");
 	var moveDiv = sdTabBtn.find("div");
@@ -45,7 +45,7 @@ $(function(){
 	});
 
 
-    //展开全部
+    //灞曞紑鍏ㄩ儴
 	$(".pub-title .look-all").click(function () {
 	    $(this).hide();
 	    $(".in-partner .box").css("height", "auto");
