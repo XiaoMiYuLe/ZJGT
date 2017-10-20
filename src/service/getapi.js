@@ -1,3 +1,4 @@
+var superagnet = require('superagent');
 var http = require('http');
 module.exports = class extends think.Service {
     constructor(options) {

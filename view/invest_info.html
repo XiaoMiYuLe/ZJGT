@@ -110,7 +110,7 @@
                     success: function (data) {
                         if (data == "1") {
                             alert('您未登录，请先登录后再投资，确定要立即登录吗？');
-                            var returnurl = "/Lend/DetailsGB.aspx?Id=2024";
+                            var returnurl = "/invest/info?Id=2024";
                             window.parent.location.href = "../Login.aspx?returnurl=" + returnurl + "";
                         }
                         if (data == "2") {
@@ -167,9 +167,9 @@
     <div class="grid-container">
         <div class="Navigation">
             <ul>
-                <li><a href="/Index.aspx" style="color: #666; padding-right: 5px;">首页</a>&gt;</li>
-                <li><a href="List.aspx?type=normal" style="color: #666; padding-right: 5px;">投资项目</a>&gt;</li>
-                <li><a href="DetailsGB.aspx" class="Orange">项目详情</a></li>
+                <li><a href="/" style="color: #666; padding-right: 5px;">首页</a>&gt;</li>
+                <li><a href="/invest/list" style="color: #666; padding-right: 5px;">投资项目</a>&gt;</li>
+                <li><a href="/invest/info" class="Orange">项目详情</a></li>
             </ul>
         </div>
     </div>

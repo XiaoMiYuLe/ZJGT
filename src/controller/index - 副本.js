@@ -9,7 +9,7 @@ module.exports = class extends Base {
             headers: {
                 'Content-Type': 'application/json'
             }
-        };
+        };        
         const getApi = think.service("getapi", options);
         await getApi.httpGet().then(function (obj) {
             if (obj.errno == '0') {

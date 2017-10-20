@@ -1,6 +1,7 @@
 const Base = require('./base.js');
 module.exports = class extends Base {
     async indexAction() {
+        request.post();
         return this.display();
     }
 
