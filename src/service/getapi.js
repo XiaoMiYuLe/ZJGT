@@ -1,14 +1,10 @@
-var superagnet = require('superagent');
+//var superagnet = require('superagent');
 var http = require('http');
 module.exports = class extends think.Service {
-    constructor(options) {
-        super();
-        this.options = options;
-    }
-    async httpGet() {
+    async httpGet(options) {
         var that = this;
         return new Promise(function (resolve) {
-            http.get(that.options, function (res) {
+            http.get(options, function (res) {
                 res.setEncoding('utf8');
                 var statusCode = res.statusCode;
                 var getData = '';
@@ -17,7 +13,8 @@ module.exports = class extends think.Service {
                         getData += chunk;
                     }).on('end', function () {
                         var obj = JSON.parse(getData);
-                        resolve(obj);
+//                        resolve(obj);
+                         resolve(obj.data);
                     });
                 } else {
                     console.log(statusCode);

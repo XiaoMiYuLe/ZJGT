@@ -115,8 +115,6 @@
 
         <div class="flexslider home-banner">
             <ul class="slides">
-
-
                 <li style='background: url(/static/img/banner/636258596671119704.png)  center top;'>
                     <a href='http://www.zjgt.com/Event/HdSendGoldPigIndex.aspx'></a>
                 </li>
@@ -129,8 +127,6 @@
                 <li style='background: url(/static/img/banner/636258605012177325.jpg)  center top;'>
                     <a href='http://www.zjgt.com/Event/walletBagInside.aspx'></a>
                 </li>
-
-
             </ul>
         </div>
 
@@ -142,12 +138,9 @@
                         <div class="news-box fl">
                             <div class="bd">
                                 <ul>
-                                    <li><b></b><a href="/Content/Details.aspx?TypeId=1&Id=69540">2017.10.12关于网站服务器升级维护的公告</a></li>
-                                    <li><b></b><a href="/Content/Details.aspx?TypeId=1&Id=69539">关于2017年中秋及国庆放假及平台工作安排的公告</a></li>
-                                    <li><b></b><a href="/Content/Details.aspx?TypeId=1&Id=69538">关于五一劳动节和端午节放假安排的公告</a></li>
-                                    <li><b></b><a href="/Content/Details.aspx?TypeId=1&Id=69537">关于网站服务器维护的公告</a></li>
-                                    <li><b></b><a href="/Content/Details.aspx?TypeId=1&Id=69536">关于网站服务器维护的公告</a></li>
-                                    <li><b></b><a href="/Content/Details.aspx?TypeId=1&Id=69535">关于400电话临时维护升级的公告</a></li>
+                                   {% for onegg in ggList %}
+                                   <li><b></b><a href="/Content/Details.aspx?TypeId={{onegg['TypeId']}}&Id={{onegg['Id']}}">{{onegg['title']}}</a></li>
+                                   {% endfor %}
                                 </ul>
                             </div>
                         </div>
@@ -162,8 +155,8 @@
                     </div>
                 </div>
                 <div class="datas fr">
-                    <span class="fl">累计成交&nbsp;<b id="SumLendMoney">loading...</b>&nbsp;万元</span>
-                    <span class="middle">累计收益&nbsp;<b id="SumExpectMoney">loading...</b>&nbsp;万元</span>
+                    <span class="fl">累计成交&nbsp;<b id="SumLendMoney">{{totalmsg['SumLendMoney']}}</b>&nbsp;万元</span>
+                    <span class="middle">累计收益&nbsp;<b id="SumExpectMoney">{{totalmsg['SumExpectMoney']}}</b>&nbsp;万元</span>
                     <span class="fr">往期兑付&nbsp;<b>100%</b></span>
                 </div>
             </div>
@@ -240,9 +233,9 @@
                                     <a id="WTProjTitle" class="color-gray" href="/Event/22BidNewCustomerDetail.aspx?Id=1818">新手专享标</a></strong><span>仅限1次，限投2万</span>
                             </p>
                             <div class="box">
-                                <span class="span-a">预期年化收益率<b><i id="WTMate">15</i>%</b></span>
-                                <span class="span-b">项目期限<b><i id="WTdateline">7</i>天</b></span>
-                                <span class="span-c">已赚钱<b><i id="lblInvestEmpCount">28322</i>人</b></span>
+                                <span class="span-a">预期年化收益率<b><i id="WTMate">{{newInvest['rate']}}</i>%</b></span>
+                                <span class="span-b">项目期限<b><i id="WTdateline">{{newInvest['term']}}</i>{{newInvest['termType']}}</b></span>
+                                <span class="span-c">已赚钱<b><i id="lblInvestEmpCount">{{newInvest['InvestCount']}}</i>人</b></span>
                                 <span class="span-link"><a href="/Event/22BidNewCustomerDetail.aspx?Id=1818" id="WTProjInvest" class="touzi">立即投资</a></span>
                             </div>
                         </div>
@@ -315,10 +308,6 @@
 
                     <!-- 标题 -->
                     <div class="pub-title clearfix"><span class="fl">热门理财</span><a class="fr" href="/invest/list">更多&nbsp;<img style="display: inline; vertical-align: middle;" src="/static/img/index2/double-arrow.png" /></a></div>
-
-
-
-
                     <div class="content-pjb content-c section clearfix">
                         <div class="cont-l fl">
                             <dl>
@@ -331,8 +320,6 @@
 
                         <div class="cont-r fr">
                             <ul class="p-menu">
-
-
                                 <li onclick="location.href='/invest/info?id=2024'">
                                     <span class="span-b">11期<b><a href="/invest/info?id=2024">优选</a></b></span>
                                     <span class="span-a">预期最高年化收益率<b><i>9.03</i>%</b></span>
