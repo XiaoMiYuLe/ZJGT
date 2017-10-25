@@ -1,8 +1,7 @@
 const Base = require('./base.js');
 
 module.exports = class extends Base {
-    listAction() {
-        
+    listAction() {        
         return this.display();
     }
     

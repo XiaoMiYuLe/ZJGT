@@ -97,8 +97,19 @@
         <!-- 焦点图 -->
         <div class="inWindow-box">
             <div class="inWrap">
-                <div class="inWindow rgba">
-
+                <div class="inWindow rgba">                    
+                     {% if userName != '' %}
+                    <!--登录后-->
+                    <div class="window-b">
+                        <p class="p-a">
+                            中金国泰理财网<br>
+                            欢迎您
+                        </p>
+                        <p class="p-b">可用余额(元)<a href="/Account/payment/payment-nobind.aspx">立即充值</a></p>
+                        <p id="usertotalzichan" class="p-c">0.00</p>
+                        <p class="p-d"><a href="/Account/FundDetails.aspx">进入我的账户</a></p>
+                    </div>
+                    {% else %}
                     <!--登录前-->
                     <div class="window-a">
                         <p class="p-a">预期年化收益率</p>
@@ -108,6 +119,7 @@
                         <p class="p-e"><a href="/Login.aspx">登 录</a></p>
                         <p class="p-f"><a href="/Register.aspx">注 册</a></p>
                     </div>
+                    {% endif %}
 
                 </div>
             </div>

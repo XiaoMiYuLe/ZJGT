@@ -1,8 +1,22 @@
 const Base = require('./base.js');
 
 module.exports = class extends Base {
+
+    indexAction() {
+        var cmdtype = this.post('cmdtype');
+        if (cmdtype == 'getlenddetail') {
+            this.getlenddetail();
+        } else if (cmdtype == 'getprojectlist') {
+            this.getprojectlist();
+        } else if (cmdtype == 'gglist') {
+            this.gglist();
+        } else if (cmdtype == 'login') {
+            this.login();
+        }
+    }
+
     //统计数据
-    totalmsgAction() {
+    getlenddetail() {
         var a = {
             "status": "0",
             "message": "请求成功",
@@ -20,7 +34,7 @@ module.exports = class extends Base {
     }
 
     //标的列表
-    investListAction() {
+    getprojectlist() {
         var a = {
             "status": "0",
             "message": "",
@@ -75,9 +89,9 @@ module.exports = class extends Base {
         }
         return this.success(a);
     }
-    
+
     //网站公告
-    ggListAction() {
+    gglist() {
         var a = {
             "status": "0",
             "message": "请求成功",
@@ -86,28 +100,54 @@ module.exports = class extends Base {
                 "TypeId": "1",
                 "Id": "69540",
                 "title": "2017.10.12关于网站服务器升级维护的公告"
-            },{
+            }, {
                 "TypeId": "1",
                 "Id": "69539",
                 "title": "关于2017年中秋及国庆放假及平台工作安排的公告"
-            },{
+            }, {
                 "TypeId": "1",
                 "Id": "69538",
                 "title": "关于五一劳动节和端午节放假安排的公告"
-            },{
+            }, {
                 "TypeId": "1",
                 "Id": "69537",
                 "title": "关于网站服务器维护的公告"
-            },{
+            }, {
                 "TypeId": "1",
                 "Id": "69536",
                 "title": "关于网站服务器维护的公告"
-            },{
+            }, {
                 "TypeId": "1",
                 "Id": "69535",
                 "title": "关于400电话临时维护升级的公告"
             }]
         }
         return this.success(a);
-    }    
+    }
+
+    //登录
+    login() {
+        var account = this.post("account");
+        var password = this.post("password")
+        var a = {};
+        if (account == '13333333333' && password == '33333333') {
+            a = {
+                "status": "0",
+                "message": "请求成功",
+                "totalcount": 0,
+                "result": [{
+                    "userId": "1",
+                    "userName": '133****3333'
+            }]
+            }
+        } else {
+            a = {
+                "status": "1",
+                "message": "用户名或密码错误",
+                "totalcount": 0,
+                "result": []
+            }
+        }
+        return this.success(a);
+    }
 };

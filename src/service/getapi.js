@@ -1,27 +1,23 @@
-//var superagnet = require('superagent');
-var http = require('http');
+var superagnet = require('superagent');
 module.exports = class extends think.Service {
-    async httpGet(options) {
+    async superPost(options) {
         var that = this;
         return new Promise(function (resolve) {
-            http.get(options, function (res) {
-                res.setEncoding('utf8');
-                var statusCode = res.statusCode;
-                var getData = '';
-                if (statusCode == 200) {
-                    res.on('data', function (chunk) {
-                        getData += chunk;
-                    }).on('end', function () {
-                        var obj = JSON.parse(getData);
-//                        resolve(obj);
-                         resolve(obj.data);
-                    });
-                } else {
-                    console.log(statusCode);
-                }
-            }).on('error', function (e) {
-                console.log(e.message);
-            });
+            superagnet.post(options.host + options.path)
+                .type('application/json')
+                .send(options.data)
+                .end(function (err, res) {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        var statusCode = res.statusCode;
+                        if (statusCode == 200) {
+                            resolve(res.body.data);
+                        } else {
+                            console.log(statusCode);
+                        }
+                    }
+                });
         });
     }
 };

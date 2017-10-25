@@ -744,11 +744,17 @@
                     </div>
                 </div>
                 <div class="t-login fr">
+                    {% if userName != '' %}
+                    <!--登陆后-->
+                    <a href="/Account/FundDetails.aspx" id="userName" class="login-successful">你好，{{userName}}</a>
+                    <span class="login-successful"><a href="/index/logout" id="TuiChu" class="logout">[退出]</a></span> 
+                    {% else %}
                     <!--登陆前-->
                     <span class="login-a">送50<b></b></span>
                     <span class="registered"><a href="/index/register">免费注册</a></span>
                     <span class="line">|</span>
-                    <span><a href="/index/login">登录</a></span>
+                    <span><a href="/index/login">登录</a></span> 
+                    {% endif %}
                     <span class="line">|</span>
                     <span><a href="/Account/jxb/activationUser.aspx">激活金薪宝</a></span>
                     <span class="line">|</span>
