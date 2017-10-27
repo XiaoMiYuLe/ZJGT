@@ -1,5 +1,5 @@
 const Base = require('./base.js');
-module.exports = class extends Base {    
+module.exports = class extends Base {
     async indexAction() {
         var that = this;
         var options = {
@@ -11,7 +11,7 @@ module.exports = class extends Base {
             cmdtype: 'getlenddetail'
         }
         const getApi = think.service("getapi");
-        await getApi.superPost(options).then(function (obj) {
+        await getApi.superPost(options).then(function(obj) {
             if (obj.status == '0') {
                 that.assign('totalmsg', obj.result[0]);
             }
@@ -23,7 +23,7 @@ module.exports = class extends Base {
             curpage: 1,
             type: 1
         }
-        await getApi.superPost(options).then(function (obj) {
+        await getApi.superPost(options).then(function(obj) {
             if (obj.status == '0') {
                 that.assign('newInvest', obj.result[0]);
             }
@@ -32,7 +32,7 @@ module.exports = class extends Base {
         options.data = {
             cmdtype: 'gglist'
         }
-        await getApi.superPost(options).then(function (obj) {
+        await getApi.superPost(options).then(function(obj) {
             if (obj.status == '0') {
                 that.assign('ggList', obj.result);
             }
@@ -48,7 +48,7 @@ module.exports = class extends Base {
             var account = this.post('account');
             var password = this.post('password');
             //cmdtype:login
-            //            
+            //
             //cmdtype:verificationcode
             //code:7777
 
@@ -70,7 +70,7 @@ module.exports = class extends Base {
                     password: password
                 }
                 const getApi = think.service("getapi");
-                await getApi.superPost(options).then(function (obj) {
+                await getApi.superPost(options).then(function(obj) {
                     if (obj.status == '0') {
                         that.session("userName", obj.result[0].userName);
                         that.session("userId", obj.result[0].userId);
@@ -92,7 +92,7 @@ module.exports = class extends Base {
         await this.session(null);
         this.ctx.redirect('/');
     }
-    
+
     async registerAction() {
         return this.display();
     }
