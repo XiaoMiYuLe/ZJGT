@@ -1,5 +1,5 @@
 const Base = require('./base.js');
-module.exports = class extends Base {
+module.exports = class extends Base {    
     async indexAction() {
         var that = this;
         var options = {
@@ -91,5 +91,9 @@ module.exports = class extends Base {
     async logoutAction() {
         await this.session(null);
         this.ctx.redirect('/');
+    }
+    
+    async registerAction() {
+        return this.display();
     }
 };

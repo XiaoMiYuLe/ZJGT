@@ -4,7 +4,6 @@ module.exports = class extends think.Service {
         var that = this;
         return new Promise(function (resolve) {
             superagnet.post(options.host + options.path)
-                .type('application/json')
                 .send(options.data)
                 .end(function (err, res) {
                     if (err) {
