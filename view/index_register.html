@@ -1,0 +1,614 @@
+{% include 'header.html' %}
+<script type="text/javascript" src="/static/js/ValidateCode.js?v=16041958"></script>
+<script type="text/javascript" src="/static/js/PropDiv.js?v=16041958"></script>
+<script type="text/javascript" src="/static/js/cookies.js?v=16041958"></script>
+<script type="text/javascript">
+    //注册成功之后，点击浏览器的后退按钮，不能再返回到注册页面。
+    window.history.forward(1);
+    ////////////
+    function selectToChange() {
+        if ($('#reg_select img').css('display') != 'none') {
+            $('#reg_select img').hide();
+        } else {
+            $('#reg_select img').show();
+        }
+    }
+
+    function subRegOne(e) {
+        $(this).hide();
+
+        var count = 0;
+        //var reg_userName = $("#reg_userName").val();
+        //var bUserName = valUserName(reg_userName);
+        //if (!bUserName) {
+        //    count = 1;
+        //    return false;
+        //}
+
+        var reg_tel = $("#reg_tel").val();
+        var bMobile = valMobile(reg_tel);
+        if (!bMobile) {
+            count = 1;
+            return false;
+        }
+
+        var reg_RecommCode = $("#reg_RecommCode").val();
+        if (reg_RecommCode != "") {
+            var bRecommCode = valRecommCode(reg_RecommCode);
+            if (!bRecommCode) {
+                count = 1;
+                return false;
+            }
+        }
+        if (e != "1") {
+            var reg_verification = $("#reg_verification").val();
+            var bVerification = valVerification(reg_verification);
+            if (!bVerification) {
+                count = 1;
+                return false;
+            }
+        }
+        if (count == 0) {
+            if (!$('#chkSed').is(":checked")) {
+                alert('请确认服务协议！');
+                count = 1;
+                return false;
+            }
+        }
+
+        $("#reg_verification2").val("");
+        if (count == 1) {
+            $(this).show();
+            return false;
+        } else {
+            $("#reg_tel2").html(reg_tel);
+            $("#reg_container").hide();
+            $("#reg_container2").show();
+            //$("#getMcode").click();
+
+            $(this).show();
+            return true;
+        }
+        e.preventDefault ? e.preventDefault() : e.returnValue = false;
+    }
+
+    function subRegThree() {
+        $(this).hide();
+        var count = 0;
+        var reg_pw = $("#reg_pw").val();
+        var spnErrObj = $("#spanPassword");
+        var bPasswd = valPasswd(reg_pw, spnErrObj);
+        if (!bPasswd) {
+            count = 1;
+            return false;
+        }
+
+        var reg_pw_current = $("#reg_pw2").val();
+        var bPasswdRepeat = valPasswdRepeat(reg_pw, reg_pw_current);
+        if (!bPasswdRepeat) {
+            count = 1;
+            return false;
+        }
+        if (count == 1) {
+            $(this).show();
+            return false;
+        } else {
+            document.forms['aspnetForm'].submit();
+            return true;
+        }
+    }
+
+    $(function () {
+        $("#reg_consent").on("click", function () {
+            $("#chkSed").prop("checked", !$("#chkSed").prop("checked"));
+        });
+
+        $(".alert-status").dialog({
+            autoOpen: false,
+            minHeight: 220,
+            width: 600,
+            modal: true,
+            closeOnEscape: true
+        });
+        $(".alert-status .btn-close").on("click", function () {
+            $(".alert-status").dialog("close");
+        });
+
+        //$('input[placeholder]').placeholder();
+        $('.reg_role').click(function () {
+            $('.reg_role').css({
+                'color': '#f64609',
+                'background': '#fff'
+            });
+            $('.reg_role img').hide();
+            $(this).css({
+                'color': '#fff',
+                'background': '#f64609'
+            });
+            $(this).find('img').show();
+        });
+
+        //点击验证码时的操作
+        $("#reg_verification_refresh").click(function () {
+            $("#reg_verification_img").attr("src", "http://www.zjgt.com/Inc/CheckCode.aspx?id=" + Math.random());
+        });
+
+        $("#reg_verification_btn").click(function () {
+            //dialogByLoadingRoot();
+            $(this).hide();
+            var count = 0;
+            var bValidateCode = valValidateCode();
+            if (!bValidateCode) {
+                count = 1;
+                //return false;//鲁明强 2015-07-09
+            }
+            if (count == 1) {
+                $(this).show();
+                return false;
+            } else {
+                $("#reg_container2").hide();
+                $("#reg_container3").show();
+                $(this).show();
+                return true;
+            }
+        });
+
+        $('.btn-captcha').on('click', function () {
+            var $this = $(this),
+                $type = $this.attr("data-type"),
+                url = $this.attr('obj'),
+                mobile = $('#reg_tel2').text(),
+                reg1 = /^1[3,4,5,7,8,9]\d{9}$/g,
+                reg2 = /^15[8,9]\d{8}$/g,
+                sf = "用户",
+                ac = "获取",
+                $btn = $('.btn-captcha'),
+                $yzmtext = $("#yzm_text").val();
+            if ($yzmtext.length < 1) {
+                layer.open({
+                    type: 1,
+                    title: "温馨提示",
+                    area: ["500px", "auto"],
+                    btn: ["确定"],
+                    content: '<div style="line-height:30px;font-size:16px;text-align:center;padding:50px;">请输入图形验证码</div>'
+                });
+                return false;
+            }
+            if (mobile.length < 4) {
+                layer.open({
+                    type: 1,
+                    title: "温馨提示",
+                    area: ["500px", "auto"],
+                    btn: ["确定"],
+                    content: '<div style="line-height:30px;font-size:16px;text-align:center;padding:50px;">请输入正确的手机号</div>'
+                });
+                return false;
+            }
+            if (!reg1.test(mobile) && !reg2.test(mobile)) {
+                layer.open({
+                    type: 1,
+                    title: "温馨提示",
+                    area: ["500px", "auto"],
+                    btn: ["确定"],
+                    content: '<div style="line-height:30px;font-size:16px;text-align:center;padding:50px;">请输入正确的手机号</div>'
+                });
+                return false;
+            } else {
+                if ($this.hasClass("disabled")) {
+                    return;
+                }
+                $btn.addClass('disabled');
+
+                var timer = 60;
+                switch ($type) {
+                case "sms":
+                    $.ajax({
+                        type: "POST",
+                        url: "/ashx/GetSmsHandler.ashx?type=getsms",
+                        data: {
+                            "mobile": mobile,
+                            "yzmcode": $yzmtext
+                        },
+                        success: function (data) {
+                            if (data == "1") {
+                                //$("#reg_verification2").val(data.d);
+                                var seq = setInterval(function () {
+                                    $this.text(--timer + '秒后重发');
+                                    if (timer <= 0) {
+                                        $this.text($this.attr("data-name"));
+                                        $btn.removeClass('disabled');
+                                        $("#yzm_img").click();
+                                        clearInterval(seq);
+                                    }
+                                }, 1000);
+                            } else {
+                                layer.open({
+                                    type: 1,
+                                    title: "温馨提示",
+                                    area: ["600px", "auto"],
+                                    btn: ["确定"],
+                                    content: '<div style="line-height:30px;font-size:16px;text-align:center;padding:50px;">' + data.split(':')[1] + '</div>',
+                                    yes: function (index) {
+                                        $btn.removeClass('disabled');
+                                        $("#yzm_img").click();
+                                        layer.close(index);
+                                    }
+                                });
+                            }
+                        }
+                    });
+                    break;
+                case "voice":
+                    $.ajax({
+                        type: "POST",
+                        url: "/ashx/GetSmsHandler.ashx?type=getvoicesms",
+                        data: {
+                            "mobile": mobile,
+                            "yzmcode": $yzmtext
+                        },
+                        success: function (data) {
+                            if (data == "1") {
+                                var seq = setInterval(function () {
+                                    $this.text(--timer + '秒后重发');
+                                    if (timer <= 0) {
+                                        $this.text($this.attr("data-name"));
+                                        $btn.removeClass('disabled');
+                                        $("#yzm_img").click();
+                                        clearInterval(seq);
+                                    }
+                                }, 1000);
+                                $(".alert-status").dialog("open");
+                            } else {
+                                layer.open({
+                                    type: 1,
+                                    title: "温馨提示",
+                                    area: ["600px", "auto"],
+                                    btn: ["确定"],
+                                    content: '<div style="line-height:30px;font-size:16px;text-align:center;padding:50px;">' + data.split(':')[1] + '</div>',
+                                    yes: function (index) {
+                                        $btn.removeClass('disabled');
+                                        $("#yzm_img").click();
+                                        layer.close(index);
+                                    }
+                                });
+                            }
+                        }
+                    });
+                    break;
+                }
+            }
+        });
+
+
+        $("#aEditMobile").click(function () {
+            $("#hdIds").val("");
+            $("#reg_container").show();
+            $("#reg_container2").hide();
+
+            $("#spnValidateCodeTime").hide("slow");
+            $("#spnValidateCodeMsg").hide("slow");
+
+            clearInterval(timer1);
+        });
+
+        //$("#reg_userName").blur(function () {
+        //    var reg_userName = $(this).val();
+        //    valUserName(reg_userName);
+        //});
+
+        $("#reg_tel").blur(function () {
+            var reg_tel = $(this).val();
+            valMobile(reg_tel);
+        });
+
+        $("#reg_pw").blur(function () {
+            var reg_pw = $(this).val();
+            var spnErrObj = $("#spanPassword");
+            valPasswd(reg_pw, spnErrObj);
+        });
+
+        $("#reg_pw2").blur(function () {
+            var reg_pw_original = $("#reg_pw").val();
+            var reg_pw_current = $(this).val();
+            valPasswdRepeat(reg_pw_original, reg_pw_current);
+        });
+
+        $("#reg_verification").blur(function () {
+            var reg_verification = $(this).val();
+            valVerification(reg_verification);
+        });
+
+        $("#reg_clause").blur(function () {
+            $("#reg_frist").focus();
+            $("#reg_frist").click();
+        });
+
+        /*new_reg*/
+        var usName = unescape(getUrlPara("var1"));
+        var usPass = unescape(getUrlPara("var2")).replace("中金国泰", "").replace("中金国泰", "");
+        var usRecomm = getUrlPara("code");
+        if (usName != "" && unescape(getUrlPara("key")) == "中金国泰") {
+            //$("#reg_userName").val(usName);
+            $("#reg_tel").val(usName);
+            $("#reg_pw").val(usPass);
+            $("#reg_pw2").val(usPass);
+            $("#reg_RecommCode").val(usRecomm);
+            $("#reg_verification").val(getCookie("code"));
+            $("#chkSed").prop("checked", true);
+
+            var numCount = 0;
+            var bMobile = valMobile(usName);
+            if (!bMobile) {
+                numCount = 1;
+            }
+
+            var bRecommCode = valRecommCode(usRecomm);
+            if (!bRecommCode) {
+                numCount = 1;
+            }
+            var bVerification = valVerification(getCookie("code"));
+            if (!bVerification) {
+                numCount = 1;
+            }
+            if (numCount == 1) {
+                $("#reg_container").show();
+                $("#reg_container").show();
+                subRegOne(1);
+            } else {
+
+                $("#reg_tel2").html(usName);
+                $("#reg_container").hide();
+                $("#reg_container2").show();
+
+                //$("#getMcode").click();
+            }
+        } else {
+            $("#reg_container").show();
+        }
+
+        ////////////
+    });
+
+    //获取当前url参数值
+    function getUrlPara(paraName) {
+
+        var _cpath = window.location.href;
+        var _css = _cpath.indexOf('?');
+        var url = "";
+        if (_css > -1) {
+            url = _cpath.substring(_css + 1);
+        }
+        var _jw = url.lastIndexOf('#');
+        if (_jw > -1) {
+            url = url.substring(0, _jw);
+        }
+
+        var sUrl = "?" + url;
+        if (sUrl.indexOf(paraName) > -1) {
+            var sReg = "(?:\\?|&){1}" + paraName + "=([^&]*)"
+            var re = new RegExp(sReg, "gi");
+            re.exec(sUrl);
+
+            return RegExp.$1;
+        }
+        return "";
+    }
+</script>
+<style type="text/css">
+    #ContentPlaceHolder1_reg_verification_btn {
+        cursor: pointer;
+        padding-left: 0;
+        top: 180px;
+        width: 174px;
+    }
+    
+    .valid {
+        background: url("/static/img/reg/valid.png?v=31260") no-repeat scroll left center rgba(0, 0, 0, 0);
+        color: #aaa;
+        display: inline;
+        padding-left: 30px;
+    }
+    
+    .valid-error {
+        background: url("/static/img/reg/error.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+        color: #aaa;
+        display: inline;
+        padding-left: 30px;
+    }
+    
+    .btn.btn-captcha {
+        display: inline-block;
+        width: 80px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 12px;
+        text-align: center;
+        color: #ff7e00;
+        background: none;
+        border: 1px solid #ff7e00;
+        vertical-align: top;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    
+    .btn.btn-captcha.disabled {
+        background-color: #f6f6f6;
+        border-color: #e5e5e5;
+        color: #ccc;
+        cursor: default;
+        pointer-events: none;
+    }
+    
+    .tel-info {
+        border: 1px solid #ac8341;
+        background-color: #e2e2e2;
+        padding: 25px 25px 25px 30px;
+        margin-top: 25px;
+        font-size: 16px;
+    }
+    
+    #chkSed {
+        border: none;
+    }
+</style>
+
+<form method="post" action="./Register.aspx" id="aspnetForm">
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzQ0OTY1OTE3DxYEHgRDb2RlZB4EdHlwZWQWAmYPZBYGZg9kFgYCAQ8WAh4HY29udGVudAUV5Lit6YeR5Zu95rOw55CG6LSi572RZAICDxYCHwIFFeS4remHkeWbveazsOeQhui0oue9kWQCBg8VAS4vYXNzZXRzL3N0eWxlc2hlZXRzL3Vuc2VtYW50aWMtZ3JpZC1tb2JpbGUuY3NzZAIDDw8WBB4EVGV4dAUT5L2T6aqMIMK3IOaWsOaJi+aghx4LTmF2aWdhdGVVcmwFKi9FdmVudC8yMkJpZE5ld0N1c3RvbWVyRGV0YWlsLmFzcHg/SWQ9MTgxOGRkAgQPDxYEHwMFE+a0u+acnyDCtyDph5HpkrHljIUfBAUiL0V2ZW50L1dhbGxldF9EZXRhaWxzLmFzcHg/SWQ9MjAzMGRkZFi6FY3aoJJp4RGEDcRi8Dpf7Co9qoevhHO67A6MvJkd" />
+    </div>
+
+    <div class="aspNetHidden">
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="799CC77D" />
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-100">
+            <div class="register">
+                <fieldset style="min-height:500px;">
+                    <legend>帐户注册</legend>
+                    <div id="reg_container" style="display:none;">
+                        <div id="reg_content">
+                            <img alt="" src="/static/img/reg/zhuce.jpg" />
+                            <div class="grid-60" style="display: inline-block; margin-top: 30px;">
+                                <p>
+                                    <label>
+                                        手机号码：</label>
+                                    <input name="ctl00$ContentPlaceHolder1$reg_tel" type="text" id="reg_tel" maxlength="11" placeholder="输入手机号码" onkeyup="value=value.replace(/[^\d]/g,&#39;&#39;)" />
+                                    <span id="spantel" style="color: Red;"></span>
+                                </p>
+                                <p>
+                                    <label>推荐码：</label>
+                                    <input name="ctl00$ContentPlaceHolder1$reg_RecommCode" type="text" id="reg_RecommCode" placeholder="输入推荐码或推荐人手机号" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,&#39;&#39;)" />（选填）
+                                    <span id="spanRecommCode" style="color: Red;"></span>
+                                </p>
+                                <p style="display: block; height: 45px;">
+                                    <label style="float: left;">
+                                        验证码：</label>
+                                    <input name="ctl00$ContentPlaceHolder1$reg_verification" type="text" id="reg_verification" placeholder="验证码" maxlength="4" style="width: 150px; margin-right: 15px;" /><img id="reg_verification_img" src="http://www.zjgt.com/Inc/CheckCode.aspx" alt="验证码" width="120px" height="38px" />
+                                    <img alt="" id="reg_verification_refresh" src="/static/img/reg/verification_refresh.png" width="22px" height="25px" />
+                                    <span id="spanCode"></span>
+
+                                </p>
+                                <p>
+                                    <span id="reg_select" style="margin-left: 104px;">
+                                        
+                                        <input id="chkSed" type="checkbox" style="width: 29px;" /><span id="reg_consent">我已阅读并同意</span><a id="reg_clause" href="/safety/register_saft.aspx" target="_blank">《网站服务协议》</a>
+                                    </span>
+                                </p>
+                                <p>
+                                    <a href="#" onclick="subRegOne(event);" style="margin-left: 110px; width: 172px; height: 42px; display: block;">
+                                        <img alt="" id="reg_frist" src="/static/img/reg/reg_btn.png" />
+                                    </a>
+                                </p>
+                                <input name="ctl00$ContentPlaceHolder1$flag" type="hidden" id="flag" value="Add" style="width: 25px" />
+                            </div>
+                            <div class="grid-40" style="margin-top: 120px;">
+                                <img src="/static/img/reg/zcgg_2.png?v=20160215" style="margin-left: -8px;" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="reg_container2" style="display: none;">
+                        <div id="reg_content2">
+                            <img alt="" src="/static/img/reg/zhuce2.jpg" />
+                            <div class="tel-info">
+                                <p>短信验证码将发送至您手机，获取验证码间隔1分钟一次，请谅解</p>
+                                <p id="reg_tel2" style="font-size: 24px; color: #ff8330;"></p>
+                                <p>请输入短信中的验证码，确保您的手机号真实有效。</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <p>
+                                        <label style="float: left;">
+                                            验证码：</label>
+                                        <input id="yzm_text" type="text" placeholder="验证码" maxlength="4" style="width: 150px; margin-right: 15px;" />
+                                        <img id="yzm_img" src="http://www.zjgt.com/Inc/CheckCode2.aspx" title="点击刷新验证码" width="120px" height="38px" style="cursor:pointer;" onclick="this.src='http://www.zjgt.com/Inc/CheckCode2.aspx?id=' + Math.random()" />
+                                        <div style="height:50px;padding:20px 112px;">
+                                            <a class="btn btn-captcha" href="javascript:void(0);" data-name="短信获取" data-type="sms">短信获取</a> 或
+                                            <a class="btn btn-captcha" href="javascript:void(0);" data-name="语音获取" data-type="voice">语音获取</a>
+                                        </div>
+                                        <label>短信验证码</label>
+                                        <input class="reg_input" id="reg_verification2" type="text" maxlength="8" style="width: 150px;" />
+                                        <span id="spnVerification" style="color: Red;"></span>
+                                    </p>
+                                </div>
+                                <p style="margin-left: 115px;">
+                                    <input id="reg_verification_btn" type="button" value="立即验证" class="btn" />
+                                    <a href="javascript:;" style="color: #00e" id="aEditMobile">返回修改手机号</a>
+                                </p>
+
+                                <input type="hidden" id="hdIds" value="" />
+                                <div class="reg_input" id="reg_tips">
+                                    如果您在1分钟之内没有收到验证码，您可重新获取或返回修改手机号码。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="reg_container3" style="display: none;">
+                        <div id="reg_content3">
+                            <img alt="" src="/static/img/reg/zhuce2.jpg" />
+                            <div class="grid-60" style="display: inline-block; margin-top: 30px;">
+                                <p style="margin-left: 30px; font-size: 18px;">设置登录密码</p>
+                                <p>
+                                    <label>
+                                        登录密码：</label>
+                                    <input name="ctl00$ContentPlaceHolder1$reg_pw" type="password" id="reg_pw" placeholder="输入密码" maxlength="20" />
+                                    <span id="spanPassword" style="color: Red;"></span>
+                                </p>
+                                <p>
+                                    <label>
+                                        重复密码：</label>
+                                    <input name="ctl00$ContentPlaceHolder1$reg_pw2" type="password" id="reg_pw2" placeholder="再次输入密码" maxlength="20" />
+                                    <span id="spanRelPass" style="color: Red;"></span>
+                                </p>
+                                <p>
+                                    <a href="#" onclick="subRegThree(event);" style="margin-left: 110px; width: 172px; height: 42px; display: block;">
+                                        <img alt="" id="Img1" src="/static/img/reg/reg_btn.png" />
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ServiceAgreementDiv" title="网站服务协议" style="display: none;">
+                        <iframe id="ifmAgreement" frameborder="0" height="460px" width="860px"></iframe>
+                    </div>
+
+                </fieldset>
+            </div>
+        </div>
+        <div class="space">&nbsp;</div>
+    </div>
+    <style type="text/css">
+        .alert-status p {
+            text-align: center;
+            line-height: 34px;
+            font-size: 16px;
+            padding: 40px 50px 30px;
+        }
+        
+        .alert-status p em {
+            font-style: normal;
+        }
+        
+        .alert-status .btn-close {
+            width: 110px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            background: #ff8330;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    </style>
+    <div class="alert-status" title="温馨提醒">
+        <p>语音验证码已发送，请注意接听来电</p>
+        <div class="btn-close">好</div>
+    </div>
+
+</form>
+
+{% include 'footer.html' %}

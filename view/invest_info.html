@@ -1,0 +1,474 @@
+{% include 'header.html' %}
+<link rel="stylesheet" type="text/css" href="/static/css/Invest.css?v=16041957" />
+
+<script type="text/javascript" src="/static/js/PropDiv.js?v=16041958"></script>
+<script type="text/javascript" src="/static/js/dialog-min.js?v=16041958"></script>
+
+<script src="/static/js/event/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="/static/js/product.js" type="text/javascript"></script>
+<link href="/static/css/Product-page.css" rel="stylesheet" />
+<!--[if lt IE 9]>
+	   <style type="text/css">.rgba {background:transparent;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8000000,endColorstr=#C8000000);zoom: 1;}</style>
+	<![endif]-->
+<script type="text/javascript">
+    function LinkPage(Id) {
+        window.location.href = "../Login.aspx?Id=" + Id;
+    }
+    /*****begin资产有效期倒计时***/
+    function show() {
+        try {
+            h = Math.floor(EndTimeMsg / 60 / 60 % 24);
+            m = Math.floor(EndTimeMsg / 60 % 60);
+            s = Math.floor(EndTimeMsg % 60);
+            var countdown = $("#countdown");
+            countdown.find(".days").text(leftdays);
+            countdown.find(".hours").text(h);
+            countdown.find(".minutes").text(m);
+            countdown.find(".seconds").text(s);
+            EndTimeMsg--;
+            if (EndTimeMsg < 0) {
+                var countdown = $("#countdown");
+                countdown.find(".days").text(0);
+                countdown.find(".hours").text(0);
+                countdown.find(".minutes").text(0);
+                countdown.find(".seconds").text(0);
+            }
+        } catch (e) {
+
+        }
+
+    }
+    setInterval("show()", 1000);
+
+    function CalculationCountDown() {
+        var nowDateStr = $("#hidCurrDate").val();
+        var nowDate = new Date(nowDateStr);
+        var tomorrow = new Date(nowDateStr);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        tomorrow.setHours(0, 0, 0, 0);
+        EndTimeMsg = (tomorrow.getTime() - nowDate.getTime()) / 1000;
+    }
+    /*****end资产有效期倒计时***********en**/
+    $(document).ready(function () {
+        /**********begin产品改造**********/
+        leftdays = $("#hidleftDays").val();
+        CalculationCountDown();
+        $(".AspNet-Menu li").on("mouseenter mouseleave", function (e) {
+            var $item = $(this).find(".item");
+            if (e.type == "mouseenter" && $item.length != 0) {
+                $item.stop(true, true).fadeIn();
+            } else {
+                $item.stop(true, true).fadeOut();
+            }
+        });
+        //选项卡
+        $(".product-page .pro-btn").on("click", "span", function () {
+            var index = $(this).index();
+            $(this).addClass("on").siblings().removeClass("on");
+
+            $(".product-page .pro-cont>div").eq(index).show().siblings().hide();
+        });
+
+        $(".pro-page-a .pro-r .tit span").hover(function () {
+            $("#txtinvestLimitation").text($("#hidinvestLimitation").val());
+            //console.info($("#txtinvestLimitation").text());
+
+            $(this).find("b").toggle();
+        });
+        /**********end产品改造**********/
+        $("#TenderDiv").dialog({
+            autoOpen: false,
+            minHeight: 420,
+            width: 700,
+            modal: true,
+            closeOnEscape: true
+        });
+        $("#NowInvest").click(function () {
+            var InvestMoney = $("#txtInvestMoney").val();
+            var ndays = parseInt($("#ndays .tick").text());
+            //console.info(ndays);
+
+            //if(!ndays){  alert("请选择天数!");return; }
+            var txtMaxLilv = $("#txtMaxLilv").html();
+            if (InvestMoney != "" && !isNaN(ndays)) {
+                var user = $("#hasbeenlogin").val();
+                var data = {
+                    InvestMoney: InvestMoney,
+                    IsLogin: "False",
+                    BorrowId: 2024,
+                    aLendLeast: 100.00,
+                    aIncreaseMoney: 100.00,
+                    HasFuyou: "False",
+                    UserName: user
+                };
+                $.ajax({
+                    type: "POST",
+                    url: "../ashx/DetailsHandler.ashx?t=" + Math.random(),
+                    data: data,
+                    //contentType: "application/json; charset=utf-8",
+                    //dataType: "json",
+                    success: function (data) {
+                        if (data == "1") {
+                            alert('您未登录，请先登录后再投资，确定要立即登录吗？');
+                            var returnurl = "/invest/info?Id=2024";
+                            window.parent.location.href = "../Login.aspx?returnurl=" + returnurl + "";
+                        }
+                        if (data == "2") {
+                            var llPayAccount = 0;
+                            if (llPayAccount == 1) {
+                                data = "3";
+                            } else {
+                                alert('您尚未绑定银行卡，请开户后再投资，确定要立即开户吗？');
+                                window.parent.location.href = "../Account/payment/bindcard.aspx";
+                            }
+                        }
+                        if (data == "3") {
+                            var hfInvestCount = $("#hfInvestCount").val();
+                            var isguide = 0;
+
+                            //$("#ifmTender").attr("src", "ZjbInfo.aspx?Id=2024&InvestFee=" + InvestMoney + "&Days="+ndays+"&MaxRate="+txtMaxLilv+"");
+                            $("#ifmTender").attr("src", "ZjbInfo.aspx?Id=2024&InvestFee=" + InvestMoney + "&Days=" + ndays + "");
+                            TenderOpen();
+                            //}
+                        }
+                    }
+
+                });
+            }
+        });
+    });
+
+    function TenderClose() {
+        $("#TenderDiv").dialog("close");
+    }
+
+    function TenderOpen() {
+        $("#TenderDiv").dialog("open");
+    }
+</script>
+<style>
+    body {
+        min-width: 1200px;
+    }
+</style>
+<form method="post" action="./DetailsGB.aspx?id=2024" id="aspnetForm">
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTYwNDgxNzA2DxYIHgJJZALoDx4HSXNGdWxsUQUBVB4QaWRlbkxMUGF5QWNjb3VudGYeB0lzR3VpZGVmFgJmD2QWCGYPZBYGAgEPFgIeB2NvbnRlbnQFL+S4remHkeWbveazsOeQhui0oue9kSznvZHnu5znkIbotKIs572R57uc5oqV6LWEZAICDxYCHwQFUeS8mOmAiSAxMeacnyDkuK3ph5Hlrp3kuIrmtbfmn5DnianmtYHmnInpmZDlhazlj7gyODk45LiHIOW6lOaUtui0puasvui9rOiuqemhueebrmQCBg8VAS4vYXNzZXRzL3N0eWxlc2hlZXRzL3Vuc2VtYW50aWMtZ3JpZC1tb2JpbGUuY3NzZAIDDw8WBB4EVGV4dAUT5L2T6aqMIMK3IOaWsOaJi+aghx4LTmF2aWdhdGVVcmwFKi9FdmVudC8yMkJpZE5ld0N1c3RvbWVyRGV0YWlsLmFzcHg/SWQ9MTgxOGRkAgQPDxYEHwUFE+a0u+acnyDCtyDph5HpkrHljIUfBgUiL0V2ZW50L1dhbGxldF9EZXRhaWxzLmFzcHg/SWQ9MjAyOWRkAgUPZBYCAgEPZBYiAgMPFgIeCWlubmVyaHRtbAVR5LyY6YCJIDEx5pyfIOS4remHkeWuneS4iua1t+afkOeJqea1geaciemZkOWFrOWPuDI4OTjkuIcg5bqU5pS26LSm5qy+6L2s6K6p6aG555uuZAIEDxYCHwcFBzE2MjYuNDRkAgUPFgIfBwUSJm5ic3A7Jm5ic3A75LiH5YWDZAIHDxYCHwcFBDkuMDBkAggPFgIeC18hSXRlbUNvdW50AgQWCGYPZBYCZg8VAwIzMAIzMAQ2LjUwZAIBD2QWAmYPFQMCNjACNjAENy4wMGQCAg9kFgJmDxUDAjkwAjkwBDcuNTBkAgMPZBYCZg8VAwMxMjADMTIwBDkuMDBkAgkPFgIeCGRpc2FibGVkZGQCCg8WBB4FdmFsdWUFDOeri+WNs+aKlei1hB8JZGQCDA8WAh8HBQM2MzVkAg0PFgIfBwWsEOS4iua1t+afkOi/m+WHuuWPo+aciemZkOWFrOWPuOWcqOS4juafkOW7uuW3pembhuWbouS4iua1t+afkOWPkeWxleaciemZkOWFrOWPuOi0uOaYk+W+gOadpeS4re+8jOS6jjIwMTflubQy5pyIOeaXpeetvue9suS6humUgOWUruWQiOWQjO+8jOWwseeUtee6v+eUtee8huetiei0p+eJqeS5sOWNlui/m+ihjOS6hue6puWumuOAguS4iua1t+afkOi/m+WHuuWPo+aciemZkOWFrOWPuOS6jjIwMTflubQy5pyIMTbml6Xlt7LlsaXooYzlkIjlkIzpobnkuIvnmoTnm7jlhbPkuYnliqHvvIzlvaLmiJDlr7nmn5Dlu7rlt6Xpm4blm6LkuIrmtbfnianotLjlj5HlsZXmnInpmZDlhazlj7jlkIjms5XjgIHlkIjop4TjgIHnnJ/lrp7nmoTlupTmlLbotKbmrL7lgLrmnYPjgIIgDQrkvZzkuLrmnKzmrKHono3otYTnmoTljp/lp4vlgLrliqHkurrvvIzmn5DnianotLjmmK8yMDEz5bm0MTLmnIgxOOaXpeafkOW7uuW3pembhuWbouWcqOS4iua1t+iHqueUsei0uOaYk+ivlemqjOWMuuaWsOaIkOeri+eahOS4gOWutuaOp+iCoeWFrOWPuO+8jOazqOWGjOi1hOacrOS4uuS4ieS6v+WFg+S6uuawkeW4geOAguWTjeW6lOWbveWutuaUv+W6nOWFgeiuuOWcqOiHqueUsei0uOaYk+ivlemqjOWMuuS4gOWumuiMg+WbtOWGhei0uOaYk+iHqueUseeahOWul+aXqO+8jOWFrOWPuOe7j+iQpeiMg+WbtOWuveW5v++8jOa2teebluS6hui0p+eJqeWPiuaKgOacr+eahOi/m+WHuuWPo+S4muWKoe+8jOW7uuetkeadkOaWmeOAgeacuuaisOiuvuWkh+OAgeacuueUteiuvuWkh+OAgeeUteWtkOS6p+WTgeOAgeeUtee6v+eUtee8huOAgemAmuiur+iuvuWkh+OAgeepuuiwg+OAgeacieiJsumHkeWxnuOAgeeFpOeCreOAgemTgeefv+efs+OAgemTgeaZtueyieOAgemSouadkOOAgeacqOadkOOAgea3t+WHneWcn+OAgeS6lOmHkeS6pOeUteOAgeiuoeeul+acuuWPiumFjeS7tuOAgeWhkeaWmeWItuWTgeOAgeW3peiJuuekvOWTgeOAgeWKnuWFrOeUqOWTgeOAgeacjeijheOAgemSiOe6uue7h+WTgeOAgeaXpeeUqOeZvui0p+OAgeePoOWunemmlumlsOOAgeWMluW3peS6p+WTgeeahOmUgOWUruOAgeWVhuWKoeS/oeaBr+WSqOivouetieWQhOS4quaWuemdouOAguWFrOWPuOebruWJjeeahOWKnuWFrOWcsOWdgOS9jeS6juS4iua1t+W4guiZueWPo+WMuue5geWNjuWVhuS4muS4reW/g+WcsOauteOAgiANCuWFrOWPuOiHquWcqOaIkOeri+i1t++8jOW3sue7j+WFt+acieWkp+Wei+WbveS8geOAgeefpeWQjeawkeS8geS9nOS4uuS4iuS4i+a4uOeahOmUgOWUruS4jumHh+i0rea4oOmBk++8jOS4uuacrOasoeW6lOaUtui0puasvui0qOaKvOiejei1hOeahOi/mOasvuadpea6kOaPkOS+m+WFhei2s+S/neivgeOAgg0K5p+Q54mp5rWB5piv5Zyo5o6l5pS25Y6f5Zu95rCR5YWa6IGU5Yuk5oC76YOo5LiK5rW35Yab6ZyA5p2Q5paZ5LuT5bqT55qE5Z+656GA5LiK5LqOMTk1MOW5tDPmnIjph43mlrDnu4Tlu7rogIzmiJDnmoTvvIzkuo4yMDAx5bm0MeaciOenu+S6pOafkOmbhuWbouOAgjIwMDblubQy5pyINeaXpeafkOWFrOWPuOaUueWItuOAkDIwMDbjgJEyOeWPt+aJueWHhu+8jOS7peafkOeJqea1geS4uuaguOW/g+S8geS4mu+8jOWQuOaUtuWOn+aAu+WQjuWGm+mcgOS7k+W6k+S4reatpuaxieOAgeilv+WuieOAgeS/oemYs+OAgeaIkOmDveetieWbm+WutuWNleS9jeWFseWQjOWPguS4jue7hOW7uuS4iua1t+afkOeJqea1geaciemZkOWFrOWPuOOAgiDnm67liY3mn5DnianmtYHml6LlhbfmnInnrqHnkIbmmbrog73vvIzkuZ/mmK/nu4/okKXlrp7kvZPvvIzkuLvopoHku6XorqHliJLlpJblhpvpnIDmnZDmlpnnmoTnrbnmjqrjgIHlhpvpnIDlk4HjgIHogYzkuJroo4XjgIHmsJHnlKjkuqflk4Hlj4rmo4nnurrljp/mnZDmlpnnmoTnu4/okKXplIDllK7jgIHku5PlgqjjgIHku6PlgqjjgIHku6PmlLbjgIHku6Plj5HjgIHmiL/kuqfnp5/otYHjgIHlnLrlnLDlh7rnp5/lkozmi5vlvoXmiYDnu4/okKXnrYnpobnnm67jgIIgDQrlhazlj7jotYTkuqflhYXotrPvvIznu4/okKXmg4XlhrXoia/lpb3vvIzkuLrmnKzmrKHlupTmlLbotKbmrL7otKjmirzono3otYTnmoTov5jmrL7mnaXmupDmj5DkvpvlhYXotrPkv53or4HjgIJkAg4PFgIfBwU855So5LqO5YC65Yqh5Lq655qE5pel5bi45Lia5Yqh57uP6JCl5Y+K6KGl5YWF5rWB5Yqo6LWE6YeR44CCZAIPDxYCHwcFxwEx44CBIOWAn+asvuS8geS4muWvueS4iua1t+afkOeJqea1geaciemZkOWFrOWPuOW6lOaUtui0puasvueahOWbnuaUtuS9nOS4uuacrOasoeiejei1hOmhueS4i+eahOesrOS4gOi/mOasvuadpea6kOOAgiANCjLjgIEg5YCf5qy+5LyB5Lia55qE57uP6JCl5oCn5Lia5Yqh5pS25YWl5Li65pys5qyh6J6N6LWE5o+Q5L6b55qE6L+Y5qy+5L+d6Zqc44CCZAIQDxYCHwcFjwMx44CB5bqU5pS26LSm5qy+6LSo5oq877ybDQoy44CB6aOO6Zmp5a2Y5qy+5YeG5aSH6YeR5L+d6Zqc77ybDQrpo47pmanlrZjmrL7kv53pmpzph5Hkv53pmpzvvJrlpoLpobnnm67lh7rnjrDpgL7mnJ/po47pmanml7bvvIzlubPlj7DlsIbnlKjpo47pmankv53pmpzph5Hlrp7mlr3lhYjooYzlnqvku5jmnLrliLbvvIzkv53pmpzmipXotYTogIXmjInml7bmlLblm57mnKzph5HlkozmlLbnm4rvvIzpgL7mnJ/lgLrmnYPlsIbnlLHlubPlj7Dov5vooYzlgqzmlLblkozov73lgb/jgIINCumjjumZqeWtmOasvuS/nemanOmHkeiuoeaPkO+8muWvueWAn+asvuS8geS4muaMieeFp+WAn+asvumHkemineeahDAuNSUtNSXov5vooYzorqHmj5DvvIzorqHlhaXpo47pmanlrZjmrL7kv53pmpzph5HkuJPmiLfjgIJkAhEPFgIfCAIFFgpmD2QWAmYPFQEvaHR0cDovL3d3dy56amd0LmNvbS9BZG1pbnMvdXBsb2FkL+WQiOWQjDAwMS5qcGdkAgEPZBYCZg8VAS9odHRwOi8vd3d3LnpqZ3QuY29tL0FkbWlucy91cGxvYWQv5ZCI5ZCMMDAyLmpwZ2QCAg9kFgJmDxUBL2h0dHA6Ly93d3cuempndC5jb20vQWRtaW5zL3VwbG9hZC/lkIjlkIwwMDMuanBnZAIDD2QWAmYPFQEvaHR0cDovL3d3dy56amd0LmNvbS9BZG1pbnMvdXBsb2FkL+WQiOWQjDAwNC5qcGdkAgQPZBYCZg8VAS9odHRwOi8vd3d3LnpqZ3QuY29tL0FkbWlucy91cGxvYWQv5ZCI5ZCMMDA1LmpwZ2QCEg8WAh8HBdQE5LiK5rW35p+Q6L+b5Ye65Y+j5pyJ6ZmQ5YWs5Y+45piv5LiA5a625oiQ56uL5LqOMjAxNOW5tDHmnIgyOOaXpe+8jOazqOWGjOWcsOS4uuS4reWbve+8iOS4iua1t++8ieiHqueUsei0uOaYk+WunumqjOWMuu+8jOazqOWGjOi1hOmHkeS4ujHkur/lhYPkurrmsJHluIHvvIzkuLvokKXotKfnianlj4rmioDmnK/nmoTov5vlh7rlj6PkuJrliqHjgIHovazlj6PotLjmmJPjgIHljLrlhoXkvIHkuJrpl7TnmoTotLjmmJPlj4rljLrlhoXotLjmmJPku6PnkIbnrYnjgILlhazlj7jkuK3lsYLnrqHnkIbkurrlkZjnu4/pqozkuLDlr4zvvIzog73pgILlupTluILlnLrnq57kuonkvIHkuJrlj5HlsZXnmoTopoHmsYLjgILlhazlj7jlnKjmiormj6Hov5vlh7rlj6PotLjmmJPlj5HlsZXotovlir/nmoTln7rnoYDkuIrvvIzlsIbov5vkuIDmraXlvLrljJblhazlj7jlhoXpg6jnrqHnkIbmsLTlubPlkozlpJbpg6jluILlnLrokKXplIDog73lipvvvIzov5vkuIDmraXplLvpgKDlhazlj7jlpJrlhYPljJbkvpvlupTpk77kvZPns7vvvIzlnKjotLjmmJPpoobln5/lhoXlgZrlpKflgZrlvLrvvIzmnIDnu4jlrp7njrDlrqLmiLfku7flgLznmoTmnIDlpKfljJbjgIJkAhMPFgIfCAIGFgxmD2QWAmYPFQE2aHR0cDovL3d3dy56amd0LmNvbS9BZG1pbnMvdXBsb2FkL+azleS6uui6q+S7veivgTEuanBnZAIBD2QWAmYPFQE2aHR0cDovL3d3dy56amd0LmNvbS9BZG1pbnMvdXBsb2FkL+W8gOaIt+iuuOWPr+ivgTIuanBnZAICD2QWAmYPFQE2aHR0cDovL3d3dy56amd0LmNvbS9BZG1pbnMvdXBsb2FkL+eojuWKoeeZu+iusOivgTMuanBnZAIDD2QWAmYPFQE2aHR0cDovL3d3dy56amd0LmNvbS9BZG1pbnMvdXBsb2FkL+S/oeeUqOS7o+eggeivgTQuanBnZAIED2QWAmYPFQEzaHR0cDovL3d3dy56amd0LmNvbS9BZG1pbnMvdXBsb2FkL+iQpeS4muaJp+eFpzUuanBnZAIFD2QWAmYPFQE8aHR0cDovL3d3dy56amd0LmNvbS9BZG1pbnMvdXBsb2FkL+e7hOe7h+acuuaehOS7o+eggeivgTYuanBnZAIUDxYCHgdWaXNpYmxlaGQCFQ9kFgICAQ8WAh4Hb25jbGljawUOTGlua1BhZ2UoMjAyNClkZOZF7/TfV76Fj7xqD/cJ87gObMVjLCBxZIBjVOvJOn6Q" />
+    </div>
+
+    <div class="aspNetHidden">
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="210ACBFE" />
+    </div>
+
+    <input name="ctl00$ContentPlaceHolder1$hidCurrDate" type="hidden" id="hidCurrDate" value="2017/10/19 13:22:02" />
+    <input name="ctl00$ContentPlaceHolder1$hidRaiseEndDate" type="hidden" id="hidRaiseEndDate" value="2018/2/16 11:29:00" />
+    <input name="ctl00$ContentPlaceHolder1$hidinvestLimitation" type="hidden" id="hidinvestLimitation" value="29" />
+    <div class="grid-container">
+        <div class="Navigation">
+            <ul>
+                <li><a href="/" style="color: #666; padding-right: 5px;">首页</a>&gt;</li>
+                <li><a href="/invest/list" style="color: #666; padding-right: 5px;">投资项目</a>&gt;</li>
+                <li><a href="/invest/info" class="Orange">项目详情</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="product-page">
+        <div class="pro-page-a box-shadow clearfix">
+            <div class="pro-l">
+                <h3><a href="javascript:;"></a><i id="txtProductName">优选 11期 中金宝上海某物流有限公司2898万 应收账款转让项目</i></h3>
+                <div class="div-box">
+
+                    <dl>
+                        <dd>
+                            <span class="tit">预期最高年化收益</span>
+                            <span class="tbig tOrange"><b>9.00</b>%</span>
+                        </dd>
+                        <dd>
+                            <span class="tit">计息方式</span>
+                            <span class="tbig"><b>T+1</b>(投资后<i class="tOrange">次日计息</i>)</span>
+                        </dd>
+                        <dd>
+                            <span class="tit">剩余可投</span>
+                            <span class="tbig"><b id="txtProductResidualAmount">1626.44</b><i id="syDanWei">&nbsp;&nbsp;万元</i></span>
+                        </dd>
+                    </dl>
+                </div>
+                <p>
+                    <b>还款方式： 到期还款付息</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!--<span>账户资金安全由阳光保险承担</span>-->
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="ico">泰然计划安全保障</span>
+                </p>
+            </div>
+            <div class="pro-r">
+                <div id="invest-window" class="div-box">
+                    <p class="op">
+                        预期年化收益&nbsp;&nbsp;&nbsp;
+                        <span>
+                            <i id="iMax"></i>
+                            <b>
+                                <em id="txtMaxLilv">9.00</em>
+                                <i>&nbsp;%</i>
+                            </b>
+                        </span>
+                    </p>
+
+
+                    <div id="select-window">
+                        <p class="tit" id="countdown">
+                            <span class="txt">请选择投资期限 :</span>
+                            <span>
+                                <img src="/static/img/ProductPage/ico-3.jpg" />
+                                <b>有效期小于<em id="txtinvestLimitation"></em>天将不可购买<i></i></b>
+                            </span>
+                            <strong class="days"></strong>天
+                            <strong class="hours"></strong>时
+                            <strong class="minutes"></strong>分
+                            <strong class="seconds"></strong>秒
+                        </p>
+
+                        <div class="days clearfix" id="ndays">
+
+                            <a href="javascript:">30天</a>
+                            <input type="hidden" id="hid30" value="6.50" />
+
+                            <a href="javascript:">60天</a>
+                            <input type="hidden" id="hid60" value="7.00" />
+
+                            <a href="javascript:">90天</a>
+                            <input type="hidden" id="hid90" value="7.50" />
+
+                            <a href="javascript:">120天</a>
+                            <input type="hidden" id="hid120" value="9.00" />
+
+                        </div>
+                        <div class="investment">
+                            <p class="oop">
+                                <span class="minus butn"></span>
+                                <span class="inpt">
+                                    <input name="ctl00$ContentPlaceHolder1$txtInvestMoney" type="text" id="txtInvestMoney" onafterpaste="this.value=this.value.replace(/\D/g,&#39;&#39;)" /></span>
+                                <span class="add butn"></span>
+                            </p>
+                            <div id="spnErrByInvestMoney" style="color: red; font-size: 1em;">
+                                <p class="text-a">预期投&nbsp;<span class="sp-b"> 0 </span>&nbsp;元，预期可赚&nbsp;<span class="sp-c">0.00</span>&nbsp;元</p>
+                                <p class="text-b"></p>
+                            </div>
+                        </div>
+
+                        <input name="ctl00$ContentPlaceHolder1$NowInvest" type="button" id="NowInvest" value="立即投资" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="pro-page-b box-shadow">
+            <div class="pro-btn">
+                <span class="on">项目详情<b></b></span>
+                <span>安全保障<b></b></span>
+                <span>借款方详情<b></b></span>
+                <span>投资记录<b></b><em id="InvestRecordInfo" class="InvestRecordInfo">635</em></span>
+            </div>
+            <div class="pro-cont">
+                <div class="pro-cont-a">
+                    <h3>平台运营模式</h3>
+                    <div class="img">
+                        <img src="/static/img/ProductPage/pro-page-6.png" />
+                    </div>
+                    <h3>项目介绍</h3>
+                    <div class="text">
+                        <p id="txtprojectDesc">上海某进出口有限公司在与某建工集团上海某发展有限公司贸易往来中，于2017年2月9日签署了销售合同，就电线电缆等货物买卖进行了约定。上海某进出口有限公司于2017年2月16日已履行合同项下的相关义务，形成对某建工集团上海物贸发展有限公司合法、合规、真实的应收账款债权。 作为本次融资的原始债务人，某物贸是2013年12月18日某建工集团在上海自由贸易试验区新成立的一家控股公司，注册资本为三亿元人民币。响应国家政府允许在自由贸易试验区一定范围内贸易自由的宗旨，公司经营范围宽广，涵盖了货物及技术的进出口业务，建筑材料、机械设备、机电设备、电子产品、电线电缆、通讯设备、空调、有色金属、煤炭、铁矿石、铁晶粉、钢材、木材、混凝土、五金交电、计算机及配件、塑料制品、工艺礼品、办公用品、服装、针纺织品、日用百货、珠宝首饰、化工产品的销售、商务信息咨询等各个方面。公司目前的办公地址位于上海市虹口区繁华商业中心地段。 公司自在成立起，已经具有大型国企、知名民企作为上下游的销售与采购渠道，为本次应收账款质押融资的还款来源提供充足保证。 某物流是在接收原国民党联勤总部上海军需材料仓库的基础上于1950年3月重新组建而成的，于2001年1月移交某集团。2006年2月5日某公司改制【2006】29号批准，以某物流为核心企业，吸收原总后军需仓库中武汉、西安、信阳、成都等四家单位共同参与组建上海某物流有限公司。 目前某物流既具有管理智能，也是经营实体，主要以计划外军需材料的筹措、军需品、职业装、民用产品及棉纺原材料的经营销售、仓储、代储、代收、代发、房产租赁、场地出租和招待所经营等项目。 公司资产充足，经营情况良好，为本次应收账款质押融资的还款来源提供充足保证。
+                        </p>
+                    </div>
+                    <h3>资金用途</h3>
+                    <div class="text">
+                        <p id="txtfundPurpose">用于债务人的日常业务经营及补充流动资金。</p>
+                    </div>
+                    <h3>还款来源</h3>
+                    <div class="text">
+                        <p id="txtrefundSource">1、 借款企业对上海某物流有限公司应收账款的回收作为本次融资项下的第一还款来源。 2、 借款企业的经营性业务收入为本次融资提供的还款保障。</p>
+                    </div>
+                </div>
+                <div class="pro-cont-b">
+                    <h3>资金安全</h3>
+                    <div class="text">
+                        <p>整个交易流程理财网不触碰用户资金，交易资金完全由第三方支付机构监管；</p>
+                        <p>监管银行依据专款专用原则，对每笔资金进出进行严格监控，确保用户账户资金安全；</p>
+
+                    </div>
+                    <h3>资产安全</h3>
+                    <div class="text">
+                        <p>当借款人逾期时，理财网将按照"风险存款准备金账户"资金使用规则从该账户中提取相应资金用于偿付投资人应收取的本金或本息金额。</p>
+                    </div>
+                    <h3>风控相关证照</h3>
+                    <div class="text">
+                        <p id="txtsafeDesc">1、应收账款质押； 2、风险存款准备金保障； 风险存款保障金保障：如项目出现逾期风险时，平台将用风险保障金实施先行垫付机制，保障投资者按时收回本金和收益，逾期债权将由平台进行催收和追偿。 风险存款保障金计提：对借款企业按照借款金额的0.5%-5%进行计提，计入风险存款保障金专户。
+                        </p>
+                    </div>
+
+                    <div class="cs-Imglistbox clearfix">
+                        <a class="prev" href="javascript:;"></a>
+                        <a class="next" href="javascript:;"></a>
+                        <div class="bd">
+                            <ul>
+
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="http://www.zjgt.com/Admins/upload/合同001.jpg" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="http://www.zjgt.com/Admins/upload/合同002.jpg" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="http://www.zjgt.com/Admins/upload/合同003.jpg" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="http://www.zjgt.com/Admins/upload/合同004.jpg" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="http://www.zjgt.com/Admins/upload/合同005.jpg" /></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pro-cont-c">
+                    <h3>借款企业介绍</h3>
+                    <div class="text">
+                        <p id="txtborrowerDesc">上海某进出口有限公司是一家成立于2014年1月28日，注册地为中国（上海）自由贸易实验区，注册资金为1亿元人民币，主营货物及技术的进出口业务、转口贸易、区内企业间的贸易及区内贸易代理等。公司中层管理人员经验丰富，能适应市场竞争企业发展的要求。公司在把握进出口贸易发展趋势的基础上，将进一步强化公司内部管理水平和外部市场营销能力，进一步锻造公司多元化供应链体系，在贸易领域内做大做强，最终实现客户价值的最大化。</p>
+                    </div>
+                    <h3>企业相关证照</h3>
+
+                    <div class="cs-Imglistbox clearfix">
+                        <a class="prev" href="javascript:;"></a>
+                        <a class="next" href="javascript:;"></a>
+                        <div class="bd">
+                            <ul>
+
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="http://www.zjgt.com/Admins/upload/法人身份证1.jpg" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="http://www.zjgt.com/Admins/upload/开户许可证2.jpg" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="http://www.zjgt.com/Admins/upload/税务登记证3.jpg" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="http://www.zjgt.com/Admins/upload/信用代码证4.jpg" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="http://www.zjgt.com/Admins/upload/营业执照5.jpg" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="http://www.zjgt.com/Admins/upload/组织机构代码证6.jpg" /></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pro-cont-d">
+
+                    <div id="divLoginOut" style="text-align: center;">
+                        <input name="ctl00$ContentPlaceHolder1$btnLoginIn" type="button" id="btnLoginIn" value="登录后可见" class="btn" onclick="LinkPage(2024)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--弹出框-->
+        <div class="pro-popop rgba">
+            <div class="img-box">
+                <a class="pop-close" href="javascript:;"><span></span></a>
+                <a class="prev arrow" href="javascript:;"><span></span></a>
+                <a class="next arrow" href="javascript:;"><span></span></a>
+                <div class="bd"></div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            (function () {
+
+                // 小图移动
+                jQuery(".cs-Imglistbox").slide({
+                    mainCell: ".bd ul",
+                    autoPage: true,
+                    effect: "left",
+                    vis: 4
+                });
+
+                //图片放大
+                $(".cs-Imglistbox .bd").on("click", "li", function () {
+
+                    var _this = $(this).index();
+                    var popop = $(".pro-popop");
+
+                    popop.find(".bd").append("<ul></ul>");
+
+                    $(this).parents(".bd").find("img").each(function () {
+                        popop.find(".bd ul").append("<li><img src='" + $(this).attr("src") + "'/></li>")
+                    });
+
+                    jQuery(".pro-popop").slide({
+                        mainCell: ".bd ul",
+                        autoPage: true,
+                        effect: "left",
+                        defaultIndex: _this
+                    });
+
+                    popop.fadeIn("slow");
+                    popop.find(".pop-close").click(function () {
+                        popop.fadeOut("slow").find(".bd").html("")
+                    });
+
+                });
+
+            })();
+        </script>
+
+
+    </div>
+    <div id="TenderDiv" title="请确认您的投资信息" dialog="" style="text-align: center;">
+        <iframe id="ifmTender" frameborder="0" height="420px" width="100%"></iframe>
+    </div>
+    <!----新旧分隔---->
+    <input name="ctl00$ContentPlaceHolder1$hasbeenlogin" type="hidden" id="hasbeenlogin" value="0" />
+    <input name="ctl00$ContentPlaceHolder1$hfInvestCount" type="hidden" id="hfInvestCount" />
+    <!--最大天数-->
+    <input name="ctl00$ContentPlaceHolder1$hidMaxDay" type="hidden" id="hidMaxDay" value="120" />
+    <!--起投金额-->
+    <input name="ctl00$ContentPlaceHolder1$hidLendLeast" type="hidden" id="hidLendLeast" value="100.00" />
+    <!--递增金额-->
+    <input name="ctl00$ContentPlaceHolder1$hidIncreaseMoney" type="hidden" id="hidIncreaseMoney" value="100.00" />
+    <!--投资天数-->
+    <input type="hidden" id="hidInvestDays" />
+    <input name="ctl00$ContentPlaceHolder1$hidleftDays" type="hidden" id="hidleftDays" value="120" />
+    <!--是否可删--->
+    <input name="ctl00$ContentPlaceHolder1$hdDateLine" type="hidden" id="hdDateLine" />
+
+</form>
+{% include 'footer.html' %}
