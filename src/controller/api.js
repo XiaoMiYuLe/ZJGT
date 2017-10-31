@@ -138,7 +138,7 @@ module.exports = class extends Base {
                 "result": [{
                     "userId": "1",
                     "userName": '133****3333'
-            }]
+                }]
             }
         } else {
             a = {
