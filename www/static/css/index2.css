@@ -28,9 +28,9 @@ img { border:none; vertical-align: top; max-width: 100%; }
 
     /* 周年庆活动弹窗 2016.6.22 */
 	#in-oneActive { display:none; position:fixed; left:0; top:0; z-index:100; width:100%; height:100%; min-width:1200px; min-height:726px; background:rgba(0,0,0,0.8); }
-    #in-oneActive .imges-box { width:100%; height:100%; background:url(/static/img/event/anniversary/in-alert.png) no-repeat center; }
-    #in-oneActive .in-link { position:absolute; left:50%; bottom:6%; margin-left:-192px; width:384px; height:101px; background:url(/static/img/event/anniversary/now-join.png) no-repeat; }
-    #in-oneActive .in-close { position:absolute; right:5%; top:15%; width:50px; height:50px; background:url(/static/img/event/anniversary/in-close.png) no-repeat; }
+    #in-oneActive .imges-box { width:100%; height:100%; background:url(/www/static/img/event/anniversary/in-alert.png) no-repeat center; }
+    #in-oneActive .in-link { position:absolute; left:50%; bottom:6%; margin-left:-192px; width:384px; height:101px; background:url(/www/static/img/event/anniversary/now-join.png) no-repeat; }
+    #in-oneActive .in-close { position:absolute; right:5%; top:15%; width:50px; height:50px; background:url(/www/static/img/event/anniversary/in-close.png) no-repeat; }
     #in-oneActive .inWrap { height:100%; }
 
 		
@@ -83,7 +83,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 		.flex-control-nav{ width:100%; position:absolute; left:50%; bottom:16px; text-align:center; -webkit-transition:transform 0.3s ease; transition:transform 0.3s ease;}
 		.flex-control-nav li{ margin:0 6px; display:inline-block; zoom:1; *display:inline;}
 		.flex-control-nav:hover{ transform:scale(1.4);}
-		.flex-control-paging li a{ display:block; width:14px; height:14px; background:url(/static/img/index2/btn-slider-dot.png) no-repeat center top; cursor:pointer; -webkit-border-radius:50%; -moz-border-radius:50%; -o-border-radius:20px; border-radius:50%; text-indent:-999em; overflow:hidden;}
+		.flex-control-paging li a{ display:block; width:14px; height:14px; background:url(/www/static/img/index2/btn-slider-dot.png) no-repeat center top; cursor:pointer; -webkit-border-radius:50%; -moz-border-radius:50%; -o-border-radius:20px; border-radius:50%; text-indent:-999em; overflow:hidden;}
 		.flex-control-paging li a.flex-active{ background-position:center bottom; cursor:default;}
 		.flex-control-thumbs{ margin:5px 0 0; position:static; overflow:hidden;}
 		.flex-control-thumbs li{ width:25%; float:left; margin:0;}
@@ -111,7 +111,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 		.h-data .box { width:478px; margin-left: 14px; border: 1px solid #e6e6e6; border-top:0; border-bottom:0; }
 		.h-data .more { margin-left: 18px; color: #aeb1b6; }
         .h-data .h-news { width:50%; }
-		.h-data .notice { padding-left:22px; background:url(/static/img/index2/inews-ico.jpg) no-repeat left 4px; color: #82858b; }
+		.h-data .notice { padding-left:22px; background:url(/www/static/img/index2/inews-ico.jpg) no-repeat left 4px; color: #82858b; }
 		.h-data .news-box { width: 350px; height:26px; margin-left: 15px; overflow:hidden; }
 		.h-data .news-box a { display: block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; color:#000; }
         .h-data .news-box a:hover { color:#ff3c00; text-decoration:underline; }
@@ -124,7 +124,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 		.h-advantage li { float:left; width:25%; height:80px; overflow: hidden; position: relative; }
 		.h-advantage .floor-one, .h-advantage .floor-two { position: absolute; text-align: center; color: #474e5d; }
 
-		.h-advantage .floor-one { top:0; width:75%; line-height: 80px; padding-left: 25%; font-size: 18px; background: #fff url(/static/img/index2/header-ico.jpg) no-repeat; }
+		.h-advantage .floor-one { top:0; width:75%; line-height: 80px; padding-left: 25%; font-size: 18px; background: #fff url(/www/static/img/index2/header-ico.jpg) no-repeat; }
 		.h-advantage .floor-a { background-position: 22% 0; }
 		.h-advantage .floor-b { background-position: 18% -80px; }
 		.h-advantage .floor-c { background-position: 22% -160px; }
@@ -167,13 +167,13 @@ img { border:none; vertical-align: top; max-width: 100%; }
         .in-main .content-d .cont-l { height:364px; background-color:#a3e1f8; }
         .in-main .content-e .cont-l { height:190px; background-color:#a2baf8; }
 
-        .in-main .cont-l dt { background:url(/static/img/index2/in-l-title.png) no-repeat; }
+        .in-main .cont-l dt { background:url(/www/static/img/index2/in-l-title.png) no-repeat; }
         .in-main .content-b .cont-l dt { background-position:0 -26px; }
         .in-main .content-c .cont-l dt { background-position:0 -52px; }
         .in-main .content-d .cont-l dt { background-position:0 -78px; }
         .in-main .content-e .cont-l dt { background-position:0 -104px; }
 
-        .in-main .cont-l .b-img { position:absolute; right:0; bottom:0; width:120px; height:108px; margin-bottom:0; overflow:hidden; background:url(/static/img/index2/in-l-ico-1.png) no-repeat; }
+        .in-main .cont-l .b-img { position:absolute; right:0; bottom:0; width:120px; height:108px; margin-bottom:0; overflow:hidden; background:url(/www/static/img/index2/in-l-ico-1.png) no-repeat; }
         .in-main .content-b .b-img { background-position: 0 -108px; }
         .in-main .content-c .b-img { background-position: 0 -216px; }
         .in-main .content-d .b-img { background-position: 0 -324px; }
@@ -251,9 +251,9 @@ img { border:none; vertical-align: top; max-width: 100%; }
         /* 票据宝 */
         /*#myCanvas { height:100%; }
         .in-main .content-pjb { position:relative; }
-        .in-main .content-pjb .pjb-ico { position:absolute; width:103px; height:65px; right:0; bottom:0; background:url(/static/img/index2/pjb-ico.png) no-repeat; }
+        .in-main .content-pjb .pjb-ico { position:absolute; width:103px; height:65px; right:0; bottom:0; background:url(/www/static/img/index2/pjb-ico.png) no-repeat; }
         .in-main .content-pjb dl { position:absolute; left:28px; top:28px; }
-        .in-main .content-pjb dt { width:105px; height:25px; margin-bottom:10px; background:url(/static/img/index2/pjb.png) no-repeat; }     
+        .in-main .content-pjb dt { width:105px; height:25px; margin-bottom:10px; background:url(/www/static/img/index2/pjb.png) no-repeat; }     
         .in-main .content-pjb dd { line-height:24px; text-indent:4px; }
         .in-main .content-pjb dd a { color:#fff; font-size:14px; }*/
         .in-main .content-pjb .text { left:28px; top:60px; }
@@ -271,8 +271,8 @@ img { border:none; vertical-align: top; max-width: 100%; }
 		.in-main .content-pjb .p-menu li .span-a i { font-size: 22px; line-height:54px; }
 		.in-main .content-pjb .p-menu li .span-c i { font-size: 17px; color:#ff3c00; line-height: 68px; }
         .in-main .content-pjb .float_blk { position:absolute; right:-2px; top:-3px; width:86px; height:75px; }
-        .in-main .content-pjb .zhouqiduan { background:url(/static/img/index2/zhouqiduan.png) no-repeat; }
-        .in-main .content-pjb .shouyigao { background:url(/static/img/index2/shouyigao.png) no-repeat; }
+        .in-main .content-pjb .zhouqiduan { background:url(/www/static/img/index2/zhouqiduan.png) no-repeat; }
+        .in-main .content-pjb .shouyigao { background:url(/www/static/img/index2/shouyigao.png) no-repeat; }
 
 
 		/* 安全可靠 */
@@ -402,7 +402,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 	    .in-tab .tab-honnr { height:196px; padding:28px 0; overflow: hidden; }
 	    .in-tab .tab-honnr p { font-size: 18px; color:#474e5d; }
 	    .in-tab .tab-honnr div { float:left; width:267px; height:194px; margin-right: 20px; border:1px solid #e6e6e6; text-align: center; }
-	    .in-tab .tab-honnr div span { display: block; height:96px; margin: 34px 0 18px; background:url(/static/img/index2/in-honnr.png) no-repeat center 0; }
+	    .in-tab .tab-honnr div span { display: block; height:96px; margin: 34px 0 18px; background:url(/www/static/img/index2/in-honnr.png) no-repeat center 0; }
 	    .in-tab .tab-honnr .honnr-b span { background-position: center -96px; }
 	    .in-tab .tab-honnr .honnr-c span { background-position: center -192px; }
 	    .in-tab .tab-honnr .honnr-d span { background-position: center -288px; }

@@ -5,18 +5,18 @@ body{ min-width:1255px; overflow-x:hidden;}
 
 .wcrd-cont{ background:#871c13; padding-bottom:40px;}
 .wcrd-cont .hd-wrap{ width:1255px; background:#7b130a; position:relative; margin:0 auto;}
-.wcrd-cont .hd-wrap:before{ content:""; width:341px; height:276px; background:url(/static/img/event/wcrd-2016/bg-arrow-l.jpg) no-repeat; position:absolute; left:-341px; top:0;}
-.wcrd-cont .hd-wrap:after{ content:""; width:341px; height:276px; background:url(/static/img/event/wcrd-2016/bg-arrow-r.jpg) no-repeat; position:absolute; right:-341px; top:0;}
+.wcrd-cont .hd-wrap:before{ content:""; width:341px; height:276px; background:url(/www/static/img/event/wcrd-2016/bg-arrow-l.jpg) no-repeat; position:absolute; left:-341px; top:0;}
+.wcrd-cont .hd-wrap:after{ content:""; width:341px; height:276px; background:url(/www/static/img/event/wcrd-2016/bg-arrow-r.jpg) no-repeat; position:absolute; right:-341px; top:0;}
 
-.banner-1{ height:400px; background:url(/static/img/event/wcrd-2016/banner-1.jpg) no-repeat center top;}
-.banner-2{ height:394px; background:url(/static/img/event/wcrd-2016/banner-2.jpg) no-repeat center top;}
+.banner-1{ height:400px; background:url(/www/static/img/event/wcrd-2016/banner-1.jpg) no-repeat center top;}
+.banner-2{ height:394px; background:url(/www/static/img/event/wcrd-2016/banner-2.jpg) no-repeat center top;}
 .banner-2 .brief{ width:1255px; margin:0 auto; padding-top:175px;}
-.banner-2 .brief p{ width:761px; height:109px; line-height:26px; font-size:18px; font-weight:bold; color:#fef9e6; letter-spacing:3px; background:url(/static/img/event/wcrd-2016/bg-banner-info.png) no-repeat; padding:20px 85px 0 90px; margin:0 auto;}
+.banner-2 .brief p{ width:761px; height:109px; line-height:26px; font-size:18px; font-weight:bold; color:#fef9e6; letter-spacing:3px; background:url(/www/static/img/event/wcrd-2016/bg-banner-info.png) no-repeat; padding:20px 85px 0 90px; margin:0 auto;}
 
 .hd-info{ padding-top:40px; margin-bottom:65px;}
 .hd-info h2{ width:360px; height:40px; line-height:40px; text-align:center; font-size:24px; font-weight:bold; color:#fcfefe; margin:0 auto; position:relative;}
-.hd-info h2:before{ content:""; width:26px; height:26px; background:url(/static/img/event/wcrd-2016/ico-circle.png) no-repeat; position:absolute; top:7px; left:-33px;}
-.hd-info h3{ width:814px; height:34px; line-height:34px; text-align:center; font-size:18px; color:#ffd48f; background:url(/static/img/event/wcrd-2016/bg-tit.png) no-repeat center center; margin:0 auto 40px; position:relative;}
+.hd-info h2:before{ content:""; width:26px; height:26px; background:url(/www/static/img/event/wcrd-2016/ico-circle.png) no-repeat; position:absolute; top:7px; left:-33px;}
+.hd-info h3{ width:814px; height:34px; line-height:34px; text-align:center; font-size:18px; color:#ffd48f; background:url(/www/static/img/event/wcrd-2016/bg-tit.png) no-repeat center center; margin:0 auto 40px; position:relative;}
 .hd-info table{ width:1030px; margin:0 auto;}
 .hd-info th{ line-height:50px; text-align:center; font-size:16px; font-weight:bold; color:#ffd48f; background:#720f07; border:1px solid #680c04;}
 .hd-info th strong{ display:block; line-height:24px; color:#fcfefe; margin-bottom:35px;}
@@ -27,7 +27,7 @@ body{ min-width:1255px; overflow-x:hidden;}
 
 .hd-ad{ height:665px; border:2px dashed #8a3314; border-left:none; border-right:none; padding-top:80px; margin:0 80px;}
 .hd-ad h2{ height:75px; line-height:38px; text-align:center; font-size:22px; font-weight:bold; color:#fdf9e0; letter-spacing:2px;}
-.hd-ad h2:before{ content:""; display:inline-block; width:155px; height:37px; background:url(/static/img/event/wcrd-2016/ico-tit.png) no-repeat; margin-right:20px; vertical-align:top;}
+.hd-ad h2:before{ content:""; display:inline-block; width:155px; height:37px; background:url(/www/static/img/event/wcrd-2016/ico-tit.png) no-repeat; margin-right:20px; vertical-align:top;}
 .hd-ad p{ width:936px; height:70px; line-height:30px; font-size:16px; color:#d38c31; background:#680f07; padding:5px 55px 0 30px; margin:0 auto 95px;}
 .hd-ad dl{ float:left; display:inline; width:365px; margin:0 auto;}
 .hd-ad dt{ height:60px; line-height:30px; text-align:center; font-size:16px; font-weight:bold; color:#eec682; text-indent:-2em;}

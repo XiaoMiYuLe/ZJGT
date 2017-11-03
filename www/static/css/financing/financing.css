@@ -53,15 +53,15 @@ input{ font-family:"Microsoft YaHei";}
 .tips{ width:auto; line-height:20px; font-size:14px; color:#ebab62; background:#fffaec; border:1px solid #ffe4c5; padding:15px 20px;}
 
 .header{ height:100px; background:url(data:image/png;base64,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) repeat-x;}
-.header .logo{ float:left; display:inline; width:423px; height:54px; background:url(/static/img/financing/logo.png) no-repeat; margin-top:30px;}
-.header .top-tel{ float:right; display:inline; width:406px; height:55px; background:url(/static/img/financing/top-tel.png) no-repeat; margin-top:27px;}
+.header .logo{ float:left; display:inline; width:423px; height:54px; background:url(/www/static/img/financing/logo.png) no-repeat; margin-top:30px;}
+.header .top-tel{ float:right; display:inline; width:406px; height:55px; background:url(/www/static/img/financing/top-tel.png) no-repeat; margin-top:27px;}
 
 .footer{ text-align:center; color:#000; padding:25px 0;}
 .footer p{ line-height:35px;}
 .footer a{ font-size:12px; color:#000; margin:0 10px;}
 
 .login-content{ position:relative;}
-.login-content .banner{ width:100%; height:539px; background:url(/static/img/financing/login-banner.jpg) no-repeat center top; position:relative; z-index:1;}
+.login-content .banner{ width:100%; height:539px; background:url(/www/static/img/financing/login-banner.jpg) no-repeat center top; position:relative; z-index:1;}
 .login-content .wrap{ position:absolute; left:50%; margin-left:-600px; z-index:2; top:0;}
 .login-content .login-form{ width:240px; height:290px; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlNm5DccCwAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=); padding:0 25px; position:absolute; right:0; top:60px;}
 .login-content .login-form h2{ height:32px; line-height:32px; font-size:18px; font-weight:normal; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.75); border-bottom:1px solid #fff; padding-top:12px; margin:0;}
@@ -83,7 +83,7 @@ input{ font-family:"Microsoft YaHei";}
 .search input.end,
 .search input.id,
 .search select.status{ margin-right:12px;}
-.search .btn{ display:inline-block; width:83px; height:32px; line-height:32px; text-align:center; font-size:12px; color:#545454; background:url(/static/img/financing/btn-search.png) no-repeat; cursor:pointer;}
+.search .btn{ display:inline-block; width:83px; height:32px; line-height:32px; text-align:center; font-size:12px; color:#545454; background:url(/www/static/img/financing/btn-search.png) no-repeat; cursor:pointer;}
 .search .btn-search{ margin-right:5px;}
 table.record{ width:100%; margin:0; border:1px solid #f2f2f2; border-right:none; border-bottom:none;}
 table.record th, table.record td{ text-align:center; color:#666; border:1px solid #f2f2f2; border-left:none; border-top:none;}
@@ -106,7 +106,7 @@ table.record .red{ color:#f00;}
 
 .side-menu dl span, .side-menu dl a{ color:#666; cursor:pointer;}
 .side-menu dl dt{ width:170px; height:60px; line-height:60px; font-size:16px; margin-left:-1px; position:relative;}
-.side-menu dl dt .ico{ float:left; background:url(/static/img/financing/side-nav-financing.png) no-repeat; margin:23px 15px 0 30px;}
+.side-menu dl dt .ico{ float:left; background:url(/www/static/img/financing/side-nav-financing.png) no-repeat; margin:23px 15px 0 30px;}
 .side-menu dl dt .ico-1{ width:14px; height:15px; background-position:-30px -100px;}
 .side-menu dl dt .ico-2{ width:18px; height:17px; background-position:-90px -100px;}
 .side-menu dl dt .ico-3{ width:19px; height:16px; background-position:-150px -100px;}
@@ -119,7 +119,7 @@ table.record .red{ color:#f00;}
 .side-menu dl dd.cur{ color:#ff7e00;}
 .side-menu dl dd.cur a{ color:#ff7e00;}
 .side-menu dl.cur dt{ color:#fff; background:#ff7e00;}
-.side-menu dl.cur dt:after{ content:""; width:10px; height:8px; background:url(/static/img/financing/side-nav-financing.png) no-repeat -120px -200px; position:absolute; right:0; bottom:-8px;}
+.side-menu dl.cur dt:after{ content:""; width:10px; height:8px; background:url(/www/static/img/financing/side-nav-financing.png) no-repeat -120px -200px; position:absolute; right:0; bottom:-8px;}
 .side-menu dl.cur dt span, .side-menu dl.cur dt a{ color:#fff;}
 .side-menu dl.cur dt .ico-1{ background-position:0 -100px;}
 .side-menu dl.cur dt .ico-2{ background-position:-60px -100px;}
@@ -260,7 +260,7 @@ table.record .red{ color:#f00;}
 
 .grid-container-bd{ background:#fff; border:1px solid #dcdcdc;}
 .grid-container-bd .feedback{ display:table; margin:80px auto 30px;}
-.grid-container-bd .feedback .feedback-icon{ display:inline-block; height:75px; line-height:75px; vertical-align:middle; margin-right:30px; width:75px; background:url(/static/img/financing/ico-financing.png) no-repeat;}
+.grid-container-bd .feedback .feedback-icon{ display:inline-block; height:75px; line-height:75px; vertical-align:middle; margin-right:30px; width:75px; background:url(/www/static/img/financing/ico-financing.png) no-repeat;}
 .grid-container-bd .feedback .tip-sorry-icon{ background-position:-100px 0;}
 .grid-container-bd .feedback .tip-success-icon{ background-position:0 0;}
 .grid-container-bd .feedback .tip-title{ display:inline; font-size:28px; line-height:75px; color:#788179; font-weight:normal; margin:0; vertical-align:middle;}

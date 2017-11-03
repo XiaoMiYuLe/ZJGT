@@ -6,26 +6,26 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .hd-wrap{ width:1200px; margin:0 auto;}
 
 .banner{ margin-bottom:45px;}
-.banner .b-1{ height:400px; background:url(/static/img/event/invite_act6/banner-1.png) no-repeat center top;}
-.banner .b-2{ height:376px; background:url(/static/img/event/invite_act6/banner-2.png) no-repeat center top;}
+.banner .b-1{ height:400px; background:url(/www/static/img/event/invite_act6/banner-1.png) no-repeat center top;}
+.banner .b-2{ height:376px; background:url(/www/static/img/event/invite_act6/banner-2.png) no-repeat center top;}
 
 .hd-intro{ margin-bottom:100px;}
-.hd-intro .i-1{ height:500px; background:url(/static/img/event/invite_act6/bg-intro-1.png) no-repeat center top;}
-.hd-intro .i-2{ height:460px; background:url(/static/img/event/invite_act6/bg-intro-2.png) no-repeat center top;}
+.hd-intro .i-1{ height:500px; background:url(/www/static/img/event/invite_act6/bg-intro-1.png) no-repeat center top;}
+.hd-intro .i-2{ height:460px; background:url(/www/static/img/event/invite_act6/bg-intro-2.png) no-repeat center top;}
 
-.hd-invite{ width:1172px; height:609px; background:url(/static/img/event/invite_act6/invite-bg.png) no-repeat; margin:0 auto 100px; position:relative;}
+.hd-invite{ width:1172px; height:609px; background:url(/www/static/img/event/invite_act6/invite-bg.png) no-repeat; margin:0 auto 100px; position:relative;}
 .hd-invite .link{ width:535px; height:60px; line-height:60px; font-size:16px; color:#be908d; position:absolute; left:95px; top:290px;}
 .hd-invite #qr-code{ width:170px; height:170px; position:absolute; right:205px; top:303px;}
 .hd-invite .btn-copy{ width:308px; height:88px; text-indent:-999em; position:absolute; left:80px; top:382px; overflow:hidden; cursor:pointer;}
 .hd-invite p{ height:58px; line-height:58px; font-size:18px; color:#430804; position:absolute; left:80px; top:470px;}
-.hd-invite.no-login{ width:1171px; height:527px; background:url(/static/img/event/invite_act6/invite-bg-nologin.png) no-repeat;}
+.hd-invite.no-login{ width:1171px; height:527px; background:url(/www/static/img/event/invite_act6/invite-bg-nologin.png) no-repeat;}
 .hd-invite.no-login .btn-login{ width:307px; height:90px; text-indent:-999em; overflow:hidden; position:absolute; left:418px; top:292px;}
 
-.hd-record{ width:1172px; height:900px; text-align:center; color:#430804; background:url(/static/img/event/invite_act6/record-bg.png) no-repeat; margin:0 auto 100px;}
+.hd-record{ width:1172px; height:900px; text-align:center; color:#430804; background:url(/www/static/img/event/invite_act6/record-bg.png) no-repeat; margin:0 auto 100px;}
 .hd-record .receive{ height:150px; line-height:90px; font-size:22px; padding-top:135px;}
-.hd-record .receive .btn{ display:inline-block; width:262px; height:90px; line-height:76px; color:#fff; background:url(/static/img/event/invite_act6/btn-invite.png) no-repeat; vertical-align:top; margin-left:25px; cursor:pointer;}
+.hd-record .receive .btn{ display:inline-block; width:262px; height:90px; line-height:76px; color:#fff; background:url(/www/static/img/event/invite_act6/btn-invite.png) no-repeat; vertical-align:top; margin-left:25px; cursor:pointer;}
 .hd-record .receive .btn.disable{ cursor:not-allowed;}
-.hd-record .list{ width:733px; height:537px; background:url(/static/img/event/invite_act6/record-bg-list.png) no-repeat; margin:0 auto;}
+.hd-record .list{ width:733px; height:537px; background:url(/www/static/img/event/invite_act6/record-bg-list.png) no-repeat; margin:0 auto;}
 .hd-record .list h2{ height:170px; line-height:120px; font-size:26px; font-weight:normal;}
 .hd-record .list em{ font-style:normal; color:#e71830;}
 .hd-record .list ul{ height:300px; overflow:hidden;}
@@ -34,20 +34,20 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .hd-record .list .name{ width:170px;}
 .hd-record .list .invest{ width:280px;}
 .hd-record .list .gift{ width:250px;}
-.hd-record.nodata .empty{ width:733px; height:537px; background:url(/static/img/event/invite_act6/record-bg-nodata.png) no-repeat; margin:0 auto;}
-.hd-record.nologin{ height:874px; background:url(/static/img/event/invite_act6/record-bg-nologin.png) no-repeat;}
+.hd-record.nodata .empty{ width:733px; height:537px; background:url(/www/static/img/event/invite_act6/record-bg-nodata.png) no-repeat; margin:0 auto;}
+.hd-record.nologin{ height:874px; background:url(/www/static/img/event/invite_act6/record-bg-nologin.png) no-repeat;}
 .hd-record.nologin .all{ height:330px; padding-top:210px; margin-bottom:31px; overflow:hidden;}
 .hd-record.nologin .all li{ height:66px; line-height:66px; font-size:22px;}
 .hd-record.nologin .all em{ font-style:normal; color:#e71830;}
 .hd-record.nologin .btn-invite{ display:block; width:290px; height:98px; text-indent:-999px; overflow:hidden; margin-left:434px; cursor:pointer;}
 
-.hd-rules{ width:1172px; height:900px; background:url(/static/img/event/invite_act6/rules-bg.png) no-repeat; position:relative; margin:0 auto 120px;}
+.hd-rules{ width:1172px; height:900px; background:url(/www/static/img/event/invite_act6/rules-bg.png) no-repeat; position:relative; margin:0 auto 120px;}
 .hd-rules .rules{ padding:140px 60px 0 90px;}
 .hd-rules .rules p{ line-height:52px; font-size:22px; color:#430804;}
-.hd-rules .mobile{ width:548px; height:205px; font-size:18px; color:#be908d; background:url(/static/img/event/invite_act6/rules-mobile.png) no-repeat; position:absolute; right:52px; top:287px;}
+.hd-rules .mobile{ width:548px; height:205px; font-size:18px; color:#be908d; background:url(/www/static/img/event/invite_act6/rules-mobile.png) no-repeat; position:absolute; right:52px; top:287px;}
 .hd-rules .mobile p{ line-height:32px; padding-left:25px;}
 .hd-rules .mobile strong{ display:block; height:42px; line-height:28px; font-weight:normal; padding:32px 0 0 150px;}
-.hd-rules .btn-invite{ width:262px; height:90px; line-height:76px; text-align:center; font-size:24px; color:#fff; background:url(/static/img/event/invite_act6/btn-invite.png) no-repeat; position:absolute; left:430px; top:690px;  cursor:pointer;}
+.hd-rules .btn-invite{ width:262px; height:90px; line-height:76px; text-align:center; font-size:24px; color:#fff; background:url(/www/static/img/event/invite_act6/btn-invite.png) no-repeat; position:absolute; left:430px; top:690px;  cursor:pointer;}
 
 .alert-mask{ display:none; width:100%; height:100%; background:#000; position:fixed; left:0; top:0; z-index:999;}
 .alert-invite{ display:none; width:400px; height:290px; background:#fff; position:fixed; left:50%; top:50%; margin:-145px 0 0 -200px; z-index:1000;}

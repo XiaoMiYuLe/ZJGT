@@ -1,7 +1,7 @@
 /* 投资成功页 20160405 */
 .invest-success{ width:1198px; border:1px solid #dedede; background:#fff; margin:35px auto; padding:100px 0;}
 .invest-success h1{ height:64px; line-height:64px; text-align:center; font-size:34px; font-weight:normal; color:#333; position:relative; z-index:2;}
-.invest-success h1:before{ content:""; display:inline-block; width:64px; height:64px; background:url(/static/img/invest/ico-success.png) no-repeat; margin-right:20px; vertical-align:top;}
+.invest-success h1:before{ content:""; display:inline-block; width:64px; height:64px; background:url(/www/static/img/invest/ico-success.png) no-repeat; margin-right:20px; vertical-align:top;}
 
 .invest-success .detail{ display:inline-block; width:64px; height:46px; font-size:0; position:relative;}
 .invest-success .detail .btn-show{ display:block; height:45px; line-height:44px; text-align:center; font-size:16px; color:#24abe9; background:#fff; border:1px solid transparent; cursor:pointer; position:relative; z-index:2;}

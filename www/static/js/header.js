@@ -1,3 +1,144 @@
+var isMobile = false;
+var ADAPT_CONFIG = {
+  path: '/static/nofis/',
+  dynamic: true,
+  callback: myCallback,
+  range: [
+    '0 to 767px = unsemantic-grid-desktop.css',
+    '768px =unsemantic-grid-desktop.css'
+  ]
+};
+
+function myCallback(i, width) {
+  // Alias HTML tag.
+  var html = document.documentElement;
+  // Find all instances of range_NUMBER and kill 'em.
+  html.className = html.className.replace(/(\s+)?range_\d/g, '');
+  // Check for valid range.
+  if (i > -1) {
+    // Add class="range_NUMBER"
+    html.className += ' range_' + i;
+  }
+  // Note: Making use of width here.
+  if (width < 768) {
+    isMobile = true;
+  }
+}
+
+function animate() {
+  $(".charts").each(function(i, item) {
+    var a = parseInt($(item).attr("w"));
+    $(item).animate({
+      width: a + "%",
+      height: "8px"
+    }, 2000);
+  });
+}
+$(document).ready(function() {
+  var sid = getUrlPara("sid");
+  var tid = getUrlPara("tid");
+  if (sid != "") {
+    if (tid == "") {
+      tid = "0";
+    }
+    //var expires = new Date();
+    //expires.setTime(expires.getTime() + 1000 * 60 * 60 * 24 );
+    $.cookie("sid", sid, {
+      path: "/",
+      domain: document.domain
+    });
+    $.cookie("tid", tid, {
+      path: "/",
+      domain: document.domain
+    });
+  }
+  var a_id = getUrlPara("a_id");
+  var c_id = getUrlPara("c_id");
+  var l_id = getUrlPara("l_id");
+  var l_type1 = getUrlPara("l_type1");
+  var rd = getUrlPara("rd");
+  if (a_id != "" && c_id != "" && l_id != "" && l_type1 != "" && rd != "") {
+    var expires = new Date();
+    expires.setTime(expires.getTime() + 1000 * 60 * 60 * 24 * parseInt(rd));
+    $.cookie("cookie_lkt", a_id + "|" + c_id + "|" + l_id + "|" + l_type1 + "|", {
+      path: "/",
+      expires: expires
+    });
+  }
+  $(".AspNet-Menu li").on("mouseenter mouseleave", function(e) {
+    var $item = $(this).find(".item");
+    if (e.type == "mouseenter" && $item.length != 0) {
+      $item.stop(true, true).fadeIn();
+    } else {
+      $item.stop(true, true).fadeOut();
+    }
+  });
+  //导航悬浮
+  var menubox = $(".menu-box");
+  menubox.hover(function() {
+    $(this).find(".link-box").addClass("on");
+    $(this).find(".sub-menu").show();
+  }, function() {
+    $(this).find(".link-box").removeClass("on");
+    $(this).find(".sub-menu").hide();
+  });
+  //侧边导航
+  $(".pub-slide .sd").mouseover(function() {
+    $(this).find(".span-box").stop().animate({
+      "top": "-40px"
+    }, "fast");
+  }).mouseout(function() {
+    $(this).find(".span-box").stop().animate({
+      "top": "0"
+    }, "fast");
+  });
+  $(".pub-slide .slide-b").click(function() {
+    $(".pub-slide .message").toggle()
+  });
+  $(".pub-slide .last").click(function() {
+    $(".pub-slide .message").hide()
+  });
+  $(".pub-slide .slide-c").click(function() {
+    $("html,body").animate({
+      "scrollTop": 0
+    }, "fast")
+  });
+  //侧边栏位置
+  $(window).resize(function() {
+    if ($(window).width() < 1350) {
+      $(".pub-slide").css({
+        'right': 0,
+        'margin-right': 0
+      });
+    } else {
+      $(".pub-slide").css({
+        'right': '50%',
+        'margin-right': '-660px'
+      });
+    }
+  });
+});
+
+function getPlatformType() {
+    var ua = window.navigator.userAgent;
+    var platform = "pc";
+
+    if (ua.match(/(Android)\s+([\d.]+)/)) {
+        platform = "android";
+    } else if (ua.match(/(iPad).*OS\s([\d_]+)/) || ua.match(/(iPod)(.*OS\s([\d_]+))?/) || ua.match(/(iPhone\sOS)\s([\d_]+)/)) {
+        platform = "ios";
+    } else if (ua.match(/Windows Phone ([\d.]+)/)) {
+        platform = "windows phone";
+    }
+    return platform;
+}
+if (getPlatformType() !== "pc") {
+    location.replace('http://m.zjgt.com');
+}
+if (window.location.host == "q.zjgt.com") {
+    window.location.href = 'http://www.zjgt.com/zjgt_Jxb_Manager/Manager/Login.aspx';
+}
+
 window._ty_rum || function(t) {
     function e(t) {
         switch (typeof t) {

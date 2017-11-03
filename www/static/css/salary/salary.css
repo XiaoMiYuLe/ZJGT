@@ -8,8 +8,8 @@ h1,h2,h3,h4,h5,h6{ margin:0; padding:0;}
 
 .reg-step{ display:none;}
 .reg-step .nav{ padding-left:40px; height:46px;}
-.reg-step .nav li{ float:left; display:inline; height:46px; line-height:46px; text-align:center; font-size:16px; color:#242424; background:url(/static/img/salary/bg-reg.png) no-repeat; margin-left:-6px;}
-.reg-step .nav li i{ display:inline-block; width:24px; height:24px; line-height:24px; font-style:normal; text-align:center; background:url(/static/img/salary/bg-circle.png) no-repeat; margin-right:15px;}
+.reg-step .nav li{ float:left; display:inline; height:46px; line-height:46px; text-align:center; font-size:16px; color:#242424; background:url(/www/static/img/salary/bg-reg.png) no-repeat; margin-left:-6px;}
+.reg-step .nav li i{ display:inline-block; width:24px; height:24px; line-height:24px; font-style:normal; text-align:center; background:url(/www/static/img/salary/bg-circle.png) no-repeat; margin-right:15px;}
 .reg-step .nav li.n-1{ width:350px; background-position:0 -50px;}
 .reg-step .nav li.n-2{ width:380px; background-position:0 -150px;}
 .reg-step .nav li.n-3{ width:370px; background-position:0 -250px;}
@@ -28,14 +28,14 @@ h1,h2,h3,h4,h5,h6{ margin:0; padding:0;}
 .reg-step .edit strong{ font-weight:normal; font-size:16px; color:#000;}
 .reg-step .edit .valid{ margin-left:20px;}
 .reg-step .edit .valid:before{ content:""; display:inline-block; width:18px; height:18px; vertical-align:text-top; margin-right:15px;}
-.reg-step .edit .valid.success:before{ background:url(/static/img/salary/ico-valid-suc.png) no-repeat;}
+.reg-step .edit .valid.success:before{ background:url(/www/static/img/salary/ico-valid-suc.png) no-repeat;}
 .reg-step .edit .valid.fail{ color:#f00;}
-.reg-step .edit .valid.fail:before{ background:url(/static/img/salary/ico-valid-err.png) no-repeat;}
+.reg-step .edit .valid.fail:before{ background:url(/www/static/img/salary/ico-valid-err.png) no-repeat;}
 
 .reg-step .btn{ display:block; width:170px; height:42px; line-height:42px; text-align:center; font-size:18px; color:#fff; background:#f85d2d; border-radius:2px; cursor:pointer;}
 .reg-step .btn.disabled{ background:#ccc; cursor:default;}
 
-.reg-step.step-1{ background:url(/static/img/salary/img-reg.png) no-repeat 730px 128px;}
+.reg-step.step-1{ background:url(/www/static/img/salary/img-reg.png) no-repeat 730px 128px;}
 .reg-step.step-1 .btn{ margin-top:40px;}
 
 .reg-step.step-2 .edit dd{ padding-left:120px;}
@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6{ margin:0; padding:0;}
 .reg-step.step-2.old .btn{ margin-left:80px;}
 
 .reg-step.step-3 h2{ height:64px; line-height:64px; text-align:center; font-size:30px; color:#030006; font-weight:normal; padding:90px 0 60px;}
-.reg-step.step-3 h2:before{ content:""; display:inline-block; width:64px; height:64px; background:url(/static/img/salary/ico-success.png) no-repeat; margin-right:20px; vertical-align:top;}
+.reg-step.step-3 h2:before{ content:""; display:inline-block; width:64px; height:64px; background:url(/www/static/img/salary/ico-success.png) no-repeat; margin-right:20px; vertical-align:top;}
 .reg-step.step-3 .btn{ margin:0 auto;}
 
 

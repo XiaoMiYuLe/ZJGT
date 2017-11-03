@@ -3,24 +3,24 @@
 .hd-wrap{ width:1200px; margin:0 auto;}
 
 .hd-1{ background:#fff;}
-.hd-1 .banner-1{ height:350px; background:url(/static/img/event/hd-wxbind/img_01.png) no-repeat center top;}
-.hd-1 .banner-2{ height:357px; background:url(/static/img/event/hd-wxbind/img_02.png) no-repeat center top;}
+.hd-1 .banner-1{ height:350px; background:url(/www/static/img/event/hd-wxbind/img_01.png) no-repeat center top;}
+.hd-1 .banner-2{ height:357px; background:url(/www/static/img/event/hd-wxbind/img_02.png) no-repeat center top;}
 
 .hd-2{ background:#e9f7ff;}
-.hd-2 .banner-1{ height:420px; background:url(/static/img/event/hd-wxbind/img_03.png) no-repeat center top;}
-.hd-2 .banner-2{ height:432px; background:url(/static/img/event/hd-wxbind/img_04.png) no-repeat center top;}
+.hd-2 .banner-1{ height:420px; background:url(/www/static/img/event/hd-wxbind/img_03.png) no-repeat center top;}
+.hd-2 .banner-2{ height:432px; background:url(/www/static/img/event/hd-wxbind/img_04.png) no-repeat center top;}
 
 .hd-3{ background:#b1e5fa;}
-.hd-3 .banner-1{ height:345px; background:url(/static/img/event/hd-wxbind/img_05.png) no-repeat center top;}
-.hd-3 .banner-2{ height:412px; background:url(/static/img/event/hd-wxbind/img_06.png) no-repeat center top;}
+.hd-3 .banner-1{ height:345px; background:url(/www/static/img/event/hd-wxbind/img_05.png) no-repeat center top;}
+.hd-3 .banner-2{ height:412px; background:url(/www/static/img/event/hd-wxbind/img_06.png) no-repeat center top;}
 
 .hd-share{ height:80px; line-height:80px; font-size:18px; color:#666; padding-left:220px;}
 .hd-share .tit{ float:left; display:inline;}
 .hd-share .jiathis_style_32x32 .jtico{ float:left; display:inline; width:44px !important; height:44px !important; background-position:center center; background-repeat:no-repeat; margin:17px 12px 0; padding:0 !important;}
-.hd-share .jiathis_style_32x32 .jtico_tsina{ background-image:url(/static/img/event/hd-wxbind/ico-sina.png);}
-.hd-share .jiathis_style_32x32 .jtico_weixin{ background-image:url(/static/img/event/hd-wxbind/ico-wx.png);}
-.hd-share .jiathis_style_32x32 .jtico_qzone{ background-image:url(/static/img/event/hd-wxbind/ico-qzone.png);}
-.hd-share .jiathis_style_32x32 .jtico_tqq{ background-image:url(/static/img/event/hd-wxbind/ico-tqq.png);}
+.hd-share .jiathis_style_32x32 .jtico_tsina{ background-image:url(/www/static/img/event/hd-wxbind/ico-sina.png);}
+.hd-share .jiathis_style_32x32 .jtico_weixin{ background-image:url(/www/static/img/event/hd-wxbind/ico-wx.png);}
+.hd-share .jiathis_style_32x32 .jtico_qzone{ background-image:url(/www/static/img/event/hd-wxbind/ico-qzone.png);}
+.hd-share .jiathis_style_32x32 .jtico_tqq{ background-image:url(/www/static/img/event/hd-wxbind/ico-tqq.png);}
 
 #jiathis_webchat{ overflow:hidden;}
 #jiathis_webchat img{ margin:15px auto 0;}

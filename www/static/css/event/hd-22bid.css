@@ -4,9 +4,9 @@ h1,h2,h3,h4,h5,h6,table{ margin:0;}
 .hd-cont{ background:#fff2e4;}
 .wrap{ width:1200px; margin:0 auto;}
 
-.banner{ height:496px; background:url(/static/img/event/hd-22bid/banner.png?v=20160527) no-repeat center top; margin-bottom:45px;}
+.banner{ height:496px; background:url(/www/static/img/event/hd-22bid/banner.png?v=20160527) no-repeat center top; margin-bottom:45px;}
 .banner .wrap{ height:100%; position:relative;}
-.banner .btn-invest{ width:305px; height:87px; background:url(/static/img/event/hd-22bid/btn-banner-invest.png) no-repeat; margin-left:-152px; position:absolute; left:50%; bottom:38px;}
+.banner .btn-invest{ width:305px; height:87px; background:url(/www/static/img/event/hd-22bid/btn-banner-invest.png) no-repeat; margin-left:-152px; position:absolute; left:50%; bottom:38px;}
 
 .hd-product{ width:1078px; height:480px; color:#595757; margin:0 auto;}
 .hd-product .product{ float:left; display:inline; width:730px; height:430px; background:#fff; border:2px solid #f67975; position:relative;}
@@ -32,7 +32,7 @@ h1,h2,h3,h4,h5,h6,table{ margin:0;}
 
 
 .hd-info{ width:1078px; background:#fff; border:2px solid #f67975; border-radius:20px; margin:195px auto 0; position:relative;}
-.hd-info h2{ width:822px; height:67px; line-height:60px; text-align:center; font-size:36px; font-weight:normal; color:#fff; background:url(/static/img/event/hd-22bid/bg-tit.png) no-repeat; padding-top:76px; margin-left:-411px; position:absolute; left:50%; top:-143px;}
+.hd-info h2{ width:822px; height:67px; line-height:60px; text-align:center; font-size:36px; font-weight:normal; color:#fff; background:url(/www/static/img/event/hd-22bid/bg-tit.png) no-repeat; padding-top:76px; margin-left:-411px; position:absolute; left:50%; top:-143px;}
 .hd-info p{ width:650px; line-height:30px; font-size:24px; color:#333; padding:15px 0 15px 60px;}
 
 .hd-info.intro{ padding:40px 0 60px;}

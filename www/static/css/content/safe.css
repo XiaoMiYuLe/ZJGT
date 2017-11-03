@@ -1,12 +1,12 @@
 .item0 {
 	width: 100%;
 	height: 610px;
-	background: url(/static/img/content/safe/banner01.jpg) no-repeat center center;
+	background: url(/www/static/img/content/safe/banner01.jpg) no-repeat center center;
 }
 .item1 {
 	width: 100%;
 	height: 465px;
-	background: url(/static/img/content/safe/banner02.jpg) no-repeat center center;
+	background: url(/www/static/img/content/safe/banner02.jpg) no-repeat center center;
 }
 .item2 {
 	width: 100%;
@@ -17,7 +17,7 @@
 .item3 {
 	width: 100%;
 	height: 770px;
-	background: url(/static/img/content/safe/banner03.jpg) no-repeat center center;
+	background: url(/www/static/img/content/safe/banner03.jpg) no-repeat center center;
 	margin-top: -5px;
 }
 .item4 {
@@ -28,7 +28,7 @@
 .safe-cont.join-us {
 	width: 925px;
 	height: 490px;
-	background: url(/static/img/content/safe/banner05.jpg);
+	background: url(/www/static/img/content/safe/banner05.jpg);
 	margin:0 auto;
 }
 .item4 .btn {
@@ -62,11 +62,11 @@
 	width: 550px;
 	height: 50px;
 	display: block;
-	background: url(/static/img/content/safe/title.png) 0 0;
+	background: url(/www/static/img/content/safe/title.png) 0 0;
 }
 .safe-logo {
 	display: block;
-	background: url(/static/img/content/safe/logo.png) 0 0;
+	background: url(/www/static/img/content/safe/logo.png) 0 0;
 }
 
 
@@ -142,7 +142,7 @@
 	width: 670px;
 }
 .tip-c .safe-tip {
-	background: url(/static/img/content/safe/title.png) -22px -190px;
+	background: url(/www/static/img/content/safe/title.png) -22px -190px;
 }
 .tip-c .safe-msg span {
 	color: #fa0303;
@@ -151,7 +151,7 @@
 .tip-c .safe-logo {
 	width: 145px;
 	height: 200px;
-	background: url(/static/img/content/safe/safe-book.jpg) 0 0;
+	background: url(/www/static/img/content/safe/safe-book.jpg) 0 0;
 	cursor: pointer;
 }
 
@@ -235,7 +235,7 @@
 .self-c .href-safe-img {
 	width: 308px;
 	height: 98px;
-	background: url(/static/img/content/safe/safe-img.png) 0 0;
+	background: url(/www/static/img/content/safe/safe-img.png) 0 0;
 	margin-left: 45px;
 }
 .self-c .pwd-safe-img {

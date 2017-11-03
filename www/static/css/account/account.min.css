@@ -6,17 +6,17 @@
 
 .Validform_checktip{ margin-left:15px;}
 .Validform_right{ color:#36c410;}
-.Validform_right:before{ content:""; display:inline-block; width:16px; height:16px; background:url(/static/img/account/ico-account.png) no-repeat -230px 0; vertical-align:text-top; margin-right:5px;}
+.Validform_right:before{ content:""; display:inline-block; width:16px; height:16px; background:url(/www/static/img/account/ico-account.png) no-repeat -230px 0; vertical-align:text-top; margin-right:5px;}
 .Validform_wrong{ color:#f00;}
-.Validform_wrong:before{ content:""; display:inline-block; width:16px; height:16px; background:url(/static/img/account/ico-account.png) no-repeat -230px -30px; vertical-align:text-top; margin-right:5px;}
+.Validform_wrong:before{ content:""; display:inline-block; width:16px; height:16px; background:url(/www/static/img/account/ico-account.png) no-repeat -230px -30px; vertical-align:text-top; margin-right:5px;}
 .hide{ display:none !important;}
 
 
 .tips{ width:auto; line-height:20px; font-size:14px; color:#ebab62; background:#fffaec; border:1px solid #ffe4c5; padding:15px 20px; margin:0;}
 
-.pop-tips{ display:inline-block; width:15px; height:15px; background:url(/static/img/account/ico-account.png) no-repeat -200px 0; vertical-align:middle; margin-left:7px; position:relative; z-index:1; cursor:pointer;}
+.pop-tips{ display:inline-block; width:15px; height:15px; background:url(/www/static/img/account/ico-account.png) no-repeat -200px 0; vertical-align:middle; margin-left:7px; position:relative; z-index:1; cursor:pointer;}
 .pop-box{ display:none; width:140px; line-height:16px; text-align:center; padding:10px; background:#fff; border:1px solid #f2f2f2; font-size:12px; color:#6d6d6d; font-style:normal; position:absolute; left:50%; top:22px; margin-left:-80px; cursor:default;}
-.pop-box:before{ content:""; width:8px; height:6px; background:url(/static/img/account/ico-account.png) no-repeat -260px -30px; position:absolute; left:50%; top:-6px; margin-left:-4px;}
+.pop-box:before{ content:""; width:8px; height:6px; background:url(/www/static/img/account/ico-account.png) no-repeat -260px -30px; position:absolute; left:50%; top:-6px; margin-left:-4px;}
 .pop-tips:hover .pop-box{ display:block;}
 
 .tab-cont{ height:49px; border:1px solid #ececec; border-top:none; border-right:none; margin-bottom:15px;}
@@ -28,9 +28,9 @@
 .search a{ display:inline-block; height:20px; line-height:20px; color:#666; padding:0 12px; margin:0 5px;}
 .search a.selected{ color:#fff; background:#ff7e00;}
 .search input{ display:inline-block; width:118px; height:32px; line-height:32px; border:1px solid #d2d2d2; padding-left:15px; box-sizing:border-box; vertical-align:middle;}
-.search input.start,.search input.end{ background:url(/static/img/account/ico-calander.png) no-repeat 95px center;}
+.search input.start,.search input.end{ background:url(/www/static/img/account/ico-calander.png) no-repeat 95px center;}
 .search input.end{ margin-right:15px;}
-.search .btn{ display:inline-block; width:76px; height:30px; line-height:30px; text-align:center; font-size:14px; color:#545454; background:url(/static/img/account/ico-account.png) no-repeat 0 -250px; cursor:pointer;}
+.search .btn{ display:inline-block; width:76px; height:30px; line-height:30px; text-align:center; font-size:14px; color:#545454; background:url(/www/static/img/account/ico-account.png) no-repeat 0 -250px; cursor:pointer;}
 
 table.record{ width:100%; margin:0; border:1px solid #f2f2f2; border-right:none; border-bottom:none;}
 table.record th,
@@ -48,7 +48,7 @@ table.record .red{ color:#f00;}
 .side-userinfo p{ height:62px; line-height:62px; font-size:14px; color:#666; text-align:center;}
 .side-userinfo .ico-phone,
 .side-userinfo .ico-vcert,
-.side-userinfo .ico-card{ float:left; width:30px; height:30px; background:url(/static/img/account/side-menu.png) no-repeat 0 0; margin-left:14px;}
+.side-userinfo .ico-card{ float:left; width:30px; height:30px; background:url(/www/static/img/account/side-menu.png) no-repeat 0 0; margin-left:14px;}
 .side-userinfo .ico-phone{ background-position:0 0;}
 .side-userinfo .ico-phone.valid{ background-position:0 -50px;}
 .side-userinfo .ico-vcert{ background-position:-60px 0;}
@@ -59,7 +59,7 @@ table.record .red{ color:#f00;}
 .side-menu{ margin-bottom:20px;}
 .side-menu dl span,.side-menu dl a{ color:#666; cursor:pointer;}
 .side-menu dl dt{ width:170px; height:60px; line-height:60px; font-size:16px; margin-left:-1px; position:relative;}
-.side-menu .ico{ float:left; background:url(/static/img/account/side-menu.png) no-repeat; margin:23px 15px 0 30px;}
+.side-menu .ico{ float:left; background:url(/www/static/img/account/side-menu.png) no-repeat; margin:23px 15px 0 30px;}
 .side-menu .ico-1{ width:19px; height:17px; background-position:-30px -100px;}
 .side-menu .ico-2{ width:19px; height:17px; background-position:-90px -100px;}
 .side-menu .ico-3{ width:19px; height:17px; background-position:-150px -100px;}
@@ -69,14 +69,14 @@ table.record .red{ color:#f00;}
 .side-menu .ico-7{ width:19px; height:17px; background-position:-30px -200px;}
 .side-menu .ico-8{ width:19px; height:17px; background-position:-90px -200px;}
 .side-menu .ico-9{ width:19px; height:17px; background-position:-30px -250px;}
-.side-menu .arrow{ width:8px; height:12px; background:url(/static/img/account/side-menu.png) no-repeat -150px -200px; position:absolute; top:24px; right:24px;}
+.side-menu .arrow{ width:8px; height:12px; background:url(/www/static/img/account/side-menu.png) no-repeat -150px -200px; position:absolute; top:24px; right:24px;}
 .side-menu .welfare{ position:absolute; top:10px; right:6px;}
 .side-menu dd{ display:none; height:40px; line-height:40px; list-style:circle inside; margin-left:50px;}
 .side-menu dd:before{ content:"·"; font-size:16px; margin-right:8px;}
 .side-menu dd.cur{ color:#ff7e00;}
 .side-menu dd.cur a{ color:#ff7e00;}
 .side-menu dl.cur dt{ color:#fff; background:#ff7e00;}
-.side-menu dl.cur dt:after{ content:""; width:10px; height:8px; background:url(/static/img/account/side-menu.png) no-repeat -120px -200px; position:absolute; right:0; bottom:-8px;}
+.side-menu dl.cur dt:after{ content:""; width:10px; height:8px; background:url(/www/static/img/account/side-menu.png) no-repeat -120px -200px; position:absolute; right:0; bottom:-8px;}
 .side-menu dl.cur dt span,
 .side-menu dl.cur dt a{ color:#fff;}
 .side-menu dl.cur .ico-1{ background-position:0 -100px;}
@@ -180,13 +180,13 @@ table.record .red{ color:#f00;}
 .setup-cont .card a.btn{ float:right; color:#08c; margin:25px 95px 0 0;}
 .setup-cont .nobind{ border-top:1px solid #ededed; padding-top:45px;}
 .setup-cont .nobind h3{ height:90px; line-height:74px; text-align:center; color:#788179; font-size:26px;}
-.setup-cont .nobind h3 i{ display:inline-block; width:73px; height:73px; background:url(/static/img/account/ico-account.png) no-repeat -100px 0; vertical-align:top; margin-right:35px;}
+.setup-cont .nobind h3 i{ display:inline-block; width:73px; height:73px; background:url(/www/static/img/account/ico-account.png) no-repeat -100px 0; vertical-align:top; margin-right:35px;}
 .setup-cont .nobind p{ height:70px; line-height:40px; text-align:center; font-size:14px; color:#aaa;}
-.setup-cont .nobind a.bind{ display:block; width:260px; height:150px; background:url(/static/img/account/btn-bindcard.png) no-repeat; margin:0 auto;}
+.setup-cont .nobind a.bind{ display:block; width:260px; height:150px; background:url(/www/static/img/account/btn-bindcard.png) no-repeat; margin:0 auto;}
 .setup-cont .sec-info{ border-top:1px solid #ededed;}
 .setup-cont .sec-info li{ width:770px; height:78px; line-height:78px; font-size:12px; border-bottom:1px solid #ededed; margin-left:8px;}
 .setup-cont .sec-info strong{ float:left; display:inline; width:240px; font-size:14px; font-weight:normal; color:#333;}
-.setup-cont .sec-info strong i{ display:inline-block; width:16px; height:16px; font-size:0; line-height:0; vertical-align:text-top; margin-right:5px; background:url(/static/img/account/ico-account.png) no-repeat;}
+.setup-cont .sec-info strong i{ display:inline-block; width:16px; height:16px; font-size:0; line-height:0; vertical-align:text-top; margin-right:5px; background:url(/www/static/img/account/ico-account.png) no-repeat;}
 .setup-cont .sec-info strong i.success{ background-position:-230px 0;}
 .setup-cont .sec-info strong i.fail{ background-position:-200px -30px;}
 .setup-cont .sec-info p{ float:left; display:inline; width:360px;}
@@ -213,7 +213,7 @@ table.record .red{ color:#f00;}
 .fz-16{ font-size:16px; line-height:30px;}
 .mr-20{ margin:20px;}
 .grid-container-bd .feedback{ display:table; margin:80px auto 30px;}
-.grid-container-bd .feedback .feedback-icon{ display:inline-block; height:75px; line-height:75px; vertical-align:middle; margin-right:30px; width:75px; background:url("/static/img/account/ico-account.png");}
+.grid-container-bd .feedback .feedback-icon{ display:inline-block; height:75px; line-height:75px; vertical-align:middle; margin-right:30px; width:75px; background:url("/www/static/img/account/ico-account.png");}
 .grid-container-bd .feedback .tip-sorry-icon{ background-position:-100px 0;}
 .grid-container-bd .feedback .tip-success-icon{ background-position:0 0;}
 .grid-container-bd .feedback .tip-title{ display:inline; font-size:28px; line-height:75px; margin:0; vertical-align:middle;}
@@ -290,7 +290,7 @@ table.record .red{ color:#f00;}
 .cashout-form .bank{ width:260px; height:56px; border:2px solid #ff7e00; position:relative; cursor:pointer; margin-bottom:15px;}
 .cashout-form .bank img{ width:160px; height:34px; position:absolute; left:10px; top:50%; margin-top:-17px;}
 .cashout-form .bank p{ width:78px; line-height:22px; font-size:14px; position:absolute; right:0; top:6px;}
-.cashout-form .bank i{ width:24px; height:24px; background:url(/static/img/account/ico-account.png) no-repeat -260px 0; position:absolute; right:-2px; top:-2px;}
+.cashout-form .bank i{ width:24px; height:24px; background:url(/www/static/img/account/ico-account.png) no-repeat -260px 0; position:absolute; right:-2px; top:-2px;}
 .cashout-form .nobind{ width:320px; height:86px; line-height:86px; text-align:center; font-size:14px; color:#c9c9c9; border:1px solid #d2d2d2; margin-bottom:15px;}
 .cashout-form select{ float:left; display:inline; width:195px; height:34px; border:1px solid #d2d2d2; margin-right:15px; padding-left:10px; box-sizing:border-box; outline:none; margin-bottom:15px;}
 .cashout-form .user-bankadd,
@@ -304,16 +304,16 @@ table.record .red{ color:#f00;}
 
 .cashout-cont .sub-container { height:50px;  }
 .cashout-cont .sub-container p { float:left; margin-left:20px; line-height:50px; font-size:14px; color:#8dc51f; }
-.cashout-cont .sub-container .er-ma { position:relative; float:right; width: 50px; height:50px; cursor:pointer; background:url(/static/img/account/weixin_ico.jpg) no-repeat center; }
+.cashout-cont .sub-container .er-ma { position:relative; float:right; width: 50px; height:50px; cursor:pointer; background:url(/www/static/img/account/weixin_ico.jpg) no-repeat center; }
 .cashout-cont .sub-container .er-ma:hover b { display:block; }
 .cashout-cont .sub-container .er-ma b { display:none; position:absolute; left:-54px; top:50px; width:158px; height:158px; text-align:center; border:1px solid #97ca33; background:#fff; }
 .cashout-cont .sub-container .er-ma img { display:inline; margin-top:13px; }
-.cashout-cont .sub-container .er-ma i { position:absolute; top:-12px; left:50%; margin-left:-7px; width:13px; height:12px; background:url(/static/img/account/reg_arr_ico.jpg) no-repeat; }
+.cashout-cont .sub-container .er-ma i { position:absolute; top:-12px; left:50%; margin-left:-7px; width:13px; height:12px; background:url(/www/static/img/account/reg_arr_ico.jpg) no-repeat; }
 .cashout-cont .btn-submit{ float:left; margin-left:250px; width:150px; height:50px; line-height:50px; text-align:center; font-size:14px; font-weight:bold; color:#fff; background:#ff7e00; }
 .cashout-cont .btn-submit.disabled{ background:#dadada; cursor:default;}
 
 .cashout-cont .tips-protect{ width: 998px; margin-left: -35px; height:50px; font-weight:bold; line-height:50px; margin-top:30px; text-indent:26px; margin-bottom:16px; font-size:18px; font-style: italic; color:#f08900; background-color:#f0efee; }
-.cashout-cont .tips-protect span { color:#fff; padding:5px 20px; background:url(/static/img/account/text-bg.png) no-repeat center;  } 
+.cashout-cont .tips-protect span { color:#fff; padding:5px 20px; background:url(/www/static/img/account/text-bg.png) no-repeat center;  } 
 
 
 .cashout-cont .notice{ border-top:1px solid #ececec; padding:10px 20px 15px;}
@@ -341,14 +341,14 @@ table.record .red{ color:#f00;}
 .welfare-cont .welfare-tab-box strong i{font-size:16px; font-weight:normal; font-style:normal; vertical-align:super;}
 .welfare-cont .welfare-tab-box p{ line-height:18px; font-size:12px; color:#fff; padding-left:20px;}
 .welfare-cont .welfare-tab-box em{ width:70px; height:30px; line-height:30px; text-align:center; font-style:normal; font-size:12px; color:#fff; background:#aeaeae; border-radius:4px; position:absolute; right:18px; bottom:16px;}
-.welfare-cont .welfare-tab-box.unactived li{ background:url(/static/img/account/bg-welfare-unused.png) no-repeat;}
+.welfare-cont .welfare-tab-box.unactived li{ background:url(/www/static/img/account/bg-welfare-unused.png) no-repeat;}
 .welfare-cont .welfare-tab-box.unactived h3{ color:#fa241e;}
 .welfare-cont .welfare-tab-box.unactived strong{ color:#fff7bf;}
 .welfare-cont .welfare-tab-box.unactived p{ color:#fff7bf;}
 .welfare-cont .welfare-tab-box.actived li,
-.welfare-cont .welfare-tab-box.expired li{ background:url(/static/img/account/bg-welfare-invalid.png) no-repeat;}
+.welfare-cont .welfare-tab-box.expired li{ background:url(/www/static/img/account/bg-welfare-invalid.png) no-repeat;}
 .welfare-cont .welfare-tab-box.unactived li em{ color:#e90014; background:#fff7bf; cursor:pointer;}
-.welfare-cont .welfare-tab-box.nodata{ height:360px; background:url(/static/img/account/welfare-nodata.png) no-repeat center 44px;}
+.welfare-cont .welfare-tab-box.nodata{ height:360px; background:url(/www/static/img/account/welfare-nodata.png) no-repeat center 44px;}
 .welfare-cont .welfare-tab-box .page{ height:56px; line-height:56px; color:#666; text-align:center; padding-top:30px;}
 .welfare-cont .user-zcoin h3{ height:60px; line-height:40px; font-size:16px; padding-top:5px;}
 .welfare-cont .user-zcoin h3 i{ font-style:normal; color:#ff7e00;}
@@ -360,15 +360,15 @@ table.record .red{ color:#f00;}
 .welfare-cont .interest-tab-cont li.cur{ color:#ff7e00;}
 .welfare-cont .interest-tab-cont span{ cursor:pointer;}
 .welfare-cont .interest-tab-box{ display:none;}
-.welfare-cont .interest-tab-box.nodata{ height:360px; background:url(/static/img/account/welfare-nodata.png) no-repeat center 44px;}
+.welfare-cont .interest-tab-box.nodata{ height:360px; background:url(/www/static/img/account/welfare-nodata.png) no-repeat center 44px;}
 .welfare-cont .interest-tab-box .page{ height:56px; line-height:56px; text-align:center; padding-top:30px;}
 .welfare-cont .interest-tab-box ul{ overflow:hidden; _zoom:1;}
 .welfare-cont .interest-tab-box li{ float:left; display:inline; width:375px; height:145px; color:#fff; margin:0 44px 30px 44px;}
 .welfare-cont .interest-tab-box li h3{ height:72px; line-height:72px; font-size:30px; font-weight:normal; padding:13px 0 0 30px; margin:0;}
 .welfare-cont .interest-tab-box li p{ line-height:18px; font-size:12px; padding-left:30px;}
-.welfare-cont .interest-tab-box.unactived li{ background:url(/static/img/account/bg-interest-unactived.png) no-repeat; cursor:pointer;}
-.welfare-cont .interest-tab-box.actived li{ background:url(/static/img/account/bg-interest-actived.png) no-repeat;}
-.welfare-cont .interest-tab-box.expired li{ background:url(/static/img/account/bg-interest-expired.png) no-repeat;}
+.welfare-cont .interest-tab-box.unactived li{ background:url(/www/static/img/account/bg-interest-unactived.png) no-repeat; cursor:pointer;}
+.welfare-cont .interest-tab-box.actived li{ background:url(/www/static/img/account/bg-interest-actived.png) no-repeat;}
+.welfare-cont .interest-tab-box.expired li{ background:url(/www/static/img/account/bg-interest-expired.png) no-repeat;}
 .welfare-cont .notice{ padding:50px 0 30px 50px;}
 .welfare-cont .notice p{ line-height:26px; font-size:12px; color:#666;}
 .welfare-cont .notice strong{ font-weight:normal; padding:5px 0;}
@@ -398,7 +398,7 @@ table.record .red{ color:#f00;}
 .bindcard-form .bank-area th{ padding-top:20px; border-top:1px solid #ececec;}
 .bindcard-form .bank-area td{ border-top:1px solid #ececec;}
 .bindcard-form .bank-list img{ width:130px; height:26px; position:absolute; left:50%; top:50%; margin:-13px 0 0 -65px;}
-.bindcard-form .bank-list i{ display:none; width:24px; height:24px; background:url(/static/img/account/ico-account.png) no-repeat -260px 0; position:absolute; right:-2px; top:-2px; z-index:2;}
+.bindcard-form .bank-list i{ display:none; width:24px; height:24px; background:url(/www/static/img/account/ico-account.png) no-repeat -260px 0; position:absolute; right:-2px; top:-2px; z-index:2;}
 .bindcard-form .bank-list b{ width:34px; height:18px; line-height:18px; text-align:center; font-size:12px; font-weight:normal; color:#fff; background:#ff7e00; position:absolute; right:-1px; bottom:-1px; z-index:2;}
 .bindcard-form .bank-list li{ float:left; display:inline; width:150px; height:44px; position:relative; border:1px solid #d2d2d2; margin:20px 20px 0 0; cursor:pointer;}
 .bindcard-form .bank-list li.select{ width:148px; height:42px; border:2px solid #ff7e00; cursor:default;}
@@ -434,7 +434,7 @@ table.record .red{ color:#f00;}
 .payment-form .bank-area th{ padding-top:20px; border-top:1px solid #ececec;}
 .payment-form .bank-area td{ border-top:1px solid #ececec;}
 .payment-form .bank-list img{ width:130px; height:26px; position:absolute; left:50%; top:50%; margin:-13px 0 0 -65px;}
-.payment-form .bank-list i{ display:none; width:24px; height:24px; background:url(/static/img/account/ico-account.png) no-repeat -260px 0; position:absolute; right:-2px; top:-2px; z-index:2;}
+.payment-form .bank-list i{ display:none; width:24px; height:24px; background:url(/www/static/img/account/ico-account.png) no-repeat -260px 0; position:absolute; right:-2px; top:-2px; z-index:2;}
 .payment-form .bank-list b{ width:34px; height:18px; line-height:18px; text-align:center; font-size:12px; font-weight:normal; color:#fff; background:#ff7e00; position:absolute; right:-1px; bottom:-1px; z-index:2;}
 .payment-form .bank-list li{ float:left; display:inline; width:150px; height:44px; position:relative; border:1px solid #d2d2d2; margin:20px 20px 0 0; cursor:pointer;}
 .payment-form .bank-list li.select{ width:148px; height:42px; border:2px solid #ff7e00; cursor:default;}
@@ -448,7 +448,7 @@ table.record .red{ color:#f00;}
 .payment-form .bank-fast{ width:265px; height:105px; font-size:14px; border:2px solid #ff7e00; position:relative; cursor:pointer; margin-top:20px;}
 .payment-form .bank-fast img{ width:160px; height:34px; position:absolute; left:10px; top:10px;}
 .payment-form .bank-fast p{ width:78px; line-height:22px; position:absolute; right:0; top:6px;}
-.payment-form .bank-fast i{ width:24px; height:24px; background:url(/static/img/account/ico-account.png) no-repeat -260px 0; position:absolute; right:-2px; top:-2px;}
+.payment-form .bank-fast i{ width:24px; height:24px; background:url(/www/static/img/account/ico-account.png) no-repeat -260px 0; position:absolute; right:-2px; top:-2px;}
 .payment-form .bank-fast strong{ width:230px; height:46px; line-height:46px; text-align:center; font-weight:normal; border-top:1px solid #ececec; position:absolute; left:50%; bottom:0; margin-left:-115px;}
 .payment-form .captcha input{ width:120px; margin-right:10px;}
 .payment-form .captcha .btn-getcaptcha{ float:left; display:inline; width:110px; height:34px; line-height:34px; text-align:center; color:#fff; background:#ff7e00;}
@@ -459,16 +459,16 @@ table.record .red{ color:#f00;}
 /*.payment-cont .btn-wrap{ height:115px;}*/
 .payment-cont .sub-container { height:50px;  }
 .payment-cont .sub-container p { float:left; margin-left:20px; line-height:50px; font-size:14px; color:#8dc51f; }
-.payment-cont .sub-container .er-ma { position:relative; float:right; width: 50px; height:50px; cursor:pointer; background:url(/static/img/account/weixin_ico.jpg) no-repeat center; }
+.payment-cont .sub-container .er-ma { position:relative; float:right; width: 50px; height:50px; cursor:pointer; background:url(/www/static/img/account/weixin_ico.jpg) no-repeat center; }
 .payment-cont .sub-container .er-ma:hover b { display:block; }
 .payment-cont .sub-container .er-ma b { display:none; position:absolute; left:-54px; top:50px; width:158px; height:158px; text-align:center; border:1px solid #97ca33; background:#fff; }
 .payment-cont .sub-container .er-ma img { display:inline; margin-top:13px; }
-.payment-cont .sub-container .er-ma i { position:absolute; top:-12px; left:50%; margin-left:-7px; width:13px; height:12px; background:url(/static/img/account/reg_arr_ico.jpg) no-repeat; }
+.payment-cont .sub-container .er-ma i { position:absolute; top:-12px; left:50%; margin-left:-7px; width:13px; height:12px; background:url(/www/static/img/account/reg_arr_ico.jpg) no-repeat; }
 
 .payment-cont .btn-submit{ float:left; width:150px; height:50px; line-height:50px; text-align:center; font-size:14px; font-weight:bold; color:#fff; margin-left:120px; background:#ff7e00; position:relative;}
 .payment-cont .btn-submit.disabled{ background:#dadada; cursor:default;}
 .payment-cont .tips-protect{ width: 998px; margin-left: -35px; height:50px; font-weight:bold; line-height:50px; margin-top:30px; text-indent:26px; margin-bottom:16px; font-size:18px; font-style: italic; color:#f08900; background-color:#f0efee; }
-.payment-cont .tips-protect span { color:#fff; padding:5px 20px; background:url(/static/img/account/text-bg.png) no-repeat center;  }
+.payment-cont .tips-protect span { color:#fff; padding:5px 20px; background:url(/www/static/img/account/text-bg.png) no-repeat center;  }
 .payment-cont .notice{ border-top:1px solid #ececec; padding:10px 20px 15px;}
 .payment-cont .notice strong{ display:block; line-height:34px; font-size:14px; color:#ff7e00; font-weight:normal;}
 .payment-cont .notice em{ font-style:normal; color:#f00;}
@@ -492,7 +492,7 @@ table.record .red{ color:#f00;}
 .invite-code .info .fr{ float:right; display:inline; text-align:right;}
 .invite-code .info .ico-people,
 .invite-code .info .ico-coin,
-.invite-code .info .ico-money{ width:26px; height:26px; background:url(/static/img/account/ico-account.png) no-repeat; position:absolute; left:0; top:50%; margin-top:-13px;}
+.invite-code .info .ico-money{ width:26px; height:26px; background:url(/www/static/img/account/ico-account.png) no-repeat; position:absolute; left:0; top:50%; margin-top:-13px;}
 .invite-code .info .ico-people{ background-position:-200px -60px;}
 .invite-code .info .ico-coin{ background-position:-230px -60px;}
 .invite-code .info .ico-money{ background-position:-260px -60px;}
@@ -501,7 +501,7 @@ table.record .red{ color:#f00;}
 .invite-code .example h3 i{ display:block; height:26px; line-height:26px; font-size:18px; font-style:normal; padding-top:7px;}
 .invite-code .example h3 em{ display:block; height:52px; line-height:52px; font-size:42px; font-style:normal;}
 .invite-code .example p{ line-height:36px; font-size:18px; color:#383838;}
-.invite-code .example p i{ float:left; display:inline; width:76px; height:76px; background:url(/static/img/account/ico-account.png) no-repeat; margin-right:25px;}
+.invite-code .example p i{ float:left; display:inline; width:76px; height:76px; background:url(/www/static/img/account/ico-account.png) no-repeat; margin-right:25px;}
 .invite-code .example dt{ float:left; display:inline; width:460px; padding-left:15px;}
 .invite-code .example dt h3{ color:#f66;}
 .invite-code .example dt p{ padding-left:22px;}
@@ -511,9 +511,9 @@ table.record .red{ color:#f00;}
 .invite-code .example dd p i{ background-position:-100px -100px;}
 .invite-step{ height:584px;}
 .invite-step h3{ font-size:30px; color:#f08b2a; letter-spacing:5px; font-weight:bold;}
-.invite-step h3 i{ float:left; display:inline; width:36px; height:36px; background:url(/static/img/account/ico-account.png) no-repeat; margin-right:13px;}
+.invite-step h3 i{ float:left; display:inline; width:36px; height:36px; background:url(/www/static/img/account/ico-account.png) no-repeat; margin-right:13px;}
 .invite-step .step-1{ float:left; display:inline; width:415px; height:482px; padding-top:80px;}
-.invite-step .step-1 h3{ width:264px; height:94px; line-height:94px; background:url(/static/img/account/ico-invite-step.png) no-repeat center bottom; margin:0 auto 25px;}
+.invite-step .step-1 h3{ width:264px; height:94px; line-height:94px; background:url(/www/static/img/account/ico-invite-step.png) no-repeat center bottom; margin:0 auto 25px;}
 .invite-step .step-1 h3 i{ background-position:-260px -140px; margin:30px 13px 0 27px;}
 .invite-step .step-1 img{ display:block; width:260px; height:260px; margin:0 auto;}
 .invite-step .step-1 p{ line-height:38px; text-align:center; font-size:14px; color:#000;}
@@ -527,32 +527,32 @@ table.record .red{ color:#f00;}
 .invite-step .step-3 h3{ height:36px; line-height:36px; padding:50px 0 25px;}
 .invite-step .step-3 h3 i{ background-position:-200px -140px;}
 .invite-step .step-3 input.link{ display:block; width:450px; height:34px; line-height:34px; font-size:14px; color:#323132; background:#efefef; border:1px solid #cacaca; border-radius:5px; padding-left:10px; margin-bottom:25px;}
-.invite-step .step-3 .copy{ float:left; display:inline; width:124px; height:42px; line-height:42px; text-align:center; font-size:14px; color:#fff; background:url(/static/img/account/ico-account.png) no-repeat 0 -200px;}
+.invite-step .step-3 .copy{ float:left; display:inline; width:124px; height:42px; line-height:42px; text-align:center; font-size:14px; color:#fff; background:url(/www/static/img/account/ico-account.png) no-repeat 0 -200px;}
 .invite-step .step-3 .copy.disabled{ background-position:-130px -200px; cursor:default;}
 .invite-step .step-3 .share{ float:right; display:inline; width:364px;}
 .invite-step .step-3 .share span{ float:left; display:inline; height:42px; line-height:42px; font-size:18px; color:#494949;}
 .invite-step .step-3 .share .share-box{ float:left; display:inline; margin:11px 0 0 8px;}
 .invite-tips{ height:210px; padding:0 35px; margin-bottom:20px;}
 .invite-tips h2{ height:26px; line-height:26px; font-size:18px; font-weight:bold; color:#ff7e00; padding:45px 0 28px; margin:0;}
-.invite-tips h2 i{ float:left; display:inline; width:26px; height:26px; background:url(/static/img/account/ico-account.png) no-repeat -230px -60px; margin-right:12px;}
+.invite-tips h2 i{ float:left; display:inline; width:26px; height:26px; background:url(/www/static/img/account/ico-account.png) no-repeat -230px -60px; margin-right:12px;}
 .invite-tips p{ line-height:32px; font-size:14px; color:#666; padding-left:10px;}
 .invite-record{ padding:0 35px 20px;}
 .invite-record h2{ height:26px; line-height:26px; font-size:18px; font-weight:bold; color:#ff7e00; padding:45px 0 28px; margin:0;}
-.invite-record h2 i{ float:left; display:inline; width:26px; height:26px; background:url(/static/img/account/ico-account.png) no-repeat -230px -100px; margin-right:12px;}
+.invite-record h2 i{ float:left; display:inline; width:26px; height:26px; background:url(/www/static/img/account/ico-account.png) no-repeat -230px -100px; margin-right:12px;}
 
 
 .newuser-cont{ padding:45px 0 45px 75px;}
 .newuser-cont .tit{ display:block; margin:0 auto 70px;}
 .newuser-cont .step{ margin-bottom:26px;}
-.newuser-cont .step h2{ height:63px; text-indent:-999em; background:url(/static/img/account/newuser/sub-tit-1.png) no-repeat; margin-bottom:50px; overflow:hidden;}
+.newuser-cont .step h2{ height:63px; text-indent:-999em; background:url(/www/static/img/account/newuser/sub-tit-1.png) no-repeat; margin-bottom:50px; overflow:hidden;}
 .newuser-cont .step ul{ height:245px;}
-.newuser-cont .step li{ float:left; display:inline; width:173px; height:173px; text-align:center; background:url(/static/img/account/newuser/bg-step.png) no-repeat; margin-right:40px;}
+.newuser-cont .step li{ float:left; display:inline; width:173px; height:173px; text-align:center; background:url(/www/static/img/account/newuser/bg-step.png) no-repeat; margin-right:40px;}
 .newuser-cont .step strong{ display:block; height:52px; line-height:52px; font-size:24px; color:#d42a36; padding-top:30px;}
 .newuser-cont .step b{ color:#fb9e2f; font-weight:normal;}
 .newuser-cont .step span{ height:70px; line-height:70px; font-size:22px; color:#878686;}
 .newuser-cont .step span i{ font-style:normal; color:#d42a36;}
 .newuser-cont .step .btn{ display:block; width:292px; height:66px; line-height:66px; text-align:center; font-size:22px; color:#f6f6f6; background:#fb515d; border-radius:5px; margin:0 auto;}
-.newuser-cont .rule h2{ height:76px; text-indent:-999em; background:url(/static/img/account/newuser/sub-tit-2.png) no-repeat; margin-bottom:36px; overflow:hidden;}
+.newuser-cont .rule h2{ height:76px; text-indent:-999em; background:url(/www/static/img/account/newuser/sub-tit-2.png) no-repeat; margin-bottom:36px; overflow:hidden;}
 .newuser-cont .rule p{ line-height:36px; font-size:18px; color:#878686;}
 .newuser-cont .rule span{ color:#bdbcbc;}
 .newuser-cont .rule em{ font-style:normal; color:#fb515d;}
@@ -567,17 +567,17 @@ table.record .red{ color:#f00;}
 .mission-list p{ height:28px; line-height:28px; color:#999; padding-left:120px; position:absolute; left:0; bottom:0;}
 .mission-list .logo{ width:105px; height:94px; position:absolute; left:0; top:0; z-index:2;}
 .mission-list .logo img{ display:block; width:100%; height:100%;}
-.mission-list.coming li{ background:url(/static/img/account/mission_coming.png) no-repeat 310px bottom;}
-.mission-list.finished li{ background:url(/static/img/account/mission_finished.png) no-repeat 310px bottom;}
+.mission-list.coming li{ background:url(/www/static/img/account/mission_coming.png) no-repeat 310px bottom;}
+.mission-list.finished li{ background:url(/www/static/img/account/mission_finished.png) no-repeat 310px bottom;}
 .mission-detail{ padding:50px 0 20px 260px; position:relative;}
 .mission-detail .logo{ width:220px; height:160px; position:absolute; left:0; top:50px;}
 .mission-detail h3{ height:50px; line-height:50px; font-size:18px; font-weight:bold; color:#333; border-top:1px solid #e6dede; padding-left:20px; margin:0;}
-.mission-detail h4{ line-height:22px; font-size:18px; font-weight:bold; color:#333; background:url(/static/img/account/ico-mission.gif) no-repeat left center; padding:10px 20px; margin:0 0 0 20px;}
+.mission-detail h4{ line-height:22px; font-size:18px; font-weight:bold; color:#333; background:url(/www/static/img/account/ico-mission.gif) no-repeat left center; padding:10px 20px; margin:0 0 0 20px;}
 .mission-detail p{ line-height:18px; font-size:12px; margin:0 20px;}
 .mission-detail .link{ height:46px; padding-left:20px;}
 .mission-detail .link input{ float:left; display:inline; width:490px; height:34px; border:1px solid #e6dede; padding:0 20px;}
 .mission-detail .link a{ float:left; display:inline; width:100px; height:36px; line-height:36px; text-align:center; font-size:14px; color:#fff; background:#ff7802;}
-.mission-info{ background:url(/static/img/account/mission-person.png) no-repeat left bottom; padding-left:280px; margin-bottom:100px;}
+.mission-info{ background:url(/www/static/img/account/mission-person.png) no-repeat left bottom; padding-left:280px; margin-bottom:100px;}
 .mission-info table{ width:100%; border-left:1px solid #9a9a9a;}
 .mission-info table th{ height:65px; text-align:center; font-size:18px; font-weight:bold; color:#fff;}
 .mission-info table th.blue-title{ width:40%; background:#0ea94e; border-right:1px solid #0ea94e;}
@@ -589,14 +589,14 @@ table.record .red{ color:#f00;}
 .mission-result h3 span{ float:left; display:inline; width:72px; height:22px; line-height:22px; text-align:center; color:#fff; background:#008000; margin-right:15px;}
 .assets-cont{ padding:0 35px 40px;}
 .assets-cont h2{ height:90px; line-height:90px; font-size:16px; margin:0;}
-.assets-cont .user-assets{ float:left; display:inline; width:538px; height:238px; text-align:center; border:1px solid #dcdcdc; background:url(/static/img/account/text-assets-total.png) no-repeat center 28px; position:relative; overflow:hidden;}
+.assets-cont .user-assets{ float:left; display:inline; width:538px; height:238px; text-align:center; border:1px solid #dcdcdc; background:url(/www/static/img/account/text-assets-total.png) no-repeat center 28px; position:relative; overflow:hidden;}
 
 
 .assets-cont .user-assets .money{ padding-top:105px;}
 .assets-cont .user-assets .money .no,
 .assets-cont .user-assets .money .split{ display:inline-block; width:44px; height:58px; line-height:58px; font-size:40px; font-family:Arial; color:#000; margin:0 2px;}
-.assets-cont .user-assets .money .no{ background:url(/static/img/account/ico-no-bg.png) no-repeat;}
-.assets-cont .user-assets .money .split{ background:url(/static/img/account/ico-no-split.png) no-repeat;}
+.assets-cont .user-assets .money .no{ background:url(/www/static/img/account/ico-no-bg.png) no-repeat;}
+.assets-cont .user-assets .money .split{ background:url(/www/static/img/account/ico-no-split.png) no-repeat;}
 .assets-cont .user-assets .info{ width:100%; height:58px; line-height:58px; font-size:16px; position:absolute; left:0; bottom:0;}
 .assets-cont .user-rank{ float:right; display:inline; width:368px; height:238px; border:1px solid #dcdcdc; position:relative;}
 .assets-cont .user-rank .no,
@@ -610,9 +610,9 @@ table.record .red{ color:#f00;}
 .assets-cont .user-rank dd{ height:43px; line-height:26px;}
 .assets-cont .user-rank dd .total{ color:#ff7e00;}
 .assets-cont .user-rank .ico{ display:block; width:38px; height:26px; margin:0 auto;}
-.assets-cont .user-rank .ico.ico-1{ background:url(/static/img/account/ico-rank-1.png) no-repeat;}
-.assets-cont .user-rank .ico.ico-2{ background:url(/static/img/account/ico-rank-2.png) no-repeat;}
-.assets-cont .user-rank .ico.ico-3{ background:url(/static/img/account/ico-rank-3.png) no-repeat;}
+.assets-cont .user-rank .ico.ico-1{ background:url(/www/static/img/account/ico-rank-1.png) no-repeat;}
+.assets-cont .user-rank .ico.ico-2{ background:url(/www/static/img/account/ico-rank-2.png) no-repeat;}
+.assets-cont .user-rank .ico.ico-3{ background:url(/www/static/img/account/ico-rank-3.png) no-repeat;}
 .assets-cont .user-rank .info{ width:100%; height:44px; line-height:24px; position:absolute; left:0; bottom:0;}
 .assets-cont .user-rank .info p{ padding-left:25px;}
 .assets-cont .user-rank .info .rank{ color:#ff7e00;}

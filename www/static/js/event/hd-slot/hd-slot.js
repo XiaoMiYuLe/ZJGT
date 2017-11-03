@@ -57,31 +57,31 @@ slot = {
                 item : 6,
                 type : "real",
                 value : "10元话费",
-                src : "/static/img/event/hd-slot/award/award-hf.png"
+                src : "/www/static/img/event/hd-slot/award/award-hf.png"
             },
             "SH"    : {    //小米手环
                 item : 8,
                 type : "real",
                 value : "小米手环",
-                src : "/static/img/event/hd-slot/award/award-sh.png"
+                src : "/www/static/img/event/hd-slot/award/award-sh.png"
             },
             "XJ"    : {    //富士拍立得
                 item : 4,
                 type : "real",
                 value : "富士拍立得",
-                src : "/static/img/event/hd-slot/award/award-xj.png"
+                src : "/www/static/img/event/hd-slot/award/award-xj.png"
             },
             "JHQ"   : {    //小米空气净化器
                 item : 1,
                 type : "real",
                 value : "小米空气净化器",
-                src : "/static/img/event/hd-slot/award/award-jhq.png"
+                src : "/www/static/img/event/hd-slot/award/award-jhq.png"
             },
             "GWK"   : {    //京东购物卡100元
                 item : 11,
                 type : "real",
                 value : "京东购物卡100元",
-                src : "/static/img/event/hd-slot/award/award-gwk.png"
+                src : "/www/static/img/event/hd-slot/award/award-gwk.png"
             }
         }
     },

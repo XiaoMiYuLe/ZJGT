@@ -11,155 +11,16 @@
   <meta name="sogou_site_verification" content="B4ffKbuhWL" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <script type="text/javascript" src="/static/js/jquery-1.11.3.min.js?v=16041958"></script>
-  <script type="text/javascript" src="/static/js/jquery.cookie.js?v=16041958"></script>
-  <script type="text/javascript" src="/static/js/modernizr.js?v=16041958"></script>
-  <script type="text/javascript" src="/static/js/layer/layer.js?v=16082949"></script>
-
-  <script type="text/javascript">
-    var isMobile = false;
-    var ADAPT_CONFIG = {
-      path: '/static/css/',
-      dynamic: true,
-      callback: myCallback,
-      range: [
-        '0 to 767px = unsemantic-grid-desktop.css',
-        '768px =unsemantic-grid-desktop.css'
-      ]
-    };
-
-    function myCallback(i, width) {
-      // Alias HTML tag.
-      var html = document.documentElement;
-
-      // Find all instances of range_NUMBER and kill 'em.
-      html.className = html.className.replace(/(\s+)?range_\d/g, '');
-
-      // Check for valid range.
-      if (i > -1) {
-        // Add class="range_NUMBER"
-        html.className += ' range_' + i;
-      }
-
-      // Note: Making use of width here.
-      if (width < 768) {
-        isMobile = true;
-      }
-    }
-
-    function animate() {
-      $(".charts").each(function(i, item) {
-        var a = parseInt($(item).attr("w"));
-        $(item).animate({
-          width: a + "%",
-          height: "8px"
-        }, 2000);
-      });
-    }
-    $(document).ready(function() {
-
-      var sid = getUrlPara("sid");
-      var tid = getUrlPara("tid");
-      if (sid != "") {
-        if (tid == "") {
-          tid = "0";
-        }
-        //var expires = new Date();
-        //expires.setTime(expires.getTime() + 1000 * 60 * 60 * 24 );
-        $.cookie("sid", sid, {
-          path: "/",
-          domain: document.domain
-        });
-        $.cookie("tid", tid, {
-          path: "/",
-          domain: document.domain
-        });
-      }
-      var a_id = getUrlPara("a_id");
-      var c_id = getUrlPara("c_id");
-      var l_id = getUrlPara("l_id");
-      var l_type1 = getUrlPara("l_type1");
-      var rd = getUrlPara("rd");
-      if (a_id != "" && c_id != "" && l_id != "" && l_type1 != "" && rd != "") {
-        var expires = new Date();
-        expires.setTime(expires.getTime() + 1000 * 60 * 60 * 24 * parseInt(rd));
-        $.cookie("cookie_lkt", a_id + "|" + c_id + "|" + l_id + "|" + l_type1 + "|", {
-          path: "/",
-          expires: expires
-        });
-      }
-
-      $(".AspNet-Menu li").on("mouseenter mouseleave", function(e) {
-        var $item = $(this).find(".item");
-        if (e.type == "mouseenter" && $item.length != 0) {
-          $item.stop(true, true).fadeIn();
-        } else {
-          $item.stop(true, true).fadeOut();
-        }
-      });
-
-
-      //导航悬浮
-      var menubox = $(".menu-box");
-
-      menubox.hover(function() {
-        $(this).find(".link-box").addClass("on");
-        $(this).find(".sub-menu").show();
-      }, function() {
-        $(this).find(".link-box").removeClass("on");
-        $(this).find(".sub-menu").hide();
-      });
-
-      //侧边导航
-      $(".pub-slide .sd").mouseover(function() {
-        $(this).find(".span-box").stop().animate({
-          "top": "-40px"
-        }, "fast");
-      }).mouseout(function() {
-        $(this).find(".span-box").stop().animate({
-          "top": "0"
-        }, "fast");
-      });
-
-      $(".pub-slide .slide-b").click(function() {
-        $(".pub-slide .message").toggle()
-      });
-      $(".pub-slide .last").click(function() {
-        $(".pub-slide .message").hide()
-      });
-
-
-      $(".pub-slide .slide-c").click(function() {
-        $("html,body").animate({
-          "scrollTop": 0
-        }, "fast")
-      });
-
-
-      //侧边栏位置
-      $(window).resize(function() {
-        if ($(window).width() < 1350) {
-          $(".pub-slide").css({
-            'right': 0,
-            'margin-right': 0
-          });
-        } else {
-          $(".pub-slide").css({
-            'right': '50%',
-            'margin-right': '-660px'
-          });
-        }
-      });
-
-    });
-  </script>
-
-  <script type="text/javascript" src="/static/js/indexMerge.js?v=16041958"></script>
-  <script type="text/javascript" src="/static/js/common.js?v=16062727"></script>
-  <script type="text/javascript" src="/static/js/header.js?v=16062727"></script>
-  <link rel="stylesheet" type="text/css" href="/static/css/indexMerge.css?v=17022008" />
+  <script type="text/javascript" src="/www/static/js/jquery-1.11.3.min.js?v=16041958"></script>
+  <script type="text/javascript" src="/www/static/js/jquery.cookie.js?v=16041958"></script>
+  <script type="text/javascript" src="/www/static/js/modernizr.js?v=16041958"></script>
+  <script type="text/javascript" src="/www/static/js/layer/layer.js?v=16082949"></script>
+  <script type="text/javascript" src="/www/static/js/header.js?v=16062727"></script>
+  <script type="text/javascript" src="/www/static/js/indexMerge.js?v=16041958"></script>
+  <script type="text/javascript" src="/www/static/js/common.js?v=16062727"></script>
+  <link rel="stylesheet" type="text/css" href="/www/static/css/indexMerge.css?v=17022008" />
   <noscript>
-    <link rel="stylesheet" type="text/css" href="/static/css/unsemantic-grid-mobile.css" />
+    <link rel="stylesheet" type="text/css" href="/www/static/css/unsemantic-grid-mobile.css" />
   </noscript>
 </head>
 
@@ -176,11 +37,11 @@
             <dl class="cont">
               <dt>扫码关注中金国泰微信号</dt>
               <dd>
-                <img src="/static/img/index2/qr-ser.jpg" />
+                <img src="/www/static/img/index2/qr-ser.jpg" />
                 <p>服务号：zjgtcom</p>
               </dd>
               <dd>
-                <img src="/static/img/index2/qr-sub.jpg" />
+                <img src="/www/static/img/index2/qr-sub.jpg" />
                 <p>订阅号：zjgtlczx</p>
               </dd>
             </dl>
@@ -196,7 +57,7 @@
             <span></span>
             <div class="cont">
               <p>手机扫一扫</p>
-              <img src="/static/img/index2/qrcode.jpg" />
+              <img src="/www/static/img/index2/qrcode.jpg" />
             </div>
           </div>
         </div>
@@ -222,7 +83,7 @@
     <div class="n-bottom">
       <div class="inWrap clearfix">
         <div class="logo fl">
-          <a class="in-link" href="/Index.aspx"><img src="/static/img/index2/logo.jpg" alt="中金国泰，安全透明的理财平台" /></a>
+          <a class="in-link" href="/Index.aspx"><img src="/www/static/img/index2/logo.jpg" alt="中金国泰，安全透明的理财平台" /></a>
         </div>
         <ul class="nav fr">
           <li class="home-page"><a class="link-a link-on" href="/">首页</a></li>

@@ -14,7 +14,7 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: url(/static/img/account/ico-account.png) no-repeat -200px 0;
+  background: url(/www/static/img/account/ico-account.png) no-repeat -200px 0;
   vertical-align: middle;
   margin-left: 7px;
   position: relative;
@@ -44,7 +44,7 @@
   content: "";
   width: 8px;
   height: 6px;
-  background: url(/static/img/account/ico-account.png) no-repeat -260px -30px;
+  background: url(/www/static/img/account/ico-account.png) no-repeat -260px -30px;
   position: absolute;
   left: 50%;
   top: -6px;
@@ -122,7 +122,7 @@
 }
 
 .search input.start, .search input.end {
-  background: url(/static/img/account/ico-calander.png) no-repeat 95px center;
+  background: url(/www/static/img/account/ico-calander.png) no-repeat 95px center;
 }
 
 .search input.end {
@@ -137,7 +137,7 @@
   text-align: center;
   font-size: 14px;
   color: #545454;
-  background: url(/static/img/account/ico-account.png) no-repeat 0 -250px;
+  background: url(/www/static/img/account/ico-account.png) no-repeat 0 -250px;
   cursor: pointer;
 }
 
@@ -211,7 +211,7 @@ table.record .red {
   float: left;
   width: 30px;
   height: 30px;
-  background: url(/static/img/account/side-menu.png) no-repeat 0 0;
+  background: url(/www/static/img/account/side-menu.png) no-repeat 0 0;
   margin-left: 14px;
 }
 
@@ -259,7 +259,7 @@ table.record .red {
 
 .side-menu dl dt .ico {
   float: left;
-  background: url(/static/img/account/side-menu.png) no-repeat;
+  background: url(/www/static/img/account/side-menu.png) no-repeat;
   margin: 23px 15px 0 30px;
 }
 
@@ -320,7 +320,7 @@ table.record .red {
 .side-menu dl dt .arrow {
   width: 8px;
   height: 12px;
-  background: url(/static/img/account/side-menu.png) no-repeat -150px -200px;
+  background: url(/www/static/img/account/side-menu.png) no-repeat -150px -200px;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -363,7 +363,7 @@ table.record .red {
   content: "";
   width: 10px;
   height: 8px;
-  background: url(/static/img/account/side-menu.png) no-repeat -120px -200px;
+  background: url(/www/static/img/account/side-menu.png) no-repeat -120px -200px;
   position: absolute;
   right: 0;
   bottom: -8px;
@@ -1032,7 +1032,7 @@ table.record .red {
   display: inline-block;
   width: 73px;
   height: 73px;
-  background: url(/static/img/account/ico-account.png) no-repeat -100px 0;
+  background: url(/www/static/img/account/ico-account.png) no-repeat -100px 0;
   vertical-align: top;
   margin-right: 35px;
 }
@@ -1049,7 +1049,7 @@ table.record .red {
   display: block;
   width: 260px;
   height: 150px;
-  background: url(/static/img/account/btn-bindcard.png) no-repeat;
+  background: url(/www/static/img/account/btn-bindcard.png) no-repeat;
   margin: 0 auto;
 }
 
@@ -1083,7 +1083,7 @@ table.record .red {
   line-height: 0;
   vertical-align: text-top;
   margin-right: 5px;
-  background: url(/static/img/account/ico-account.png) no-repeat;
+  background: url(/www/static/img/account/ico-account.png) no-repeat;
 }
 
 .setup-cont .sec-info strong i.success {
@@ -1248,7 +1248,7 @@ table.record .red {
   vertical-align: middle;
   margin-right: 30px;
   width: 75px;
-  background: url("/static/img/account/ico-account.png");
+  background: url("/www/static/img/account/ico-account.png");
 }
 
 .grid-container-bd .feedback .tip-sorry-icon {
@@ -1679,7 +1679,7 @@ table.record .red {
 .cashout-form .bank i {
   width: 24px;
   height: 24px;
-  background: url(/static/img/account/ico-account.png) no-repeat -260px 0;
+  background: url(/www/static/img/account/ico-account.png) no-repeat -260px 0;
   position: absolute;
   right: -2px;
   top: -2px;
@@ -1894,7 +1894,7 @@ table.record .red {
   width: 357px;
   height: 235px;
   font-size: 16px;
-  background: url(/static/img/account/bg-welfare.png) no-repeat;
+  background: url(/www/static/img/account/bg-welfare.png) no-repeat;
   margin: 0 40px 45px;
   position: relative;
 }
@@ -1967,7 +1967,7 @@ table.record .red {
 
 .welfare-cont .welfare-tab-box.nodata {
   height: 360px;
-  background: url(/static/img/account/welfare-nodata.png) no-repeat center 44px;
+  background: url(/www/static/img/account/welfare-nodata.png) no-repeat center 44px;
 }
 
 .welfare-cont .user-zcoin h3, .welfare-cont .user-zcoin .home-invite .res h4, .home-invite .res .welfare-cont .user-zcoin h4 {
@@ -2032,7 +2032,7 @@ table.record .red {
 
 .welfare-cont .interest-tab-box.nodata {
   height: 360px;
-  background: url(/static/img/account/welfare-nodata.png) no-repeat center 44px;
+  background: url(/www/static/img/account/welfare-nodata.png) no-repeat center 44px;
 }
 
 .welfare-cont .interest-tab-box .page {
@@ -2072,16 +2072,16 @@ table.record .red {
 }
 
 .welfare-cont .interest-tab-box.unactived li {
-  background: url(/static/img/account/bg-interest-unactived.png) no-repeat;
+  background: url(/www/static/img/account/bg-interest-unactived.png) no-repeat;
   cursor: pointer;
 }
 
 .welfare-cont .interest-tab-box.actived li {
-  background: url(/static/img/account/bg-interest-actived.png) no-repeat;
+  background: url(/www/static/img/account/bg-interest-actived.png) no-repeat;
 }
 
 .welfare-cont .interest-tab-box.expired li {
-  background: url(/static/img/account/bg-interest-expired.png) no-repeat;
+  background: url(/www/static/img/account/bg-interest-expired.png) no-repeat;
 }
 
 .welfare-cont .notice {
@@ -2225,7 +2225,7 @@ table.record .red {
   display: none;
   width: 24px;
   height: 24px;
-  background: url(/static/img/account/ico-account.png) no-repeat -260px 0;
+  background: url(/www/static/img/account/ico-account.png) no-repeat -260px 0;
   position: absolute;
   right: -2px;
   top: -2px;
@@ -2444,7 +2444,7 @@ table.record .red {
   display: none;
   width: 24px;
   height: 24px;
-  background: url(/static/img/account/ico-account.png) no-repeat -260px 0;
+  background: url(/www/static/img/account/ico-account.png) no-repeat -260px 0;
   position: absolute;
   right: -2px;
   top: -2px;
@@ -2543,7 +2543,7 @@ table.record .red {
 .payment-form .bank-fast i {
   width: 24px;
   height: 24px;
-  background: url(/static/img/account/ico-account.png) no-repeat -260px 0;
+  background: url(/www/static/img/account/ico-account.png) no-repeat -260px 0;
   position: absolute;
   right: -2px;
   top: -2px;
@@ -2709,7 +2709,7 @@ table.record .red {
 .invite-code .info .ico-people, .invite-code .info .ico-coin, .invite-code .info .ico-money {
   width: 26px;
   height: 26px;
-  background: url(/static/img/account/ico-account.png) no-repeat;
+  background: url(/www/static/img/account/ico-account.png) no-repeat;
   position: absolute;
   left: 0;
   top: 50%;
@@ -2770,7 +2770,7 @@ table.record .red {
   display: inline;
   width: 76px;
   height: 76px;
-  background: url(/static/img/account/ico-account.png) no-repeat;
+  background: url(/www/static/img/account/ico-account.png) no-repeat;
   margin-right: 25px;
 }
 
@@ -2823,7 +2823,7 @@ table.record .red {
   display: inline;
   width: 36px;
   height: 36px;
-  background: url(/static/img/account/ico-account.png) no-repeat;
+  background: url(/www/static/img/account/ico-account.png) no-repeat;
   margin-right: 13px;
 }
 
@@ -2839,7 +2839,7 @@ table.record .red {
   width: 264px;
   height: 94px;
   line-height: 94px;
-  background: url(/static/img/account/ico-invite-step.png) no-repeat center bottom;
+  background: url(/www/static/img/account/ico-invite-step.png) no-repeat center bottom;
   margin: 0 auto 25px;
 }
 
@@ -2942,7 +2942,7 @@ table.record .red {
   text-align: center;
   font-size: 14px;
   color: #fff;
-  background: url(/static/img/account/ico-account.png) no-repeat 0 -200px;
+  background: url(/www/static/img/account/ico-account.png) no-repeat 0 -200px;
 }
 
 .invite-step .step-3 .copy.disabled {
@@ -2992,7 +2992,7 @@ table.record .red {
   display: inline;
   width: 26px;
   height: 26px;
-  background: url(/static/img/account/ico-account.png) no-repeat -230px -60px;
+  background: url(/www/static/img/account/ico-account.png) no-repeat -230px -60px;
   margin-right: 12px;
 }
 
@@ -3022,7 +3022,7 @@ table.record .red {
   display: inline;
   width: 26px;
   height: 26px;
-  background: url(/static/img/account/ico-account.png) no-repeat -230px -100px;
+  background: url(/www/static/img/account/ico-account.png) no-repeat -230px -100px;
   margin-right: 12px;
 }
 
@@ -3042,7 +3042,7 @@ table.record .red {
 .newuser-cont .step h2 {
   height: 63px;
   text-indent: -999em;
-  background: url(/static/img/account/newuser/sub-tit-1.png) no-repeat;
+  background: url(/www/static/img/account/newuser/sub-tit-1.png) no-repeat;
   margin-bottom: 50px;
   overflow: hidden;
 }
@@ -3057,7 +3057,7 @@ table.record .red {
   width: 173px;
   height: 173px;
   text-align: center;
-  background: url(/static/img/account/newuser/bg-step.png) no-repeat;
+  background: url(/www/static/img/account/newuser/bg-step.png) no-repeat;
   margin-right: 40px;
 }
 
@@ -3103,7 +3103,7 @@ table.record .red {
 .newuser-cont .rule h2 {
   height: 76px;
   text-indent: -999em;
-  background: url(/static/img/account/newuser/sub-tit-2.png) no-repeat;
+  background: url(/www/static/img/account/newuser/sub-tit-2.png) no-repeat;
   margin-bottom: 36px;
   overflow: hidden;
 }
@@ -3193,11 +3193,11 @@ table.record .red {
 }
 
 .mission-list.coming li {
-  background: url(/static/img/account/mission_coming.png) no-repeat 310px bottom;
+  background: url(/www/static/img/account/mission_coming.png) no-repeat 310px bottom;
 }
 
 .mission-list.finished li {
-  background: url(/static/img/account/mission_finished.png) no-repeat 310px bottom;
+  background: url(/www/static/img/account/mission_finished.png) no-repeat 310px bottom;
 }
 
 .mission-detail {
@@ -3229,7 +3229,7 @@ table.record .red {
   font-size: 18px;
   font-weight: bold;
   color: #333;
-  background: url(/static/img/account/ico-mission.gif) no-repeat left center;
+  background: url(/www/static/img/account/ico-mission.gif) no-repeat left center;
   padding: 10px 20px;
   margin: 0 0 0 20px;
 }
@@ -3267,7 +3267,7 @@ table.record .red {
 }
 
 .mission-info {
-  background: url(/static/img/account/mission-person.png) no-repeat left bottom;
+  background: url(/www/static/img/account/mission-person.png) no-repeat left bottom;
   padding-left: 280px;
   margin-bottom: 100px;
 }
@@ -3352,7 +3352,7 @@ table.record .red {
   height: 238px;
   text-align: center;
   border: 1px solid #dcdcdc;
-  background: url(/static/img/account/text-assets-total.png) no-repeat center 28px;
+  background: url(/www/static/img/account/text-assets-total.png) no-repeat center 28px;
   position: relative;
   overflow: hidden;
 }
@@ -3373,11 +3373,11 @@ table.record .red {
 }
 
 .assets-cont .user-assets .money .no {
-  background: url(/static/img/account/ico-no-bg.png) no-repeat;
+  background: url(/www/static/img/account/ico-no-bg.png) no-repeat;
 }
 
 .assets-cont .user-assets .money .split {
-  background: url(/static/img/account/ico-no-split.png) no-repeat;
+  background: url(/www/static/img/account/ico-no-split.png) no-repeat;
 }
 
 .assets-cont .user-assets .info {
@@ -3445,15 +3445,15 @@ table.record .red {
 }
 
 .assets-cont .user-rank .ico.ico-1 {
-  background: url(/static/img/account/ico-rank-1.png) no-repeat;
+  background: url(/www/static/img/account/ico-rank-1.png) no-repeat;
 }
 
 .assets-cont .user-rank .ico.ico-2 {
-  background: url(/static/img/account/ico-rank-2.png) no-repeat;
+  background: url(/www/static/img/account/ico-rank-2.png) no-repeat;
 }
 
 .assets-cont .user-rank .ico.ico-3 {
-  background: url(/static/img/account/ico-rank-3.png) no-repeat;
+  background: url(/www/static/img/account/ico-rank-3.png) no-repeat;
 }
 
 .assets-cont .user-rank .info {
@@ -3613,7 +3613,7 @@ table.record .red {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url(/static/img/account/ico-account.png) no-repeat -230px 0;
+  background: url(/www/static/img/account/ico-account.png) no-repeat -230px 0;
   vertical-align: text-top;
   margin-right: 5px;
 }
@@ -3627,7 +3627,7 @@ table.record .red {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url(/static/img/account/ico-account.png) no-repeat -230px -30px;
+  background: url(/www/static/img/account/ico-account.png) no-repeat -230px -30px;
   vertical-align: text-top;
   margin-right: 5px;
 }

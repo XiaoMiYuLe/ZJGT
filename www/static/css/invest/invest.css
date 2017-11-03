@@ -10,11 +10,11 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .list-nav .item{ width:840px; height:100%; position:absolute; top:0;}
 .list-nav strong{ display:block; height:58px; line-height:58px; font-size:40px; font-weight:bold; padding-top:34px;}
 .list-nav span{ display:block; height:26px; line-height:26px; font-size:14px; font-weight:bold; color:#fff;}
-.list-nav .normal .item{ background:#fff url(/static/img/invest/bg-normal.png) no-repeat 55px 38px; left:-120px;}
+.list-nav .normal .item{ background:#fff url(/www/static/img/invest/bg-normal.png) no-repeat 55px 38px; left:-120px;}
 .list-nav .normal strong{ color:#ff8331; padding-left:220px;}
 .list-nav .normal span{ padding-left:220px;}
 .list-nav .vip{ text-align:right;}
-.list-nav .vip .item{ background:#fff url(/static/img/invest/bg-vip.png) no-repeat 12px 34px; right:-120px;}
+.list-nav .vip .item{ background:#fff url(/www/static/img/invest/bg-vip.png) no-repeat 12px 34px; right:-120px;}
 .list-nav .vip strong{ color:#3f9ae0; padding-right:220px;}
 .list-nav .vip span{ padding-right:220px;}
 .list-nav .select{ width:840px;}
@@ -24,27 +24,27 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .list-nav .vip.select strong{ color:#fff;}
 
 
-.list-brief{ height:132px; color:#fff; background:url(/static/img/invest/bg-brief.png) repeat-x center top; margin-bottom:20px;}
+.list-brief{ height:132px; color:#fff; background:url(/www/static/img/invest/bg-brief.png) repeat-x center top; margin-bottom:20px;}
 .list-brief .wrap{ width:1200px; margin:0 auto;}
 .list-brief h2{ float:left; display:inline; width:200px; height:132px; line-height:132px; text-align:center; font-size:38px; margin:0;}
 .list-brief ul{ float:left; padding-top:36px;}
 .list-brief li{ float:left; display:inline; padding-left:75px; position:relative;}
 .list-brief li i{ position:absolute; top:0; left:0;}
-.list-brief li i.no-1{ width:21px; height:49px; background:url(/static/img/invest/ico-num-1.png) no-repeat; margin-left:41px;}
-.list-brief li i.no-2{ width:35px; height:53px; background:url(/static/img/invest/ico-num-2.png) no-repeat; margin-left:29px;}
-.list-brief li i.no-3{ width:34px; height:53px; background:url(/static/img/invest/ico-num-3.png) no-repeat; margin-left:27px;}
-.list-brief li i.no-4{ width:37px; height:46px; background:url(/static/img/invest/ico-num-4.png) no-repeat; margin-left:33px;}
+.list-brief li i.no-1{ width:21px; height:49px; background:url(/www/static/img/invest/ico-num-1.png) no-repeat; margin-left:41px;}
+.list-brief li i.no-2{ width:35px; height:53px; background:url(/www/static/img/invest/ico-num-2.png) no-repeat; margin-left:29px;}
+.list-brief li i.no-3{ width:34px; height:53px; background:url(/www/static/img/invest/ico-num-3.png) no-repeat; margin-left:27px;}
+.list-brief li i.no-4{ width:37px; height:46px; background:url(/www/static/img/invest/ico-num-4.png) no-repeat; margin-left:33px;}
 .list-brief li h3{ height:32px; line-height:32px; font-size:18px; margin:0;}
 .list-brief li p{ height:24px; line-height:24px; font-size:14px; white-space:nowrap;}
 
 .list-tab{ width:1160px; height:80px; background:#fff; box-shadow:0 1px 2px 2px rgba(11,3,6,0.08); margin:0 auto 25px; }
-.list-tab .btn-order{ float:left; display:inline; width:70px; height:30px; line-height:30px; text-align:right; font-size:18px; color:#565656; background:url(/static/img/invest/ico-order.png) no-repeat left center; margin:26px 45px 0;}
+.list-tab .btn-order{ float:left; display:inline; width:70px; height:30px; line-height:30px; text-align:right; font-size:18px; color:#565656; background:url(/www/static/img/invest/ico-order.png) no-repeat left center; margin:26px 45px 0;}
 .list-tab ul{ float:left; display:inline; height:30px; border-left:1px solid #ebebeb; margin-top:30px;}
 .list-tab li{ float:left; display:inline; width:220px; height:30px; border-right:1px solid #ebebeb; text-align:center; position:relative;}
 .list-tab strong{ display:block; height:26px; line-height:26px; font-size:18px; font-weight:normal; color:#565656; margin-top:-14px;}
 .list-tab strong a{ color:#565656;}
 .list-tab span{ display:block; height:20px; line-height:20px; font-size:14px; color:#808080;}
-.list-tab i{ display:none; width:19px; height:11px; background:url(/static/img/invest/bg-arrow.png) no-repeat; position:absolute; left:50%; top:43px;}
+.list-tab i{ display:none; width:19px; height:11px; background:url(/www/static/img/invest/bg-arrow.png) no-repeat; position:absolute; left:50%; top:43px;}
 .list-tab li.vip{ width:300px; border-right:none;}
 .list-tab li.vip span,
 .list-tab li.vip strong a{ color:#1695f6}
@@ -56,8 +56,8 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .list-wrap h2 a{ float:left; display:inline; color:#565656;}
 .list-wrap h2 a:hover{ color:#ff8331;}
 .list-wrap .tip{ float:left; display:inline; font-size:14px; font-style:normal; padding-left:30px; margin-left:20px;}
-.list-wrap .tip.pro{ color:#f60; background:url(/static/img/invest/ico-pro.png) no-repeat left center;}
-.list-wrap .tip.vip{ color:#1695f6; background:url(/static/img/invest/ico-vip.png) no-repeat left center; margin-left:30px;}
+.list-wrap .tip.pro{ color:#f60; background:url(/www/static/img/invest/ico-pro.png) no-repeat left center;}
+.list-wrap .tip.vip{ color:#1695f6; background:url(/www/static/img/invest/ico-vip.png) no-repeat left center; margin-left:30px;}
 .list-wrap dd{ float:left; display:inline; height:60px; line-height:60px; text-align:center; font-size:15px; color:#565656; position:relative;}
 .list-wrap dd strong{ font-size:24px; font-weight:normal; font-family:Arial; padding-right:5px;}
 .list-wrap dd span{ width:100%; height:24px; line-height:24px; font-size:14px; color:#808080; position:absolute; left:0; bottom:-14px;}
@@ -104,11 +104,11 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 
 /* 愚人节活动 20160324 */
 .list-wrap .egg{ height:100%; padding:0 10px;}
-.list-wrap .egg .ico-egg{ float:left; display:inline; width:37px; height:45px; background:url(/static/img/event/hd-foolsday/ico-egg.gif) no-repeat; position:relative;}
-.list-wrap .egg .ico-egg.hover{ background:url(/static/img/event/hd-foolsday/ico-egg-ani.gif) no-repeat;}
+.list-wrap .egg .ico-egg{ float:left; display:inline; width:37px; height:45px; background:url(/www/static/img/event/hd-foolsday/ico-egg.gif) no-repeat; position:relative;}
+.list-wrap .egg .ico-egg.hover{ background:url(/www/static/img/event/hd-foolsday/ico-egg-ani.gif) no-repeat;}
 .list-wrap .egg .ico-egg .notice{ display:none; width:165px; line-height:20px; font-size:12px; color:#666; border:1px solid #666; background:#fff; padding:5px 10px; position:absolute; left:50px; top:0; cursor:default;}
 .list-wrap .egg .ico-egg:hover .notice{ display:block;}
-.list-wrap .egg .ico-welfare{ float:left; display:inline; width:130px; height:16px; background:url(/static/img/event/hd-foolsday/ico-welfare-lendlist.png) no-repeat; margin-top:18px;}
+.list-wrap .egg .ico-welfare{ float:left; display:inline; width:130px; height:16px; background:url(/www/static/img/event/hd-foolsday/ico-welfare-lendlist.png) no-repeat; margin-top:18px;}
 .list-wrap .date em{ height:16px; line-height:16px; font-size:12px; font-style:normal; font-family:Arial; color:#fff; letter-spacing:-1px; background:#fc350e; padding:0 5px; position:absolute; right:10px; top:7px;}
 
 /* 新手标自动续投3月标 */
@@ -116,14 +116,14 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .invest-auto h2{ height:110px; line-height:110px; text-align:center; font-size:30px; font-weight:normal; padding-top:30px;}
 
 .invest-auto .redenv-wrap{ width:915px; background:#f5fcff; border:1px solid #d3e6ec; margin:0 auto; padding-bottom:20px; margin-bottom:25px; position:relative;}
-.invest-auto .redenv-wrap .ico-chance{ width:102px; height:102px; background:url(/static/img/invest/ico-chance.png) no-repeat; position:absolute; left:-1px; top:-1px;}
+.invest-auto .redenv-wrap .ico-chance{ width:102px; height:102px; background:url(/www/static/img/invest/ico-chance.png) no-repeat; position:absolute; left:-1px; top:-1px;}
 .invest-auto .redenv{ overflow:hidden; padding:45px 0 0 5px;}
-.invest-auto .redenv li{ float:left; display:inline; width:153px; height:159px; background:url(/static/img/invest/redenv-back.png) no-repeat; margin:0 0 30px 110px; position:relative; cursor:pointer;}
-.invest-auto .redenv span{ width:148px; height:117px; line-height:100px; text-align:center; font-weight:bold; font-size:26px; color:#fb3402; background:url(/static/img/invest/redenv-main.png) no-repeat; position:absolute; right:0; bottom:37px;}
+.invest-auto .redenv li{ float:left; display:inline; width:153px; height:159px; background:url(/www/static/img/invest/redenv-back.png) no-repeat; margin:0 0 30px 110px; position:relative; cursor:pointer;}
+.invest-auto .redenv span{ width:148px; height:117px; line-height:100px; text-align:center; font-weight:bold; font-size:26px; color:#fb3402; background:url(/www/static/img/invest/redenv-main.png) no-repeat; position:absolute; right:0; bottom:37px;}
 .invest-auto .redenv b{ font-weight:normal; font-size:46px; letter-spacing:-3px; padding-left:5px;}
-.invest-auto .redenv i{ width:153px; height:96px; background:url(/static/img/invest/redenv-front.png) no-repeat; position:absolute; left:0; bottom:6px;}
+.invest-auto .redenv i{ width:153px; height:96px; background:url(/www/static/img/invest/redenv-front.png) no-repeat; position:absolute; left:0; bottom:6px;}
 
-.invest-auto .redenv-list{ width:724px; height:55px; background:url(/static/img/invest/bg-list.png) no-repeat; margin:0 auto;}
+.invest-auto .redenv-list{ width:724px; height:55px; background:url(/www/static/img/invest/bg-list.png) no-repeat; margin:0 auto;}
 .invest-auto .redenv-list ul{ height:36px; padding-top:10px; overflow:hidden;}
 .invest-auto .redenv-list li{ width:670px; height:36px; margin:0 auto;}
 .invest-auto .redenv-list p{ float:left; width:50%; line-height:36px; text-align:center; font-size:14px;}
@@ -186,7 +186,7 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .cs-investlist .menus li > p a { float:left; max-width:500px; font-size:16px; color:#565656; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .cs-investlist .menus li > p a:hover { color:#ff4c4c; }
 .cs-investlist .menus li > p span { float:left; font-size:14px; }
-.cs-investlist .menus li > p .ico { width:0; height:24px; margin:0 8px; padding-left:28px; overflow:hidden; cursor:pointer; background:url(/static/img/invest/invest-ico.jpg) no-repeat; }
+.cs-investlist .menus li > p .ico { width:0; height:24px; margin:0 8px; padding-left:28px; overflow:hidden; cursor:pointer; background:url(/www/static/img/invest/invest-ico.jpg) no-repeat; }
 .cs-investlist .menus li > p .ico-b { background-position:0 -24px; }
 .cs-investlist .menus li dl { overflow:hidden; font-size:14px; color:#565656; }
 .cs-investlist .menus li dd { float:left; width:25%; text-align:center; }
@@ -210,7 +210,7 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .cs-investlist .slide dd { padding:16px 0 16px 86px; line-height:20px; font-size:12px; }
 .cs-investlist .slide dd span { display:block; }
 .cs-investlist .slide dd span b { color:#ff4c4c; }
-.cs-investlist .slide dd em { float:left; width:40px; height:40px; margin-left:-65px; background:url(/static/img/invest/slide-ico.jpg) no-repeat; }
+.cs-investlist .slide dd em { float:left; width:40px; height:40px; margin-left:-65px; background:url(/www/static/img/invest/slide-ico.jpg) no-repeat; }
 .cs-investlist .slide .em-b { background-position:0 -40px; }
 .cs-investlist .slide .em-c { background-position:0 -80px; }
 

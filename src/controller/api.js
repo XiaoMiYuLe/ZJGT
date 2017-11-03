@@ -12,7 +12,7 @@ module.exports = class extends Base {
             this.gglist();
         } else if (cmdtype == 'login') {
             this.login();
-        }
+        }        
     }
 
     //统计数据

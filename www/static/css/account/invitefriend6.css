@@ -4,7 +4,7 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .invite-cont{ float:right; display:inline; width:1000px; color:#333;}
 .invite-wrap{ border:1px solid #dcdcdc; background:#fff; box-shadow:0 4px 4px 0 #eaeaea; margin-bottom:25px;}
 
-.hd-tit{ height:60px; line-height:60px; font-size:28px; font-weight:bold; color:#fff; background:url(/static/img/account/invitefriend/bg-tit.png) no-repeat; padding-left:25px;}
+.hd-tit{ height:60px; line-height:60px; font-size:28px; font-weight:bold; color:#fff; background:url(/www/static/img/account/invitefriend/bg-tit.png) no-repeat; padding-left:25px;}
 .hd-tit span{ font-size:16px; font-weight:normal; padding-left:30px;}
 
 .hd-link{ height:130px; padding-left:85px;}
@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .hd-intro .item dt em{ font-style:normal; color:#ff1000;}
 .hd-intro .item dd{ float:left; display:inline; width:75px; height:75px; background:#fffce6; border:3px solid #ffd1a8; border-radius:50%; position:relative; margin:0 50px 0 55px; behavior:url(/static/css/pie.htc);}
 .hd-intro .item dd p{ text-align:center; font-size:16px; color:#636363;}
-.hd-intro .item dd .plus{ width:116px; height:63px; background:url(/static/img/account/invitefriend/ico-plus.png) no-repeat; position:absolute; left:-17px; bottom:-12px;}
+.hd-intro .item dd .plus{ width:116px; height:63px; background:url(/www/static/img/account/invitefriend/ico-plus.png) no-repeat; position:absolute; left:-17px; bottom:-12px;}
 .hd-intro .item .split{ width:30px; height:3px; line-height:0; font-size:0; background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAADAQMAAACKz+y4AAAABlBMVEUAAAD+eQN9yXQQAAAAAXRSTlMAQObYZgAAAAtJREFUCNdjeACCAAfmAqGBW6z3AAAAAElFTkSuQmCC') repeat-x; position:absolute; right:-70px; top:50%; margin-top:-1px;}
 .hd-intro .item.pc{ height:100px;}
 .hd-intro .item.pc dd p{ line-height:75px;}

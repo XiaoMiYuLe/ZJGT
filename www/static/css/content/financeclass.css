@@ -7,28 +7,28 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .finance-nav{ height:72px; margin-left:10px;}
 .finance-nav li{ float:left; display:inline; width:194px; height:50px; line-height:50px; text-indent:74px; font-size:18px; background-color:#dadada; background-repeat:no-repeat; background-position:39px center; border-radius:5px; margin-right:33px; position:relative;}
 .finance-nav li a{ display:block; width:100%; height:100%; color:#fff;}
-.finance-nav li i{ display:none; width:21px; height:12px; font-size:0; line-height:0; background:url(/static/img/content/financeclass/ico-nav-arrow.png) no-repeat; position:absolute; left:50%; bottom:-12px; margin-left:-10px;}
-.finance-nav li.n-1{ background-image:url(/static/img/content/financeclass/ico-nav-1.png);}
-.finance-nav li.n-2{ background-image:url(/static/img/content/financeclass/ico-nav-2.png);}
-.finance-nav li.n-3{ background-image:url(/static/img/content/financeclass/ico-nav-3.png);}
-.finance-nav li.n-4{ background-image:url(/static/img/content/financeclass/ico-nav-4.png);}
-.finance-nav li.n-5{ background-image:url(/static/img/content/financeclass/ico-nav-5.png);}
+.finance-nav li i{ display:none; width:21px; height:12px; font-size:0; line-height:0; background:url(/www/static/img/content/financeclass/ico-nav-arrow.png) no-repeat; position:absolute; left:50%; bottom:-12px; margin-left:-10px;}
+.finance-nav li.n-1{ background-image:url(/www/static/img/content/financeclass/ico-nav-1.png);}
+.finance-nav li.n-2{ background-image:url(/www/static/img/content/financeclass/ico-nav-2.png);}
+.finance-nav li.n-3{ background-image:url(/www/static/img/content/financeclass/ico-nav-3.png);}
+.finance-nav li.n-4{ background-image:url(/www/static/img/content/financeclass/ico-nav-4.png);}
+.finance-nav li.n-5{ background-image:url(/www/static/img/content/financeclass/ico-nav-5.png);}
 .finance-nav li.cur,
 .finance-nav li:hover{ background-color:#fd722d;}
 .finance-nav li.cur i,
 .finance-nav li:hover i{ display:block;}
 
 
-.guide-banner{ width:1178px; height:273px; background:url(/static/img/content/financeclass/banner-guide.png) no-repeat; margin:0 auto;}
+.guide-banner{ width:1178px; height:273px; background:url(/www/static/img/content/financeclass/banner-guide.png) no-repeat; margin:0 auto;}
 
 .guide-about{ height:465px;}
-.guide-about h2{ height:80px; line-height:80px; text-align:center; font-size:36px; color:#606060; background:url(/static/img/content/financeclass/bg-guide-about-line.png) no-repeat center bottom; padding-top:55px;}
+.guide-about h2{ height:80px; line-height:80px; text-align:center; font-size:36px; color:#606060; background:url(/www/static/img/content/financeclass/bg-guide-about-line.png) no-repeat center bottom; padding-top:55px;}
 .guide-about img{ float:right; display:inline; margin:67px 11px 0 0;}
 .guide-about p{ float:left; display:inline; width:640px; line-height:36px; font-size:18px; color:#848484; text-indent:2em; padding-top:100px;}
 .guide-about p strong{ font-weight:normal; font-size:36px; color:#fd722d;}
 
 .guide-adv{ height:625px; background:#f9f9f9;}
-.guide-adv h2{ height:94px; line-height:94px; text-align:center; font-size:36px; color:#606060; background:url(/static/img/content/financeclass/bg-guide-about-line.png) no-repeat center bottom; padding-top:30px; margin-bottom:85px;}
+.guide-adv h2{ height:94px; line-height:94px; text-align:center; font-size:36px; color:#606060; background:url(/www/static/img/content/financeclass/bg-guide-about-line.png) no-repeat center bottom; padding-top:30px; margin-bottom:85px;}
 .guide-adv li{ float:left; display:inline; width:33%; text-align:center; margin:0 auto;}
 .guide-adv img{ display:block; width:186px; height:186px; margin:0 auto 20px;}
 .guide-adv h3{ height:64px; line-height:64px; font-size:22px; font-weight:bold; color:#4f4f4f; margin:0;}
@@ -36,21 +36,21 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .guide-adv p em{ font-style:normal; color:#ff6149;}
 
 .guide-product{ height:925px;}
-.guide-product h2{ height:100px; line-height:100px; text-align:center; font-size:36px; color:#606060; background:url(/static/img/content/financeclass/bg-guide-about-line.png) no-repeat center bottom; padding-top:35px; margin-bottom:110px;}
+.guide-product h2{ height:100px; line-height:100px; text-align:center; font-size:36px; color:#606060; background:url(/www/static/img/content/financeclass/bg-guide-about-line.png) no-repeat center bottom; padding-top:35px; margin-bottom:110px;}
 .guide-product .main{ height:530px;}
 .guide-product .pro{ display:inline; width:365px; height:456px;}
 .guide-product .pro h3{ height:82px; line-height:72px; text-align:center; font-size:26px; font-weight:bold; color:#fff;}
 .guide-product .pro ul{}
 .guide-product .pro li{ height:106px; line-height:106px; font-size:22px; color:#848484; text-indent:55px;}
-.guide-product .pro.unfixed{ float:left; background:url(/static/img/content/financeclass/bg-product-unfixed.png) no-repeat;}
-.guide-product .pro.fixed{ float:right; background:url(/static/img/content/financeclass/bg-product-fixed.png) no-repeat;}
-.guide-product .ad{ float:left; display:inline; width:360px; height:46px; line-height:46px; text-align:center; font-size:24px; color:#fe7551; background:url(/static/img/content/financeclass/bg-product.png) no-repeat center 23px; margin-left:30px; padding-top:340px;}
-.guide-product .btn-invest{ display:block; width:363px; height:89px; line-height:82px; text-align:center; font-size:30px; color:#fff; background:url(/static/img/content/financeclass/btn-guide-invest.png) no-repeat; margin:0 auto;}
+.guide-product .pro.unfixed{ float:left; background:url(/www/static/img/content/financeclass/bg-product-unfixed.png) no-repeat;}
+.guide-product .pro.fixed{ float:right; background:url(/www/static/img/content/financeclass/bg-product-fixed.png) no-repeat;}
+.guide-product .ad{ float:left; display:inline; width:360px; height:46px; line-height:46px; text-align:center; font-size:24px; color:#fe7551; background:url(/www/static/img/content/financeclass/bg-product.png) no-repeat center 23px; margin-left:30px; padding-top:340px;}
+.guide-product .btn-invest{ display:block; width:363px; height:89px; line-height:82px; text-align:center; font-size:30px; color:#fff; background:url(/www/static/img/content/financeclass/btn-guide-invest.png) no-repeat; margin:0 auto;}
 
 .guide-step{ height:1170px; background:#f9f9f9;}
-.guide-step h2{ height:106px; line-height:106px; text-align:center; font-size:36px; color:#606060; background:url(/static/img/content/financeclass/bg-guide-about-line.png) no-repeat center bottom; padding-top:25px; margin-bottom:85px;}
+.guide-step h2{ height:106px; line-height:106px; text-align:center; font-size:36px; color:#606060; background:url(/www/static/img/content/financeclass/bg-guide-about-line.png) no-repeat center bottom; padding-top:25px; margin-bottom:85px;}
 .guide-step .step{ height:160px; margin-left:40px;}
-.guide-step .step li{ float:left; display:inline; height:80px; line-height:80px; text-align:center; font-size:26px; color:#ffaf66; background:url(/static/img/content/financeclass/bg-guide-step.png) no-repeat; margin-left:-20px; cursor:pointer;}
+.guide-step .step li{ float:left; display:inline; height:80px; line-height:80px; text-align:center; font-size:26px; color:#ffaf66; background:url(/www/static/img/content/financeclass/bg-guide-step.png) no-repeat; margin-left:-20px; cursor:pointer;}
 .guide-step .step li.cur{ color:#fff; cursor:default;}
 .guide-step .step li.s-1{ width:275px; background-position:0 -100px; margin-left:0;}
 .guide-step .step li.s-1.cur{ background-position:0 0;}
@@ -63,16 +63,16 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .guide-step .slider{ width:920px; height:490px; position:relative; margin:0 auto 60px;}
 .guide-step .slider .prev,
 .guide-step .slider .next{ width:25px; height:50px; position:absolute; top:50%; margin-top:-25px; cursor:pointer;}
-.guide-step .slider .prev{ background:url(/static/img/content/financeclass/btn-guide-slider-prev.png) no-repeat; left:-90px;}
-.guide-step .slider .next{ background:url(/static/img/content/financeclass/btn-guide-slider-next.png) no-repeat; right:-90px;}
+.guide-step .slider .prev{ background:url(/www/static/img/content/financeclass/btn-guide-slider-prev.png) no-repeat; left:-90px;}
+.guide-step .slider .next{ background:url(/www/static/img/content/financeclass/btn-guide-slider-next.png) no-repeat; right:-90px;}
 .guide-step .slider-box{ width:920px; height:490px; overflow:hidden;}
 .guide-step .slider li{ float:left; display:inline; width:918px; height:488px; border:1px solid #c4c4c4;}
 .guide-step .slider img{ display:block; width:100%; height:100%;}
 .guide-step p{ height:62px; line-height:62px; text-align:center; font-size:18px; color:#fd722d;}
-.guide-step .btn-invest{ display:block; width:363px; height:89px; line-height:82px; text-align:center; font-size:30px; color:#fff; background:url(/static/img/content/financeclass/btn-guide-invest.png) no-repeat; margin:0 auto;}
+.guide-step .btn-invest{ display:block; width:363px; height:89px; line-height:82px; text-align:center; font-size:30px; color:#fff; background:url(/www/static/img/content/financeclass/btn-guide-invest.png) no-repeat; margin:0 auto;}
 
 
-.safe-banner{ width:1178px; height:273px; background:url(/static/img/content/financeclass/banner-safe.png) no-repeat; margin:0 auto 50px;}
+.safe-banner{ width:1178px; height:273px; background:url(/www/static/img/content/financeclass/banner-safe.png) no-repeat; margin:0 auto 50px;}
 
 .safe-info{ width:670px; min-height:300px; margin:0 0 120px 80px; position:relative;}
 .safe-info img{ position:absolute;}
@@ -81,38 +81,38 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .safe-info p{ line-height:36px; font-size:16px; color:#878786;}
 .safe-info.c{ margin-left:460px;}
 .safe-info.info-1 img{ right:-310px; top:40px;}
-.safe-info.info-1 h2{ background:url(/static/img/content/financeclass/ico-safe-tit-1.png) no-repeat left center;}
+.safe-info.info-1 h2{ background:url(/www/static/img/content/financeclass/ico-safe-tit-1.png) no-repeat left center;}
 .safe-info.info-2 img{ left:-380px; top:104px;}
-.safe-info.info-2 h2{ background:url(/static/img/content/financeclass/ico-safe-tit-2.png) no-repeat left center;}
+.safe-info.info-2 h2{ background:url(/www/static/img/content/financeclass/ico-safe-tit-2.png) no-repeat left center;}
 .safe-info.info-3 img{ right:-380px; top:104px;}
-.safe-info.info-3 h2{ background:url(/static/img/content/financeclass/ico-safe-tit-3.png) no-repeat left center;}
+.safe-info.info-3 h2{ background:url(/www/static/img/content/financeclass/ico-safe-tit-3.png) no-repeat left center;}
 .safe-info.info-4 img{ left:-370px; top:0;}
-.safe-info.info-4 h2{ background:url(/static/img/content/financeclass/ico-safe-tit-4.png) no-repeat left center;}
+.safe-info.info-4 h2{ background:url(/www/static/img/content/financeclass/ico-safe-tit-4.png) no-repeat left center;}
 .safe-info.info-5 img{ right:-380px; top:104px;}
-.safe-info.info-5 h2{ background:url(/static/img/content/financeclass/ico-safe-tit-5.png) no-repeat left center;}
+.safe-info.info-5 h2{ background:url(/www/static/img/content/financeclass/ico-safe-tit-5.png) no-repeat left center;}
 
 .safe-ad{ padding-bottom:180px;}
-.safe-ad h2{ height:100px; line-height:100px; text-align:center; font-size:36px; font-weight:normal; color:#595959; background:url(/static/img/content/financeclass/tit-safe-ad.png) no-repeat center center;}
+.safe-ad h2{ height:100px; line-height:100px; text-align:center; font-size:36px; font-weight:normal; color:#595959; background:url(/www/static/img/content/financeclass/tit-safe-ad.png) no-repeat center center;}
 .safe-ad ul{ height:245px; margin-left:77px;}
 .safe-ad li{ float:left; display:inline; width:320px; height:130px; line-height:42px; text-align:center; font-size:24px; color:#595959; background:#f0eff1; margin-right:44px; position:relative;}
 .safe-ad li strong{ display:block; padding-top:20px;}
 .safe-ad li i{ width:25px; height:25px; position:absolute; top:29px; left:81px;}
-.safe-ad li i.ico-1{ background:url(/static/img/content/financeclass/ico-safe-ad-1.png) no-repeat;}
-.safe-ad li i.ico-2{ background:url(/static/img/content/financeclass/ico-safe-ad-2.png) no-repeat;}
-.safe-ad li i.ico-3{ background:url(/static/img/content/financeclass/ico-safe-ad-3.png) no-repeat;}
-.safe-ad li i.ico-4{ background:url(/static/img/content/financeclass/ico-safe-ad-4.png) no-repeat;}
+.safe-ad li i.ico-1{ background:url(/www/static/img/content/financeclass/ico-safe-ad-1.png) no-repeat;}
+.safe-ad li i.ico-2{ background:url(/www/static/img/content/financeclass/ico-safe-ad-2.png) no-repeat;}
+.safe-ad li i.ico-3{ background:url(/www/static/img/content/financeclass/ico-safe-ad-3.png) no-repeat;}
+.safe-ad li i.ico-4{ background:url(/www/static/img/content/financeclass/ico-safe-ad-4.png) no-repeat;}
 .safe-ad li em{ font-style:normal; color:#fd0f0f;}
-.safe-ad li b{ width:20px; height:25px; background:url(/static/img/content/financeclass/ico-safe-ad-ls-arrow.png) no-repeat; position:absolute; right:-30px; top:50%; margin-top:-12px;}
-.safe-ad .btn-invest{ display:block; width:350px; height:74px; line-height:74px; text-align:center; font-size:36px; color:#fff; background:#ff9600 url(/static/img/content/financeclass/ico-safe-ad-btn-arrow.png) no-repeat 258px center; margin:0 auto;}
+.safe-ad li b{ width:20px; height:25px; background:url(/www/static/img/content/financeclass/ico-safe-ad-ls-arrow.png) no-repeat; position:absolute; right:-30px; top:50%; margin-top:-12px;}
+.safe-ad .btn-invest{ display:block; width:350px; height:74px; line-height:74px; text-align:center; font-size:36px; color:#fff; background:#ff9600 url(/www/static/img/content/financeclass/ico-safe-ad-btn-arrow.png) no-repeat 258px center; margin:0 auto;}
 
 
-.mission-banner{ width:1178px; height:273px; background:url(/static/img/content/financeclass/banner-mission.png) no-repeat; margin:0 auto;}
+.mission-banner{ width:1178px; height:273px; background:url(/www/static/img/content/financeclass/banner-mission.png) no-repeat; margin:0 auto;}
 
-.mission-info{ width:1070px; background:url(/static/img/content/financeclass/bg-mission-info-line-y.png) repeat-y left top; margin:0 auto; position:relative;}
+.mission-info{ width:1070px; background:url(/www/static/img/content/financeclass/bg-mission-info-line-y.png) repeat-y left top; margin:0 auto; position:relative;}
 .mission-info .wrap{ margin-left:72px; padding:70px 0 100px;}
 .mission-info img{ position:absolute;}
 .mission-info h2{ line-height:56px; font-size:38px; color:#ff7533; font-weight:normal; position:relative;}
-.mission-info h2 i{ width:22px; height:22px; background:url(/static/img/content/financeclass/ico-mission-circle.png) no-repeat; position:absolute; left:-82px; top:17px;}
+.mission-info h2 i{ width:22px; height:22px; background:url(/www/static/img/content/financeclass/ico-mission-circle.png) no-repeat; position:absolute; left:-82px; top:17px;}
 .mission-info h2 b{ display:block; font-weight:normal; font-family:Arial; color:#b7b9bd;}
 .mission-info p{ line-height:36px; font-size:22px; color:#828282; padding:30px 0 50px;}
 .mission-info .btn{ display:block; width:245px; height:70px; line-height:70px; text-align:center; font-size:24px; color:#fff; background:#ff9333; border-radius:10px;}
@@ -124,8 +124,8 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .mission-info.info-2 img{ left:78px; top:136px;}
 .mission-info.info-3 img{ left:690px; top:144px;}
 .mission-info.info-4 img{ left:60px; top:88px;}
-.mission-info-line-x{ width:1070px; height:34px; background:url(/static/img/content/financeclass/bg-mission-info-line-x-1.png) no-repeat; margin:0 auto;}
-.mission-info-line-x.c{ background:url(/static/img/content/financeclass/bg-mission-info-line-x-2.png) no-repeat;}
+.mission-info-line-x{ width:1070px; height:34px; background:url(/www/static/img/content/financeclass/bg-mission-info-line-x-1.png) no-repeat; margin:0 auto;}
+.mission-info-line-x.c{ background:url(/www/static/img/content/financeclass/bg-mission-info-line-x-2.png) no-repeat;}
 
 .mission-rules{ background:#fff3e9; padding-bottom:110px;}
 .mission-rules h2{ height:120px; line-height:120px; text-align:center; font-size:38px; font-weight:normal; color:#ff7533; padding-top:55px;}
@@ -134,23 +134,23 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 
 .strategy-nav{ width:1100px; height:87px; border-bottom:1px solid #e1e1e1; margin-left:12px;}
 .strategy-nav li{ float:left; display:inline; height:87px; line-height:64px; text-align:center; font-size:18px; color:#393939; margin:0 35px; position:relative; cursor:pointer;}
-.strategy-nav li i{ display:none; width:14px; height:9px; line-height:0; font-size:0; background:url(/static/img/content/financeclass/ico-strategy-nav-arrow.png) no-repeat; position:absolute; left:50%; bottom:-1px; margin-left:-7px;}
+.strategy-nav li i{ display:none; width:14px; height:9px; line-height:0; font-size:0; background:url(/www/static/img/content/financeclass/ico-strategy-nav-arrow.png) no-repeat; position:absolute; left:50%; bottom:-1px; margin-left:-7px;}
 .strategy-nav li.cur{ color:#fd722d; cursor:default;}
 .strategy-nav li.cur i{ display:block;}
 .strategy-con{ display:none; width:1100px; margin-left:12px;}
 .strategy-con .noun-tab{ width:740px; padding:30px 0 0 240px; overflow:hidden; _zoom:1;}
 .strategy-con .noun-tab li{ float:left; display:inline; width:98px; height:98px; border-radius:10px; margin:38px 44px 0 0; cursor:pointer;}
 .strategy-con .noun-tab li span{ display:block; line-height:46px; text-align:center; font-size:16px; padding-top:51px;}
-.strategy-con .noun-tab li.n-1{ border:2px solid #ffaf66; color:#ffaf66; background:url(/static/img/content/financeclass/ico-strategy-noun-1.png) no-repeat center 12px;}
-.strategy-con .noun-tab li.n-2{ border:2px solid #fe8179; color:#fe8179; background:url(/static/img/content/financeclass/ico-strategy-noun-2.png) no-repeat center 12px;}
-.strategy-con .noun-tab li.n-3{ border:2px solid #85a1fd; color:#85a1fd; background:url(/static/img/content/financeclass/ico-strategy-noun-3.png) no-repeat center 12px;}
-.strategy-con .noun-tab li.n-4{ border:2px solid #8bdc90; color:#8bdc90; background:url(/static/img/content/financeclass/ico-strategy-noun-4.png) no-repeat center 12px;}
-.strategy-con .noun-tab li.n-5{ border:2px solid #ffaf66; color:#ffaf66; background:url(/static/img/content/financeclass/ico-strategy-noun-5.png) no-repeat center 12px;}
-.strategy-con .noun-tab li.n-6{ border:2px solid #98e09c; color:#98e09c; background:url(/static/img/content/financeclass/ico-strategy-noun-6.png) no-repeat center 12px;}
-.strategy-con .noun-tab li.n-7{ border:2px solid #52d3b5; color:#52d3b5; background:url(/static/img/content/financeclass/ico-strategy-noun-7.png) no-repeat center 12px;}
-.strategy-con .noun-tab li.n-8{ border:2px solid #ffc800; color:#ffc800; background:url(/static/img/content/financeclass/ico-strategy-noun-8.png) no-repeat center 12px;}
-.strategy-con .noun-tab li.n-9{ border:2px solid #6abcee; color:#6abcee; background:url(/static/img/content/financeclass/ico-strategy-noun-9.png) no-repeat center 12px;}
-.strategy-con .noun-tab li.n-10{ border:2px solid #fd85bb; color:#fd85bb; background:url(/static/img/content/financeclass/ico-strategy-noun-10.png) no-repeat center 12px;}
+.strategy-con .noun-tab li.n-1{ border:2px solid #ffaf66; color:#ffaf66; background:url(/www/static/img/content/financeclass/ico-strategy-noun-1.png) no-repeat center 12px;}
+.strategy-con .noun-tab li.n-2{ border:2px solid #fe8179; color:#fe8179; background:url(/www/static/img/content/financeclass/ico-strategy-noun-2.png) no-repeat center 12px;}
+.strategy-con .noun-tab li.n-3{ border:2px solid #85a1fd; color:#85a1fd; background:url(/www/static/img/content/financeclass/ico-strategy-noun-3.png) no-repeat center 12px;}
+.strategy-con .noun-tab li.n-4{ border:2px solid #8bdc90; color:#8bdc90; background:url(/www/static/img/content/financeclass/ico-strategy-noun-4.png) no-repeat center 12px;}
+.strategy-con .noun-tab li.n-5{ border:2px solid #ffaf66; color:#ffaf66; background:url(/www/static/img/content/financeclass/ico-strategy-noun-5.png) no-repeat center 12px;}
+.strategy-con .noun-tab li.n-6{ border:2px solid #98e09c; color:#98e09c; background:url(/www/static/img/content/financeclass/ico-strategy-noun-6.png) no-repeat center 12px;}
+.strategy-con .noun-tab li.n-7{ border:2px solid #52d3b5; color:#52d3b5; background:url(/www/static/img/content/financeclass/ico-strategy-noun-7.png) no-repeat center 12px;}
+.strategy-con .noun-tab li.n-8{ border:2px solid #ffc800; color:#ffc800; background:url(/www/static/img/content/financeclass/ico-strategy-noun-8.png) no-repeat center 12px;}
+.strategy-con .noun-tab li.n-9{ border:2px solid #6abcee; color:#6abcee; background:url(/www/static/img/content/financeclass/ico-strategy-noun-9.png) no-repeat center 12px;}
+.strategy-con .noun-tab li.n-10{ border:2px solid #fd85bb; color:#fd85bb; background:url(/www/static/img/content/financeclass/ico-strategy-noun-10.png) no-repeat center 12px;}
 .strategy-con .noun-tab li.cur{ width:102px; height:102px; border:none; border-radius:0; cursor:default;}
 .strategy-con .noun-tab li.cur span{ height:100px; line-height:100px; color:#fff; padding-top:0;}
 .strategy-con .noun-tab li.n-1.cur{ background:#ffaf66;}
@@ -169,11 +169,11 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .strategy-con.info{ padding-bottom:135px;}
 .strategy-con .info-tab{ width:1080px; height:97px; border-bottom:1px solid #e1e1e1; margin-left:25px; padding-top:42px;}
 .strategy-con .info-tab li{ float:left; display:inline; height:97px; line-height:30px; text-align:center; font-size:18px; color:#393939; margin:0 35px; position:relative; cursor:pointer;}
-.strategy-con .info-tab li i{ display:none; width:14px; height:9px; line-height:0; font-size:0; background:url(/static/img/content/financeclass/ico-strategy-nav-arrow.png) no-repeat; position:absolute; left:50%; bottom:-1px; margin-left:-7px;}
+.strategy-con .info-tab li i{ display:none; width:14px; height:9px; line-height:0; font-size:0; background:url(/www/static/img/content/financeclass/ico-strategy-nav-arrow.png) no-repeat; position:absolute; left:50%; bottom:-1px; margin-left:-7px;}
 .strategy-con .info-tab li.cur{ color:#fd722d; cursor:default;}
 .strategy-con .info-tab li.cur i{ display:block;}
 .strategy-con .info-con{ display:none; width:928px; border:1px solid #e1e1e1; border-top:none; color:#5d5d5d; padding:40px 75px 80px; margin-left:25px;}
-.strategy-con .info-con .tit{ height:74px; line-height:74px; text-align:center; font-size:30px; background:url(/static/img/content/financeclass/bg-strategy-info-tit.png) no-repeat center center;}
+.strategy-con .info-con .tit{ height:74px; line-height:74px; text-align:center; font-size:30px; background:url(/www/static/img/content/financeclass/bg-strategy-info-tit.png) no-repeat center center;}
 .strategy-con .info-con h2{ height:85px; line-height:50px; text-align:center; font-size:22px; font-weight:bold;}
 .strategy-con .info-con h3{ line-height:80px; font-size:18px; font-weight:bold;}
 .strategy-con .info-con p{ line-height:34px; font-size:14px; text-indent:2em;}

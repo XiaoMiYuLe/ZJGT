@@ -6,8 +6,8 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 
 
 
-.hd-goldpig{ background:#fff1d4 url(/static/img/event/hd-goldpig/bg-feet.png) no-repeat center 570px;}
-.banner{ height:580px; background:url(/static/img/event/hd-goldpig/banner.png) no-repeat center top; margin-bottom:50px;}
+.hd-goldpig{ background:#fff1d4 url(/www/static/img/event/hd-goldpig/bg-feet.png) no-repeat center 570px;}
+.banner{ height:580px; background:url(/www/static/img/event/hd-goldpig/banner.png) no-repeat center top; margin-bottom:50px;}
 .banner .info{ color:#f0fc5c; position:absolute; left:500px; top:330px;}
 .banner .info strong{ display:block; line-height:34px; font-size:24px; font-weight:normal;}
 .banner .info p{ line-height:30px; font-size:22px;}
@@ -40,8 +40,8 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .hd-comment .cont strong{ display:block; line-height:30px; font-size:14px; font-weight:normal;}
 
 
-.hd-lucky{ height:530px; background:#5bcfc4 url(/static/img/event/hd-goldpig/bg-lucky.png) repeat-x center top; position:relative; margin-top:15px;}
-.hd-lucky .tit{ width:336px; height:162px; text-indent:-99em; background:url(/static/img/event/hd-goldpig/tit-lucky.png) no-repeat; position:absolute; left:50%; top:-15px; margin-left:-168px; overflow:hidden;}
+.hd-lucky{ height:530px; background:#5bcfc4 url(/www/static/img/event/hd-goldpig/bg-lucky.png) repeat-x center top; position:relative; margin-top:15px;}
+.hd-lucky .tit{ width:336px; height:162px; text-indent:-99em; background:url(/www/static/img/event/hd-goldpig/tit-lucky.png) no-repeat; position:absolute; left:50%; top:-15px; margin-left:-168px; overflow:hidden;}
 .hd-lucky .hd-wrap{ overflow:hidden;}
 .hd-lucky ul{ width:1300px; padding-top:180px;}
 .hd-lucky li{ float:left; display:inline; width:305px; margin:0 90px 0 24px;}
@@ -60,7 +60,7 @@ h1,h2,h3,h4,h5,h6{ margin:0;}
 .hd-info{ min-height:950px; width:1198px; background:#fff; border:1px solid #dedede; box-shadow:0 0 10px 0 #dedede; position:relative; margin:0 auto;}
 
 .hd-step{ width:290px; border-right:1px dashed #c3c3c3; padding-top:70px; position:absolute; left:0; top:0; bottom:0;}
-.hd-step dt{ height:72px; text-indent:-999em; background:url(/static/img/event/hd-goldpig/earn-tit.png) no-repeat center top; overflow:hidden;}
+.hd-step dt{ height:72px; text-indent:-999em; background:url(/www/static/img/event/hd-goldpig/earn-tit.png) no-repeat center top; overflow:hidden;}
 .hd-step dd{ width:160px; height:310px; position:relative; margin:0 auto;}
 .hd-step dd img{ display:block; width:160px; height:160px; position:relative; z-index:1;}
 .hd-step dd i{ width:7px; height:113px; background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAARBAMAAADj86tmAAAAJ1BMVEUAAADc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nw43xNXAAAADHRSTlMAd5nu3TPMu1VEIhGkLiEaAAAAMUlEQVQI12NgtHFlYJA5c3gBg8+ZMwIMZ86cKQARCgw6Z85MYNh25hADA0NjAANJAADrJw+Dqiwk7wAAAABJRU5ErkJggg==') repeat-y; position:absolute; left:50%; top:178px;}
