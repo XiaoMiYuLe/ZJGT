@@ -1,0 +1,623 @@
+{% include 'header.html' %}
+<link href="/static/css/invest/invest.css" rel="stylesheet" />
+<script type="text/javascript">
+    $(function () {
+        // 小图片悬浮伸展
+        $(".cs-investlist span.ico").hover(
+            function () {
+                $(this).stop().animate({
+                    'width': '200'
+                }, 300);
+            },
+            function () {
+                $(this).stop().animate({
+                    'width': 0
+                }, 300);
+            }
+        );
+
+        // 侧边栏
+        var sTop = $(".cs-investlist .box-menu").offset().top;
+        var slide = $(".cs-investlist .slide");
+
+        $(window).scroll(function () {
+            $(window).scrollTop() > sTop ? slide.addClass("fly") : slide.removeClass("fly");
+        });
+
+    });
+</script>
+
+<form method="post" action="./list.aspx" id="aspnetForm">
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5Mjg4OTgwMDQPZBYCZg9kFghmD2QWAgIGDxUBLi9hc3NldHMvc3R5bGVzaGVldHMvdW5zZW1hbnRpYy1ncmlkLW1vYmlsZS5jc3NkAgMPDxYEHgRUZXh0BRPkvZPpqowgwrcg5paw5omL5qCHHgtOYXZpZ2F0ZVVybAUqL0V2ZW50LzIyQmlkTmV3Q3VzdG9tZXJEZXRhaWwuYXNweD9JZD0xODE4ZGQCBA8PFgQfAAUT5rS75pyfIMK3IOmHkemSseWMhR8BBSIvRXZlbnQvV2FsbGV0X0RldGFpbHMuYXNweD9JZD0yMDI5ZGQCBQ9kFgICAQ9kFgICAQ8PFgIeC1JlY29yZGNvdW50ArkEZGRkVKBgI6Sq7AYPKaTyhN0dAFvpqKpX6mWIfxAlYb4nczY=" />
+    </div>
+
+    <script language="Javascript">
+        <!--
+        function ANP_checkInput(bid, mv) {
+            var el = document.getElementById(bid);
+            var r = new RegExp("^\\s*(\\d+)\\s*$");
+            if (r.test(el.value)) {
+                if (RegExp.$1 < 1 || RegExp.$1 > mv) {
+                    alert("页索引超出范围！");
+                    el.focus();
+                    el.select();
+                    return false;
+                }
+                return true;
+            }
+            alert("页索引不是有效的数值！");
+            el.focus();
+            el.select();
+            return false;
+        }
+
+        function ANP_keydown(e, btnId) {
+            var kcode;
+            if (window.event) {
+                kcode = e.keyCode;
+            } else if (e.which) {
+                kcode = e.which;
+            }
+            var validKey = (kcode == 8 || kcode == 46 || kcode == 37 || kcode == 39 || (kcode >= 48 && kcode <= 57) || (kcode >= 96 && kcode <= 105));
+            if (!validKey) {
+                if (kcode == 13) document.getElementById(btnId).click();
+                if (e.preventDefault) e.preventDefault();
+                else {
+                    event.returnValue = false
+                };
+            }
+        }
+        -->
+    </script>
+    <div class="aspNetHidden">
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CAEA7281" />
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+    </div>
+
+
+    <div class="cs-investlist">
+        <div class="title-img">
+            <img src="/static/img/invest/product-title.jpg" />
+        </div>
+
+        <div class="box-menu clearfix">
+            <div class="menus fl">
+                <ul>
+
+                    <li>
+                        <p>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hidValue" id="hidValue" value="&lt;%= ProjectStatus(item.proId) %>" />
+
+                            <span>
+                                
+
+                                <a href="/invest/info?id=2024" class="opt">优选 11期 中金宝上海某物流有限公司2898万 应收账款转让项目</a>
+
+                                
+                            </span>
+                            <!--<span class="ico">账户资金安全由阳光保险承担</span>-->
+                            <span class="ico ico-b">泰然计划安全保障</span>
+                        </p>
+                        <dl>
+                            <dd class="dd-a">
+                                <span class="span-a"><b>9.00</b>%</span>
+                                <span class="span-b">预期<b>最高</b>年化收益</span>
+                            </dd>
+                            <dd class="dd-b">
+
+
+                                <span class="span-a"><b>30</b>&nbsp;天起</span>
+
+
+                                <span class="span-b">项目期限</span>
+                            </dd>
+                            <dd class="dd-c">
+                                <span class="span-a">投资后次日计息</span>
+                                <span class="span-b">计息方式</span>
+                            </dd>
+
+
+
+                            <dd class="dd-d">
+                                <span class="span-a">剩余金额：&nbsp;<b>16264400.00</b>&nbsp;元</span>
+
+
+                                <a href="/invest/info?id=2024" class="span-b">立即投资</a>
+
+
+
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <p>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hidValue" id="hidValue" value="&lt;%= ProjectStatus(item.proId) %>" />
+
+                            <span>
+                                
+
+                                <a href="/invest/info?id=2012" class="opt">优选 10期 中金宝上海某物流有限公司2705万 应收账款转让项目</a>
+
+                                
+                            </span>
+                            <!--<span class="ico">账户资金安全由阳光保险承担</span>-->
+                            <span class="ico ico-b">泰然计划安全保障</span>
+                        </p>
+                        <dl>
+                            <dd class="dd-a">
+                                <span class="span-a"><b>8.55</b>%</span>
+                                <span class="span-b">预期<b>最高</b>年化收益</span>
+                            </dd>
+                            <dd class="dd-b">
+
+
+                                <span class="span-a"><b>30</b>&nbsp;天起</span>
+
+
+                                <span class="span-b">项目期限</span>
+                            </dd>
+                            <dd class="dd-c">
+                                <span class="span-a">投资后次日计息</span>
+                                <span class="span-b">计息方式</span>
+                            </dd>
+
+
+
+                            <dd class="dd-e">
+                                <span class="span-a">结束时间：&nbsp;<b>2017/8/19 13:01:47</b></span>
+
+
+                                <a href="/invest/info?id=2012" class="span-b">募集结束</a>
+
+
+
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <p>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hidValue" id="hidValue" value="&lt;%= ProjectStatus(item.proId) %>" />
+
+                            <span>
+                                
+
+                                <a href="/invest/info?id=1982" class="opt">优选 9期 中金宝上海某物流有限公司4521万 应收账款转让项目</a>
+
+                                
+                            </span>
+                            <!--<span class="ico">账户资金安全由阳光保险承担</span>-->
+                            <span class="ico ico-b">泰然计划安全保障</span>
+                        </p>
+                        <dl>
+                            <dd class="dd-a">
+                                <span class="span-a"><b>6.80</b>%</span>
+                                <span class="span-b">预期<b>最高</b>年化收益</span>
+                            </dd>
+                            <dd class="dd-b">
+
+
+                                <span class="span-a"><b>30</b>&nbsp;天起</span>
+
+
+                                <span class="span-b">项目期限</span>
+                            </dd>
+                            <dd class="dd-c">
+                                <span class="span-a">投资后次日计息</span>
+                                <span class="span-b">计息方式</span>
+                            </dd>
+
+
+
+                            <dd class="dd-e">
+                                <span class="span-a">结束时间：&nbsp;<b>2017/6/7 18:56:53</b></span>
+
+
+                                <a href="/invest/info?id=1982" class="span-b">募集结束</a>
+
+
+
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <p>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hidValue" id="hidValue" value="&lt;%= ProjectStatus(item.proId) %>" />
+
+                            <span>
+                                
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="opt">优选 8期 央企宝 上海某大型央企公司 应收账款质押项目</a>
+
+                                
+                            </span>
+                            <!--<span class="ico">账户资金安全由阳光保险承担</span>-->
+                            <span class="ico ico-b">泰然计划安全保障</span>
+                        </p>
+                        <dl>
+                            <dd class="dd-a">
+                                <span class="span-a"><b>11.01</b>%</span>
+                                <span class="span-b">预期<b>最高</b>年化收益</span>
+                            </dd>
+                            <dd class="dd-b">
+
+
+                                <span class="span-a"><b>0</b>&nbsp;天</span>
+
+
+                                <span class="span-b">项目期限</span>
+                            </dd>
+                            <dd class="dd-c">
+                                <span class="span-a">投资后次日计息</span>
+                                <span class="span-b">计息方式</span>
+                            </dd>
+
+
+
+                            <dd class="dd-e">
+                                <span class="span-a">结束时间：&nbsp;<b>2017/1/29 9:58:03</b></span>
+
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="span-b">已还款</a>
+
+
+
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <p>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hidValue" id="hidValue" value="&lt;%= ProjectStatus(item.proId) %>" />
+
+                            <span>
+                                
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="opt">优选 7期 中金宝上海某工贸有限公司1341万 应收账款转让项目</a>
+
+                                
+                            </span>
+                            <!--<span class="ico">账户资金安全由阳光保险承担</span>-->
+                            <span class="ico ico-b">泰然计划安全保障</span>
+                        </p>
+                        <dl>
+                            <dd class="dd-a">
+                                <span class="span-a"><b>9.00</b>%</span>
+                                <span class="span-b">预期<b>最高</b>年化收益</span>
+                            </dd>
+                            <dd class="dd-b">
+
+
+                                <span class="span-a"><b>0</b>&nbsp;天</span>
+
+
+                                <span class="span-b">项目期限</span>
+                            </dd>
+                            <dd class="dd-c">
+                                <span class="span-a">投资后次日计息</span>
+                                <span class="span-b">计息方式</span>
+                            </dd>
+
+
+
+                            <dd class="dd-e">
+                                <span class="span-a">结束时间：&nbsp;<b>2016/11/17 12:05:00</b></span>
+
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="span-b">已还款</a>
+
+
+
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <p>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hidValue" id="hidValue" value="&lt;%= ProjectStatus(item.proId) %>" />
+
+                            <span>
+                                
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="opt">优选 6期 央企宝 某大型央企公司220万 应收账款转让项目</a>
+
+                                
+                            </span>
+                            <!--<span class="ico">账户资金安全由阳光保险承担</span>-->
+                            <span class="ico ico-b">泰然计划安全保障</span>
+                        </p>
+                        <dl>
+                            <dd class="dd-a">
+                                <span class="span-a"><b>11.01</b>%</span>
+                                <span class="span-b">预期<b>最高</b>年化收益</span>
+                            </dd>
+                            <dd class="dd-b">
+
+
+                                <span class="span-a"><b>0</b>&nbsp;天</span>
+
+
+                                <span class="span-b">项目期限</span>
+                            </dd>
+                            <dd class="dd-c">
+                                <span class="span-a">投资后次日计息</span>
+                                <span class="span-b">计息方式</span>
+                            </dd>
+
+
+
+                            <dd class="dd-e">
+                                <span class="span-a">结束时间：&nbsp;<b>2016/8/18 22:00:17</b></span>
+
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="span-b">已还款</a>
+
+
+
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <p>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hidValue" id="hidValue" value="&lt;%= ProjectStatus(item.proId) %>" />
+
+                            <span>
+                                
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="opt">优选 5期 贸金壹号   (3期)上海某工贸有限公司应收账款转让项目</a>
+
+                                
+                            </span>
+                            <!--<span class="ico">账户资金安全由阳光保险承担</span>-->
+                            <span class="ico ico-b">泰然计划安全保障</span>
+                        </p>
+                        <dl>
+                            <dd class="dd-a">
+                                <span class="span-a"><b>6.95</b>%</span>
+                                <span class="span-b">预期<b>最高</b>年化收益</span>
+                            </dd>
+                            <dd class="dd-b">
+
+
+                                <span class="span-a"><b>0</b>&nbsp;天</span>
+
+
+                                <span class="span-b">项目期限</span>
+                            </dd>
+                            <dd class="dd-c">
+                                <span class="span-a">投资后次日计息</span>
+                                <span class="span-b">计息方式</span>
+                            </dd>
+
+
+
+                            <dd class="dd-e">
+                                <span class="span-a">结束时间：&nbsp;<b>2016/8/6 20:39:48</b></span>
+
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="span-b">已还款</a>
+
+
+
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <p>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hidValue" id="hidValue" value="&lt;%= ProjectStatus(item.proId) %>" />
+
+                            <span>
+                                
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="opt">优选 4期 中金宝 上海某实业有限公司4500万 应收账款质押项目</a>
+
+                                
+                            </span>
+                            <!--<span class="ico">账户资金安全由阳光保险承担</span>-->
+                            <span class="ico ico-b">泰然计划安全保障</span>
+                        </p>
+                        <dl>
+                            <dd class="dd-a">
+                                <span class="span-a"><b>7.51</b>%</span>
+                                <span class="span-b">预期<b>最高</b>年化收益</span>
+                            </dd>
+                            <dd class="dd-b">
+
+
+                                <span class="span-a"><b>0</b>&nbsp;天</span>
+
+
+                                <span class="span-b">项目期限</span>
+                            </dd>
+                            <dd class="dd-c">
+                                <span class="span-a">投资后次日计息</span>
+                                <span class="span-b">计息方式</span>
+                            </dd>
+
+
+
+                            <dd class="dd-e">
+                                <span class="span-a">结束时间：&nbsp;<b>2016/12/15 9:16:00</b></span>
+
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="span-b">已还款</a>
+
+
+
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <p>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hidValue" id="hidValue" value="&lt;%= ProjectStatus(item.proId) %>" />
+
+                            <span>
+                                
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="opt">优选 3期 世界500强企业 应收账款质押项目</a>
+
+                                
+                            </span>
+                            <!--<span class="ico">账户资金安全由阳光保险承担</span>-->
+                            <span class="ico ico-b">泰然计划安全保障</span>
+                        </p>
+                        <dl>
+                            <dd class="dd-a">
+                                <span class="span-a"><b>10.01</b>%</span>
+                                <span class="span-b">预期<b>最高</b>年化收益</span>
+                            </dd>
+                            <dd class="dd-b">
+
+
+                                <span class="span-a"><b>0</b>&nbsp;天</span>
+
+
+                                <span class="span-b">项目期限</span>
+                            </dd>
+                            <dd class="dd-c">
+                                <span class="span-a">投资后次日计息</span>
+                                <span class="span-b">计息方式</span>
+                            </dd>
+
+
+
+                            <dd class="dd-e">
+                                <span class="span-a">结束时间：&nbsp;<b>2016/8/5 8:19:22</b></span>
+
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="span-b">已还款</a>
+
+
+
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <p>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hidValue" id="hidValue" value="&lt;%= ProjectStatus(item.proId) %>" />
+
+                            <span>
+                                
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="opt">小微贷 第3期 上海某知名快递公司借款</a>
+
+                                
+                            </span>
+                            <!--<span class="ico">账户资金安全由阳光保险承担</span>-->
+                            <span class="ico ico-b">泰然计划安全保障</span>
+                        </p>
+                        <dl>
+                            <dd class="dd-a">
+                                <span class="span-a"><b>12.01</b>%</span>
+                                <span class="span-b">预期<b>最高</b>年化收益</span>
+                            </dd>
+                            <dd class="dd-b">
+
+
+                                <span class="span-a"><b>0</b>&nbsp;天</span>
+
+
+                                <span class="span-b">项目期限</span>
+                            </dd>
+                            <dd class="dd-c">
+                                <span class="span-a">投资后次日计息</span>
+                                <span class="span-b">计息方式</span>
+                            </dd>
+
+
+
+                            <dd class="dd-e">
+                                <span class="span-a">结束时间：&nbsp;<b>2016/7/18 8:47:38</b></span>
+
+
+                                <a href="javascript:void(1);" style="cursor: text;" class="span-b">已还款</a>
+
+
+
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                </ul>
+
+                <!-- AspNetPager V7.2 for VS2005 & VS2008  Copyright:2003-2008 Webdiyer (www.webdiyer.com) -->
+                <div id="listPager" class="listPage">
+                    <div class="listPage" style="width:50%;float:left;">
+                        第1页/共57页
+                    </div>
+                    <div class="listPage" style="width:50%;float:left;">
+                        <a class="btn" class="btn" disabled="disabled" style="margin-right:20px;">首页</a><a class="btn" class="btn" disabled="disabled" style="margin-right:20px;">上一页</a><span class="page on" style="margin-right:20px;">1</span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$listPager&#39;,&#39;2&#39;)" class="page" style="margin-right:20px;">2</a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$listPager&#39;,&#39;3&#39;)" class="page" style="margin-right:20px;">3</a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$listPager&#39;,&#39;4&#39;)" class="page" style="margin-right:20px;">4</a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$listPager&#39;,&#39;5&#39;)" class="page" style="margin-right:20px;">5</a><a class="page" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$listPager&#39;,&#39;6&#39;)" style="margin-right:20px;">...</a><a class="btn" class="btn" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$listPager&#39;,&#39;2&#39;)" style="margin-right:20px;">下一页</a><a class="btn" class="btn" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$listPager&#39;,&#39;57&#39;)" style="margin-right:20px;">末页</a>&nbsp;&nbsp;
+                        <input type="text" value="1" name="ctl00$ContentPlaceHolder1$listPager_input" id="ctl00$ContentPlaceHolder1$listPager_input" onkeydown="ANP_keydown(event,&#39;ctl00$ContentPlaceHolder1$listPager_btn&#39;);" style="width:30px;display:none" />
+                        <input type="submit" value="go" name="ctl00$ContentPlaceHolder1$listPager" id="ctl00$ContentPlaceHolder1$listPager_btn" onclick="if(ANP_checkInput(&#39;ctl00$ContentPlaceHolder1$listPager_input&#39;,57)){__doPostBack(&#39;ctl00$ContentPlaceHolder1$listPager&#39;,&#39;&#39;)} else{return false}" style="display:none" />
+                    </div>
+                </div>
+                <!-- AspNetPager V7.2 for VS2005 & VS2008 End -->
+
+
+            </div>
+
+
+
+            <div class="slide fr">
+                <dl>
+                    <dt><b>理财数据</b><i></i></dt>
+                    <dd>
+                        <em></em>
+                        <span>已成交金额</span>
+                        <span><b>33817.1401</b>万元</span>
+                    </dd>
+                    <dd>
+                        <em class="em-b"></em>
+                        <span>已还款金额</span>
+                        <span><b>32545.5801</b>万元</span>
+                    </dd>
+                    <dd>
+                        <em class="em-c"></em>
+                        <span>待还款金额</span>
+                        <span><b>1271.5602</b>万元</span>
+                    </dd>
+                </dl>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms['aspnetForm'];
+        if (!theForm) {
+            theForm = document.aspnetForm;
+        }
+
+        function __doPostBack(eventTarget, eventArgument) {
+            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                theForm.__EVENTTARGET.value = eventTarget;
+                theForm.__EVENTARGUMENT.value = eventArgument;
+                theForm.submit();
+            }
+        }
+    </script>
+</form>
+
+{% include 'footer.html' %}

@@ -56,11 +56,11 @@ exports.model = {
 exports.session = {
     type: 'file',
     common: {
-        maxAge: 10 * 1000,
+        maxAge: 30 * 60 * 1000,
         cookie: {
             name: 'thinkjs'
-//            autoUpdate: true,
-//            maxAge: 10 * 1000
+                //            autoUpdate: true,
+                //            maxAge: 10 * 1000
                 // keys: ['werwer', 'werwer'],
                 // signed: true
         }

@@ -1,4 +1,4 @@
-﻿$(function () {
+$(function () {
 
     // 投资框
     (function () {

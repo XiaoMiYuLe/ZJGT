@@ -929,3 +929,4 @@ function QRBitBuffer() {
 	QRCode.CorrectLevel = QRErrorCorrectLevel;
 })();
 
+

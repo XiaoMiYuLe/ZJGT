@@ -23,10 +23,10 @@ img { border:none; vertical-align: top; max-width: 100%; }
 
 
 /*---------------------------------------
-   				Ê×Ò³ÑùÊ½±í
+   				é¦–é¡µæ ·å¼è¡¨
 ---------------------------------------*/
 
-    /* ÖÜÄêÇì»î¶¯µ¯´° 2016.6.22 */
+    /* å‘¨å¹´åº†æ´»åŠ¨å¼¹çª— 2016.6.22 */
 	#in-oneActive { display:none; position:fixed; left:0; top:0; z-index:100; width:100%; height:100%; min-width:1200px; min-height:726px; background:rgba(0,0,0,0.8); }
     #in-oneActive .imges-box { width:100%; height:100%; background:url(/static/img/event/anniversary/in-alert.png) no-repeat center; }
     #in-oneActive .in-link { position:absolute; left:50%; bottom:6%; margin-left:-192px; width:384px; height:101px; background:url(/static/img/event/anniversary/now-join.png) no-repeat; }
@@ -35,11 +35,11 @@ img { border:none; vertical-align: top; max-width: 100%; }
 
 		
 
-	/* index-1. Í·²¿ĞÅÏ¢ */
+	/* index-1. å¤´éƒ¨ä¿¡æ¯ */
 		.in-header { width:100%; /* margin-top:100px;*/ background:#fff; overflow:hidden; }
 
 
-		/* ÊÕÒæ¸¡´° */
+		/* æ”¶ç›Šæµ®çª— */
 		.inWindow { position: absolute; top:45px; right:0; z-index: 2; width:256px; height:300px; line-height: 24px; text-align: center; font-size: 14px; color:#fff; overflow: hidden; background: rgba(0,0,0,0.5); }
 		.inWindow p span { font-size: 20px; color:#fff; }
 		.inWindow .window-a .p-a { font-size: 18px; margin-top: 20px; }
@@ -135,7 +135,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 		.h-advantage .floor-two span { display: block; height:26px; line-height: 26px; font-size: 14px; }
 
 
-	/* index-2. ÕıÎÄÄÚÈİ */
+	/* index-2. æ­£æ–‡å†…å®¹ */
 
 		.in-article { padding-bottom:36px; background:#f5f5f5; }
 		.in-article .section { margin-bottom: 16px; background:#fff; }
@@ -191,7 +191,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 		.in-main .slide .title .line { position: absolute; top:50%; left:5%; width:90%; border-bottom:1px solid #e6e6e6; }
 
 
-		/* ĞÂÊÖÖ¸Òı */
+		/* æ–°æ‰‹æŒ‡å¼• */
 		.in-main .content-a .cont-r { width:611px; padding: 20px 43px; }
 		.in-main .content-a .cont-r p { padding-bottom: 15px; border-bottom:1px solid #e6e6e6; line-height:24px; overflow:hidden; }
 		.in-main .content-a .cont-r p span { float:right; margin-right: 18px; font-size:14px; color:#797c83; }
@@ -208,7 +208,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 		
 		
 
-		/* ½ğÇ®°ü */
+		/* é‡‘é’±åŒ… */
 		.in-main .content-b .cont-r { width:611px; height:210px; padding: 0 43px; overflow: hidden; }
         .in-main .content-b .cont-r > p { padding:20px 0 15px; border-bottom: 1px solid #e6e6e6; font-size:14px; line-height: 24px; overflow: hidden; }
 		.in-main .content-b .cont-r > p b { color:#ff4c4c; font-size:16px; }
@@ -248,7 +248,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 		.in-main .content-b .scope .sp-c b { font-size: 16px; color: #ff2c2a; }
 
 
-        /* Æ±¾İ±¦ */
+        /* ç¥¨æ®å® */
         /*#myCanvas { height:100%; }
         .in-main .content-pjb { position:relative; }
         .in-main .content-pjb .pjb-ico { position:absolute; width:103px; height:65px; right:0; bottom:0; background:url(/static/img/index2/pjb-ico.png) no-repeat; }
@@ -275,7 +275,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
         .in-main .content-pjb .shouyigao { background:url(/static/img/index2/shouyigao.png) no-repeat; }
 
 
-		/* °²È«¿É¿¿ */
+		/* å®‰å…¨å¯é  */
 		.in-main .content-d .cont-r, .in-main .content-e .cont-r { width:697px; overflow: hidden; }
 		/*.in-main .content-e .cont-menu li { padding:15px 43px; }*/
         .in-main .content-e .cont-menu li:last-child { border-bottom-color: #fff; }
@@ -285,7 +285,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 
 
 
-        /* µÈ´ı¿ª·Å */
+        /* ç­‰å¾…å¼€æ”¾ */
         .in-main .cont-menu .await { width:100%; height:90px; padding:0; }
         .in-main .cont-menu .await img { display:block; margin:0 auto; }
 
@@ -320,7 +320,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 
 
 
-		/* Í¶×ÊÅÅĞĞ */
+		/* æŠ•èµ„æ’è¡Œ */
 		.in-main .slide-c .sd-tab { font-size:12px; }
 		.in-main .slide-c .title { margin-bottom:32px; }
 		.in-main .slide-c .sd-tab-btn { position: relative; height:30px; margin-bottom:20px; line-height:30px; border:1px solid #e6e6e6; font-size:0; border-radius:15px; }
@@ -343,7 +343,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 
 
 
-		/* Í¶×ÊÊµ¿ö */
+		/* æŠ•èµ„å®å†µ */
         .in-main .slide-d .live .bd { height:244px; overflow:hidden; }
 		.in-main .slide-d .live li { line-height:40px; overflow: hidden; }
 		.in-main .slide-d .live a { float:left; width:78%; color:#474e5d; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -353,7 +353,7 @@ img { border:none; vertical-align: top; max-width: 100%; }
 		
 		
 
-		/* Ã½Ìå±¨µÀ */
+		/* åª’ä½“æŠ¥é“ */
 	    .in-tab { padding: 0 32px; }
 	    .in-tab li { position: absolute; left:0; top:0; width:100%; background: #fff; display: none; overflow: hidden; }
 	    .in-tab .tab-btn { position: relative; padding-top: 32px; line-height: 24px; font-size: 0; }
@@ -424,12 +424,12 @@ img { border:none; vertical-align: top; max-width: 100%; }
 	    .in-tab .tab-school .school-c p { text-indent: 56px; }
 
 
-		/* ºÏ×÷»ï°é */
+		/* åˆä½œä¼™ä¼´ */
 		.in-partner { padding: 28px 20px 28px 46px; background:#fff; }
         .in-partner .box { height:128px; overflow: hidden; }
 		.in-partner .box a { float:left; width:20%; height:54px; margin-bottom: 20px; }
 
 
-	    /* ÊÓÆµ²¥·ÅÑùÊ½ */
+	    /* è§†é¢‘æ’­æ”¾æ ·å¼ */
         div.layui-layer-title { color:#000; background:#fff; }
         .layui-layer-setwin .layui-layer-close1 { background-position:0 -40px; }

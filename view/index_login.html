@@ -1,0 +1,40 @@
+{% include 'header.html' %}
+<form method="post" action="/index/login" id="aspnetForm">
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4NDI0MTgwNjIPZBYCZg9kFgQCAw8PFgQeBFRleHQFE+S9k+mqjCDCtyDmlrDmiYvmoIceC05hdmlnYXRlVXJsBSovRXZlbnQvMjJCaWROZXdDdXN0b21lckRldGFpbC5hc3B4P0lkPTE4MThkZAIEDw8WBB8ABRPmtLvmnJ8gwrcg6YeR6ZKx5YyFHwEFIi9FdmVudC9XYWxsZXRfRGV0YWlscy5hc3B4P0lkPTIwMzBkZGTSUiqk6cKub/X5x4LdNU+s/fYseCEf9qUdyBJ8vavxHw==" />
+    </div>
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
+    </div>
+    <div class="grid-container" style="position: relative; z-index: 4;">
+        <div class="grid-100">
+            <div class="login">
+                <fieldset>
+                    <legend>帐户信息</legend>
+                    <div style="margin-top:-20px;height:20px;padding-left:6.5em;color: red;">{{errorMsg}}</div>
+                    <p>
+                        <label>账号</label>
+                        <input name="account" type="text" id="login_userName" placeholder="输入手机号/用户名"  value="{{account}}"/>
+                    </p>
+                    <p>
+                        <label>密码</label>
+                        <input name="password" type="password" id="login_userPassWorld" maxlength="20" placeholder="输入密码" value="" />
+                    </p>
+                    <p>
+                    </p>
+                    <p style="text-align: center">
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnLogin" value="立即登录" id="btnLogin" class="btn" />
+                    </p>
+                    <p style="padding-left: 50px;">
+                        <span>没有账号？</span><a href="Register.aspx">免费注册&nbsp;|&nbsp;</a><a href="Safety/GetPass1.aspx">忘记密码</a>
+                    </p>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="login-banner"></div>
+    </div>
+
+</form>
+{% include 'footer2.html' %}

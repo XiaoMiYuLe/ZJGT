@@ -113,7 +113,7 @@ em { font-style:normal; }
 .pro-page-b .pro-cont .text p { line-height:30px; font-size:16px; color:#565656; }
 
 .cs-Imglistbox { position:relative; width:100%; height:238px; margin:50px 0;  overflow:hidden; }
-.cs-Imglistbox > a { position:absolute; top: 50%; outline:none; margin-top:-68px; width:20px; height:35px; padding:50px 0; background:url(/Event/images/Wallet/arrows-two.jpg) no-repeat 0 center; }
+.cs-Imglistbox > a { position:absolute; top: 50%; outline:none; margin-top:-68px; width:20px; height:35px; padding:50px 0; background:url(/static/img/event/img/arrows-two.jpg) no-repeat 0 center; }
 .cs-Imglistbox .prev { left:40px; }
 .cs-Imglistbox .next { right:40px; background-position: -20px center; }
 .cs-Imglistbox ul { height:238px; overflow:hidden; }
@@ -145,6 +145,7 @@ em { font-style:normal; }
 .pro-popop .next { right:0; }
 .pro-popop .next span { background-position:-50px 0; }
 .pro-popop .pop-close { position:absolute; top:-50px; right:8%; width:36px; height:36px; background:url(/static/img/ProductPage/popop-close.png) no-repeat; }
+
 
 
 
