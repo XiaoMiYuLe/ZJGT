@@ -30,7 +30,8 @@
     "think-inspect": "0.0.2",
     "think-watcher": "^3.0.0",
     "think-webpack-dev-middleware": "^1.0.1",
-    "think-webpack-hot-middleware": "^1.0.2"
+    "think-webpack-hot-middleware": "^1.0.2",
+    "webpack": "^3.8.1"
   },
   "repository": "",
   "license": "MIT",

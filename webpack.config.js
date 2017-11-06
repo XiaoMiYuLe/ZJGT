@@ -1,12 +1,12 @@
-//var webpack = require('webpack');
-//module.exports = {
-//    entry: {
-//        main: [
-//            'src/index.js',
-//            'webpack-hot-middleware/client?reload=true'
-//        ]
-//    },
-//    plugin: [
-//       new webpack.HotModuleReplacementPlugin()
-//    ]
-//};
+var webpack = require('webpack');
+var path = require('path');
+
+module.exports = {
+    entry: {
+        header: []
+    },
+    output: {
+        filename: '[name].js',
+        path: path.resolve(__dirname, 'dist')
+    }
+}
