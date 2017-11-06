@@ -13,6 +13,13 @@
 //   })
 // })
 
+//发布到哪, 这代表： fis3 release 之后的 -d d:/www/fis_zjgt,以后只要直接执行 fis3 release
+fis.match('*', {
+  deploy: fis.plugin('local-deliver', {
+    to: 'd:/www/fis_zjgt'
+  })
+})
+
 //css添加hash
 fis.match('/www/static/css/(**.css)', {
     useHash: true
@@ -23,7 +30,7 @@ fis.match('/www/static/js/(**.js)', {
     postprocessor: function(content, file, settings) {
         // 只对 js 类文件进行处理
         // if (!file.isJsLike) return content;
-        
+
         return content += '\n// build ' + file.filename;
         // return content += '?v=' + v;
     }
