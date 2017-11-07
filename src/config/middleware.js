@@ -2,11 +2,11 @@ const path = require('path');
 const isDev = think.env === 'development';
 
 module.exports = [
-    {
-        handle: 'webpack',
-        //        enable: isDev,
-        options: {}
-  },
+  //   {
+  //       handle: 'webpack',
+  //       //        enable: isDev,
+  //       options: {}
+  // },
     {
         handle: 'meta',
         options: {
