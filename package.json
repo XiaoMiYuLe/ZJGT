@@ -25,6 +25,7 @@
     "babel-preset-think-node": "^1.0.0",
     "eslint": "^4.2.0",
     "eslint-config-think": "^1.0.0",
+    "html-webpack-plugin": "^2.30.1",
     "node-notifier": "^5.0.2",
     "think-babel": "^1.0.3",
     "think-inspect": "0.0.2",
