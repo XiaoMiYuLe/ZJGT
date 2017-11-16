@@ -27,13 +27,12 @@ fis.match('/www/static/css/(**.css)', {
 //js添加hash
 fis.match('/www/static/js/(**.js)', {
     useHash: true,
-    postprocessor: function(content, file, settings) {
-        // 只对 js 类文件进行处理
-        // if (!file.isJsLike) return content;
-
-        return content += '\n// build ' + file.filename;
-        // return content += '?v=' + v;
-    }
+    // postprocessor: function(content, file, settings) {
+    //     // 只对 js 类文件进行处理
+    //     // if (!file.isJsLike) return content;
+    //     return content += '\n// build ' + file.filename;
+    //     // return content += '?v=' + v;
+    // }
 });
 //所有图片加 hash
 fis.match('image', {
@@ -41,10 +40,10 @@ fis.match('image', {
 });
 
 // 压缩文件
-// fis.match('/www/static/(**.js)', {
-//     // fis-optimizer-uglify-js 插件进行压缩，已内置
-//     optimizer: fis.plugin('uglify-js')
-// });
+fis.match('/www/static/(**.js)', {
+    // fis-optimizer-uglify-js 插件进行压缩，已内置
+    optimizer: fis.plugin('uglify-js')
+});
 
 fis.match('/www/static/(**.css)', {
     // fis-optimizer-clean-css 插件进行压缩，已内置
