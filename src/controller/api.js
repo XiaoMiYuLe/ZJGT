@@ -1,7 +1,6 @@
 const Base = require('./base.js');
 
 module.exports = class extends Base {
-
     indexAction() {
         var cmdtype = this.post('cmdtype');
         if (cmdtype == 'getlenddetail') {
@@ -128,7 +127,7 @@ module.exports = class extends Base {
     //登录
     login() {
         var account = this.post("account");
-        var password = this.post("password")
+        var password = this.post("password");
         var a = {};
         if (account == '13333333333' && password == '33333333') {
             a = {
